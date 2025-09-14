@@ -1,11 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Menu, Home, FileText, Search, Info, Phone, Sun, Moon, Download,
-  Shield, User, Settings, LogOut, ChevronDown
-} from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import {
+  Menu,
+  Home,
+  FileText,
+  Search,
+  Info,
+  Phone,
+  Sun,
+  Moon,
+  Download,
+  Shield,
+  User,
+  Settings,
+  LogOut,
+  ChevronDown,
+} from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
-import MobileSidebar from './MobileSidebar';
-import { Link } from 'react-router-dom';
+import MobileSidebar from "./MobileSidebar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -18,19 +30,24 @@ const Navbar = () => {
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
       e.preventDefault();
+      console.log("PWA is installable!", e);
       setDeferredPrompt(e);
       setIsInstallable(true);
     };
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    return () =>
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
   }, []);
 
   const handleInstallApp = async () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') setIsInstallable(false);
+      if (outcome === "accepted") setIsInstallable(false);
       setDeferredPrompt(null);
     }
   };
@@ -39,17 +56,17 @@ const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navLinks = [
-    { name: 'Home', path: '/', icon: Home },
-    { name: 'Report Issue', path: '/report', icon: FileText },
-    { name: 'Track Status', path: '/track', icon: Search },
-    { name: 'About Us', path: '/about', icon: Info },
-    { name: 'Contact', path: '/contact', icon: Phone }
+    { name: "Home", path: "/", icon: Home },
+    { name: "Report Issue", path: "/report", icon: FileText },
+    { name: "Track Status", path: "/track", icon: Search },
+    { name: "About Us", path: "/about", icon: Info },
+    { name: "Contact", path: "/contact", icon: Phone },
   ];
 
   const profileItems = [
-    { name: 'My Profile', path: '/profile', icon: User },
-    { name: 'Settings', path: '/settings', icon: Settings },
-    { name: 'Logout', path: '/logout', icon: LogOut, isDestructive: true }
+    { name: "My Profile", path: "/profile", icon: User },
+    { name: "Settings", path: "/settings", icon: Settings },
+    { name: "Logout", path: "/logout", icon: LogOut, isDestructive: true },
   ];
 
   return (
@@ -58,7 +75,6 @@ const Navbar = () => {
       <nav className="bg-white dark:bg-gray-900 shadow-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-
             {/* Logo */}
             <div className="flex items-center space-x-3 cursor-pointer">
               <div className="relative">
@@ -98,9 +114,8 @@ const Navbar = () => {
 
             {/* Desktop Utility Buttons */}
             <div className="hidden lg:flex items-center space-x-3">
-
               {/* Install PWA */}
-              {isInstallable && (
+              {!isInstallable && (
                 <button
                   onClick={handleInstallApp}
                   className="flex items-center space-x-2 px-3 py-2 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white rounded-lg transition-all duration-200 font-medium shadow-md hover:shadow-lg text-sm"
@@ -114,7 +129,9 @@ const Navbar = () => {
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 group"
-                aria-label={isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                aria-label={
+                  isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"
+                }
               >
                 {isDarkMode ? (
                   <Sun className="w-5 h-5 text-yellow-500 group-hover:scale-110 transition-transform duration-200" />
@@ -145,8 +162,8 @@ const Navbar = () => {
                           onClick={() => setIsProfileOpen(false)}
                           className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                             item.isDestructive
-                              ? 'text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20'
-                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                              ? "text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20"
+                              : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
                           }`}
                         >
                           <IconComponent className="w-4 h-4" />
@@ -157,7 +174,6 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-
             </div>
 
             {/* Mobile Hamburger */}
@@ -175,7 +191,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Sidebar */}
-      <MobileSidebar 
+      <MobileSidebar
         isMenuOpen={isMenuOpen}
         closeMenu={closeMenu}
         navLinks={navLinks}

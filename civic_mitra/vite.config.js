@@ -12,9 +12,9 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
       manifest: {
-        name: "Hackathon MVP App",
-        short_name: "MVPApp",
-        description: "A simple installable hackathon PWA",
+        name: "Civic Mitra PWA App",
+        short_name: "Civic Mitra",
+        description: "A  Civic Mitra Installable PWA App",
         theme_color: "#2563eb",
         background_color: "#ffffff",
         display: "standalone",
