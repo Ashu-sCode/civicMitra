@@ -1,0 +1,54 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* === Global Styling for MVP === */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui;
+    @apply bg-gray-50 text-gray-800 antialiased transition-colors duration-300;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', ui-sans-serif, system-ui;
+    @apply text-gray-900;
+  }
+  a {
+    @apply text-blue-600 hover:underline;
+  }
+  input, textarea, select {
+    @apply border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+  button {
+    @apply px-4 py-2 rounded-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition disabled:opacity-50;
+  }
+}
+
+/* === Dark Mode Support === */
+@layer base {
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+  .dark h1, .dark h2, .dark h3 {
+    @apply text-white;
+  }
+  .dark input, .dark textarea, .dark select {
+    @apply bg-gray-800 border-gray-600 text-gray-200;
+  }
+  .dark button {
+    @apply bg-blue-500 hover:bg-blue-600;
+  }
+}
+
+/* === Utility Classes Extension (Optional) === */
+@layer components {
+  .card {
+    @apply bg-white shadow-md rounded-2xl p-4 dark:bg-gray-800;
+  }
+  .container {
+    @apply max-w-4xl mx-auto px-4;
+  }
+}
