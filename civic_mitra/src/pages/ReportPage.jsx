@@ -221,26 +221,7 @@ const ReportPage = () => {
                   value={formData.fullName}
                   onChange={(e) =>
                     handleInputChange("fullName", e.target.value)
-                  }
-                  className={`w-full px-4 py-3 rounded-xl border-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors text-lg ${
-                    isDarkMode
-                      ? "bg-gray-700 border-gray-600 text-white placeholder-gray-400"
-                      : "bg-gray-50 border-gray-300 text-gray-900 placeholder-gray-500"
-                  }`}
-                  placeholder="Enter your full name"
-                />
-              </div>
-
-              <div>
-                <label
-                  className={`block text-sm font-medium mb-2 ${
-                    isDarkMode ? "text-gray-300" : "text-gray-700"
-                  }`}
-                >
-                  Mobile Number *
-                </label>
-                <div className="relative">
-                  <Phone
+          
                     className={`absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 ${
                       isDarkMode ? "text-gray-400" : "text-gray-500"
                     }`}
