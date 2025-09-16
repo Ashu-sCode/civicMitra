@@ -163,24 +163,6 @@ const ReportPage = () => {
 
 
        
-  
-              {isOnline ? (
-                <Wifi className="w-4 h-4 mr-2" />
-              ) : (
-                <WifiOff className="w-4 h-4 mr-2" />
-              )}
-              {isOnline ? "Synced Online ✅" : "Saved Offline ⏸️"}
-            </div>
-            <p
-              className={`text-sm ${
-                isDarkMode ? "text-gray-400" : "text-gray-500"
-              }`}
-            >
-              {isOnline
-                ? "Your report has been submitted and will be reviewed by authorities."
-                : "Your report will sync automatically when you're back online."}
-            </p>
-          </div>
         </div>
       </div>
     );
