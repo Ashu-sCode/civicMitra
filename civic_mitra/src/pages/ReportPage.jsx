@@ -161,15 +161,7 @@ const ReportPage = () => {
     }
   };
 
-  if (isSubmitted) {
-    return (
-      <div
-        className={`min-h-screen transition-colors duration-300 ${
-          isDarkMode
-            ? "bg-gray-900"
-            : "bg-gradient-to-br from-blue-50 to-gray-100"
-        }`}
-      >
+
         <div className="max-w-md mx-auto px-4 py-8 md:max-w-2xl lg:py-12">
           <div
             className={`rounded-2xl p-8 text-center shadow-xl transition-colors duration-300 ${
