@@ -163,16 +163,7 @@ const ReportPage = () => {
 
 
        
-            <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
-              <Check className="w-10 h-10 text-green-600" />
-            </div>
-            <h2
-              className={`text-2xl font-bold mb-4 ${
-                isDarkMode ? "text-white" : "text-gray-900"
-              }`}
-            >
-              Thank You! 🎉
-            </h2>
+  
             <p
               className={`text-lg mb-4 ${
                 isDarkMode ? "text-gray-300" : "text-gray-600"
