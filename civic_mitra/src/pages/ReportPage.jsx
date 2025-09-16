@@ -184,24 +184,7 @@ const ReportPage = () => {
             : "bg-white/90 border-gray-200"
         } backdrop-blur-sm`}
       >
-        <div className="max-w-md mx-auto px-4 py-3 md:max-w-2xl">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <div
-                className={`w-3 h-3 rounded-full mr-2 ${
-                  isOnline ? "bg-green-500" : "bg-orange-500"
-                } animate-pulse`}
-              ></div>
-              <span
-                className={`text-sm font-medium ${
-                  isDarkMode ? "text-gray-300" : "text-gray-600"
-                }`}
-              >
-                {isOnline ? "Online" : "Offline Mode"}
-              </span>
-            </div>
-            <button
-              onClick={() => setIsDarkMode(!isDarkMode)}
+   ) => setIsDarkMode(!isDarkMode)}
               className={`p-2 rounded-lg transition-colors ${
                 isDarkMode
                   ? "bg-gray-700 hover:bg-gray-600"
