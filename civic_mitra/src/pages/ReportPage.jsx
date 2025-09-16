@@ -198,23 +198,7 @@ const ReportPage = () => {
       </div>
 
       <div className="max-w-md mx-auto px-4 py-6 md:max-w-2xl lg:py-8">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h1
-            className={`text-3xl font-bold mb-3 ${
-              isDarkMode ? "text-white" : "text-gray-900"
-            }`}
-          >
-            📢 Report an Issue
-          </h1>
-          <p
-            className={`text-lg ${
-              isDarkMode ? "text-gray-300" : "text-gray-600"
-            }`}
-          >
-            Help us make your community better
-          </p>
-        </div>
+    
 
         {/* Form Sections */}
         <div className="space-y-6">
