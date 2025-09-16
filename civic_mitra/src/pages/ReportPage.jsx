@@ -252,48 +252,7 @@ const ReportPage = () => {
                 : "bg-white border border-gray-200"
             }`}
           >
-            <h2
-              className={`text-lg font-semibold mb-4 flex items-center ${
-                isDarkMode ? "text-white" : "text-gray-900"
-              }`}
-            >
-              <MessageSquare className="w-5 h-5 mr-2 text-green-600" />
-              Issue Details
-            </h2>
-
-            <div className="space-y-4">
-              <div>
-                <label
-                  className={`block text-sm font-medium mb-2 ${
-                    isDarkMode ? "text-gray-300" : "text-gray-700"
-                  }`}
-                >
-                  Category *
-                </label>
-                <div className="relative">
-                  <Folder
-                    className={`absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 ${
-                      isDarkMode ? "text-gray-400" : "text-gray-500"
-                    }`}
-                  />
-                  <ChevronDown
-                    className={`absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 ${
-                      isDarkMode ? "text-gray-400" : "text-gray-500"
-                    }`}
-                  />
-                  <select
-                    value={formData.category}
-                    onChange={(e) =>
-                      handleInputChange("category", e.target.value)
-                    }
-                    className={`w-full pl-12 pr-12 py-3 rounded-xl border-2 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-colors text-lg appearance-none ${
-                      isDarkMode
-                        ? "bg-gray-700 border-gray-600 text-white"
-                        : "bg-gray-50 border-gray-300 text-gray-900"
-                    }`}
-                  >
-                    {categories.map((cat) => (
-                      <option key={cat.value} value={cat.value}>
+           
                         {cat.label}
                       </option>
                     ))}
