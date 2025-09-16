@@ -164,20 +164,6 @@ const ReportPage = () => {
 
        
   
-            <p
-              className={`text-lg mb-4 ${
-                isDarkMode ? "text-gray-300" : "text-gray-600"
-              }`}
-            >
-              Your report has been saved successfully.
-            </p>
-            <div
-              className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-4 ${
-                isOnline
-                  ? "bg-green-100 text-green-800 border border-green-200"
-                  : "bg-orange-100 text-orange-800 border border-orange-200"
-              }`}
-            >
               {isOnline ? (
                 <Wifi className="w-4 h-4 mr-2" />
               ) : (
