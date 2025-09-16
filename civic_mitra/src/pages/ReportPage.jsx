@@ -162,14 +162,7 @@ const ReportPage = () => {
   };
 
 
-        <div className="max-w-md mx-auto px-4 py-8 md:max-w-2xl lg:py-12">
-          <div
-            className={`rounded-2xl p-8 text-center shadow-xl transition-colors duration-300 ${
-              isDarkMode
-                ? "bg-gray-800 border border-gray-700"
-                : "bg-white border border-gray-200"
-            }`}
-          >
+       
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
               <Check className="w-10 h-10 text-green-600" />
             </div>
