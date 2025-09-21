@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicMitra Problem Routing System - Department Mapping</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3d6f 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .download-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .download-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .download-btn:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .table-container {
+            padding: 0;
+            overflow-x: auto;
+        }
+        
+        .routing-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        .routing-table th {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3d6f 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 3px solid #1e3d6f;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .routing-table td {
+            padding: 15px 12px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+        
+        .routing-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .routing-table tr:hover {
+            background-color: #e8f4f8;
+            transition: background-color 0.3s ease;
+        }
+        
+        .problem-category {
+            font-weight: bold;
+            color: #2c5aa0;
+            font-size: 1.1em;
+        }
+        
+        .problem-description {
+            color: #555;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        
+        .urban-dept {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .rural-dept {
+            background: linear-gradient(135deg, #fd7e14 0%, #e83e8c 100%);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            padding: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .download-controls {
+                display: none;
+            }
+            
+            .routing-table {
+                font-size: 12px;
+            }
+            
+            .routing-table th,
+            .routing-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .download-controls {
+                position: static;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .routing-table {
+                font-size: 12px;
+            }
+            
+            .routing-table th,
+            .routing-table td {
+                padding: 8px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="download-controls">
+                <button class="download-btn" onclick="downloadPDF()">
+                    📄 Download PDF
+                </button>
+                <button class="download-btn" onclick="printTable()">
+                    🖨️ Print
+                </button>
+            </div>
+            <h1>CivicMitra Problem Routing System</h1>
+            <p>Comprehensive Department Mapping for Urban & Rural Governance</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">20</div>
+                <div class="stat-label">Problem Categories</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">40+</div>
+                <div class="stat-label">Department Mappings</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Governance Tiers</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table class="routing-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">Problem Category</th>
+                        <th style="width: 35%;">Problem Description</th>
+                        <th style="width: 22.5%;">Urban Department</th>
+                        <th style="width: 22.5%;">Rural Department</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="problem-category">Roads & Transport Issues</td>
+                        <td class="problem-description">Potholes, broken roads, speed breakers, traffic signals, illegal parking</td>
+                        <td class="urban-dept">Public Works Dept / Municipal Engineering / Transport Dept</td>
+                        <td class="rural-dept">Rural Development Dept / Panchayat Roads / Block Dev Office</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Sanitation & Solid Waste</td>
+                        <td class="problem-description">Overflowing bins, uncollected waste, illegal dumping, stray animals</td>
+                        <td class="urban-dept">Municipal Sanitation Dept / Swachh Bharat Mission Urban</td>
+                        <td class="rural-dept">Panchayati Raj Dept / Swachh Bharat Mission Gramin</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Water Supply & Sewerage</td>
+                        <td class="problem-description">Broken pipelines, blocked drains, waterlogging, sewage overflow</td>
+                        <td class="urban-dept">Jal Board / Municipal Sewerage Dept</td>
+                        <td class="rural-dept">Panchayat Water & Sanitation Dept</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Streetlights & Electricity</td>
+                        <td class="problem-description">Broken streetlights, electrical hazards, low illumination</td>
+                        <td class="urban-dept">Municipal Electrical Dept / DISCOM</td>
+                        <td class="rural-dept">Rural Electricity / DISCOM</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Environment & Public Health</td>
+                        <td class="problem-description">Open burning, pollution, mosquito breeding, stray animals</td>
+                        <td class="urban-dept">Municipal Health Dept / Pollution Control Board</td>
+                        <td class="rural-dept">Rural Health Dept / Animal Husbandry Dept</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Parks & Public Spaces</td>
+                        <td class="problem-description">Damaged benches, broken swings, unmaintained parks, encroachments</td>
+                        <td class="urban-dept">Municipal Horticulture Dept / Urban Development</td>
+                        <td class="rural-dept">Panchayat Parks / Community Development Dept</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Public Safety & Law</td>
+                        <td class="problem-description">Eve-teasing spots, broken CCTV, harassment, unauthorized construction</td>
+                        <td class="urban-dept">Local Police / Municipal Enforcement Wing</td>
+                        <td class="rural-dept">Police / Gram Panchayat Enforcement</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Civic Infrastructure</td>
+                        <td class="problem-description">Broken public toilets, bus stops, signage</td>
+                        <td class="urban-dept">Municipal Infrastructure / Transport Dept</td>
+                        <td class="rural-dept">Panchayat Infrastructure / Transport Dept</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Education & Libraries</td>
+                        <td class="problem-description">School repairs, library maintenance, water & sanitation in schools</td>
+                        <td class="urban-dept">Municipal Education Dept / School Authority</td>
+                        <td class="rural-dept">Block Education Officer / Panchayat Schools</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Disaster & Emergency</td>
+                        <td class="problem-description">Floods, fire hazards, landslides, accidents</td>
+                        <td class="urban-dept">Fire Dept / Emergency Services / Municipal Disaster Management</td>
+                        <td class="rural-dept">Block Emergency Services / Panchayat Disaster Management</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Urban Planning & Zoning</td>
+                        <td class="problem-description">Unauthorized construction, land use violations</td>
+                        <td class="urban-dept">Town Planning / Building Dept</td>
+                        <td class="rural-dept">Panchayat / Revenue Dept / Rural Development</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Animal Welfare & Control</td>
+                        <td class="problem-description">Stray animals, dog bites, dead animals, livestock management</td>
+                        <td class="urban-dept">Municipal Animal Control / Health</td>
+                        <td class="rural-dept">Animal Husbandry / Panchayat Health Officer</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Roads & Traffic Safety</td>
+                        <td class="problem-description">Missing signage, speed bumps, unsafe intersections</td>
+                        <td class="urban-dept">Transport Dept / Traffic Police</td>
+                        <td class="rural-dept">Panchayat / Block Transport Officer</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Citizen Services & Grievances</td>
+                        <td class="problem-description">Delayed services, complaints about civic workers</td>
+                        <td class="urban-dept">Municipal Grievance Cell / Citizen Services</td>
+                        <td class="rural-dept">Panchayat / Block Development Office</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Drinking Water & Quality</td>
+                        <td class="problem-description">Contaminated water, low pressure, handpump repairs</td>
+                        <td class="urban-dept">Water Supply Board / Public Health</td>
+                        <td class="rural-dept">Panchayat Water Dept / Rural Health</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Street Cleaning</td>
+                        <td class="problem-description">Dust, blocked gutters, fallen branches</td>
+                        <td class="urban-dept">Sanitation / Cleaning Dept</td>
+                        <td class="rural-dept">Panchayat Sanitation / Volunteers</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Heritage & Monuments</td>
+                        <td class="problem-description">Vandalism, poor maintenance</td>
+                        <td class="urban-dept">Municipal Heritage / Tourism Dept</td>
+                        <td class="rural-dept">Panchayat / State Archaeology / Tourism</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Markets & Trade</td>
+                        <td class="problem-description">Illegal stalls, poor hygiene, drainage issues</td>
+                        <td class="urban-dept">Municipal Market / Licensing</td>
+                        <td class="rural-dept">Panchayat / Block Market Officer</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Transport & Public Vehicles</td>
+                        <td class="problem-description">Broken bus stops, unsafe vehicles, abandoned vehicles</td>
+                        <td class="urban-dept">Transport Dept / Municipal Transport</td>
+                        <td class="rural-dept">Block Transport / Panchayat</td>
+                    </tr>
+                    <tr>
+                        <td class="problem-category">Lighting & Street Safety</td>
+                        <td class="problem-description">Streetlight outages, poorly lit alleys</td>
+                        <td class="urban-dept">Electrical Dept / Municipal Public Works</td>
+                        <td class="rural-dept">Rural Electricity / Panchayat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p><strong>CivicMitra Problem Routing System</strong> | Comprehensive Department Mapping for Smart Governance</p>
+            <p>Empowering Citizens through Transparent Issue Resolution</p>
+        </div>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            // Hide download controls for clean PDF
+            const controls = document.querySelector('.download-controls');
+            controls.style.display = 'none';
+            
+            // Trigger print dialog with custom settings for PDF
+            window.print();
+            
+            // Restore controls after a brief delay
+            setTimeout(() => {
+                controls.style.display = 'flex';
+            }, 100);
+        }
+        
+        function printTable() {
+            const controls = document.querySelector('.download-controls');
+            controls.style.display = 'none';
+            window.print();
+            setTimeout(() => {
+                controls.style.display = 'flex';
+            }, 100);
+        }
+        
+        // Keyboard shortcut for download
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                downloadPDF();
+            }
+        });
+        
+        // Add interactive features
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add row hover effects
+            const rows = document.querySelectorAll('.routing-table tbody tr');
+            rows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02)';
+                    this.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+                
+                row.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            console.log('CivicMitra Routing Table Loaded Successfully');
+            console.log('20 Problem Categories | 40+ Department Mappings | Urban-Rural Coverage');
+        });
+        
+        // Add search functionality
+        function addSearchFeature() {
+            const searchContainer = document.createElement('div');
+            searchContainer.innerHTML = `
+                <div style="padding: 20px; background: #f8f9fa; border-bottom: 1px solid #e0e0e0;">
+                    <input type="text" id="searchInput" placeholder="Search problem categories or departments..." 
+                           style="width: 100%; padding: 12px; border: 2px solid #2c5aa0; border-radius: 25px; font-size: 16px;">
+                </div>
+            `;
+            
+            const tableContainer = document.querySelector('.table-container');
+            tableContainer.parentNode.insertBefore(searchContainer, tableContainer);
+            
+            const searchInput = document.getElementById('searchInput');
+            const tableRows = document.querySelectorAll('.routing-table tbody tr');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                tableRows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        }
+        
+        // Initialize search feature
+        setTimeout(addSearchFeature, 500);
+    </script>
+</body>
+</html>

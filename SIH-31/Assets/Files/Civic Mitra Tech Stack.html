@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicMitra Technology Stack - Technical Specification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+        }
+        
+        .title-page {
+            text-align: center;
+            padding: 60px 0;
+            border-bottom: 3px solid #2c5aa0;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .download-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .download-btn {
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .download-btn:hover {
+            background: #1e3d6f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .title-page h1 {
+            font-size: 3.5em;
+            color: #2c5aa0;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .title-page h2 {
+            font-size: 1.8em;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        
+        .title-page .subtitle {
+            font-size: 1.2em;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #2c5aa0;
+            font-size: 2.2em;
+            margin: 40px 0 20px 0;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2c5aa0;
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+            border-left: 4px solid #2c5aa0;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #4a6fa5;
+            font-size: 1.3em;
+            margin: 25px 0 12px 0;
+        }
+        
+        p {
+            margin: 12px 0;
+            text-align: justify;
+        }
+        
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .tech-table th {
+            background: #2c5aa0;
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: bold;
+            border-bottom: 2px solid #1e3d6f;
+        }
+        
+        .tech-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        
+        .tech-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .tech-table tr:hover {
+            background-color: #e8f4f8;
+        }
+        
+        .layer-name {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .technology {
+            font-weight: bold;
+            color: #28a745;
+        }
+        
+        .reasoning-box {
+            background: #e8f4f8;
+            border-left: 4px solid #2c5aa0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .reasoning-box .reasoning-label {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+        }
+        
+        .section {
+            margin: 30px 0;
+            page-break-inside: avoid;
+        }
+        
+        .options-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        .options-table th {
+            background: #28a745;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .options-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .options-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .summary-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .highlight-tech {
+            background: #fff3cd;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .section-number {
+            background: #2c5aa0;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #2c5aa0;
+            text-align: center;
+            color: #666;
+        }
+        
+        @media print {
+            body {
+                max-width: none;
+                margin: 0;
+                padding: 15mm;
+            }
+            
+            .download-controls {
+                display: none !important;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            h1 {
+                page-break-after: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .download-controls {
+                position: static;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            
+            .tech-table {
+                font-size: 14px;
+            }
+            
+            .tech-table th,
+            .tech-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-page">
+        <div class="download-controls">
+            <button class="download-btn" onclick="downloadPDF()">
+                Download PDF
+            </button>
+            <button class="download-btn" onclick="printDocument()">
+                Print
+            </button>
+        </div>
+        <h1>CivicMitra</h1>
+        <h2>Technology Stack</h2>
+        <div class="subtitle">Comprehensive Technical Specification for Smart Civic Governance</div>
+        <div style="font-size: 1em; color: #666; margin-top: 30px;">
+            <p><strong>Document Version:</strong> 1.0</p>
+            <p><strong>Target:</strong> Smart India Hackathon & Production Deployment</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h1><span class="section-number">1</span>Frontend (Citizen + Admin UI)</h1>
+        
+        <table class="tech-table">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Layer</th>
+                    <th style="width: 35%;">Technology</th>
+                    <th style="width: 45%;">Why we chose it</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="layer-name">Citizen App</td>
+                    <td class="technology">React + Vite + Tailwind CSS (PWA)</td>
+                    <td>Fast development, mobile-first, offline support, installable like an app without App Store, responsive for all devices.</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Admin Dashboard</td>
+                    <td class="technology">React + Tailwind + React Query / Zustand</td>
+                    <td>Quick, responsive, role-based dashboard for municipal staff, easy integration with maps and charts.</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Maps / Geo</td>
+                    <td class="technology">Leaflet.js or Mapbox</td>
+                    <td>Lightweight, interactive map support, can render pins, heatmaps, and ward boundaries. Works offline if tiles cached.</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Notifications</td>
+                    <td class="technology">Firebase Cloud Messaging / Twilio SMS</td>
+                    <td>Push notifications and SMS for status updates, works even in rural low-connectivity areas.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="reasoning-box">
+            <div class="reasoning-label">Reasoning:</div>
+            React + PWA allows users to report issues with minimal friction, even on low-end devices. Tailwind makes UI consistent and fast to develop. Map libraries are lightweight and flexible. SMS fallback ensures rural reach.
+        </div>
+    </div>
+
+    <div class="section">
+        <h1><span class="section-number">2</span>Backend (APIs, Routing, Auth, Analytics)</h1>
+        
+        <table class="tech-table">
+            <thead>
+                <tr>
+                    <th style="width: 20%;">Layer</th>
+                    <th style="width: 35%;">Technology</th>
+                    <th style="width: 45%;">Why we chose it</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="layer-name">API Server</td>
+                    <td class="technology">Node.js + Express / NestJS</td>
+                    <td>Lightweight, scalable, easy to implement routing logic, connects seamlessly with geospatial DB and storage.</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Database</td>
+                    <td class="technology">PostgreSQL + PostGIS</td>
+                    <td>Relational DB for structured reports, PostGIS handles geospatial queries (auto-routing, ward/panchayat mapping).</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Media Storage</td>
+                    <td class="technology">AWS S3 / Firebase Storage / Google Cloud Storage</td>
+                    <td>Secure storage for images, voice notes; CDN support for fast media delivery.</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Auth</td>
+                    <td class="technology">Firebase Auth / Keycloak / Auth0</td>
+                    <td>Secure, role-based access control; supports OTP/2FA; easy integration with mobile/web apps.</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Analytics</td>
+                    <td class="technology">PostgreSQL + Grafana / Metabase / Superset</td>
+                    <td>Generate dashboards, heatmaps, KPIs; track SLA compliance and citizen engagement.</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="reasoning-box">
+            <div class="reasoning-label">Reasoning:</div>
+            Node.js + PostgreSQL is scalable and maintainable. PostGIS ensures auto-routing based on GPS. Cloud storage handles large multimedia uploads. Firebase/Auth0 provides secure login and user management quickly.
+        </div>
+    </div>
+
+    <div class="section">
+        <h1><span class="section-number">3</span>Geospatial & Routing</h1>
+        
+        <p><strong>Ward / Panchayat boundaries database</strong> for urban/rural detection.</p>
+        
+        <p><strong>Backend logic:</strong> Category + Geo → Correct Department → Field Officer.</p>
+        
+        <p><strong>Frontend visualization:</strong> Leaflet/Mapbox for live issue map, heatmaps.</p>
+        
+        <div class="reasoning-box">
+            <div class="reasoning-label">Reasoning:</div>
+            Citizens report issues without choosing department. Auto-routing via geospatial data ensures accuracy and simplicity.
+        </div>
+    </div>
+
+    <div class="section">
+        <h1><span class="section-number">4</span>Security & Compliance</h1>
+        
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li style="margin: 10px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #2c5aa0;">
+                <strong>Encryption:</strong> TLS 1.3 + HSTS, secure cookies
+            </li>
+            <li style="margin: 10px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #2c5aa0;">
+                <strong>Access Control:</strong> RBAC (Reporter, Field Officer, Supervisor, Admin, Auditor)
+            </li>
+            <li style="margin: 10px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #2c5aa0;">
+                <strong>Data Protection:</strong> Encryption at rest (AES-256) + in transit (TLS 1.3)
+            </li>
+            <li style="margin: 10px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #2c5aa0;">
+                <strong>Audit Logging:</strong> Append-only immutable logs
+            </li>
+            <li style="margin: 10px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #2c5aa0;">
+                <strong>Data Residency:</strong> Inside India/state cloud (NIC / AWS Gov / Azure India)
+            </li>
+        </ul>
+        
+        <div class="reasoning-box">
+            <div class="reasoning-label">Reasoning:</div>
+            Security and privacy are critical for government apps. Compliance with Indian regulations ensures trust and smooth deployment.
+        </div>
+    </div>
+
+    <div class="section">
+        <h1><span class="section-number">5</span>Deployment / Hosting</h1>
+        
+        <table class="options-table">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">Option</th>
+                    <th style="width: 70%;">Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Hackathon / MVP</strong></td>
+                    <td>Firebase Hosting + Functions or Vercel / Netlify + Managed DB</td>
+                </tr>
+                <tr>
+                    <td><strong>Pilot / State rollout</strong></td>
+                    <td>Government cloud (NIC / AWS Gov / Azure India)</td>
+                </tr>
+                <tr>
+                    <td><strong>Offline / Rural support</strong></td>
+                    <td>PWA caching, service workers, background sync</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="reasoning-box">
+            <div class="reasoning-label">Reasoning:</div>
+            Start fast for hackathon. Later, migrate to fully compliant cloud for production and scale.
+        </div>
+    </div>
+
+    <div class="section">
+        <h1><span class="section-number">6</span>Future-ready / ML Integration</h1>
+        
+        <p><strong>Auto-priority scoring,</strong> duplicate detection, predictive maintenance.</p>
+        
+        <p><strong>Image classification</strong> (potholes, streetlight types).</p>
+        
+        <p><strong>API designed modularly</strong> so ML can be added later without major refactor.</p>
+        
+        <div class="reasoning-box">
+            <div class="reasoning-label">Reasoning:</div>
+            Allows MVP to be simple and stable, while leaving room for AI/ML enhancements after pilot.
+        </div>
+    </div>
+
+    <div class="summary-section">
+        <h1>Technology Stack Summary</h1>
+        
+        <table class="tech-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Layer</th>
+                    <th style="width: 35%;">Technology</th>
+                    <th style="width: 40%;">Key Advantage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="layer-name">Frontend (Citizen)</td>
+                    <td class="technology">React + PWA + Tailwind</td>
+                    <td>Fast, mobile-first, offline, low friction</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Frontend (Admin)</td>
+                    <td class="technology">React + Tailwind + React Query</td>
+                    <td>Responsive dashboards, map & analytics</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Maps / Geo</td>
+                    <td class="technology">Leaflet / Mapbox</td>
+                    <td>Interactive map + heatmaps, geo-routing</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Backend API</td>
+                    <td class="technology">Node.js + Express/NestJS</td>
+                    <td>Scalable, modular, fast integration</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Database</td>
+                    <td class="technology">PostgreSQL + PostGIS</td>
+                    <td>Relational + geo queries for auto-routing</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Media Storage</td>
+                    <td class="technology">AWS S3 / Firebase Storage</td>
+                    <td>Secure, CDN-enabled, scalable media storage</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Auth</td>
+                    <td class="technology">Firebase Auth / Keycloak</td>
+                    <td>Secure, role-based, OTP/2FA support</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Notifications</td>
+                    <td class="technology">Firebase Cloud Messaging / Twilio SMS</td>
+                    <td>Push & SMS notifications for rural users</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Analytics</td>
+                    <td class="technology">Grafana / Metabase / Superset</td>
+                    <td>KPI dashboards, heatmaps, trend reports</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">Deployment</td>
+                    <td class="technology">Firebase / Vercel → Govt cloud</td>
+                    <td>MVP fast deployment → state-scale secure rollout</td>
+                </tr>
+                <tr>
+                    <td class="layer-name">ML (Future)</td>
+                    <td class="technology">Python + TensorFlow/PyTorch</td>
+                    <td>Auto-prioritization, duplicate detection, predictive insights</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p><strong>CivicMitra Technology Stack</strong> | Smart India Hackathon 2024</p>
+        <p>Scalable, Secure, Citizen-Centric Technology Foundation</p>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            const controls = document.querySelector('.download-controls');
+            controls.style.display = 'none';
+            
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>CivicMitra Technology Stack</title>
+                    <style>
+                        ${document.querySelector('style').innerHTML}
+                        @media print {
+                            body { margin: 0; padding: 15mm; }
+                            .download-controls { display: none !important; }
+                            .section { page-break-inside: avoid; }
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${document.body.innerHTML}
+                </body>
+                </html>
+            `);
+            
+            printWindow.document.close();
+            printWindow.onload = function() {
+                printWindow.print();
+                setTimeout(() => {
+                    printWindow.close();
+                    controls.style.display = 'flex';
+                }, 100);
+            };
+        }
+        
+        function printDocument() {
+            const controls = document.querySelector('.download-controls');
+            controls.style.display = 'none';
+            window.print();
+            setTimeout(() => {
+                controls.style.display = 'flex';
+            }, 100);
+        }
+        
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                downloadPDF();
+            }
+        });
+        
+        console.log('CivicMitra Technology Stack Document Loaded');
+    </script>
+</body>
+</html>

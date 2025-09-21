@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicMitra Admin Dashboards - Role-Based System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+        
+        .wireframe-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3d6f 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .role-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .role-btn {
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+        
+        .role-btn.active {
+            background: #28a745;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+        }
+        
+        .role-btn:hover {
+            background: #1e3d6f;
+            transform: translateY(-2px);
+        }
+        
+        .dashboard-frame {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 30px auto;
+            display: none;
+        }
+        
+        .dashboard-frame.active {
+            display: block;
+        }
+        
+        .device-header {
+            background: #333;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Admin Header */
+        .admin-header {
+            background: #2c5aa0;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #1e3d6f;
+        }
+        
+        .admin-logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        
+        .admin-user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+        
+        .dropdown-menu {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-menu:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Sidebar Navigation */
+        .admin-layout {
+            display: flex;
+            min-height: 600px;
+        }
+        
+        .sidebar {
+            width: 260px;
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+            padding: 0;
+        }
+        
+        .nav-item {
+            display: block;
+            padding: 15px 25px;
+            color: #495057;
+            text-decoration: none;
+            border-bottom: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .nav-item:hover, .nav-item.active {
+            background: #2c5aa0;
+            color: white;
+        }
+        
+        .nav-item i {
+            margin-right: 10px;
+            width: 20px;
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            background: #fff;
+        }
+        
+        .content-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .content-title {
+            font-size: 2em;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+        
+        .content-subtitle {
+            color: #6c757d;
+            font-size: 1.1em;
+        }
+        
+        /* Widgets and Cards */
+        .widget-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .widget-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #2c5aa0;
+            transition: all 0.3s ease;
+        }
+        
+        .widget-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        .widget-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+        
+        .widget-label {
+            color: #6c757d;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        
+        .widget-change {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .change-positive { color: #28a745; }
+        .change-negative { color: #dc3545; }
+        
+        /* Status indicators */
+        .status-pending { color: #ffc107; }
+        .status-progress { color: #fd7e14; }
+        .status-resolved { color: #28a745; }
+        .status-overdue { color: #dc3545; }
+        
+        /* Data Table */
+        .data-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        .table-header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .table-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .table-filters {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .filter-select {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .data-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .data-table th {
+            background: #2c5aa0;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .data-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: middle;
+        }
+        
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .badge-new { background: #ffc107; color: #856404; }
+        .badge-acknowledged { background: #17a2b8; color: white; }
+        .badge-assigned { background: #6f42c1; color: white; }
+        .badge-progress { background: #fd7e14; color: white; }
+        .badge-resolved { background: #28a745; color: white; }
+        .badge-overdue { background: #dc3545; color: white; }
+        
+        .priority-high { color: #dc3545; font-weight: bold; }
+        .priority-medium { color: #ffc107; font-weight: bold; }
+        .priority-low { color: #28a745; font-weight: bold; }
+        
+        .action-btn {
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn:hover {
+            background: #1e3d6f;
+        }
+        
+        .action-btn.assign { background: #28a745; }
+        .action-btn.escalate { background: #dc3545; }
+        .action-btn.view { background: #17a2b8; }
+        
+        /* Charts and Analytics */
+        .chart-container {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        
+        .chart-placeholder {
+            height: 300px;
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+        
+        .heatmap-container {
+            height: 400px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 1.3em;
+        }
+        
+        /* Mobile Field Officer Layout */
+        .mobile-layout {
+            max-width: 375px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .mobile-header {
+            background: #2c5aa0;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .task-card {
+            background: white;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .task-id {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .task-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .task-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .mobile-btn {
+            flex: 1;
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-btn:hover {
+            background: #1e3d6f;
+        }
+        
+        .mobile-btn.secondary {
+            background: #6c757d;
+        }
+        
+        .mobile-btn.upload {
+            background: #28a745;
+        }
+        
+        /* Login Page */
+        .login-container {
+            display: flex;
+            min-height: 600px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .login-left {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 50px;
+        }
+        
+        .login-right {
+            flex: 1;
+            background: white;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .form-input:focus {
+            border-color: #2c5aa0;
+            outline: none;
+        }
+        
+        .login-btn {
+            width: 100%;
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .login-btn:hover {
+            background: #1e3d6f;
+        }
+        
+        .form-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .form-links a {
+            color: #2c5aa0;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .admin-layout {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+            }
+            
+            .widget-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .login-container {
+                flex-direction: column;
+            }
+            
+            .role-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        /* Report Detail Layout */
+        .report-detail-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .report-main {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .report-sidebar {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .timeline {
+            margin: 20px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #e9ecef;
+            position: relative;
+        }
+        
+        .timeline-item.active {
+            border-left-color: #2c5aa0;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #e9ecef;
+        }
+        
+        .timeline-item.active .timeline-dot {
+            background: #2c5aa0;
+        }
+        
+        .timeline-content {
+            margin-left: 20px;
+        }
+        
+        .timeline-title {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .timeline-time {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .photo-placeholder {
+            height: 120px;
+            background: #f8f9fa;
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        <div class="page-header">
+            <h1>CivicMitra Admin System</h1>
+            <p>Complete Role-Based Dashboard Wireframes</p>
+        </div>
+
+        <div class="role-selector">
+            <button class="role-btn active" onclick="showDashboard('login')">🔐 Login Page</button>
+            <button class="role-btn" onclick="showDashboard('super-admin')">👨‍💼 Super Admin</button>
+            <button class="role-btn" onclick="showDashboard('dept-admin')">🏢 Department Admin</button>
+            <button class="role-btn" onclick="showDashboard('field-officer')">📱 Field Officer</button>
+            <button class="role-btn" onclick="showDashboard('analyst')">📊 Analyst</button>
+            <button class="role-btn" onclick="showDashboard('report-detail')">📋 Report Detail</button>
+            <button class="role-btn" onclick="showDashboard('notifications')">🔔 Notifications</button>
+            <button class="role-btn" onclick="showDashboard('settings')">⚙️ Settings</button>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login" class="dashboard-frame active">
+            <div class="device-header">
+                <span>💻 Admin Login Portal - CivicMitra</span>
+                <span>Secure Authentication System</span>
+            </div>
+            <div class="login-container">
+                <div class="login-left">
+                    <div style="text-align: center;">
+                        <h1 style="font-size: 3em; margin-bottom: 20px;">CivicMitra</h1>
+                        <h2 style="font-size: 1.5em; margin-bottom: 30px;">Admin Portal</h2>
+                        <p style="font-size: 1.2em; opacity: 0.9;">Secure access for municipal staff, field officers, and administrators</p>
+                        <div style="margin-top: 40px; font-size: 4em;">🏛️</div>
+                    </div>
+                </div>
+                <div class="login-right">
+                    <div class="login-form">
+                        <h2 style="text-align: center; margin-bottom: 30px; color: #2c5aa0;">Sign In to Dashboard</h2>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email / Phone Number</label>
+                            <input type="text" class="form-input" placeholder="admin@civicmitra.gov.in" value="admin@bangalore.gov.in">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-input" placeholder="••••••••" value="••••••••">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">2FA Code (SMS/Authenticator)</label>
+                            <input type="text" class="form-input" placeholder="123456" maxlength="6">
+                        </div>
+                        
+                        <button class="login-btn">🔐 Secure Login</button>
+                        
+                        <div class="form-links">
+                            <a href="#">Forgot Password?</a> |
+                            <a href="#">Contact IT Helpdesk</a>
+                        </div>
+                        
+                        <div style="margin-top: 30px; padding: 15px; background: #e8f4f8; border-radius: 8px; text-align: center;">
+                            <small style="color: #2c5aa0;">
+                                <strong>Auto-Role Detection:</strong><br>
+                                Super Admin | Dept Admin | Field Officer | Analyst
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Super Admin Dashboard -->
+        <div id="super-admin" class="dashboard-frame">
+            <div class="device-header">
+                <span>💻 Super Admin Dashboard - State Level Control</span>
+                <span>Karnataka State | All Districts</span>
+            </div>
+            <div class="admin-header">
+                <div class="admin-logo">CivicMitra | Super Admin</div>
+                <div class="admin-user">
+                    <span>Dr. Rajesh Kumar | State Admin</span>
+                    <div class="user-avatar">👨‍💼</div>
+                    <div class="dropdown-menu">▼</div>
+                </div>
+            </div>
+            <div class="admin-layout">
+                <div class="sidebar">
+                    <div class="nav-item active">📊 Dashboard</div>
+                    <div class="nav-item">📋 All Reports</div>
+                    <div class="nav-item">🏢 Departments</div>
+                    <div class="nav-item">👥 Field Officers</div>
+                    <div class="nav-item">🗺️ District Map</div>
+                    <div class="nav-item">📈 Analytics</div>
+                    <div class="nav-item">⚙️ Settings</div>
+                    <div class="nav-item">🔒 Security</div>
+                    <div class="nav-item">📤 Logout</div>
+                </div>
+                <div class="main-content">
+                    <div class="content-header">
+                        <h1 class="content-title">State-Wide Overview</h1>
+                        <p class="content-subtitle">Complete oversight across all districts and departments</p>
+                    </div>
+                    
+                    <div class="widget-grid">
+                        <div class="widget-card">
+                            <div class="widget-number">12,847</div>
+                            <div class="widget-label">Total Reports</div>
+                            <div class="widget-change change-positive">↗ +15% this month</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">2,156</div>
+                            <div class="widget-label">Pending Issues</div>
+                            <div class="widget-change change-negative">↗ +8% this week</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">72hrs</div>
+                            <div class="widget-label">Avg Resolution</div>
+                            <div class="widget-change change-positive">↘ -12% improvement</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">87%</div>
+                            <div class="widget-label">SLA Compliance</div>
+                            <div class="widget-change change-positive">↗ +5% this month</div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;">
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">District-wise Issue Heatmap</h3>
+                            <div class="heatmap-container">
+                                🗺️ Interactive Karnataka Map<br>
+                                <small>Bangalore: 3,547 | Mysore: 1,892 | Hubli: 1,234</small>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Top Issue Categories</h3>
+                            <div class="chart-placeholder">
+                                📊 Pie Chart<br>
+                                Roads: 35% | Water: 25% | Garbage: 20%
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-table">
+                        <div class="table-header">
+                            <div class="table-title">Department Performance Overview</div>
+                            <div class="table-filters">
+                                <select class="filter-select">
+                                    <option>All Districts</option>
+                                    <option>Bangalore Urban</option>
+                                    <option>Mysore</option>
+                                </select>
+                                <select class="filter-select">
+                                    <option>Last 30 Days</option>
+                                    <option>Last 7 Days</option>
+                                    <option>This Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Department</th>
+                                    <th>District</th>
+                                    <th>Total Reports</th>
+                                    <th>Resolved</th>
+                                    <th>Avg Resolution Time</th>
+                                    <th>SLA Compliance</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Public Works Dept</strong></td>
+                                    <td>Bangalore Urban</td>
+                                    <td>1,847</td>
+                                    <td><span class="status-resolved">1,456 (79%)</span></td>
+                                    <td>48 hours</td>
+                                    <td><span class="change-positive">92%</span></td>
+                                    <td>
+                                        <button class="action-btn view">View Details</button>
+                                        <button class="action-btn">Manage</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Water Department</strong></td>
+                                    <td>Bangalore Urban</td>
+                                    <td>892</td>
+                                    <td><span class="status-resolved">743 (83%)</span></td>
+                                    <td>36 hours</td>
+                                    <td><span class="change-positive">88%</span></td>
+                                    <td>
+                                        <button class="action-btn view">View Details</button>
+                                        <button class="action-btn">Manage</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sanitation Dept</strong></td>
+                                    <td>Mysore</td>
+                                    <td>456</td>
+                                    <td><span class="status-progress">298 (65%)</span></td>
+                                    <td>84 hours</td>
+                                    <td><span class="change-negative">72%</span></td>
+                                    <td>
+                                        <button class="action-btn view">View Details</button>
+                                        <button class="action-btn escalate">Escalate</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Department Admin Dashboard -->
+        <div id="dept-admin" class="dashboard-frame">
+            <div class="device-header">
+                <span>💻 Department Admin - Public Works Department</span>
+                <span>Bangalore Urban | 1,847 Active Reports</span>
+            </div>
+            <div class="admin-header">
+                <div class="admin-logo">CivicMitra | PWD Admin</div>
+                <div class="admin-user">
+                    <span>Priya Sharma | PWD Administrator</span>
+                    <div class="user-avatar">👩‍💼</div>
+                    <div class="dropdown-menu">▼</div>
+                </div>
+            </div>
+            <div class="admin-layout">
+                <div class="sidebar">
+                    <div class="nav-item active">📊 Department Dashboard</div>
+                    <div class="nav-item">📋 My Reports</div>
+                    <div class="nav-item">👥 Field Officers</div>
+                    <div class="nav-item">⏰ SLA Monitor</div>
+                    <div class="nav-item">📈 Performance</div>
+                    <div class="nav-item">🔔 Notifications</div>
+                    <div class="nav-item">⚙️ Settings</div>
+                    <div class="nav-item">📤 Logout</div>
+                </div>
+                <div class="main-content">
+                    <div class="content-header">
+                        <h1 class="content-title">Public Works Department</h1>
+                        <p class="content-subtitle">Manage road repairs, infrastructure, and maintenance issues</p>
+                    </div>
+                    
+                    <div class="widget-grid">
+                        <div class="widget-card">
+                            <div class="widget-number">387</div>
+                            <div class="widget-label">Pending Reports</div>
+                            <div class="widget-change change-negative">↗ +12 today</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">156</div>
+                            <div class="widget-label">In Progress</div>
+                            <div class="widget-change change-positive">↗ +8 assigned today</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">92%</div>
+                            <div class="widget-label">SLA Compliance</div>
+                            <div class="widget-change change-positive">↗ +3% this week</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">24</div>
+                            <div class="widget-label">Field Officers</div>
+                            <div class="widget-change">22 active today</div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-table">
+                        <div class="table-header">
+                            <div class="table-title">Recent Reports - Requires Action</div>
+                            <div class="table-filters">
+                                <select class="filter-select">
+                                    <option>All Wards</option>
+                                    <option>Ward 15</option>
+                                    <option>Ward 8</option>
+                                </select>
+                                <select class="filter-select">
+                                    <option>All Priorities</option>
+                                    <option>High Priority</option>
+                                    <option>Overdue</option>
+                                </select>
+                                <button class="action-btn">Assign Bulk</button>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Report ID</th>
+                                    <th>Category</th>
+                                    <th>Location</th>
+                                    <th>Reporter</th>
+                                    <th>Priority</th>
+                                    <th>Status</th>
+                                    <th>Assigned To</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>#CM-2024-156</strong></td>
+                                    <td>🕳️ Pothole</td>
+                                    <td>MG Road, Ward 15</td>
+                                    <td>Rahul M. (+91 98765****)</td>
+                                    <td><span class="priority-high">High</span></td>
+                                    <td><span class="badge-new">New</span></td>
+                                    <td>Unassigned</td>
+                                    <td>
+                                        <button class="action-btn assign">Assign</button>
+                                        <button class="action-btn view">View</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#CM-2024-157</strong></td>
+                                    <td>🚧 Road Repair</td>
+                                    <td>Brigade Road, Ward 8</td>
+                                    <td>Anonymous</td>
+                                    <td><span class="priority-medium">Medium</span></td>
+                                    <td><span class="badge-progress">In Progress</span></td>
+                                    <td>Rajesh Kumar</td>
+                                    <td>
+                                        <button class="action-btn view">View</button>
+                                        <button class="action-btn">Update</button>
+                                    </td>
+                                </tr>
+                                <tr style="background: #fff3cd;">
+                                    <td><strong>#CM-2024-145</strong></td>
+                                    <td>🚦 Traffic Signal</td>
+                                    <td>Commercial St, Ward 12</td>
+                                    <td>Priya S. (+91 87654****)</td>
+                                    <td><span class="priority-high">High</span></td>
+                                    <td><span class="badge-overdue">Overdue</span></td>
+                                    <td>Amit Patel</td>
+                                    <td>
+                                        <button class="action-btn escalate">Escalate</button>
+                                        <button class="action-btn view">View</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;">
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Weekly Report Trends</h3>
+                            <div class="chart-placeholder">
+                                📈 Line Chart<br>
+                                This Week: 127 | Last Week: 115
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Officer Workload Distribution</h3>
+                            <div class="chart-placeholder">
+                                📊 Bar Chart<br>
+                                Rajesh: 18 | Amit: 15 | Suresh: 12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Field Officer Mobile Dashboard -->
+        <div id="field-officer" class="dashboard-frame">
+            <div class="device-header">
+                <span>📱 Field Officer Mobile Dashboard</span>
+                <span>Rajesh Kumar | 8 Active Tasks</span>
+            </div>
+            <div class="mobile-layout">
+                <div class="mobile-header">
+                    <div>
+                        <div style="font-weight: bold;">CivicMitra Officer</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Rajesh Kumar | PWD</div>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <div style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px;">
+                            📍 Online
+                        </div>
+                        <div style="background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 15px; font-size: 12px;">
+                            ⚙️
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="padding: 15px; background: #f8f9fa;">
+                    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                        <button style="background: #2c5aa0; color: white; border: none; padding: 8px 15px; border-radius: 15px; font-size: 12px;">Assigned (8)</button>
+                        <button style="background: #e9ecef; color: #333; border: none; padding: 8px 15px; border-radius: 15px; font-size: 12px;">Completed</button>
+                        <button style="background: #e9ecef; color: #333; border: none; padding: 8px 15px; border-radius: 15px; font-size: 12px;">Overdue (2)</button>
+                    </div>
+                </div>
+                
+                <div style="height: 400px; overflow-y: auto; background: #f8f9fa;">
+                    <div class="task-card">
+                        <div class="task-header">
+                            <div class="task-id">#CM-2024-156</div>
+                            <div class="badge-assigned">Assigned</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <div style="font-size: 2em;">🕳️</div>
+                            <div>
+                                <div style="font-weight: bold;">Large Pothole</div>
+                                <div style="color: #6c757d; font-size: 14px;">MG Road near City Mall</div>
+                            </div>
+                        </div>
+                        <div class="task-meta">
+                            <span>📍 Ward 15</span>
+                            <span>⏰ Due in 18 hrs</span>
+                            <span class="priority-high">High Priority</span>
+                        </div>
+                        <div class="task-actions">
+                            <button class="mobile-btn">📍 Navigate</button>
+                            <button class="mobile-btn secondary">📞 Call Admin</button>
+                        </div>
+                        <div class="task-actions" style="margin-top: 10px;">
+                            <button class="mobile-btn upload">📸 Upload Progress</button>
+                            <button class="mobile-btn">✅ Mark Complete</button>
+                        </div>
+                    </div>
+                    
+                    <div class="task-card">
+                        <div class="task-header">
+                            <div class="task-id">#CM-2024-148</div>
+                            <div class="badge-progress">In Progress</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <div style="font-size: 2em;">🚧</div>
+                            <div>
+                                <div style="font-weight: bold;">Road Repair</div>
+                                <div style="color: #6c757d; font-size: 14px;">Brigade Road Junction</div>
+                            </div>
+                        </div>
+                        <div class="task-meta">
+                            <span>📍 Ward 8</span>
+                            <span>⏰ Due in 2 days</span>
+                            <span class="priority-medium">Medium Priority</span>
+                        </div>
+                        <div style="background: #e8f4f8; padding: 10px; border-radius: 8px; margin: 10px 0; font-size: 14px;">
+                            <strong>Progress Update:</strong> Materials ordered, work will start tomorrow at 8 AM.
+                        </div>
+                        <div class="task-actions">
+                            <button class="mobile-btn upload">📸 Update Photo</button>
+                            <button class="mobile-btn">💬 Add Comment</button>
+                        </div>
+                    </div>
+                    
+                    <div class="task-card" style="border-left-color: #dc3545;">
+                        <div class="task-header">
+                            <div class="task-id">#CM-2024-142</div>
+                            <div class="badge-overdue">Overdue</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                            <div style="font-size: 2em;">🚦</div>
+                            <div>
+                                <div style="font-weight: bold;">Traffic Signal Repair</div>
+                                <div style="color: #6c757d; font-size: 14px;">Commercial Street</div>
+                            </div>
+                        </div>
+                        <div class="task-meta">
+                            <span>📍 Ward 12</span>
+                            <span style="color: #dc3545;">⏰ Overdue by 8 hrs</span>
+                            <span class="priority-high">High Priority</span>
+                        </div>
+                        <div style="background: #f8d7da; padding: 10px; border-radius: 8px; margin: 10px 0; font-size: 14px; color: #721c24;">
+                            <strong>⚠️ SLA Breach:</strong> This task is overdue. Please update status immediately.
+                        </div>
+                        <div class="task-actions">
+                            <button class="mobile-btn" style="background: #dc3545;">🚨 Urgent Update</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="padding: 15px; background: white; border-top: 1px solid #e9ecef;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <button style="background: none; border: none; color: #2c5aa0; font-size: 24px;">🏠</button>
+                        <button style="background: none; border: none; color: #6c757d; font-size: 24px;">📋</button>
+                        <button style="background: none; border: none; color: #6c757d; font-size: 24px;">📍</button>
+                        <button style="background: none; border: none; color: #6c757d; font-size: 24px;">👤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analyst Dashboard -->
+        <div id="analyst" class="dashboard-frame">
+            <div class="device-header">
+                <span>💻 Analyst Dashboard - Data Insights & Performance</span>
+                <span>Dr. Meera Nair | Data Analytics Team</span>
+            </div>
+            <div class="admin-header">
+                <div class="admin-logo">CivicMitra | Analytics</div>
+                <div class="admin-user">
+                    <span>Dr. Meera Nair | Senior Analyst</span>
+                    <div class="user-avatar">👩‍🔬</div>
+                    <div class="dropdown-menu">▼</div>
+                </div>
+            </div>
+            <div class="admin-layout">
+                <div class="sidebar">
+                    <div class="nav-item active">📊 Analytics Dashboard</div>
+                    <div class="nav-item">📈 Trend Analysis</div>
+                    <div class="nav-item">🗺️ Geographic Insights</div>
+                    <div class="nav-item">🏢 Department Performance</div>
+                    <div class="nav-item">📋 Custom Reports</div>
+                    <div class="nav-item">📤 Export Data</div>
+                    <div class="nav-item">⚙️ Report Builder</div>
+                    <div class="nav-item">📤 Logout</div>
+                </div>
+                <div class="main-content">
+                    <div class="content-header">
+                        <h1 class="content-title">Analytics & Performance Insights</h1>
+                        <p class="content-subtitle">Data-driven insights for better civic governance</p>
+                    </div>
+                    
+                    <div class="widget-grid">
+                        <div class="widget-card">
+                            <div class="widget-number">15,247</div>
+                            <div class="widget-label">Total Reports (YTD)</div>
+                            <div class="widget-change change-positive">↗ +23% vs last year</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">67hrs</div>
+                            <div class="widget-label">Avg Resolution Time</div>
+                            <div class="widget-change change-positive">↘ -18% improvement</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">89%</div>
+                            <div class="widget-label">Citizen Satisfaction</div>
+                            <div class="widget-change change-positive">↗ +7% this quarter</div>
+                        </div>
+                        <div class="widget-card">
+                            <div class="widget-number">91%</div>
+                            <div class="widget-label">SLA Compliance</div>
+                            <div class="widget-change change-positive">↗ +4% this month</div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-bottom: 30px;">
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Monthly Report Trends (Last 12 Months)</h3>
+                            <div class="chart-placeholder">
+                                📈 Line Chart<br>
+                                Peak: May 2024 (1,847) | Low: Jan 2024 (892)<br>
+                                Trend: +12% average monthly growth
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Issue Categories Distribution</h3>
+                            <div class="chart-placeholder">
+                                🥧 Donut Chart<br>
+                                Roads: 35% | Water: 22% | Sanitation: 18%<br>
+                                Electricity: 15% | Others: 10%
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Department Performance Comparison</h3>
+                            <div class="chart-placeholder">
+                                📊 Bar Chart<br>
+                                PWD: 85% SLA | Water: 92% SLA<br>
+                                Sanitation: 78% SLA | Electricity: 88% SLA
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h3 style="margin-bottom: 20px; color: #2c5aa0;">Urban vs Rural Performance</h3>
+                            <div class="chart-placeholder">
+                                📊 Comparison Chart<br>
+                                Urban Avg: 48hrs | Rural Avg: 76hrs<br>
+                                Urban SLA: 94% | Rural SLA: 82%
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="data-table">
+                        <div class="table-header">
+                            <div class="table-title">Top Performing Departments (This Month)</div>
+                            <div class="table-filters">
+                                <select class="filter-select">
+                                    <option>All Metrics</option>
+                                    <option>Resolution Time</option>
+                                    <option>SLA Compliance</option>
+                                    <option>Satisfaction Score</option>
+                                </select>
+                                <button class="action-btn">📤 Export Report</button>
+                                <button class="action-btn">📊 Detailed Analysis</button>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Department</th>
+                                    <th>District</th>
+                                    <th>Reports Handled</th>
+                                    <th>Avg Resolution</th>
+                                    <th>SLA Compliance</th>
+                                    <th>Satisfaction</th>
+                                    <th>Trend</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Water Department</strong></td>
+                                    <td>Bangalore Urban</td>
+                                    <td>892</td>
+                                    <td>36 hours</td>
+                                    <td><span class="change-positive">92%</span></td>
+                                    <td><span class="change-positive">4.6/5</span></td>
+                                    <td><span class="change-positive">↗ Improving</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Public Works</strong></td>
+                                    <td>Mysore</td>
+                                    <td>456</td>
+                                    <td>52 hours</td>
+                                    <td><span class="change-positive">88%</span></td>
+                                    <td><span class="change-positive">4.3/5</span></td>
+                                    <td><span class="change-positive">↗ Stable</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sanitation</strong></td>
+                                    <td>Hubli</td>
+                                    <td>234</td>
+                                    <td>84 hours</td>
+                                    <td><span class="change-negative">72%</span></td>
+                                    <td><span class="change-negative">3.8/5</span></td>
+                                    <td><span class="change-negative">↘ Needs Attention</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Report Detail Page -->
+        <div id="report-detail" class="dashboard-frame">
+            <div class="device-header">
+                <span>💻 Report Detail View - Admin Interface</span>
+                <span>Report #CM-2024-156 | Pothole Issue</span>
+            </div>
+            <div class="admin-header">
+                <div class="admin-logo">CivicMitra | Report Management</div>
+                <div class="admin-user">
+                    <button class="action-btn">← Back to Reports</button>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="action-btn assign">Assign Officer</button>
+                        <button class="action-btn escalate">Escalate Issue</button>
+                        <button class="action-btn">Print Report</button>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 30px;">
+                <div class="report-detail-grid">
+                    <div class="report-main">
+                        <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
+                            <div style="font-size: 3em;">🕳️</div>
+                            <div>
+                                <h2 style="color: #2c5aa0; margin-bottom: 5px;">Large Pothole Causing Traffic Issues</h2>
+                                <p style="color: #6c757d;">Report #CM-2024-156 • Submitted on Jan 15, 2024 at 9:30 AM</p>
+                                <div style="margin-top: 10px;">
+                                    <span class="badge-assigned">Assigned to Rajesh Kumar</span>
+                                    <span class="priority-high" style="margin-left: 10px;">High Priority</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+                            <h4 style="color: #2c5aa0; margin-bottom: 15px;">Report Details</h4>
+                            <p><strong>Description:</strong> Large pothole on MG Road near City Mall causing severe traffic issues. Vehicles are swerving to avoid it, creating safety hazards especially during peak hours.</p>
+                            <p style="margin-top: 15px;"><strong>Location:</strong> MG Road, near City Mall, Ward 15, Bangalore Urban</p>
+                            <p><strong>Coordinates:</strong> 12.9716° N, 77.5946° E</p>
+                            <p><strong>Department:</strong> Public Works Department</p>
+                        </div>
+                        
+                        <div class="timeline">
+                            <h4 style="color: #2c5aa0; margin-bottom: 20px;">Status Timeline</h4>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Report Submitted</div>
+                                    <div class="timeline-time">Jan 15, 2024 - 9:30 AM</div>
+                                    <p style="font-size: 14px; color: #6c757d; margin-top: 5px;">Citizen submitted report with photo evidence</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Auto-routed to PWD</div>
+                                    <div class="timeline-time">Jan 15, 2024 - 9:31 AM</div>
+                                    <p style="font-size: 14px; color: #6c757d; margin-top: 5px;">System automatically assigned to Public Works Department</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Acknowledged by Department</div>
+                                    <div class="timeline-time">Jan 15, 2024 - 2:45 PM</div>
+                                    <p style="font-size: 14px; color: #6c757d; margin-top: 5px;">PWD Admin Priya Sharma acknowledged the report</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Assigned to Field Officer</div>
+                                    <div class="timeline-time">Jan 16, 2024 - 10:15 AM</div>
+                                    <p style="font-size: 14px; color: #6c757d; margin-top: 5px;">Assigned to Officer Rajesh Kumar for on-site action</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-title">Work In Progress</div>
+                                    <div class="timeline-time">Expected: Jan 17, 2024</div>
+                                    <p style="font-size: 14px; color: #6c757d; margin-top: 5px;">Field inspection and repair work to begin</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: #e8f4f8; padding: 20px; border-radius: 10px; margin-top: 30px;">
+                            <h4 style="color: #2c5aa0; margin-bottom: 15px;">Admin Comments & Updates</h4>
+                            <div style="border-bottom: 1px solid #dee2e6; padding-bottom: 15px; margin-bottom: 15px;">
+                                <p><strong>Priya Sharma (PWD Admin)</strong> - Jan 16, 10:15 AM</p>
+                                <p style="font-size: 14px; margin-top: 5px;">"High priority issue due to safety concerns. Assigned to our most experienced officer. Materials have been ordered."</p>
+                            </div>
+                            <div style="border-bottom: 1px solid #dee2e6; padding-bottom: 15px; margin-bottom: 15px;">
+                                <p><strong>Rajesh Kumar (Field Officer)</strong> - Jan 16, 4:30 PM</p>
+                                <p style="font-size: 14px; margin-top: 5px;">"Site inspection completed. Pothole is indeed large (approx 3x2 feet). Will require 2-day repair work. Materials expected tomorrow."</p>
+                            </div>
+                            <textarea style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 10px;" rows="3" placeholder="Add administrative comment..."></textarea>
+                            <button class="action-btn" style="margin-top: 10px;">Add Comment</button>
+                        </div>
+                    </div>
+                    
+                    <div class="report-sidebar">
+                        <h4 style="color: #2c5aa0; margin-bottom: 15px;">Citizen Information</h4>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                            <p><strong>Name:</strong> Rahul Menon</p>
+                            <p><strong>Phone:</strong> +91 98765 43210</p>
+                            <p><strong>Email:</strong> rahul.m@email.com</p>
+                            <p><strong>Ward:</strong> Ward 15 Resident</p>
+                            <button class="action-btn" style="margin-top: 10px; width: 100%;">📞 Contact Citizen</button>
+                        </div>
+                        
+                        <h4 style="color: #2c5aa0; margin-bottom: 15px;">Location & Media</h4>
+                        <div style="height: 200px; background: #f8f9fa; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; color: #6c757d;">
+                            🗺️ Interactive Map<br>
+                            <small>MG Road, Bangalore</small>
+                        </div>
+                        
+                        <h4 style="color: #2c5aa0; margin-bottom: 15px;">Evidence Photos</h4>
+                        <div class="photo-grid">
+                            <div class="photo-placeholder">📷 Original Photo</div>
+                            <div class="photo-placeholder">📷 Inspection Photo</div>
+                        </div>
+                        
+                        <h4 style="color: #2c5aa0; margin-bottom: 15px;">SLA Information</h4>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                            <p><strong>Category:</strong> Road Infrastructure</p>
+                            <p><strong>SLA Target:</strong> 72 hours</p>
+                            <p><strong>Time Elapsed:</strong> 31 hours</p>
+                            <p><strong>Time Remaining:</strong> 41 hours</p>
+                            <div style="background: #28a745; height: 8px; border-radius: 4px; margin-top: 10px; position: relative;">
+                                <div style="background: #2c5aa0; height: 8px; border-radius: 4px; width: 43%;"></div>
+                            </div>
+                            <p style="font-size: 12px; color: #28a745; margin-top: 5px;">✅ On Track for SLA Compliance</p>
+                        </div>
+                        
+                        <h4 style="color: #2c5aa0; margin-bottom: 15px;">Quick Actions</h4>
+                        <button class="action-btn assign" style="width: 100%; margin-bottom: 10px;">👤 Reassign Officer</button>
+                        <button class="action-btn escalate" style="width: 100%; margin-bottom: 10px;">⬆️ Escalate to Senior</button>
+                        <button class="action-btn" style="width: 100%; margin-bottom: 10px;">📧 Send Update to Citizen</button>
+                        <button class="action-btn view" style="width: 100%;">📄 Generate Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notifications Center -->
+        <div id="notifications" class="dashboard-frame">
+            <div class="device-header">
+                <span>💻 Notification & Communication Center</span>
+                <span>Real-time Updates & Team Coordination</span>
+            </div>
+            <div class="admin-header">
+                <div class="admin-logo">CivicMitra | Communications</div>
+                <div class="admin-user">
+                    <div style="display: flex; gap: 15px;">
+                        <button class="action-btn">📢 Broadcast Message</button>
+                        <button class="action-btn">⚙️ Notification Settings</button>
+                        <button class="action-btn">✅ Mark All Read</button>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 30px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h3 style="color: #2c5aa0; margin-bottom: 20px;">System Notifications</h3>
+                        <div style="background: white; border-radius: 10px; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                            <div style="background: #fff3cd; padding: 15px; border-radius: 10px 10px 0 0; border-left: 4px solid #ffc107;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <strong>🚨 SLA Breach Alert</strong>
+                                        <p style="font-size: 14px; margin-top: 5px;">Report #CM-2024-145 is overdue by 8 hours</p>
+                                    </div>
+                                    <div style="font-size: 12px; color: #6c757d;">2 hours ago</div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #d4edda; padding: 15px; border-left: 4px solid #28a745;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <strong>✅ New Report Assigned</strong>
+                                        <p style="font-size: 14px; margin-top: 5px;">Report #CM-2024-158 assigned to Rajesh Kumar</p>
+                                    </div>
+                                    <div style="font-size: 12px; color: #6c757d;">15 mins ago</div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #e8f4f8; padding: 15px; border-left: 4px solid #2c5aa0;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <strong>📊 Monthly Report Available</strong>
+                                        <p style="font-size: 14px; margin-top: 5px;">January performance report is ready for review</p>
+                                    </div>
+                                    <div style="font-size: 12px; color: #6c757d;">1 hour ago</div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #f8d7da; padding: 15px; border-left: 4px solid #dc3545;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <strong>⚠️ System Maintenance</strong>
+                                        <p style="font-size: 14px; margin-top: 5px;">Scheduled maintenance tonight 2-4 AM</p>
+                                    </div>
+                                    <div style="font-size: 12px; color: #6c757d;">4 hours ago</div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: white; padding: 15px; border-left: 4px solid #6c757d;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <strong>👥 New User Registration</strong>
+                                        <p style="font-size: 14px; margin-top: 5px;">Field Officer Suresh Reddy joined PWD team</p>
+                                    </div>
+                                    <div style="font-size: 12px; color: #6c757d;">6 hours ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 style="color: #2c5aa0; margin-bottom: 20px;">Department Chat</h3>
+                        <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); height: 400px; display: flex; flex-direction: column;">
+                            <div style="flex: 1; overflow-y: auto; margin-bottom: 15px;">
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                        <div style="width: 30px; height: 30px; background: #2c5aa0; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">PS</div>
+                                        <strong>Priya Sharma</strong>
+                                        <span style="font-size: 12px; color: #6c757d;">10:30 AM</span>
+                                    </div>
+                                    <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-left: 40px;">
+                                        "All officers, please prioritize the MG Road pothole. High visibility location, needs quick resolution."
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                        <div style="width: 30px; height: 30px; background: #28a745; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">RK</div>
+                                        <strong>Rajesh Kumar</strong>
+                                        <span style="font-size: 12px; color: #6c757d;">10:45 AM</span>
+                                    </div>
+                                    <div style="background: #e8f4f8; padding: 10px; border-radius: 8px; margin-left: 40px;">
+                                        "Site inspection done. Materials ordered, will start work tomorrow morning at 8 AM."
+                                    </div>
+                                </div>
+                                
+                                <div style="margin-bottom: 15px;">
+                                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                        <div style="width: 30px; height: 30px; background: #ffc107; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 14px;">AP</div>
+                                        <strong>Amit Patel</strong>
+                                        <span style="font-size: 12px; color: #6c757d;">11:15 AM</span>
+                                    </div>
+                                    <div style="background: #f8f9fa; padding: 10px; border-radius: 8px; margin-left: 40px;">
+                                        "I can assist with the traffic signal repair on Commercial Street if needed."
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; gap: 10px;">
+                                <input type="text" placeholder="Type your message..." style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 20px;">
+                                <button class="action-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h3 style="color: #2c5aa0; margin-bottom: 20px;">Citizen Communication Queue</h3>
+                    <div class="data-table">
+                        <div class="table-header">
+                            <div class="table-title">Pending Citizen Notifications</div>
+                            <div class="table-filters">
+                                <select class="filter-select">
+                                    <option>All Types</option>
+                                    <option>Status Updates</option>
+                                    <option>Resolution Confirmations</option>
+                                    <option>Feedback Requests</option>
+                                </select>
+                                <button class="action-btn">📤 Send All</button>
+                            </div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Report ID</th>
+                                    <th>Citizen</th>
+                                    <th>Notification Type</th>
+                                    <th>Message</th>
+                                    <th>Scheduled</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>#CM-2024-156</strong></td>
+                                    <td>Rahul M. (+91 98765****)</td>
+                                    <td><span class="badge-progress">Status Update</span></td>
+                                    <td>Work has started on your reported pothole</td>
+                                    <td>Ready to send</td>
+                                    <td>
+                                        <button class="action-btn">📱 Send SMS</button>
+                                        <button class="action-btn view">Preview</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#CM-2024-142</strong></td>
+                                    <td>Priya S. (+91 87654****)</td>
+                                    <td><span class="badge-resolved">Resolution</span></td>
+                                    <td>Your traffic signal issue has been resolved</td>
+                                    <td>Ready to send</td>
+                                    <td>
+                                        <button class="action-btn">📧 Send Email</button>
+                                        <button class="action-btn">📱 Send SMS</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings & Security -->
+        <div id="settings" class="dashboard-frame">
+            <div class="device-header">
+                <span>💻 Settings & Security Management</span>
+                <span>System Administration & Security Controls</span>
+            </div>
+            <div class="admin-header">
+                <div class="admin-logo">CivicMitra | Settings</div>
+                <div class="admin-user">
+                    <span>System Administrator</span>
+                    <div class="user-avatar">🔐</div>
+                    <div class="dropdown-menu">▼</div>
+                </div>
+            </div>
+            <div class="admin-layout">
+                <div class="sidebar">
+                    <div class="nav-item active">⚙️ General Settings</div>
+                    <div class="nav-item">👥 User Management</div>
+                    <div class="nav-item">🏢 Department Setup</div>
+                    <div class="nav-item">📏 SLA Configuration</div>
+                    <div class="nav-item">🔒 Security Settings</div>
+                    <div class="nav-item">📊 Audit Logs</div>
+                    <div class="nav-item">🔄 Data Backup</div>
+                    <div class="nav-item">📤 Logout</div>
+                </div>
+                <div class="main-content">
+                    <div class="content-header">
+                        <h1 class="content-title">System Settings & Security</h1>
+                        <p class="content-subtitle">Configure system parameters and security policies</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                        <div>
+                            <h3 style="color: #2c5aa0; margin-bottom: 20px;">Role Management</h3>
+                            <div class="data-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>User</th>
+                                            <th>Role</th>
+                                            <th>Department</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Dr. Rajesh Kumar</strong></td>
+                                            <td><span class="badge-resolved">Super Admin</span></td>
+                                            <td>State Level</td>
+                                            <td><span class="change-positive">Active</span></td>
+                                            <td>
+                                                <button class="action-btn">Edit</button>
+                                                <button class="action-btn view">Audit</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Priya Sharma</strong></td>
+                                            <td><span class="badge-assigned">Dept Admin</span></td>
+                                            <td>PWD</td>
+                                            <td><span class="change-positive">Active</span></td>
+                                            <td>
+                                                <button class="action-btn">Edit</button>
+                                                <button class="action-btn">Reset 2FA</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Rajesh Kumar</strong></td>
+                                            <td><span class="badge-progress">Field Officer</span></td>
+                                            <td>PWD</td>
+                                            <td><span class="change-positive">Active</span></td>
+                                            <td>
+                                                <button class="action-btn">Edit</button>
+                                                <button class="action-btn">View Tasks</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <h3 style="color: #2c5aa0; margin: 30px 0 20px;">Security Audit Trail</h3>
+                            <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); height: 250px; overflow-y: auto;">
+                                <div style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <strong>User Login</strong>
+                                        <span style="font-size: 12px; color: #6c757d;">Jan 17, 2024 - 9:15 AM</span>
+                                    </div>
+                                    <p style="font-size: 14px; color: #6c757d;">priya.sharma@bangalore.gov.in logged in successfully</p>
+                                </div>
+                                <div style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <strong>Report Status Changed</strong>
+                                        <span style="font-size: 12px; color: #6c757d;">Jan 17, 2024 - 8:45 AM</span>
+                                    </div>
+                                    <p style="font-size: 14px; color: #6c757d;">Rajesh Kumar marked CM-2024-148 as "In Progress"</p>
+                                </div>
+                                <div style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <strong>Failed Login Attempt</strong>
+                                        <span style="font-size: 12px; color: #dc3545;">Jan 17, 2024 - 2:30 AM</span>
+                                    </div>
+                                    <p style="font-size: 14px; color: #dc3545;">Failed login from IP 192.168.1.10 (admin@test.com)</p>
+                                </div>
+                                <div style="border-bottom: 1px solid #e9ecef; padding-bottom: 10px; margin-bottom: 10px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <strong>Report Escalated</strong>
+                                        <span style="font-size: 12px; color: #6c757d;">Jan 16, 2024 - 6:20 PM</span>
+                                    </div>
+                                    <p style="font-size: 14px; color: #6c757d;">Priya Sharma escalated CM-2024-145 to State Level</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 style="color: #2c5aa0; margin-bottom: 20px;">Department Configuration</h3>
+                            <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px;">
+                                <h4 style="margin-bottom: 15px;">SLA Time Limits (Hours)</h4>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px;">Roads & Infrastructure</label>
+                                        <input type="number" value="72" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px;">Water Supply</label>
+                                        <input type="number" value="48" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px;">Sanitation</label>
+                                        <input type="number" value="24" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                                    </div>
+                                    <div>
+                                        <label style="display: block; margin-bottom: 5px;">Electricity</label>
+                                        <input type="number" value="12" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                                    </div>
+                                </div>
+                                <button class="action-btn" style="margin-top: 15px;">Save SLA Settings</button>
+                            </div>
+                            
+                            <h3 style="color: #2c5aa0; margin-bottom: 20px;">Security Settings</h3>
+                            <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <span>Enforce 2FA for All Users</span>
+                                    <div style="width: 50px; height: 25px; background: #2c5aa0; border-radius: 25px; position: relative; cursor: pointer;">
+                                        <div style="width: 21px; height: 21px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <span>Auto-logout after 30 minutes</span>
+                                    <div style="width: 50px; height: 25px; background: #2c5aa0; border-radius: 25px; position: relative; cursor: pointer;">
+                                        <div style="width: 21px; height: 21px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                                    <span>Password complexity requirements</span>
+                                    <div style="width: 50px; height: 25px; background: #2c5aa0; border-radius: 25px; position: relative; cursor: pointer;">
+                                        <div style="width: 21px; height: 21px; background: white; border-radius: 50%; position: absolute; top: 2px; right: 2px;"></div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                    <span>IP whitelist for admin access</span>
+                                    <div style="width: 50px; height: 25px; background: #ccc; border-radius: 25px; position: relative; cursor: pointer;">
+                                        <div style="width: 21px; height: 21px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px;"></div>
+                                    </div>
+                                </div>
+                                <button class="action-btn">Update Security Settings</button>
+                            </div>
+                            
+                            <div style="background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 8px; padding: 15px; margin-top: 20px; color: #721c24;">
+                                <h4 style="margin-bottom: 10px;">🔐 Security Recommendations</h4>
+                                <ul style="margin-left: 20px;">
+                                    <li>Regular password updates (90 days)</li>
+                                    <li>Monitor failed login attempts</li>
+                                    <li>Enable audit logging for all actions</li>
+                                    <li>Regular security backups</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentDashboard = 'login';
+
+        function showDashboard(dashboard) {
+            // Update button states
+            document.querySelectorAll('.role-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Show/hide dashboard frames
+            document.querySelectorAll('.dashboard-frame').forEach(frame => {
+                frame.classList.remove('active');
+            });
+            document.getElementById(dashboard).classList.add('active');
+            
+            currentDashboard = dashboard;
+        }
+
+        // Interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sidebar navigation
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Action buttons
+            document.querySelectorAll('.action-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (this.textContent.includes('View') || this.textContent.includes('Details')) {
+                        showDashboard('report-detail');
+                    }
+                });
+            });
+            
+            // Table row clicks
+            document.querySelectorAll('.data-table tr').forEach(row => {
+                row.addEventListener('click', function() {
+                    if (this.querySelector('th')) return; // Skip header
+                    showDashboard('report-detail');
+                });
+            });
+            
+            // Task card clicks in mobile
+            document.querySelectorAll('.task-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.background = '#e8f4f8';
+                    setTimeout(() => {
+                        this.style.background = 'white';
+                    }, 200);
+                });
+            });
+            
+            console.log('CivicMitra Admin Dashboards Loaded');
+            console.log('All role-based interfaces ready for interaction');
+        });
+    </script>
+</body>
+</html>

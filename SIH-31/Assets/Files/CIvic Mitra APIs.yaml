@@ -1,0 +1,436 @@
+openapi: 3.0.3
+info:
+  title: CivicMitra API
+  description: |
+    Crowdsourced Civic Issue Reporting & Resolution System.
+    Provides endpoints for Citizens, Admins, Officers, Super Admin, and Analytics.
+    Includes authentication, reporting, media uploads, notifications, feedback, and rewards.
+  version: 1.0.0
+servers:
+  - url: https://api.civicmitra.gov.in/v1
+    description: Production Server
+  - url: https://staging.api.civicmitra.gov.in/v1
+    description: Staging Server
+
+tags:
+  - name: Auth
+  - name: User
+  - name: Reports
+  - name: Media
+  - name: Admin
+  - name: Officer
+  - name: SuperAdmin
+  - name: Notifications
+  - name: Feedback
+  - name: Rewards
+  - name: Analytics
+  - name: Management
+  - name: Health
+
+paths:
+  #########################
+  # AUTH APIs
+  #########################
+
+  /auth/request-otp:
+    post:
+      tags: [Auth]
+      summary: Request OTP for login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone: { type: string, example: "+919876543210" }
+      responses:
+        "200":
+          description: OTP sent
+
+  /auth/verify-otp:
+    post:
+      tags: [Auth]
+      summary: Verify OTP and get JWT
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone: { type: string }
+                otp: { type: string }
+      responses:
+        "200":
+          description: Token issued
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token: { type: string }
+
+  /auth/refresh:
+    post:
+      tags: [Auth]
+      summary: Refresh JWT token
+      responses:
+        "200":
+          description: Refreshed token
+
+  #########################
+  # USER APIs
+  #########################
+
+  /user/profile:
+    get:
+      tags: [User]
+      summary: Get current user profile
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Profile object
+
+    put:
+      tags: [User]
+      summary: Update user profile
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                email: { type: string }
+                language: { type: string }
+      responses:
+        "200":
+          description: Updated
+
+  #########################
+  # REPORT APIs
+  #########################
+
+  /reports:
+    post:
+      tags: [Reports]
+      summary: Submit a new report
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/NewReport"
+      responses:
+        "201":
+          description: Report created
+
+    get:
+      tags: [Reports]
+      summary: List reports
+      parameters:
+        - name: status
+          in: query
+          schema: { type: string }
+        - name: category
+          in: query
+          schema: { type: string }
+        - name: page
+          in: query
+          schema: { type: integer, default: 1 }
+      responses:
+        "200":
+          description: Reports list
+
+  /reports/{id}:
+    get:
+      tags: [Reports]
+      summary: Get single report
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Report detail
+
+    put:
+      tags: [Admin, Officer]
+      summary: Update report (status/assignment)
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string }
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  {
+                    type: string,
+                    enum: [pending, in-progress, resolved, rejected],
+                  }
+                assignedDept: { type: string }
+                assignedOfficerId: { type: string }
+      responses:
+        "200":
+          description: Updated
+
+  #########################
+  # MEDIA APIs
+  #########################
+
+  /media/upload-url:
+    post:
+      tags: [Media]
+      summary: Get signed URL for file upload
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                fileName: { type: string }
+                fileType: { type: string }
+      responses:
+        "200":
+          description: Signed URL response
+
+  #########################
+  # ADMIN APIs
+  #########################
+
+  /admin/reports:
+    get:
+      tags: [Admin]
+      summary: List all reports with filters
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Reports list
+
+  /admin/officers:
+    post:
+      tags: [Admin]
+      summary: Create officer account
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Officer"
+      responses:
+        "201":
+          description: Officer created
+
+  #########################
+  # OFFICER APIs
+  #########################
+
+  /officer/assigned:
+    get:
+      tags: [Officer]
+      summary: List reports assigned to officer
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Assigned reports
+
+  /officer/update-status:
+    put:
+      tags: [Officer]
+      summary: Update status of assigned report
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reportId: { type: string }
+                status: { type: string }
+      responses:
+        "200":
+          description: Status updated
+
+  #########################
+  # SUPERADMIN APIs
+  #########################
+
+  /superadmin/departments:
+    post:
+      tags: [SuperAdmin]
+      summary: Add new department
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name: { type: string }
+                description: { type: string }
+      responses:
+        "201":
+          description: Department created
+
+  #########################
+  # NOTIFICATION APIs
+  #########################
+
+  /notifications/send:
+    post:
+      tags: [Notifications]
+      summary: Send notification
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId: { type: string }
+                message: { type: string }
+      responses:
+        "200":
+          description: Sent
+
+  #########################
+  # FEEDBACK APIs
+  #########################
+
+  /feedback:
+    post:
+      tags: [Feedback]
+      summary: Submit feedback on resolved issue
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reportId: { type: string }
+                rating: { type: integer, minimum: 1, maximum: 5 }
+                comments: { type: string }
+      responses:
+        "201":
+          description: Feedback stored
+
+  #########################
+  # REWARDS APIs
+  #########################
+
+  /rewards/points:
+    get:
+      tags: [Rewards]
+      summary: Get user reward points
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Points
+
+  /rewards/redeem:
+    post:
+      tags: [Rewards]
+      summary: Redeem points
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                rewardId: { type: string }
+      responses:
+        "200":
+          description: Redeemed
+
+  #########################
+  # ANALYTICS APIs
+  #########################
+
+  /analytics/summary:
+    get:
+      tags: [Analytics]
+      summary: System analytics overview
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Summary
+
+  #########################
+  # MANAGEMENT APIs
+  #########################
+
+  /management/config:
+    get:
+      tags: [Management]
+      summary: Get system config
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Config
+
+  #########################
+  # HEALTH APIs
+  #########################
+
+  /health:
+    get:
+      tags: [Health]
+      summary: Health check
+      responses:
+        "200":
+          description: OK
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Report:
+      type: object
+      properties:
+        id: { type: string }
+        category: { type: string }
+        description: { type: string }
+        status: { type: string }
+        imageUrl: { type: string }
+        location:
+          type: object
+          properties:
+            lat: { type: number }
+            lng: { type: number }
+        createdAt: { type: string, format: date-time }
+
+    NewReport:
+      type: object
+      required: [category, description, location]
+      properties:
+        category: { type: string }
+        description: { type: string }
+        imageUrl: { type: string }
+        location:
+          type: object
+          properties:
+            lat: { type: number }
+            lng: { type: number }
+
+    Officer:
+      type: object
+      properties:
+        name: { type: string }
+        phone: { type: string }
+        dept: { type: string }
