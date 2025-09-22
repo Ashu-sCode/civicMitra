@@ -1,11 +1,11 @@
 // src/components/Report/LocationInput.jsx
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import axios from "axios";
 
-// Marker icons
+// Leaflet marker icons (Vite-friendly)
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
 import iconUrl from "leaflet/dist/images/marker-icon.png";
 import shadowUrl from "leaflet/dist/images/marker-shadow.png";
@@ -13,7 +13,7 @@ import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({ iconRetinaUrl, iconUrl, shadowUrl });
 
-// Dummy data (replace with API if available)
+// Dummy state/district data (replace with API if available)
 const statesList = [
   { name: "Uttar Pradesh", districts: ["Lucknow", "Kanpur", "Varanasi"] },
   { name: "Maharashtra", districts: ["Mumbai", "Pune", "Nagpur"] },
@@ -66,9 +66,10 @@ async function reverseGeocode(lat, lng, setAddressData) {
 export default function LocationInput({ location, setLocation, addressData, setAddressData }) {
   const mapRef = useRef(null);
   const [districts, setDistricts] = useState([]);
-  const [cities, setCities] = useState([]); // For future expansion, currently manual
 
-  // When state changes, populate districts
+  // ----------------------------
+  // Handle State Change
+  // ----------------------------
   const handleStateChange = (e) => {
     const selectedState = e.target.value;
     const stateObj = statesList.find((s) => s.name === selectedState);
@@ -76,13 +77,17 @@ export default function LocationInput({ location, setLocation, addressData, setA
     setAddressData({ ...addressData, state: selectedState, district: "", city: "" });
   };
 
-  // When district changes, clear city
+  // ----------------------------
+  // Handle District Change
+  // ----------------------------
   const handleDistrictChange = (e) => {
     const district = e.target.value;
     setAddressData({ ...addressData, district, city: "" });
-    // Optionally fetch cities via API here
   };
 
+  // ----------------------------
+  // Detect Live Location
+  // ----------------------------
   const detectLocation = () => {
     if (!navigator.geolocation) return alert("Geolocation not supported");
 
@@ -93,7 +98,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
         if (mapRef.current) mapRef.current.setView([latitude, longitude], 16);
         await reverseGeocode(latitude, longitude, setAddressData);
       },
-      () => alert("Location access denied. Enter manually."),
+      () => alert("Location access denied. Please enter manually."),
       { enableHighAccuracy: true }
     );
   };
@@ -102,7 +107,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
     <section className="w-full max-w-3xl mx-auto p-4 mt-8">
       <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">Enter Location</h2>
 
-      {/* Live Location */}
+      {/* Live Location Button */}
       <button
         onClick={detectLocation}
         className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition w-full sm:w-auto"
@@ -110,7 +115,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
         📍 Use My Current Location
       </button>
 
-      {/* Manual address */}
+      {/* Manual Address */}
       <input
         type="text"
         placeholder="Enter landmark or address"
@@ -119,7 +124,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
         className="w-full p-3 mb-4 rounded-md border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition"
       />
 
-      {/* Dropdowns */}
+      {/* State/District/City/Pin */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         {/* State */}
         <select
@@ -145,7 +150,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
           ))}
         </select>
 
-        {/* City */}
+        {/* City/Village */}
         <input
           type="text"
           placeholder="City / Village"
@@ -154,7 +159,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
           className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
         />
 
-        {/* Pin code */}
+        {/* Pin Code */}
         <input
           type="text"
           placeholder="Pin Code"
@@ -180,6 +185,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
         </MapContainer>
       </div>
 
+      {/* Optional info */}
       {location && (
         <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
           Selected: Lat {location.lat.toFixed(5)}, Lng {location.lng.toFixed(5)}
