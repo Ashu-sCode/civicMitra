@@ -1,101 +1,77 @@
-import React, { useRef, useState } from "react";
-import { useTheme } from "../context/ThemeContext";
+import React, { useRef, useState, useContext } from "react";
+import { categories } from '../data/categories'; // adjust path if needed
 
-// Import your components
 import CategorySelection from "../components/ReportPage/CategorySelection";
-import LocationSelection from "../components/ReportPage/LocationSelection";
-import MediaUploadSection from "../components/ReportPage/MediaUploadSection";
-import DescriptionInput from "../components/ReportPage/DescriptionInput";
+
 
 
 const ReportPage = () => {
-  // State for report
-  const [reportData, setReportData] = useState({
-    category: null,
-    location: null,
-    media: [],
-    description: "",
-    contact: "",
-  });
 
-  // Refs for auto-scroll
   const locationRef = useRef(null);
-  const mediaRef = useRef(null);
-  const descriptionRef = useRef(null);
-  const reviewRef = useRef(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [location, setLocation] = useState("");
 
   const handleCategorySelect = (category) => {
-    setReportData((prev) => ({ ...prev, category }));
-    // Scroll to location section
-    locationRef.current.scrollIntoView({ behavior: "smooth" });
+    setSelectedCategory(category);
   };
 
-  const handleLocationSelect = (location) => {
-    setReportData((prev) => ({ ...prev, location }));
-    // Scroll to media upload section
-    mediaRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleMediaUpload = (media) => {
-    setReportData((prev) => ({ ...prev, media }));
-    // Scroll to description section
-    descriptionRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleDescriptionInput = (description) => {
-    setReportData((prev) => ({ ...prev, description }));
-    // Scroll to review section
-    reviewRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleSubmit = () => {
-    // TODO: Send reportData to backend API
-    console.log("Submitting report:", reportData);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!selectedCategory || !location) {
+      alert("Please select a category and enter location!");
+      return;
+    }
+    console.log("Report Submitted:", { category: selectedCategory, location });
+    alert(`Report submitted successfully for ${selectedCategory.category}`);
+    // Reset form if needed
+    setSelectedCategory(null);
+    setLocation("");
   };
 
   return (
-    <div className="report-page w-full max-w-5xl mx-auto p-4 space-y-8 dark:bg-gray-900 dark:text-gray-100">
-      <h1 className="text-2xl font-bold mb-4 text-center">
-        Submit Civic Issue Report
-      </h1>
+    <div className={`min-h-screen  transition-colors duration-300`}>
+      
+   
+      {/* Category Selection */}
+      <CategorySelection
+        categories={categories}
+        onCategorySelect={handleCategorySelect}
+        nextSectionRef={locationRef}
+      />
 
-      {/* 1️⃣ Category Selection */}
-      <section>
-        <CategorySelection
-          categories={/* pass your categories data */}
-          onCategorySelect={handleCategorySelect}
-          nextSectionRef={locationRef}
-        />
-      </section>
+      {/* Location Section */}
+      <div
+        ref={locationRef}
+        className="mt-12 max-w-2xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md dark:shadow-lg transition"
+      >
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">
+          Enter Location
+        </h2>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Enter exact location or landmark"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            className="p-3 rounded-md border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition"
+          />
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition"
+          >
+            Submit Report
+          </button>
+        </form>
 
-      {/* 2️⃣ Location Selection */}
-      <section ref={locationRef}>
-        <LocationSelection
-          onLocationSelect={handleLocationSelect}
-          initialLocation={reportData.location}
-        />
-      </section>
-
-      {/* 3️⃣ Media Upload */}
-      <section ref={mediaRef}>
-        <MediaUpload onUpload={handleMediaUpload} initialMedia={reportData.media} />
-      </section>
-
-      {/* 4️⃣ Description */}
-      <section ref={descriptionRef}>
-        <DescriptionInput
-          onChange={handleDescriptionInput}
-          initialValue={reportData.description}
-        />
-      </section>
-
-      {/* 5️⃣ Review & Submit */}
-      <section ref={reviewRef}>
-        <ReviewSubmit
-          reportData={reportData}
-          onSubmit={handleSubmit}
-        />
-      </section>
+        {/* Optional Summary */}
+        {selectedCategory && location && (
+          <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+            <p className="text-blue-800 dark:text-blue-200 font-semibold">
+              You are reporting: {selectedCategory.category} at "{location}"
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
