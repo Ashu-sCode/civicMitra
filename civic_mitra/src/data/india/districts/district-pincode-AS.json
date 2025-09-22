@@ -1,0 +1,1306 @@
+{
+  "Baksa": {},
+  "Barpeta": {},
+  "Biswanath": {},
+  "Bongaigaon": {},
+  "Cachar": {
+    "Silchar H.O": [
+      "788001"
+    ],
+    "Malugram S.O": [
+      "788002"
+    ],
+    "Tarapur S.O (Cachar": [
+      "788003"
+    ],
+    "G C College S.O": [
+      "788004"
+    ],
+    "Rangirkhari S.O": [
+      "788005"
+    ],
+    "Link Road S.O (Cachar": [
+      "788006"
+    ],
+    "Vivekananda Road S.O": [
+      "788007"
+    ],
+    "Rongpur S.O": [
+      "788009"
+    ],
+    "Silchar REC S.O": [
+      "788010"
+    ],
+    "Assam University S.O": [
+      "788011"
+    ],
+    "Sonabarighat S.O": [
+      "788013"
+    ],
+    "Silchar Medical College S.O": [
+      "788014"
+    ],
+    "Meherpur S.O": [
+      "788015"
+    ],
+    "Arunachal S.O": [
+      "788025"
+    ],
+    "Srikona S.O": [
+      "788026"
+    ],
+    "Udarbond S.O": [
+      "788030"
+    ],
+    "Salganga S.O": [
+      "788031"
+    ],
+    "Pailapool S.O": [
+      "788098"
+    ],
+    "Matinagar S.O": [
+      "788099"
+    ],
+    "Banskandi S.O": [
+      "788101"
+    ],
+    "Dewan S.O": [
+      "788102"
+    ],
+    "Lakhipur S.O (Cachar": [
+      "788103"
+    ],
+    "Jirighat S.O": [
+      "788104"
+    ],
+    "Fulertal S.O": [
+      "788106"
+    ],
+    "Joypur Rajabazar S.O": [
+      "788107"
+    ],
+    "Kumbhir S.O": [
+      "788108"
+    ],
+    "Kumbhirgram Airport S.O": [
+      "788109"
+    ],
+    "Borkhola S.O": [
+      "788110"
+    ],
+    "Dalu S.O": [
+      "788111"
+    ],
+    "Derby S.O": [
+      "788112"
+    ],
+    "Dwarband S.O": [
+      "788113"
+    ],
+    "Dholai Bazar S.O": [
+      "788114"
+    ],
+    "Narsingpur S.O": [
+      "788115"
+    ],
+    "Palonghat S.O": [
+      "788116"
+    ],
+    "Barjalenga S.O": [
+      "788117"
+    ],
+    "Silcuri S.O": [
+      "788118"
+    ],
+    "Sonaimukh S.O": [
+      "788119"
+    ],
+    "Bhaga Bazar S.O": [
+      "788120"
+    ],
+    "Kabuganj Bazar S.O": [
+      "788121"
+    ],
+    "Bekirpar S.O": [
+      "788123"
+    ],
+    "Binnakandi Ghat S.O": [
+      "788126"
+    ],
+    "Jarailtala Bazar S.O": [
+      "788127"
+    ],
+    "Kalibari Bazar S.O": [
+      "788150"
+    ],
+    "Hailakandi H.O": [
+      "788151"
+    ],
+    "Lakshmisahar S.O": [
+      "788152"
+    ],
+    "Ratanpur Road S.O": [
+      "788155"
+    ],
+    "Anilgarh S.O": [
+      "788156"
+    ],
+    "Jaffirband S.O": [
+      "788160"
+    ],
+    "Katlacherra S.O": [
+      "788161"
+    ],
+    "Jamira Bazar S.O": [
+      "788162"
+    ],
+    "Lala S.O": [
+      "788163"
+    ],
+    "Monacherra S.O": [
+      "788164"
+    ],
+    "Manipur Bagan S.O": [
+      "788165"
+    ],
+    "Ramkrishnanagar S.O": [
+      "788166"
+    ],
+    "Rajyeswarpur S.O": [
+      "788168"
+    ],
+    "Bhanga Bazaar S.O": [
+      "788701"
+    ],
+    "Tillabazar S.O": [
+      "788709"
+    ],
+    "Karimganj H.O": [
+      "788710"
+    ],
+    "Karimganj Bazar S.O": [
+      "788711"
+    ],
+    "Settlement Road S.O": [
+      "788712"
+    ],
+    "Silchar Road S.O": [
+      "788713"
+    ],
+    "Kayasthagram S.O": [
+      "788719"
+    ],
+    "Kaliganj Bazar S.O": [
+      "788720"
+    ],
+    "Nilam Bazar S.O": [
+      "788722"
+    ],
+    "Baraigram S.O": [
+      "788723"
+    ],
+    "Patharkandi S.O": [
+      "788724"
+    ],
+    "Chandkhira S.O": [
+      "788725"
+    ],
+    "Hatikhira S.O": [
+      "788726"
+    ],
+    "Bazaricherra Bazar S.O": [
+      "788727"
+    ],
+    "Isabeel S.O": [
+      "788728"
+    ],
+    "Anipur S.O": [
+      "788734"
+    ],
+    "Ratabari S.O": [
+      "788735"
+    ],
+    "Dullabcherra S.O": [
+      "788736"
+    ],
+    "Olivacherra S.O": [
+      "788737"
+    ],
+    "BIDYANAGAR S.O": [
+      "788738"
+    ],
+    "Mahisashan S.O": [
+      "788781"
+    ],
+    "Kalinagar S.O": [
+      "788801"
+    ],
+    "Panchgram S.O": [
+      "788802"
+    ],
+    "Badarpurghat S.O": [
+      "788803"
+    ],
+    "Katirail S.O": [
+      "788804"
+    ],
+    "Katigorah S.O": [
+      "788805"
+    ],
+    "Badarpur S.O (Karimganj": [
+      "788806"
+    ],
+    "Kalain S.O": [
+      "788815"
+    ],
+    "Jalalpur S.O (Cachar": [
+      "788816"
+    ],
+    "Behara Bazar S.O": [
+      "788817"
+    ],
+    "Harengajao S.O": [
+      "788818"
+    ],
+    "Haflong S.O": [
+      "788819"
+    ],
+    "Haflong Ptc S.O": [
+      "788820"
+    ],
+    "Mahur S.O": [
+      "788830"
+    ],
+    "Maibong S.O": [
+      "788831"
+    ],
+    "Langting S.O": [
+      "788832"
+    ],
+    "Umrangshu S.O": [
+      "788931"
+    ]
+  },
+  "Charaideo": {},
+  "Chirang": {},
+  "Darrang": {
+    "Tezpur H.O": [
+      "784001"
+    ],
+    "Tezpur Medical College S.O": [
+      "784010"
+    ],
+    "Panchmile S.O": [
+      "784025"
+    ],
+    "Khalihamari S.O": [
+      "784026"
+    ],
+    "Kaliabhomora S.O": [
+      "784027"
+    ],
+    "Napaam S.O": [
+      "784028"
+    ],
+    "Balipara S.O": [
+      "784101"
+    ],
+    "Lokra S.O": [
+      "784102"
+    ],
+    "Chariduar S.O": [
+      "784103"
+    ],
+    "Shalonibari S.O": [
+      "784104"
+    ],
+    "Ghoramari S.O": [
+      "784105"
+    ],
+    "Dhekiajuli S.O": [
+      "784110"
+    ],
+    "Darrang Panbari S.O": [
+      "784111"
+    ],
+    "Alisinga S.O": [
+      "784112"
+    ],
+    "Kopati S.O": [
+      "784113"
+    ],
+    "Orang S.O": [
+      "784114"
+    ],
+    "Kharupetiaghat S.O": [
+      "784115"
+    ],
+    "Dalgaon S.O": [
+      "784116"
+    ],
+    "Sirajuli S.O": [
+      "784117"
+    ],
+    "Mangaldoi H.O": [
+      "784125"
+    ],
+    "Pathorighat S.O": [
+      "784144"
+    ],
+    "Sipajhar S.O": [
+      "784145"
+    ],
+    "Dhula S.O": [
+      "784146"
+    ],
+    "Deomornoi S.O": [
+      "784147"
+    ],
+    "Duni S.O (Darrang": [
+      "784148"
+    ],
+    "Thelamara S.O": [
+      "784149"
+    ],
+    "Besseria S.O": [
+      "784150"
+    ],
+    "Bihaguri S.O": [
+      "784153"
+    ],
+    "Ketekibari S.O": [
+      "784154"
+    ],
+    "Behali S.O": [
+      "784166"
+    ],
+    "Borgong S.O": [
+      "784167"
+    ],
+    "Gohpur S.O": [
+      "784168"
+    ],
+    "Howajan  S.O": [
+      "784169"
+    ],
+    "Halem S.O": [
+      "784170"
+    ],
+    "Tetenbari S.O": [
+      "784171"
+    ],
+    "Barangabari S.O": [
+      "784172"
+    ],
+    "Mijikajan S.O": [
+      "784173"
+    ],
+    "Pabhoi S.O": [
+      "784174"
+    ],
+    "Sootea S.O": [
+      "784175"
+    ],
+    "Chariali MDG": [
+      "784176"
+    ],
+    "Biswanathghat S.O": [
+      "784177"
+    ],
+    "Kalabari S.O": [
+      "784178"
+    ],
+    "Bedeti S.O": [
+      "784179"
+    ],
+    "Jamugurihat S.O": [
+      "784180"
+    ],
+    "Naharbari S.O": [
+      "784182"
+    ],
+    "Gingia S.O": [
+      "784184"
+    ],
+    "Karsontala S.O": [
+      "784189"
+    ],
+    "Bhakatpara S.O": [
+      "784190"
+    ],
+    "Dekargaon S.O": [
+      "784501"
+    ],
+    "Bindukuri S.O": [
+      "784502"
+    ],
+    "Borjuli S.O": [
+      "784504"
+    ],
+    "Rangapara S.O": [
+      "784505"
+    ],
+    "Missamari S.O": [
+      "784506"
+    ],
+    "Mazbat S.O": [
+      "784507"
+    ],
+    "Rowta S.O": [
+      "784508"
+    ],
+    "Udalguri S.O": [
+      "784509"
+    ],
+    "Harisinga S.O": [
+      "784510"
+    ],
+    "Sapangaon S.O": [
+      "784513"
+    ],
+    "Lalpul Bazar S.O": [
+      "784514"
+    ],
+    "Tangla S.O": [
+      "784521"
+    ],
+    "Khoirabari S.O": [
+      "784522"
+    ],
+    "Panerihat S.O": [
+      "784523"
+    ],
+    "Hatigarh S.O (Darrang": [
+      "784524"
+    ],
+    "Kalaigaon S.O": [
+      "784525"
+    ],
+    "Dimakuchi S.O": [
+      "784526"
+    ],
+    "Atterikhat S.O": [
+      "784527"
+    ],
+    "Purani Tangla S.O": [
+      "784528"
+    ],
+    "Chapaichowka S.O": [
+      "784529"
+    ]
+  },
+  "Dhemaji": {},
+  "Dhubri": {},
+  "Dibrugarh": {
+    "Laluk S.O": [
+      "784160"
+    ],
+    "Bihupuria S.O": [
+      "784161"
+    ],
+    "Pathalipahar S.O": [
+      "784163"
+    ],
+    "Dikrong S.O": [
+      "784164"
+    ],
+    "Dhalpur S.O": [
+      "784165"
+    ],
+    "Khowang S.O": [
+      "785675"
+    ],
+    "Khowang Ghat S.O": [
+      "785676"
+    ],
+    "Dibrugarh H.O": [
+      "786001"
+    ],
+    "Assam Medical College S.O": [
+      "786002"
+    ],
+    "Central Revenue Building S.O": [
+      "786003"
+    ],
+    "Dibrugarh University S.O": [
+      "786004"
+    ],
+    "Graham Bazar S.O": [
+      "786005"
+    ],
+    "Lepetkata S.O": [
+      "786006"
+    ],
+    "Barbaruah S.O": [
+      "786007"
+    ],
+    "Mohanaghat S.O": [
+      "786008"
+    ],
+    "Lahoal S.O": [
+      "786010"
+    ],
+    "Mohanbari Air Field S.O": [
+      "786012"
+    ],
+    "Dikom S.O": [
+      "786101"
+    ],
+    "Chabua Air Field S.O": [
+      "786102"
+    ],
+    "Tengakhat S.O": [
+      "786103"
+    ],
+    "Chabua S.O": [
+      "786184"
+    ],
+    "Naoholia S.O": [
+      "786191"
+    ],
+    "Duliajan S.O": [
+      "786602"
+    ],
+    "Naharkatia S.O": [
+      "786610"
+    ],
+    "Rajgarh (Dibrugarh) S.O": [
+      "786611"
+    ],
+    "Tingkhong S.O": [
+      "786612"
+    ],
+    "Bamunbari S.O": [
+      "786613"
+    ],
+    "Jeypore S.O": [
+      "786614"
+    ],
+    "Namrup S.O": [
+      "786621"
+    ],
+    "Namrup Thermal Power Station S.O": [
+      "786622"
+    ],
+    "Parbatpur S.O": [
+      "786623"
+    ],
+    "Anandapara S.O": [
+      "786692"
+    ],
+    "North Lakhimpur H.O": [
+      "787001"
+    ],
+    "Naoboicha S.O": [
+      "787023"
+    ],
+    "Bordoloni S.O": [
+      "787026"
+    ],
+    "Khelmati S.O": [
+      "787031"
+    ],
+    "Moidumia S.O": [
+      "787032"
+    ],
+    "Bhogpur Chariali S.O": [
+      "787033"
+    ],
+    "Gogamukh S.O": [
+      "787034"
+    ],
+    "Gerukamukh S.O": [
+      "787035"
+    ],
+    "Lilabari AF S.O": [
+      "787051"
+    ],
+    "Panigaon S.O": [
+      "787052"
+    ],
+    "Ghilamara S.O": [
+      "787053"
+    ],
+    "Islamgaon S.O": [
+      "787054"
+    ],
+    "Dhakuakhana S.O": [
+      "787055"
+    ],
+    "Pathalipam S.O": [
+      "787056"
+    ],
+    "Dhemaji S.O": [
+      "787057"
+    ],
+    "Machkhowa S.O": [
+      "787058"
+    ],
+    "Silapathar S.O": [
+      "787059"
+    ],
+    "Jonai S.O": [
+      "787060"
+    ],
+    "Simen Chapori S.O": [
+      "787061"
+    ],
+    "Sissiborgaon S.O": [
+      "787110"
+    ]
+  },
+  "Goalpara": {
+    "Goalpara Head Post Office": [
+      "783101"
+    ],
+    "Agia S.O": [
+      "783120"
+    ],
+    "Damra S.O": [
+      "783122"
+    ],
+    "Dhupdhara S.O": [
+      "783123"
+    ],
+    "Dudhnoi S.O": [
+      "783124"
+    ],
+    "Matia S.O": [
+      "783125"
+    ],
+    "Krishnai S.O": [
+      "783126"
+    ],
+    "Salmara South S.O": [
+      "783127"
+    ],
+    "Sukchar S.O (Dhubri)": [
+      "783128"
+    ],
+    "Lakhipur S.O (Goalpara)": [
+      "783129"
+    ],
+    "Rangjuli S.O": [
+      "783130"
+    ],
+    "Mankachar S.O": [
+      "783131"
+    ],
+    "Jaleswar S.O": [
+      "783132"
+    ],
+    "Rajapara S.O": [
+      "783133"
+    ],
+    "Darrangiri S.O.": [
+      "783134"
+    ],
+    "Fekamari S.O": [
+      "783135"
+    ],
+    "Hatsingimari  S.O": [
+      "783136"
+    ],
+    "Dhubri H.O": [
+      "783301"
+    ],
+    "Amco Road S.O": [
+      "783323"
+    ],
+    "Bidyapara S.O": [
+      "783324"
+    ],
+    "Jhagrarpar S.O": [
+      "783325"
+    ],
+    "Fakirganj S.O": [
+      "783330"
+    ],
+    "Gauripur S.O": [
+      "783331"
+    ],
+    "Tamarhat S.O": [
+      "783332"
+    ],
+    "Dingdinga S.O": [
+      "783333"
+    ],
+    "Golakganj S.O": [
+      "783334"
+    ],
+    "Agomoni S.O": [
+      "783335"
+    ],
+    "Bhowraguri S.O": [
+      "783336"
+    ],
+    "Sapatgram S.O": [
+      "783337"
+    ],
+    "Alamganj S.O": [
+      "783339"
+    ],
+    "Fakiragram S.O": [
+      "783345"
+    ],
+    "Serfanguri S.O": [
+      "783346"
+    ],
+    "Dotma S.O": [
+      "783347"
+    ],
+    "Bilasipara S.O": [
+      "783348"
+    ],
+    "Bagribari S.O": [
+      "783349"
+    ],
+    "Kachugaon S.O": [
+      "783350"
+    ],
+    "Saktiashram S.O": [
+      "783354"
+    ],
+    "Gossaigaon S.O": [
+      "783360"
+    ],
+    "Srirampur S.O (Kokrajhar)": [
+      "783361"
+    ],
+    "Salakati Project S.O": [
+      "783369"
+    ],
+    "Kokrajhar H.O": [
+      "783370"
+    ],
+    "Chapar S.O": [
+      "783371"
+    ],
+    "Basugaon S.O": [
+      "783372"
+    ],
+    "Sidli S.O": [
+      "783373"
+    ],
+    "Runikhata S.O": [
+      "783375"
+    ],
+    "Choraikhola S.O": [
+      "783376"
+    ],
+    "Bongaigaon S.O": [
+      "783380"
+    ],
+    "New Bongaigaon S.O": [
+      "783381"
+    ],
+    "Jogighopa S.O": [
+      "783382"
+    ],
+    "Salmara North S.O": [
+      "783383"
+    ],
+    "Abhayapuri S.O": [
+      "783384"
+    ],
+    "Dhaligaon S.O": [
+      "783385"
+    ],
+    "Kajalgaon S.O": [
+      "783386"
+    ],
+    "A.P.Mill S.O": [
+      "783388"
+    ],
+    "Boitamari S.O": [
+      "783389"
+    ],
+    "Bijni S.O": [
+      "783390"
+    ],
+    "Patiladaha S.O": [
+      "783391"
+    ],
+    "Manikpur S.O (Bongaigaon)": [
+      "783392"
+    ],
+    "Boro Bazar S.O": [
+      "783393"
+    ],
+    "Bengtal S.O": [
+      "783394"
+    ]
+  },
+  "Golaghat": {},
+  "Hailakandi": {},
+  "Hojai": {},
+  "Jorhat": {},
+  "Kamrup Metropolitan": {},
+  "Kamrup": {},
+  "Karbi Anglong": {},
+  "Karimganj": {},
+  "Kokrajhar": {},
+  "Lakhimpur": {},
+  "Majuli": {},
+  "Morigaon": {},
+  "Nagaon": {
+    "Nagaon H.O": [
+      "782001"
+    ],
+    "Haiborgaon S.O": [
+      "782002"
+    ],
+    "Itachali S.O": [
+      "782003"
+    ],
+    "Nonoi S.O": [
+      "782101"
+    ],
+    "Barhampur S.O": [
+      "782102"
+    ],
+    "Raha S.O": [
+      "782103"
+    ],
+    "Jaluguti S.O": [
+      "782104"
+    ],
+    "Morigaon S.O": [
+      "782105"
+    ],
+    "Charaibahi S.O": [
+      "782106"
+    ],
+    "Ambagan S.O": [
+      "782120"
+    ],
+    "Bhuragaon S.O": [
+      "782121"
+    ],
+    "Batadraba S.O": [
+      "782122"
+    ],
+    "Dhing S.O": [
+      "782123"
+    ],
+    "Juria S.O": [
+      "782124"
+    ],
+    "Rupahi S.O": [
+      "782125"
+    ],
+    "Moirabari S.O": [
+      "782126"
+    ],
+    "Lahorighat S.O": [
+      "782127"
+    ],
+    "Garajan Bazar S.O": [
+      "782128"
+    ],
+    "Chapanalla S.O": [
+      "782135"
+    ],
+    "Jakhalabandha S.O": [
+      "782136"
+    ],
+    "Kuworitul S.O": [
+      "782137"
+    ],
+    "Missa S.O": [
+      "782138"
+    ],
+    "Salana S.O": [
+      "782139"
+    ],
+    "Samaguri S.O": [
+      "782140"
+    ],
+    "Puranigudam S.O": [
+      "782141"
+    ],
+    "Bebejia S.O": [
+      "782142"
+    ],
+    "Silghat S.O": [
+      "782143"
+    ],
+    "Baligaon S.O": [
+      "782144"
+    ],
+    "Jagiroad S.O": [
+      "782410"
+    ],
+    "Jagibhakatgaon S.O": [
+      "782411"
+    ],
+    "Dharamtul S.O": [
+      "782412"
+    ],
+    "Kagajnagar S.O": [
+      "782413"
+    ],
+    "Chaparmukh S.O": [
+      "782425"
+    ],
+    "Kampur S.O": [
+      "782426"
+    ],
+    "Kathiatoli S.O": [
+      "782427"
+    ],
+    "Jamunamukh S.O": [
+      "782428"
+    ],
+    "Jogijan Bazar S.O": [
+      "782429"
+    ],
+    "Hojai S.O": [
+      "782435"
+    ],
+    "Rabindranath Tagore University": [
+      "782436"
+    ],
+    "Murazar Bazar S.O": [
+      "782439"
+    ],
+    "Daboka S.O": [
+      "782440"
+    ],
+    "Dokmaka S.O": [
+      "782441"
+    ],
+    "Sankardev Nagar S.O": [
+      "782442"
+    ],
+    "Nilbagan S.O": [
+      "782445"
+    ],
+    "Lanka S.O (Nagaon)": [
+      "782446"
+    ],
+    "Lumding S.O": [
+      "782447"
+    ],
+    "Kheroni S.O": [
+      "782448"
+    ],
+    "Baithalangsho S.O": [
+      "782450"
+    ],
+    "Diphu H.O": [
+      "782460"
+    ],
+    "Manja S.O": [
+      "782461"
+    ],
+    "Diphu Govt.College S.O": [
+      "782462"
+    ],
+    "Dhansripar S.O": [
+      "782470"
+    ],
+    "Bokajan S.O": [
+      "782480"
+    ],
+    "Howraghat S.O": [
+      "782481"
+    ],
+    "Bakalighat S.O": [
+      "782482"
+    ],
+    "Donkamokam S.O": [
+      "782485"
+    ],
+    "Hamren S.O": [
+      "782486"
+    ],
+    "Bokajan C F S.O": [
+      "782490"
+    ]
+  },
+  "Nalbari": {
+    "Mukalmua S.O": [
+      "781126"
+    ],
+    "Bartola S.O": [
+      "781138"
+    ],
+    "Barpeta H.O": [
+      "781301"
+    ],
+    "Baharihat S.O": [
+      "781302"
+    ],
+    "Banagram S.O": [
+      "781303"
+    ],
+    "Belsor S.O": [
+      "781304"
+    ],
+    "Chenga S.O": [
+      "781305"
+    ],
+    "Chamata S.O": [
+      "781306"
+    ],
+    "Sarthebari S.O": [
+      "781307"
+    ],
+    "Mandia S.O": [
+      "781308"
+    ],
+    "Bhella S.O": [
+      "781309"
+    ],
+    "Jagra S.O": [
+      "781310"
+    ],
+    "Nagaon Bazar S.O": [
+      "781311"
+    ],
+    "Rampur S.O (Nalbari)": [
+      "781312"
+    ],
+    "Simlaguri S.O": [
+      "781313"
+    ],
+    "Santinagar S.O (Barpeta)": [
+      "781314"
+    ],
+    "Barpeta Road S.O": [
+      "781315"
+    ],
+    "Howly S.O": [
+      "781316"
+    ],
+    "Sorbhog S.O": [
+      "781317"
+    ],
+    "Sarupeta S.O": [
+      "781318"
+    ],
+    "Kalgachia S.O": [
+      "781319"
+    ],
+    "Salbari S.O": [
+      "781320"
+    ],
+    "Mayanbari S.O": [
+      "781321"
+    ],
+    "Pathsala S.O": [
+      "781325"
+    ],
+    "Patacharkuchi S.O": [
+      "781326"
+    ],
+    "Jalahghat S.O": [
+      "781327"
+    ],
+    "Baghmarabazar S.O": [
+      "781328"
+    ],
+    "Nityananda S.O": [
+      "781329"
+    ],
+    "Simla S.O": [
+      "781330"
+    ],
+    "Barimakha S.O": [
+      "781333"
+    ],
+    "Chowkbazar S.O (Nalbari)": [
+      "781334"
+    ],
+    "Nalbari H.O": [
+      "781335"
+    ],
+    "Milanpur S.O": [
+      "781337"
+    ],
+    "Solmara S.O": [
+      "781338"
+    ],
+    "Karia S.O": [
+      "781339"
+    ],
+    "Banekuchi S.O": [
+      "781340"
+    ],
+    "Kazipara S.O": [
+      "781341"
+    ],
+    "Dhanbil S.O": [
+      "781343"
+    ],
+    "Baganpara S.O": [
+      "781344"
+    ],
+    "Barama S.O": [
+      "781346"
+    ],
+    "Kamarkuchi S.O": [
+      "781347"
+    ],
+    "Marowa S.O": [
+      "781348"
+    ],
+    "Nizdhamdhama S.O": [
+      "781349"
+    ],
+    "Sanekuchi S.O": [
+      "781350"
+    ],
+    "Kalag S.O": [
+      "781351"
+    ],
+    "Bhowanipur S.O": [
+      "781352"
+    ],
+    "Gopalbazar S.O": [
+      "781353"
+    ],
+    "Assam Syntex S.O": [
+      "781355"
+    ],
+    "Kumarikata S.O": [
+      "781360"
+    ],
+    "Tambulpur S.O": [
+      "781367"
+    ],
+    "Nagrijuli S.O": [
+      "781368"
+    ],
+    "Ghograpar S.O": [
+      "781369"
+    ],
+    "Kaithalkuchi S.O": [
+      "781370"
+    ],
+    "Tihu S.O": [
+      "781371"
+    ],
+    "Mussalpur S.O": [
+      "781372"
+    ],
+    "Doomni S.O": [
+      "781373"
+    ],
+    "Makhibaha S.O": [
+      "781374"
+    ],
+    "Bangaon S.O (Nalbari)": [
+      "781375"
+    ],
+    "Thamna S.O (Nalbari)": [
+      "781377"
+    ],
+    "Haribhanga S.O": [
+      "781378"
+    ]
+  },
+  "Dima Hasao": {},
+  "Sivasagar": {},
+  "Sonitpur": {},
+  "South Salmara-Mankachar": {},
+  "Tinsukia": {
+    "Tinsukia H.O": [
+      "786125"
+    ],
+    "Borguri S.O": [
+      "786126"
+    ],
+    "Sripuria S.O": [
+      "786145"
+    ],
+    "Sukhanpukhuri S.O": [
+      "786146"
+    ],
+    "Rangagora S.O": [
+      "786147"
+    ],
+    "Monkhooli S.O.": [
+      "786148"
+    ],
+    "Barhapjan S.O": [
+      "786150"
+    ],
+    "Doom Dooma S.O": [
+      "786151"
+    ],
+    "Kakapathar S.O": [
+      "786152"
+    ],
+    "Rupaisiding S.O": [
+      "786153"
+    ],
+    "Saikhowaghat S.O": [
+      "786154"
+    ],
+    "Sadiya S.O": [
+      "786155"
+    ],
+    "Talap S.O (Tinsukia)": [
+      "786156"
+    ],
+    "Chapakhowa S.O": [
+      "786157"
+    ],
+    "Kundil S.O": [
+      "786158"
+    ],
+    "Sukriting S.O": [
+      "786159"
+    ],
+    "Phillobari S.O": [
+      "786160"
+    ],
+    "Makum Junction S.O": [
+      "786170"
+    ],
+    "Digboi S.O": [
+      "786171"
+    ],
+    "Jubilee Digboi S.O": [
+      "786173"
+    ],
+    "Pengri S.O": [
+      "786174"
+    ],
+    "Tipong S.O": [
+      "786179"
+    ],
+    "Margherita S.O": [
+      "786181"
+    ],
+    "Ledo S.O": [
+      "786182"
+    ],
+    "Panitola S.O": [
+      "786183"
+    ],
+    "Makum Pathar S.O": [
+      "786187"
+    ],
+    "Jagun S.O": [
+      "786188"
+    ],
+    "Dinjan S.O": [
+      "786189"
+    ],
+    "Hansara S.O": [
+      "786190"
+    ],
+    "Hijiguri S.O": [
+      "786192"
+    ],
+    "Hoogrijan S.O": [
+      "786601"
+    ]
+  },
+  "Udalguri": {},
+  "West Karbi Anglong": {},
+  "Misc": {}
+}

@@ -1,0 +1,674 @@
+{
+  "Almora": {
+    "Almora HO": [
+      "263601"
+    ],
+    "Ghingartola SO": [
+      "263619"
+    ],
+    "Kausani Estate SO": [
+      "263620"
+    ],
+    "Bagwalipokhar SO": [
+      "263621"
+    ],
+    "Dania SO": [
+      "263622"
+    ],
+    "Panuwanaula SO": [
+      "263623"
+    ],
+    "Barechhina SO": [
+      "263624"
+    ],
+    "Lamgara SO": [
+      "263625"
+    ],
+    "Jainti SO": [
+      "263626"
+    ],
+    "Takula SO": [
+      "263628"
+    ],
+    "Chanoda SO": [
+      "263629"
+    ],
+    "Billori SO": [
+      "263630"
+    ],
+    "Kanda SO": [
+      "263631"
+    ],
+    "Kapkote SO": [
+      "263632"
+    ],
+    "Shama SO": [
+      "263633"
+    ],
+    "Dofar SO": [
+      "263634"
+    ],
+    "Dangoli SO": [
+      "263635"
+    ],
+    "Hawalbagh SO": [
+      "263636"
+    ],
+    "Someshwar SO": [
+      "263637"
+    ],
+    "Manan SO": [
+      "263638"
+    ],
+    "Kausani SO": [
+      "263639"
+    ],
+    "Kameridevi SO": [
+      "263640"
+    ],
+    "Baijnath SO Bageshwar": [
+      "263641"
+    ],
+    "Bageshwar SO": [
+      "263642"
+    ],
+    "Kosi SO Almora": [
+      "263643"
+    ],
+    "Ranikhet HO": [
+      "263645"
+    ],
+    "Bhatronjkhan SO": [
+      "263646"
+    ],
+    "Chaubattia SO": [
+      "263651"
+    ],
+    "Majkhali SO": [
+      "263652"
+    ],
+    "Dwarahat SO": [
+      "263653"
+    ],
+    "Daulaghat SO": [
+      "263655"
+    ],
+    "Ganai SO": [
+      "263656"
+    ],
+    "Masi SO": [
+      "263658"
+    ],
+    "Deghat SO": [
+      "263659"
+    ],
+    "Daula SO": [
+      "263660"
+    ],
+    "Syalde SO": [
+      "263661"
+    ],
+    "Tarikhet SO": [
+      "263663"
+    ],
+    "Deolikhet SO": [
+      "263664"
+    ],
+    "Matela SO": [
+      "263665"
+    ],
+    "Bhikiyasen SO": [
+      "263667"
+    ],
+    "Maulekhal SO": [
+      "263676"
+    ],
+    "Shitalakhet SO": [
+      "263678"
+    ],
+    "Bharari SO": [
+      "263679"
+    ],
+    "Chaunallia SO": [
+      "263680"
+    ]
+  },
+  "Bageshwar": {},
+  "Chamoli": {
+    "Jakholi SO": [
+      "246141"
+    ],
+    "Rudraprayag SO": [
+      "246171"
+    ],
+    "Gopeshwar HO": [
+      "246401"
+    ],
+    "Bhiri SO": [
+      "246419"
+    ],
+    "Augustmuni SO": [
+      "246421"
+    ],
+    "Badrinath Seasonal SO": [
+      "246422"
+    ],
+    "Chamoli SO": [
+      "246424"
+    ],
+    "Chandrapuri SO": [
+      "246425"
+    ],
+    "Chhinka SO": [
+      "246426"
+    ],
+    "Debal SO": [
+      "246427"
+    ],
+    "Gairsain SO": [
+      "246428"
+    ],
+    "Gauchar SO": [
+      "246429"
+    ],
+    "Mehalchauri SO": [
+      "246431"
+    ],
+    "Ghat SO": [
+      "246435"
+    ],
+    "Guptkashi SO": [
+      "246439"
+    ],
+    "Adibadri SO": [
+      "246440"
+    ],
+    "Gwaldam SO": [
+      "246441"
+    ],
+    "Jakhani SO": [
+      "246442"
+    ],
+    "Joshimath SO": [
+      "246443"
+    ],
+    "Karanprayag SO": [
+      "246444"
+    ],
+    "Kedarnath Seasional SO": [
+      "246445"
+    ],
+    "Langasu SO": [
+      "246446"
+    ],
+    "Maikoti SO": [
+      "246448"
+    ],
+    "Nandprayag SO": [
+      "246449"
+    ],
+    "Nalgaun SO": [
+      "246453"
+    ],
+    "Narayan Bagar SO": [
+      "246455"
+    ],
+    "Okhimath SO": [
+      "246469"
+    ],
+    "Phata SO": [
+      "246471"
+    ],
+    "Pipalkoti SO": [
+      "246472"
+    ],
+    "Pokhari Nagnath SO": [
+      "246473"
+    ],
+    "Simli SO": [
+      "246474"
+    ],
+    "Tilwara SO": [
+      "246475"
+    ],
+    "Tharali SO": [
+      "246481"
+    ],
+    "Talwari SO": [
+      "246482"
+    ],
+    "Tapoban SO": [
+      "246483"
+    ],
+    "Bachhuwaban SO": [
+      "246486"
+    ],
+    "Nauti SO": [
+      "246487"
+    ],
+    "Nainisain SO": [
+      "246488"
+    ],
+    "Chopra SO Rudraprayag": [
+      "246495"
+    ]
+  },
+  "Champawat": {},
+  "Dehradun": {
+    "Manglour Town SO": [
+      "247656"
+    ],
+    "Bhagwanpur SO Haridwar": [
+      "247661"
+    ],
+    "Laksar SO": [
+      "247663"
+    ],
+    "Landhaura SO": [
+      "247664"
+    ],
+    "Jhabrera SO": [
+      "247665"
+    ],
+    "Milap Nagar SO": [
+      "247666"
+    ],
+    "Roorkee HO": [
+      "247667"
+    ],
+    "Iqbalpur SO": [
+      "247668"
+    ],
+    "Gurkul Narsan SO": [
+      "247670"
+    ],
+    "Raisi SO": [
+      "247671"
+    ],
+    "Dehradun GPO": [
+      "248001"
+    ],
+    "Clementtown SO": [
+      "248002"
+    ],
+    "Dehradun Cantt HO": [
+      "248003"
+    ],
+    "IIP SO": [
+      "248005"
+    ],
+    "Newforest SO": [
+      "248006"
+    ],
+    "Prem Nagar SO Dehradun": [
+      "248007"
+    ],
+    "RaipurOF SO": [
+      "248008"
+    ],
+    "Rajpur SO Dehradun": [
+      "248009"
+    ],
+    "Selaqui SO": [
+      "248011"
+    ],
+    "Defence Colony SO": [
+      "248012"
+    ],
+    "Sahastradhara Road SO": [
+      "248013"
+    ],
+    "Nehrugram SO": [
+      "248014"
+    ],
+    "Sudhowala SO": [
+      "248015"
+    ],
+    "Jollygrant SO": [
+      "248016"
+    ],
+    "Mehunwala SO": [
+      "248018"
+    ],
+    "Balawala SO": [
+      "248019"
+    ],
+    "Ajabpur SO": [
+      "248121"
+    ],
+    "Barlowganj SO": [
+      "248122"
+    ],
+    "Chakrata SO": [
+      "248123"
+    ],
+    "Barontha SO": [
+      "248124"
+    ],
+    "Dakpathar SO": [
+      "248125"
+    ],
+    "Doiwala SO": [
+      "248140"
+    ],
+    "Herbertpur SO": [
+      "248142"
+    ],
+    "Bhogpur SO Dehradun": [
+      "248143"
+    ],
+    "Rani Pokhari SO": [
+      "248145"
+    ],
+    "Seemadwar SO": [
+      "248146"
+    ],
+    "Kalsi SO": [
+      "248158"
+    ],
+    "Kalsi Gate SO": [
+      "248159"
+    ],
+    "Koti SO": [
+      "248165"
+    ],
+    "Majra SO Dehradun": [
+      "248171"
+    ],
+    "Mussoorie SO": [
+      "248179"
+    ],
+    "IPE SO": [
+      "248195"
+    ],
+    "Sahiya SO": [
+      "248196"
+    ],
+    "Sahaspur SO Dehradun": [
+      "248197"
+    ],
+    "Vikasnagar SO Dehradun": [
+      "248198"
+    ],
+    "Tuini SO": [
+      "248199"
+    ],
+    "Rishikesh SO": [
+      "249201"
+    ],
+    "Virbhadra SO": [
+      "249202"
+    ],
+    "Pashulok SO": [
+      "249203"
+    ],
+    "SN Temple SO": [
+      "249204"
+    ],
+    "Raiwala SO": [
+      "249205"
+    ],
+    "Chiddarwala SO": [
+      "249206"
+    ],
+    "Haridwar SO": [
+      "249401"
+    ],
+    "Bahadrabad SO": [
+      "249402"
+    ],
+    "BHEL SO Haridwar": [
+      "249403"
+    ],
+    "Gurukul Kangri SO": [
+      "249404"
+    ],
+    "Patanjali Yogpeeth SO": [
+      "249405"
+    ],
+    "Jwalapur SO": [
+      "249407"
+    ],
+    "Kankhal SO": [
+      "249408"
+    ],
+    "Sadhubela Bhupatwala SO": [
+      "249410"
+    ],
+    "Shantikunj SO": [
+      "249411"
+    ],
+    "Navoday Nagar S.O": [
+      "249412"
+    ]
+  },
+  "Haridwar": {},
+  "Nainital": {
+    "Jaspur SO": [
+      "244712"
+    ],
+    "Kashipur Udham Singh Nagar SO": [
+      "244713"
+    ],
+    "Ramnagar SO Nainital": [
+      "244715"
+    ],
+    "RTC Hempur SO": [
+      "244716"
+    ],
+    "SM Nadehi SO": [
+      "244717"
+    ],
+    "SULTANPUR PATTI": [
+      "244720"
+    ],
+    "Khatima SO": [
+      "262308"
+    ],
+    "Tanakpur SO": [
+      "262309"
+    ],
+    "Chandani SO": [
+      "262310"
+    ],
+    "Nanakmatta SO": [
+      "262311"
+    ],
+    "Bazpur SO": [
+      "262401"
+    ],
+    "Lalkua SO": [
+      "262402"
+    ],
+    "Sittarganj SO": [
+      "262405"
+    ],
+    "Nainital HO": [
+      "263001"
+    ],
+    "Kathgodam SO": [
+      "263126"
+    ],
+    "Jeolikote SO": [
+      "263127"
+    ],
+    "Patwadanger SO": [
+      "263128"
+    ],
+    "Bhowali SO": [
+      "263132"
+    ],
+    "Betalghat SO": [
+      "263134"
+    ],
+    "Garampani SO": [
+      "263135"
+    ],
+    "Bhimtal SO": [
+      "263136"
+    ],
+    "Ramgarh SO Nainital": [
+      "263137"
+    ],
+    "MukteshwarKumaon SO": [
+      "263138"
+    ],
+    "Haldwani HO": [
+      "263139"
+    ],
+    "Kaladhungi SO": [
+      "263140"
+    ],
+    "Halduchaur S.O": [
+      "263142"
+    ],
+    "Pantnagar SO": [
+      "263145"
+    ],
+    "Kichha SO": [
+      "263148"
+    ],
+    "DF Nagla SO": [
+      "263149"
+    ],
+    "Kelakhera SO": [
+      "263150"
+    ],
+    "Shaktifarm SO": [
+      "263151"
+    ],
+    "Gadarpur SO": [
+      "263152"
+    ],
+    "Rudarpur SO": [
+      "263153"
+    ],
+    "Ghorakhal SO": [
+      "263156"
+    ],
+    "Okhalkanda SO": [
+      "263157"
+    ],
+    "Narain Swamy Ashram SO": [
+      "263158"
+    ],
+    "Kotabagh SO": [
+      "263159"
+    ],
+    "Dineshpur SO": [
+      "263160"
+    ]
+  },
+  "Pauri Garhwal": {},
+  "Pithoragarh": {
+    "Pithoragarh HO": [
+      "262501"
+    ],
+    "Degree College SO Pithoragarh": [
+      "262502"
+    ],
+    "Bharkatia SO": [
+      "262520"
+    ],
+    "Wadda SO": [
+      "262521"
+    ],
+    "Gangolihat SO": [
+      "262522"
+    ],
+    "Champawat SO": [
+      "262523"
+    ],
+    "Lohaghat SO": [
+      "262524"
+    ],
+    "Abbotmount SO": [
+      "262525"
+    ],
+    "Jhulaghat SO": [
+      "262526"
+    ],
+    "Barakote SO": [
+      "262527"
+    ],
+    "Khetikhan SO": [
+      "262528"
+    ],
+    "Gurna SO": [
+      "262529"
+    ],
+    "Aincholi SO": [
+      "262530"
+    ],
+    "Berinag SO": [
+      "262531"
+    ],
+    "Ganai Gangoli SO": [
+      "262532"
+    ],
+    "Pankhu SO": [
+      "262533"
+    ],
+    "Agar SO": [
+      "262534"
+    ],
+    "Jajardewal SO": [
+      "262540"
+    ],
+    "Kanalichina SO": [
+      "262541"
+    ],
+    "Dewalthal SO": [
+      "262542"
+    ],
+    "Askote SO": [
+      "262543"
+    ],
+    "Jauljibi SO": [
+      "262544"
+    ],
+    "Dharchula SO": [
+      "262545"
+    ],
+    "Garbyang SO": [
+      "262546"
+    ],
+    "Pangu SO": [
+      "262547"
+    ],
+    "Merthi SO": [
+      "262550"
+    ],
+    "Didihat SO": [
+      "262551"
+    ],
+    "Thal SO Pithoragarh": [
+      "262552"
+    ],
+    "Tejam SO": [
+      "262553"
+    ],
+    "Munsiari SO": [
+      "262554"
+    ],
+    "Bansbagar SO": [
+      "262555"
+    ],
+    "Pati SO": [
+      "262561"
+    ],
+    "Muwani SO": [
+      "262572"
+    ],
+    "Baluwakote SO": [
+      "262576"
+    ],
+    "Devidhura SO": [
+      "262580"
+    ]
+  },
+  "Rudraprayag": {},
+  "Tehri Garhwal": {},
+  "Udham Singh Nagar": {},
+  "Uttarkashi": {}
+}

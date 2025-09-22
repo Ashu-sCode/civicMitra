@@ -1,0 +1,3163 @@
+{
+  "Ariyalur": {},
+  "Chennai": {},
+  "Coimbatore": {
+    "Coimbatore HO": [
+      "641001"
+    ],
+    "Rathinasabapathy Puram HO": [
+      "641002"
+    ],
+    "Lawley Road SO": [
+      "641003"
+    ],
+    "Peelamedu SO": [
+      "641004"
+    ],
+    "Singanallur SO": [
+      "641005"
+    ],
+    "Ganapathy SO": [
+      "641006"
+    ],
+    "SBInstitute SO": [
+      "641007"
+    ],
+    "Kuniamuthur SO": [
+      "641008"
+    ],
+    "Ramnagar Coimbatore SO": [
+      "641009"
+    ],
+    "Perur SO Coimbatore": [
+      "641010"
+    ],
+    "Saibaba Mission SO": [
+      "641011"
+    ],
+    "Tatabad SO": [
+      "641012"
+    ],
+    "GovtCollege Of Technology SO": [
+      "641013"
+    ],
+    "Coimbatore Aerodrome SO": [
+      "641014"
+    ],
+    "Uppilipalayam SO": [
+      "641015"
+    ],
+    "Ondipudur SO": [
+      "641016"
+    ],
+    "Vadamadurai Kurudampalayam SO": [
+      "641017"
+    ],
+    "Coimbatore Central SO": [
+      "641018"
+    ],
+    "Coimbatore Press Colony SO": [
+      "641019"
+    ],
+    "Sri Ramakrishna Vidyalaya SO": [
+      "641020"
+    ],
+    "Coimbatore Industrial Estate SO": [
+      "641021"
+    ],
+    "NGGO Colony SO": [
+      "641022"
+    ],
+    "Podanur SO": [
+      "641023"
+    ],
+    "Sundarapuram SO": [
+      "641024"
+    ],
+    "Velandipalayam SO": [
+      "641025"
+    ],
+    "Komarapalayam Coimbatore SO": [
+      "641026"
+    ],
+    "Rathinapuri SO": [
+      "641027"
+    ],
+    "Sowripalayam SO": [
+      "641028"
+    ],
+    "Gnanambika Mills SO": [
+      "641029"
+    ],
+    "Kavundampalayam Colony SO": [
+      "641030"
+    ],
+    "Narasimhanaickenpalayam SO": [
+      "641031"
+    ],
+    "Othakkalmandapam SO": [
+      "641032"
+    ],
+    "Neelikonampalayam SO": [
+      "641033"
+    ],
+    "Tudiyalur SO": [
+      "641034"
+    ],
+    "Saravanampatti SO": [
+      "641035"
+    ],
+    "Nanjundapuram SO": [
+      "641036"
+    ],
+    "Pappanaickenpalayam SO": [
+      "641037"
+    ],
+    "Kuppakonanpudur SO": [
+      "641038"
+    ],
+    "Telungupalayam SO": [
+      "641039"
+    ],
+    "Pappanaickenpudur SO": [
+      "641041"
+    ],
+    "Kovaipudur SO": [
+      "641042"
+    ],
+    "Sahs College SO": [
+      "641043"
+    ],
+    "Siddhapudur SO": [
+      "641044"
+    ],
+    "Ramanathapuram Coimbatore SO": [
+      "641045"
+    ],
+    "Bharathiyar University SO": [
+      "641046"
+    ],
+    "Jothipuram SO": [
+      "641047"
+    ],
+    "Kalapatti SO": [
+      "641048"
+    ],
+    "Chinnavedampatti SO": [
+      "641049"
+    ],
+    "Malumichampatti SO": [
+      "641050"
+    ],
+    "Cheranmaanagar SO": [
+      "641051"
+    ],
+    "Sinniampalayam SO": [
+      "641062"
+    ],
+    "Alandurai SO": [
+      "641101"
+    ],
+    "Madukkarai SO": [
+      "641105"
+    ],
+    "Sarkarsamakulam SO": [
+      "641107"
+    ],
+    "Tadagam SO": [
+      "641108"
+    ],
+    "Thondamuthur SO": [
+      "641109"
+    ],
+    "Vaiyampalayam SO": [
+      "641110"
+    ],
+    "Vellalore SO": [
+      "641111"
+    ],
+    "Amritanagar SO": [
+      "641112"
+    ],
+    "Karunyanagar SO": [
+      "641114"
+    ],
+    "Chettipalayam SO": [
+      "641201"
+    ]
+  },
+  "Cuddalore": {
+    "Cuddalore H.O": [
+      "607001"
+    ],
+    "Tirupadiripuliyur S.O": [
+      "607002"
+    ],
+    "Cuddalore Old Town S.O": [
+      "607003"
+    ],
+    "Vandipalayam S.O": [
+      "607004"
+    ],
+    "Sipcot Cuddalore S.O": [
+      "607005"
+    ],
+    "Kondur S.O": [
+      "607006"
+    ],
+    "Anathur S.O": [
+      "607101"
+    ],
+    "Chinnapanaickenpalayam S.O": [
+      "607102"
+    ],
+    "Kadambuliyur S.O": [
+      "607103"
+    ],
+    "Melpattambakkam S.O": [
+      "607104"
+    ],
+    "Nellikkuppam S.O": [
+      "607105"
+    ],
+    "Panruti S.O": [
+      "607106"
+    ],
+    "Puthupet (CDL) S.O": [
+      "607108"
+    ],
+    "Varakalpattu S.O": [
+      "607109"
+    ],
+    "Kilkavarappattu S.O": [
+      "607112"
+    ],
+    "Tiruthuraiyur S.O": [
+      "607205"
+    ],
+    "Kullanchavadi S.O": [
+      "607301"
+    ],
+    "Kurinjipadi S.O": [
+      "607302"
+    ],
+    "Vadalur S.O": [
+      "607303"
+    ],
+    "Gandhi Nagar S.O (Cuddalore)": [
+      "607308"
+    ],
+    "Tiruvendhipuram S.O": [
+      "607401"
+    ],
+    "Neyveli 1 S.O": [
+      "607801"
+    ],
+    "Neyveli 2 S.O": [
+      "607802"
+    ],
+    "Neyveli 3 S.O": [
+      "607803"
+    ],
+    "Perperiyankuppam S.O": [
+      "607805"
+    ],
+    "Block 29, Neyveli S.O": [
+      "607807"
+    ],
+    "Chidambaram H.O": [
+      "608001"
+    ],
+    "Annamalainagar S.O": [
+      "608002"
+    ],
+    "Killai S.O": [
+      "608102"
+    ],
+    "Orathur S.O": [
+      "608201"
+    ],
+    "Kattumannarkoil S.O": [
+      "608301"
+    ],
+    "Komaratchi S.O": [
+      "608302"
+    ],
+    "Lalpet S.O": [
+      "608303"
+    ],
+    "Reddiyur S.O": [
+      "608304"
+    ],
+    "T.Nedunjeri S.O": [
+      "608305"
+    ],
+    "Ayangudi S.O": [
+      "608306"
+    ],
+    "Vallampadugai S.O": [
+      "608401"
+    ],
+    "B.Mutlur S.O": [
+      "608501"
+    ],
+    "Parangipettai S.O": [
+      "608502"
+    ],
+    "Bhuvanagiri S.O": [
+      "608601"
+    ],
+    "Keerapalayam S.O": [
+      "608602"
+    ],
+    "Palayamkottai(CDL) S.O": [
+      "608701"
+    ],
+    "Sethiathope S.O": [
+      "608702"
+    ],
+    "Srimushnam S.O": [
+      "608703"
+    ],
+    "Pinnalur S.O": [
+      "608704"
+    ],
+    "Alapakkam S.O": [
+      "608801"
+    ]
+  },
+  "Dharmapuri": {
+    "Barur S.O": [
+      "635201"
+    ],
+    "Kambainallore S.O": [
+      "635202"
+    ],
+    "Periyanahalli S.O": [
+      "635205"
+    ],
+    "Bommidi S.O": [
+      "635301"
+    ],
+    "Buddireddipatti S.O": [
+      "635302"
+    ],
+    "Kadathur S.O": [
+      "635303"
+    ],
+    "Morappur S.O": [
+      "635305"
+    ],
+    "Thoppur S.O": [
+      "636352"
+    ],
+    "Dharmapuri H.O": [
+      "636701"
+    ],
+    "Annasagaram S.O": [
+      "636704"
+    ],
+    "Dharmapuri Collectorate S.O": [
+      "636705"
+    ],
+    "Indur S.O": [
+      "636803"
+    ],
+    "Laligam S.O": [
+      "636804"
+    ],
+    "Mallupatti S.O": [
+      "636805"
+    ],
+    "Marandahalli S.O": [
+      "636806"
+    ],
+    "Nallampalli S.O": [
+      "636807"
+    ],
+    "Palacode S.O": [
+      "636808"
+    ],
+    "Paupparapatti S.O": [
+      "636809"
+    ],
+    "Pennagaram S.O": [
+      "636810"
+    ],
+    "Perumbalai S.O": [
+      "636811"
+    ],
+    "Biliyanur Agraharam S.O": [
+      "636813"
+    ],
+    "Eachambadi S.O": [
+      "636902"
+    ],
+    "Harur S.O": [
+      "636903"
+    ],
+    "Menisi S.O": [
+      "636904"
+    ],
+    "Pappireddipatti S.O": [
+      "636905"
+    ],
+    "Tirtamalai S.O": [
+      "636906"
+    ],
+    "Naripalli SO": [
+      "636907"
+    ]
+  },
+  "Dindigul": {
+    "Dindigul HO": [
+      "624001"
+    ],
+    "Begampur SO Dindigul": [
+      "624002"
+    ],
+    "Nagalnagar SO": [
+      "624003"
+    ],
+    "Dindigul Collectorate SO": [
+      "624004"
+    ],
+    "Balakrishnapurampudur SO": [
+      "624005"
+    ],
+    "Kodaikanal SO": [
+      "624101"
+    ],
+    "Kodaikanal Observatory SO": [
+      "624103"
+    ],
+    "Ammayanaickanur SO": [
+      "624201"
+    ],
+    "Batlagundu SO": [
+      "624202"
+    ],
+    "Iyyampalayam SO": [
+      "624204"
+    ],
+    "Kodairoad RS SO": [
+      "624206"
+    ],
+    "Nilakottai HO": [
+      "624208"
+    ],
+    "Pannaikadu SO": [
+      "624210"
+    ],
+    "Pattiveeranpatti SO": [
+      "624211"
+    ],
+    "Perumbarai SO": [
+      "624212"
+    ],
+    "Silukkuvarpatti SO": [
+      "624215"
+    ],
+    "Tandigudi SO": [
+      "624216"
+    ],
+    "Vilampatti SO": [
+      "624219"
+    ],
+    "Viruveedu SO": [
+      "624220"
+    ],
+    "Chinnalapatti SO": [
+      "624301"
+    ],
+    "Gandhigram SO Dindigul": [
+      "624302"
+    ],
+    "NPanjampatti SO": [
+      "624303"
+    ],
+    "Sanarpatti SO": [
+      "624304"
+    ],
+    "Siluvathur SO": [
+      "624306"
+    ],
+    "Vellodu SO": [
+      "624307"
+    ],
+    "Vembarpatti SO": [
+      "624308"
+    ],
+    "Natham SO": [
+      "624401"
+    ],
+    "Samudrapatti SO": [
+      "624402"
+    ],
+    "Sendurai SO Dindigul": [
+      "624403"
+    ],
+    "Palani HO": [
+      "624601"
+    ],
+    "Balasamudram SO Dindigul": [
+      "624610"
+    ],
+    "Ambilikai SO": [
+      "624612"
+    ],
+    "Ayakudi SO": [
+      "624613"
+    ],
+    "Chatrapatti SO Dindigul": [
+      "624614"
+    ],
+    "Kalayamputhur SO": [
+      "624615"
+    ],
+    "Kallimandayam SO": [
+      "624616"
+    ],
+    "KeeranurMA SO": [
+      "624617"
+    ],
+    "Narikalpatti SO": [
+      "624618"
+    ],
+    "Oddanchatram SO": [
+      "624619"
+    ],
+    "Palayam SO": [
+      "624620"
+    ],
+    "Pappampatti SO": [
+      "624621"
+    ],
+    "Reddiarchatram SO": [
+      "624622"
+    ],
+    "Attur SO": [
+      "624701"
+    ],
+    "Eriyodu SO": [
+      "624702"
+    ],
+    "Guziliamparai SO": [
+      "624703"
+    ],
+    "Idayakottai SO": [
+      "624704"
+    ],
+    "Kannivadi SO": [
+      "624705"
+    ],
+    "Kovilur SO": [
+      "624706"
+    ],
+    "Sembatti SO": [
+      "624707"
+    ],
+    "Sithayankottai SO": [
+      "624708"
+    ],
+    "Tadicombu SO": [
+      "624709"
+    ],
+    "Vedasandur SO": [
+      "624710"
+    ],
+    "Kasipalayam SO Dindigul": [
+      "624711"
+    ],
+    "Markkampatti SO": [
+      "624712"
+    ],
+    "Ayyalur SO": [
+      "624801"
+    ],
+    "Vadamadurai SO": [
+      "624802"
+    ]
+  },
+  "Erode": {
+    "Erode HO": [
+      "638001"
+    ],
+    "Erode Railway Colony SO": [
+      "638002"
+    ],
+    "Karungalpalayam SO": [
+      "638003"
+    ],
+    "Veerappanchatram SO": [
+      "638004"
+    ],
+    "Peria Agraharam SO": [
+      "638005"
+    ],
+    "Pallipalayam SO": [
+      "638006"
+    ],
+    "Cauvery Railway Station SO": [
+      "638007"
+    ],
+    "Surampatti SO": [
+      "638009"
+    ],
+    "SPB Colony SO": [
+      "638010"
+    ],
+    "Erode Collectorate SO": [
+      "638011"
+    ],
+    "Thindal SO": [
+      "638012"
+    ],
+    "Chennimalai SO": [
+      "638051"
+    ],
+    "Perundurai SO": [
+      "638052"
+    ],
+    "Perundurai Sanitorium SO": [
+      "638053"
+    ],
+    "Siruvalur SO": [
+      "638054"
+    ],
+    "Tingalur SO": [
+      "638055"
+    ],
+    "Vijayamangalam SO": [
+      "638056"
+    ],
+    "Tudupathi SO": [
+      "638057"
+    ],
+    "Thoppupalayam SO": [
+      "638060"
+    ],
+    "Arachalur SO": [
+      "638101"
+    ],
+    "Chittode SO": [
+      "638102"
+    ],
+    "Kunnathur SO Erode": [
+      "638103"
+    ],
+    "Modakurichi SO": [
+      "638104"
+    ],
+    "Nasiyanur SO": [
+      "638107"
+    ],
+    "Sivagiri SO Erode": [
+      "638109"
+    ],
+    "Getticheyur SO": [
+      "638110"
+    ],
+    "Vadamugam Vellode SO": [
+      "638112"
+    ],
+    "Avalpundurai SO": [
+      "638115"
+    ],
+    "Kanjikovil SO": [
+      "638116"
+    ],
+    "Kodumudi SO": [
+      "638151"
+    ],
+    "Unjalur SO": [
+      "638152"
+    ],
+    "Ganapathipalayam SO": [
+      "638153"
+    ],
+    "Pasur SO": [
+      "638154"
+    ],
+    "Bhavani HO": [
+      "638301"
+    ],
+    "Ammapettai SO": [
+      "638311"
+    ],
+    "Jambai SO": [
+      "638312"
+    ],
+    "Kugalur SO": [
+      "638313"
+    ],
+    "Olagadam SO": [
+      "638314"
+    ],
+    "Sakthinagar SO": [
+      "638315"
+    ],
+    "Vasavi College SO": [
+      "638316"
+    ],
+    "Gobichettipalayam HO": [
+      "638452"
+    ],
+    "Karattadipalayam SO": [
+      "638453"
+    ],
+    "Kasipalayam SO Erode": [
+      "638454"
+    ],
+    "Kavindapadi SO": [
+      "638455"
+    ],
+    "Kolappalur SO Erode": [
+      "638456"
+    ],
+    "Kurumandur SO": [
+      "638457"
+    ],
+    "Nambiyur SO": [
+      "638458"
+    ],
+    "Vemandampalayam SO": [
+      "638462"
+    ],
+    "Gobichettipalayam South SO": [
+      "638476"
+    ],
+    "Anthiyur SO": [
+      "638501"
+    ],
+    "Athani SO Erode": [
+      "638502"
+    ],
+    "Dasappagoundenpudur SO": [
+      "638503"
+    ],
+    "Guruvareddiyur SO": [
+      "638504"
+    ],
+    "Kallipatti SO": [
+      "638505"
+    ],
+    "Thuckanaickenpalayam SO": [
+      "638506"
+    ],
+    "Uttukuli SO": [
+      "638751"
+    ],
+    "Uttukuli Rs SO": [
+      "638752"
+    ]
+  },
+  "Kanchipuram": {
+    "Periapalayam S.O": [
+      "601102"
+    ],
+    "Vengal S.O": [
+      "601103"
+    ],
+    "Tiruvallur H.O": [
+      "602001"
+    ],
+    "Manavalanagar S.O": [
+      "602002"
+    ],
+    "Kakalur Ind Estate S.O": [
+      "602003"
+    ],
+    "Ikkadu S.O": [
+      "602021"
+    ],
+    "Poondi S.O": [
+      "602023"
+    ],
+    "Tiruninravur Rs S.O": [
+      "602024"
+    ],
+    "Tirur Cpt S.O": [
+      "602025"
+    ],
+    "Uttukottai S.O": [
+      "602026"
+    ],
+    "Sriperumbudur S.O": [
+      "602105"
+    ],
+    "Sunguvarchatram S.O": [
+      "602106"
+    ],
+    "Pannur S.O (Kanchipuram)": [
+      "602108"
+    ],
+    "Irungattukottai S.O": [
+      "602117"
+    ],
+    "Oragadam SO": [
+      "602118"
+    ],
+    "Kaliyampoondi S.O": [
+      "603402"
+    ],
+    "Manampathi S.O": [
+      "603403"
+    ],
+    "Uttiramerur S.O": [
+      "603406"
+    ],
+    "Arungolam S.O": [
+      "631201"
+    ],
+    "Athimanjeripeta S.O": [
+      "631202"
+    ],
+    "Kadambathur S.O": [
+      "631203"
+    ],
+    "Kanakammachatram S.O": [
+      "631204"
+    ],
+    "Kg Kandigai S.O": [
+      "631205"
+    ],
+    "Madduru S.O": [
+      "631206"
+    ],
+    "Pallipat S.O": [
+      "631207"
+    ],
+    "Podaturpeta S.O": [
+      "631208"
+    ],
+    "Tiruttani S.O": [
+      "631209"
+    ],
+    "Tiruvelangadu S.O": [
+      "631210"
+    ],
+    "Saraswathinagar S.O": [
+      "631211"
+    ],
+    "Poonimangadu S.O": [
+      "631212"
+    ],
+    "Ponpadi Rs S.O": [
+      "631213"
+    ],
+    "Ammavarikuppam S.O": [
+      "631301"
+    ],
+    "Erumbi S.O": [
+      "631302"
+    ],
+    "Ramakrishnarajupeta S.O": [
+      "631303"
+    ],
+    "Vanganur S.O": [
+      "631304"
+    ],
+    "Perambakkam S.O": [
+      "631402"
+    ],
+    "Kanchipuram H.O": [
+      "631501"
+    ],
+    "Big Kanchipuram S.O": [
+      "631502"
+    ],
+    "Balchettychatram S.O": [
+      "631551"
+    ],
+    "Karaipettai S.O": [
+      "631552"
+    ],
+    "Edayarpakkam S.O": [
+      "631553"
+    ],
+    "Enathur S.O": [
+      "631561"
+    ],
+    "Ayyampettai S.O": [
+      "631601"
+    ],
+    "Magaral S.O": [
+      "631603"
+    ],
+    "Thenneri S.O": [
+      "631604"
+    ],
+    "Walajabad S.O": [
+      "631605"
+    ],
+    "Palayaseevaram S.O": [
+      "631606"
+    ]
+  },
+  "Kanyakumari": {},
+  "Karur": {
+    "Chinthamanipatti S.O": [
+      "621301"
+    ],
+    "Elangakurichi S.O": [
+      "621302"
+    ],
+    "Kovilpatti S.O": [
+      "621305"
+    ],
+    "Manaparai S.O": [
+      "621306"
+    ],
+    "Manjampatti S.O": [
+      "621307"
+    ],
+    "Palakurichi S.O": [
+      "621308"
+    ],
+    "Puthanatham S.O": [
+      "621310"
+    ],
+    "Tharagampatti S.O": [
+      "621311"
+    ],
+    "Thiagesaralai S.O": [
+      "621312"
+    ],
+    "Thogaimalai S.O": [
+      "621313"
+    ],
+    "Thuvarankurichi S.O": [
+      "621314"
+    ],
+    "Vaiyampatti S.O": [
+      "621315"
+    ],
+    "Karur H.O": [
+      "639001"
+    ],
+    "Sengunthapuram S.O": [
+      "639002"
+    ],
+    "Tirumanilaiyur S.O": [
+      "639003"
+    ],
+    "Pasupathipalayam S.O": [
+      "639004"
+    ],
+    "Thanthonimalai S.O": [
+      "639005"
+    ],
+    "Vengamedu S.O": [
+      "639006"
+    ],
+    "Karur Collectorate S.O": [
+      "639007"
+    ],
+    "Andankoil S.O": [
+      "639008"
+    ],
+    "Krishnarayapuram S.O": [
+      "639102"
+    ],
+    "Kulittalai H.O": [
+      "639104"
+    ],
+    "Lalapet S.O": [
+      "639105"
+    ],
+    "Marudur S.O": [
+      "639107"
+    ],
+    "Mayanur S.O": [
+      "639108"
+    ],
+    "Moolapatti S.O": [
+      "639109"
+    ],
+    "Nungavaram S.O": [
+      "639110"
+    ],
+    "Paramathi (Karur) S.O": [
+      "639111"
+    ],
+    "Pugalur Sugar Factory S.O": [
+      "639113"
+    ],
+    "Puliyur Cement Factory S.O": [
+      "639114"
+    ],
+    "Vangal S.O": [
+      "639116"
+    ],
+    "Velayuthampalayam S.O": [
+      "639117"
+    ],
+    "Velliyanai S.O": [
+      "639118"
+    ],
+    "Panjapatti S.O": [
+      "639119"
+    ],
+    "Vaiganallur S.O": [
+      "639120"
+    ],
+    "Kagtithapuram S.O": [
+      "639136"
+    ],
+    "Aravakurichi S.O": [
+      "639201"
+    ],
+    "Chinnadharapuram S.O": [
+      "639202"
+    ],
+    "Isanatham S.O": [
+      "639203"
+    ],
+    "Pallapatti S.O (Karur)": [
+      "639205"
+    ],
+    "Tennilai S.O": [
+      "639206"
+    ],
+    "Pallapatti Bazaar S.O": [
+      "639207"
+    ]
+  },
+  "Krishnagiri": {
+    "Krishnagiri H.O": [
+      "635001"
+    ],
+    "Krishnagiri Indl. Estate S.O": [
+      "635002"
+    ],
+    "Krishnagiri Project S.O": [
+      "635101"
+    ],
+    "Anchetty S.O": [
+      "635102"
+    ],
+    "Bagalur S.O (Krishnagiri)": [
+      "635103"
+    ],
+    "Barugur S.O": [
+      "635104"
+    ],
+    "Berigai S.O": [
+      "635105"
+    ],
+    "Chaparthi S.O": [
+      "635106"
+    ],
+    "Denkanikotta S.O": [
+      "635107"
+    ],
+    "Elathagiri S.O": [
+      "635108"
+    ],
+    "Hosur S.O (Dharmapuri)": [
+      "635109"
+    ],
+    "Hosur Cattle Farm S.O": [
+      "635110"
+    ],
+    "Karimangalam S.O": [
+      "635111"
+    ],
+    "Kaveripattinam S.O (Krishnagiri)": [
+      "635112"
+    ],
+    "Kelamangalam S.O": [
+      "635113"
+    ],
+    "Mathagondapalli S.O": [
+      "635114"
+    ],
+    "Ramapuram S.O (Dharmapuri)": [
+      "635115"
+    ],
+    "Royakottah S.O": [
+      "635116"
+    ],
+    "Shoolagiri S.O": [
+      "635117"
+    ],
+    "Thally S.O": [
+      "635118"
+    ],
+    "Uddanapalli S.O": [
+      "635119"
+    ],
+    "Varattanapalli S.O": [
+      "635120"
+    ],
+    "Veppanapalli S.O": [
+      "635121"
+    ],
+    "Alapatti S.O": [
+      "635122"
+    ],
+    "Pannandur S.O": [
+      "635123"
+    ],
+    "Belathur S.O": [
+      "635124"
+    ],
+    "Hosur Indl. Complex S.O": [
+      "635126"
+    ],
+    "Kumudepalli SO": [
+      "635130"
+    ],
+    "Mathur S.O (Dharmapuri)": [
+      "635203"
+    ],
+    "Nagarasampatti S.O": [
+      "635204"
+    ],
+    "Pochampalli S.O (Krishnagiri)": [
+      "635206"
+    ],
+    "Uttangarai S.O": [
+      "635207"
+    ],
+    "Kallavi S.O": [
+      "635304"
+    ],
+    "Samalpatti R.S S.O": [
+      "635306"
+    ],
+    "Singarapettai S.O": [
+      "635307"
+    ]
+  },
+  "Madurai": {
+    "Madurai HO": [
+      "625001"
+    ],
+    "Tallakulam HO": [
+      "625002"
+    ],
+    "Palanganatham SO": [
+      "625003"
+    ],
+    "Pasumalai SO": [
+      "625004"
+    ],
+    "Thiruparankundram SO": [
+      "625005"
+    ],
+    "Tirunagar SO": [
+      "625006"
+    ],
+    "KPudur SO": [
+      "625007"
+    ],
+    "Kappalur IndlEstate SO": [
+      "625008"
+    ],
+    "Ma Munichalai Road SO": [
+      "625009"
+    ],
+    "Subramaniapuram SO Madurai": [
+      "625011"
+    ],
+    "Avaniapuram SO": [
+      "625012"
+    ],
+    "Ma Reserve Lines SO": [
+      "625014"
+    ],
+    "Thiagarajar Engg College SO": [
+      "625015"
+    ],
+    "Arasaradi HO": [
+      "625016"
+    ],
+    "Anaiyur SO": [
+      "625017"
+    ],
+    "Thathaneri SO": [
+      "625018"
+    ],
+    "Nagamalai SO": [
+      "625019"
+    ],
+    "Gandhi Nagar MA SO": [
+      "625020"
+    ],
+    "Palkalai Nagar SO": [
+      "625021"
+    ],
+    "Postal Training Centre SO": [
+      "625022"
+    ],
+    "Madras High Court Madurai Bench SO": [
+      "625023"
+    ],
+    "Karungalakudi SO": [
+      "625101"
+    ],
+    "Kilavalavu SO": [
+      "625102"
+    ],
+    "Kottampatti SO": [
+      "625103"
+    ],
+    "Madurai Agricultural College SO": [
+      "625104"
+    ],
+    "Melavlavu SO": [
+      "625105"
+    ],
+    "Melur SO Madurai": [
+      "625106"
+    ],
+    "Othakadai SO": [
+      "625107"
+    ],
+    "Thumbaipatti SO": [
+      "625108"
+    ],
+    "Vellalur SO": [
+      "625109"
+    ],
+    "Tiruvadur SO": [
+      "625110"
+    ],
+    "Therkutheru SO": [
+      "625122"
+    ],
+    "Silaiman SO": [
+      "625201"
+    ],
+    "Karupatti SO": [
+      "625205"
+    ],
+    "Mullipallam SO": [
+      "625207"
+    ],
+    "Sholavandan SO": [
+      "625214"
+    ],
+    "Vadipatti SO": [
+      "625218"
+    ],
+    "Thanichiyam SO": [
+      "625221"
+    ],
+    "Tiruvedagam SO": [
+      "625234"
+    ],
+    "Alagarkoil SO": [
+      "625301"
+    ],
+    "Samayanallur SO": [
+      "625402"
+    ],
+    "Alanganallur SO": [
+      "625501"
+    ],
+    "Palamedu SO": [
+      "625503"
+    ],
+    "Checkanurani SO": [
+      "625514"
+    ],
+    "Kalligudi SO": [
+      "625701"
+    ],
+    "TKallupatti SO": [
+      "625702"
+    ],
+    "Peraiyur SO Madurai": [
+      "625703"
+    ],
+    "TPudupatti SO": [
+      "625704"
+    ],
+    "Tirumangalam SO": [
+      "625706"
+    ],
+    "Villur SO": [
+      "625707"
+    ],
+    "TKunnathur SO": [
+      "625708"
+    ]
+  },
+  "Nagapattinam": {
+    "Mudikondan S.O": [
+      "609502"
+    ],
+    "Sannanallur S.O": [
+      "609504"
+    ],
+    "Ambagarathur S.O": [
+      "609601"
+    ],
+    "Karaikal S.O": [
+      "609602"
+    ],
+    "Nedungadu S.O": [
+      "609603"
+    ],
+    "Neravy S.O": [
+      "609604"
+    ],
+    "Thalatheru S.O": [
+      "609605"
+    ],
+    "Tirumalairayanpattinam S.O": [
+      "609606"
+    ],
+    "Tirunallar S.O": [
+      "609607"
+    ],
+    "Kollapuram S.O": [
+      "609608"
+    ],
+    "Kottuchery S.O": [
+      "609609"
+    ],
+    "Enangudi S.O": [
+      "609701"
+    ],
+    "Tirumarugal S.O": [
+      "609702"
+    ],
+    "Tittachery S.O": [
+      "609703"
+    ],
+    "Tirukannapuram S.O": [
+      "609704"
+    ],
+    "Tiruvarur H.O": [
+      "610001"
+    ],
+    "Kidarankondan S.O": [
+      "610003"
+    ],
+    "Tiruvarur Collectorate S.O": [
+      "610004"
+    ],
+    "Tiruvarur Central University": [
+      "610005"
+    ],
+    "Kangalanchery S.O": [
+      "610101"
+    ],
+    "Kamalapuram S.O (Tiruvarur)": [
+      "610102"
+    ],
+    "Mangudi S.O": [
+      "610103"
+    ],
+    "Manakkal Ayyampet S.O": [
+      "610104"
+    ],
+    "Nannilam S.O": [
+      "610105"
+    ],
+    "Thappalampuliyur S.O": [
+      "610106"
+    ],
+    "Pulivalam S.O (Tiruvarur)": [
+      "610109"
+    ],
+    "Kachanam S.O": [
+      "610201"
+    ],
+    "Mavoor S.O (Tiruvarur)": [
+      "610202"
+    ],
+    "Ponnirai S.O": [
+      "610203"
+    ],
+    "Tirukuvalai S.O": [
+      "610204"
+    ],
+    "Tirunellikaval S.O": [
+      "610205"
+    ],
+    "Valivalam S.O": [
+      "610207"
+    ],
+    "Nagapattinam H.O": [
+      "611001"
+    ],
+    "Nagore S.O": [
+      "611002"
+    ],
+    "Nagapattinam Collectorate S.O": [
+      "611003"
+    ],
+    "Adiakkamangalam S.O": [
+      "611101"
+    ],
+    "Andanapettai S.O": [
+      "611102"
+    ],
+    "Kilaiyur (Tiruvarur) S.O": [
+      "611103"
+    ],
+    "Kilvelur S.O": [
+      "611104"
+    ],
+    "Kuthur S.O": [
+      "611105"
+    ],
+    "Manjakollai S.O": [
+      "611106"
+    ],
+    "Sikkal S.O (Nagapattinam)": [
+      "611108"
+    ],
+    "Thevur S.O (Nagapattinam)": [
+      "611109"
+    ],
+    "Tirupundi S.O": [
+      "611110"
+    ],
+    "Vailankanni S.O": [
+      "611111"
+    ],
+    "Vettaikaraniruppu S.O": [
+      "611112"
+    ],
+    "Ammayappan S.O": [
+      "613701"
+    ],
+    "Kulikarai S.O": [
+      "613704"
+    ]
+  },
+  "Namakkal": {
+    "Namakkal H.O": [
+      "637001"
+    ],
+    "Ganesapuram S.O": [
+      "637002"
+    ],
+    "Nallipalayam S.O": [
+      "637003"
+    ],
+    "Erampatti S.O": [
+      "637013"
+    ],
+    "Karaikurichi S.O (Namakkal)": [
+      "637014"
+    ],
+    "Mohanur S.O": [
+      "637015"
+    ],
+    "Palapatti S.O": [
+      "637017"
+    ],
+    "Puduchatram S.O": [
+      "637018"
+    ],
+    "Sellappampatti S.O": [
+      "637019"
+    ],
+    "Valayapatti S.O (Namakkal)": [
+      "637020"
+    ],
+    "Varagur S.O": [
+      "637021"
+    ],
+    "Idappadi S.O": [
+      "637101"
+    ],
+    "Konganapuram S.O": [
+      "637102"
+    ],
+    "Mc Donalds Choultry S.O": [
+      "637103"
+    ],
+    "Thevur S.O (Namakkal)": [
+      "637104"
+    ],
+    "Vellandivalasai S.O": [
+      "637105"
+    ],
+    "Poolampatti S.O": [
+      "637107"
+    ],
+    "Chittalandur S.O": [
+      "637201"
+    ],
+    "Elachipalayam S.O": [
+      "637202"
+    ],
+    "Kandampalayam S.O": [
+      "637203"
+    ],
+    "Kapilamalai S.O": [
+      "637204"
+    ],
+    "Kumaramangalam S.O": [
+      "637205"
+    ],
+    "Nadandai S.O": [
+      "637206"
+    ],
+    "Paramathi S.O": [
+      "637207"
+    ],
+    "Paundamangalam S.O": [
+      "637208"
+    ],
+    "Seetharamapalayam S.O": [
+      "637209"
+    ],
+    "Solasiramani S.O": [
+      "637210"
+    ],
+    "Tiruchengodu H.O": [
+      "637211"
+    ],
+    "Velagoundampatti S.O": [
+      "637212"
+    ],
+    "Jedarpalayam S.O": [
+      "637213"
+    ],
+    "Koottapalli S.O": [
+      "637214"
+    ],
+    "Kuchipalayam S.O": [
+      "637215"
+    ],
+    "PERIYAMANALI SO": [
+      "637216"
+    ],
+    "Sankaridrug S.O": [
+      "637301"
+    ],
+    "Sankaridrug.R.S S.O": [
+      "637302"
+    ],
+    "Sankari West S.O": [
+      "637303"
+    ],
+    "Thannirpandalpalayam S.O": [
+      "637304"
+    ],
+    "Belukurichi S.O": [
+      "637402"
+    ],
+    "Kalappanaickenpatti S.O": [
+      "637404"
+    ],
+    "Muthugapatti S.O": [
+      "637405"
+    ],
+    "Sendamangalam S.O": [
+      "637409"
+    ],
+    "Vaiyappamalai S.O": [
+      "637410"
+    ],
+    "Semmedu S.O": [
+      "637411"
+    ],
+    "Solakkadu S.O": [
+      "637415"
+    ],
+    "Mallasamudram S.O": [
+      "637503"
+    ],
+    "Pallipalayamagraharam S.O": [
+      "638008"
+    ],
+    "Pothanur S.O": [
+      "638181"
+    ],
+    "Velur (Namakkal) S.O": [
+      "638182"
+    ],
+    "Komarapalayam S.O": [
+      "638183"
+    ]
+  },
+  "Nilgiris": {
+    "Udagamandalam H.O": [
+      "643001"
+    ],
+    "Stone House Hill S.O": [
+      "643002"
+    ],
+    "Lovedale S.O": [
+      "643003"
+    ],
+    "Fernhill S.O": [
+      "643004"
+    ],
+    "Indunagar S.O": [
+      "643005"
+    ],
+    "Finger Post S.O": [
+      "643006"
+    ],
+    "Dr. Basuviah Nagar S.O": [
+      "643007"
+    ],
+    "Coonoor H.O": [
+      "643101"
+    ],
+    "Coonoor RS S.O": [
+      "643102"
+    ],
+    "Pasteur Institute S.O": [
+      "643103"
+    ],
+    "Ottupattarai S.O": [
+      "643105"
+    ],
+    "Aravenu S.O": [
+      "643201"
+    ],
+    "Aruvankadu S.O": [
+      "643202"
+    ],
+    "Balacola S.O": [
+      "643203"
+    ],
+    "Chamraj Estate S.O": [
+      "643204"
+    ],
+    "Cherambadi S.O": [
+      "643205"
+    ],
+    "Denaducombai S.O": [
+      "643206"
+    ],
+    "Devarshola S.O": [
+      "643207"
+    ],
+    "Emerald S.O": [
+      "643209"
+    ],
+    "Gudalur Nilgiris S.O": [
+      "643211"
+    ],
+    "Gudalur Bazaar S.O": [
+      "643212"
+    ],
+    "Katary S.O": [
+      "643213"
+    ],
+    "Kattabettu S.O": [
+      "643214"
+    ],
+    "Ketti S.O": [
+      "643215"
+    ],
+    "Kil Kotagiri S.O": [
+      "643216"
+    ],
+    "Kotagiri S.O": [
+      "643217"
+    ],
+    "Kullakamby S.O": [
+      "643218"
+    ],
+    "Kundah Bridge S.O": [
+      "643219"
+    ],
+    "Mangorange S.O": [
+      "643220"
+    ],
+    "Melur Nilgiris S.O": [
+      "643221"
+    ],
+    "Masinagudi S.O": [
+      "643223"
+    ],
+    "Naduvattam S.O": [
+      "643224"
+    ],
+    "Nellakotta S.O": [
+      "643225"
+    ],
+    "Newhope S.O": [
+      "643226"
+    ],
+    "Wellington S.O": [
+      "643231"
+    ],
+    "Pandalur S.O": [
+      "643233"
+    ],
+    "Kotada Estate S.O": [
+      "643236"
+    ],
+    "Sandynallah S.O": [
+      "643237"
+    ],
+    "Nonsuch S.O": [
+      "643238"
+    ],
+    "Konnachal S.O": [
+      "643239"
+    ],
+    "Bitherkad S.O": [
+      "643240"
+    ],
+    "Uppatti S.O": [
+      "643241"
+    ],
+    "Tuttapallam S.O": [
+      "643242"
+    ],
+    "Yellanhalli S.O": [
+      "643243"
+    ],
+    "Kolapalli S.O": [
+      "643253"
+    ],
+    "Devala SO": [
+      "643270"
+    ]
+  },
+  "Perambalur": {},
+  "Pudukkottai": {
+    "Ghandarvakottai S.O": [
+      "613301"
+    ],
+    "Arantangi S.O": [
+      "614616"
+    ],
+    "Ammapattinam S.O": [
+      "614617"
+    ],
+    "Tirupperunthurai S.O": [
+      "614618"
+    ],
+    "Kottaipattinam S.O": [
+      "614619"
+    ],
+    "Manamelkudi S.O": [
+      "614620"
+    ],
+    "Mimisal S.O": [
+      "614621"
+    ],
+    "Silattur S.O": [
+      "614622"
+    ],
+    "Keeramangalam S.O": [
+      "614624"
+    ],
+    "Ponbethi S.O": [
+      "614629"
+    ],
+    "Attani S.O": [
+      "614630"
+    ],
+    "Arasarkulam S.O": [
+      "614801"
+    ],
+    "Subramaniapuram S.O (Pudukkottai)": [
+      "614805"
+    ],
+    "Viralimalai S.O": [
+      "621316"
+    ],
+    "Pudukkottai H.O": [
+      "622001"
+    ],
+    "Tirugokarnam S.O": [
+      "622002"
+    ],
+    "Rajagopalapuram S.O": [
+      "622003"
+    ],
+    "Pudukkottai Ind. Estate S.O": [
+      "622004"
+    ],
+    "Pudukkottai Collectorate S.O": [
+      "622005"
+    ],
+    "Annavasal S.O": [
+      "622101"
+    ],
+    "Illuppur S.O": [
+      "622102"
+    ],
+    "Muckanamalaipatti S.O": [
+      "622103"
+    ],
+    "Vayalogam S.O": [
+      "622104"
+    ],
+    "Arimalam S.O": [
+      "622201"
+    ],
+    "Kilanilai S.O": [
+      "622202"
+    ],
+    "Perungalur S.O": [
+      "622203"
+    ],
+    "Yembal S.O": [
+      "622204"
+    ],
+    "Kilanilaikottai S.O": [
+      "622209"
+    ],
+    "Alangudi S.O": [
+      "622301"
+    ],
+    "Karambakudi S.O": [
+      "622302"
+    ],
+    "Tiruvarankulam S.O": [
+      "622303"
+    ],
+    "Vadakadu S.O": [
+      "622304"
+    ],
+    "Koppanapatti S.O": [
+      "622401"
+    ],
+    "Kulipirai S.O": [
+      "622402"
+    ],
+    "Melasivapuri S.O": [
+      "622403"
+    ],
+    "Nachandupatti S.O": [
+      "622404"
+    ],
+    "Ponnamaravathy S.O": [
+      "622407"
+    ],
+    "Rangiem S.O": [
+      "622409"
+    ],
+    "Valayapatti S.O (Pudukkottai)": [
+      "622411"
+    ],
+    "Virachilai S.O": [
+      "622412"
+    ],
+    "Sivapuram S.O": [
+      "622422"
+    ],
+    "Cauvery Nagar S.O": [
+      "622501"
+    ],
+    "Keeranur S.O": [
+      "622502"
+    ],
+    "Konapet S.O": [
+      "622503"
+    ],
+    "Kulathur S.O (Pudukkottai)": [
+      "622504"
+    ],
+    "Ramachandrapuram S.O (Pudukkottai)": [
+      "622505"
+    ],
+    "Rayavaram S.O (Pudukkottai)": [
+      "622506"
+    ],
+    "Tirumayam S.O": [
+      "622507"
+    ],
+    "Mathur Ind. Estate S.O": [
+      "622515"
+    ]
+  },
+  "Ramanathapuram": {
+    "Perunali SO": [
+      "623115"
+    ],
+    "Sayalgudi SO": [
+      "623120"
+    ],
+    "Kannirajapuram SO": [
+      "623135"
+    ],
+    "Mangalakudi SO": [
+      "623308"
+    ],
+    "Vellayapuram SO": [
+      "623315"
+    ],
+    "Anandur SO": [
+      "623401"
+    ],
+    "Chinnakeeramangalam SO": [
+      "623402"
+    ],
+    "Nambuthalai SO": [
+      "623403"
+    ],
+    "Pandugudi SO": [
+      "623404"
+    ],
+    "Sundarapandiapattinam SO": [
+      "623406"
+    ],
+    "Tiruvadanai SO": [
+      "623407"
+    ],
+    "Tondi SO": [
+      "623409"
+    ],
+    "Ramanathapuram HO": [
+      "623501"
+    ],
+    "Achunthanvayal SO": [
+      "623502"
+    ],
+    "Ramanathapuram Collectorate SO": [
+      "623503"
+    ],
+    "Velipattanam SO": [
+      "623504"
+    ],
+    "Alagankulam SO": [
+      "623512"
+    ],
+    "Chitharkottai SO": [
+      "623513"
+    ],
+    "Devipattinam SO": [
+      "623514"
+    ],
+    "Ervadi SO": [
+      "623515"
+    ],
+    "Irumeni SO": [
+      "623516"
+    ],
+    "Kilakarai SO": [
+      "623517"
+    ],
+    "Mandapam SO": [
+      "623518"
+    ],
+    "Mandapam Camp SO": [
+      "623519"
+    ],
+    "Marine Fisheries SO": [
+      "623520"
+    ],
+    "Pamban SO": [
+      "623521"
+    ],
+    "Panaikulam SO": [
+      "623522"
+    ],
+    "Periyapattinam SO": [
+      "623523"
+    ],
+    "Pudumadam SO": [
+      "623524"
+    ],
+    "Rajasingamangalam SO": [
+      "623525"
+    ],
+    "Rameswaram SO": [
+      "623526"
+    ],
+    "Chathirakudi SO": [
+      "623527"
+    ],
+    "Sikkal SO Ramanathapuram": [
+      "623528"
+    ],
+    "Thangachimadam SO": [
+      "623529"
+    ],
+    "Toruvalur SO": [
+      "623530"
+    ],
+    "Tirupalaikudi SO": [
+      "623531"
+    ],
+    "Thiruppullani SO": [
+      "623532"
+    ],
+    "Uthirakosamangai SO": [
+      "623533"
+    ],
+    "Uchipuli SO": [
+      "623534"
+    ],
+    "Perungulam SO Ramanathapuram": [
+      "623536"
+    ],
+    "Pottagavayal SO": [
+      "623537"
+    ],
+    "Sanaveli SO": [
+      "623538"
+    ],
+    "Ervadi Dargha SO": [
+      "623566"
+    ],
+    "Abiramam SO": [
+      "623601"
+    ],
+    "Kamudi SO": [
+      "623603"
+    ],
+    "Kottaimedu SO": [
+      "623604"
+    ],
+    "Mandalamanickam SO": [
+      "623605"
+    ],
+    "Parthibanur SO": [
+      "623608"
+    ],
+    "Emaneswaram SO": [
+      "623701"
+    ],
+    "Kadaladi SO Ramanathapuram": [
+      "623703"
+    ],
+    "Mudukulathur SO": [
+      "623704"
+    ],
+    "Nainarkoil SO": [
+      "623705"
+    ],
+    "Pambur SO": [
+      "623706"
+    ],
+    "Paramakudi HO": [
+      "623707"
+    ],
+    "Peraiyur SO Ramanathapuram": [
+      "623708"
+    ],
+    "Teriruveli SO": [
+      "623711"
+    ],
+    "Tiruvarangam SO": [
+      "623712"
+    ],
+    "Sathaksalai SO": [
+      "623806"
+    ]
+  },
+  "Salem": {},
+  "Sivaganga": {
+    "Kandavarayanpatti SO": [
+      "630203"
+    ],
+    "Kandramanickam SO": [
+      "630204"
+    ],
+    "Tirukoshtiyur SO": [
+      "630210"
+    ],
+    "Tirupattur SO": [
+      "630211"
+    ],
+    "Kallal SO": [
+      "630305"
+    ],
+    "Sembanur SO": [
+      "630313"
+    ],
+    "Vethiyur SO": [
+      "630321"
+    ],
+    "Tiruvegampet SO": [
+      "630408"
+    ],
+    "Sarakeni SO": [
+      "630411"
+    ],
+    "Kalayarkoil SO": [
+      "630551"
+    ],
+    "Kilapungudi SO": [
+      "630552"
+    ],
+    "Madagupatti SO": [
+      "630553"
+    ],
+    "Mangalam SO Sivaganga": [
+      "630554"
+    ],
+    "Natarajapuram SO Sivaganga": [
+      "630555"
+    ],
+    "Nattarasankottai SO": [
+      "630556"
+    ],
+    "Okkur SO": [
+      "630557"
+    ],
+    "Paganeri SO": [
+      "630558"
+    ],
+    "Periakottai SO": [
+      "630559"
+    ],
+    "Sivaganga HO": [
+      "630561"
+    ],
+    "Sivaganga Collectorate SO": [
+      "630562"
+    ],
+    "Eriyur SO": [
+      "630566"
+    ],
+    "Idaikattur SO": [
+      "630602"
+    ],
+    "Manamadurai HO": [
+      "630606"
+    ],
+    "Rajagambiram SO": [
+      "630609"
+    ],
+    "Tiruppachetti SO": [
+      "630610"
+    ],
+    "Tiruppuvanam SO": [
+      "630611"
+    ],
+    "Pottapalayam SO": [
+      "630612"
+    ],
+    "Ilayangudi SO": [
+      "630702"
+    ],
+    "Pudur Ilayangudi SO": [
+      "630709"
+    ],
+    "Salaigramam SO": [
+      "630710"
+    ],
+    "Suranam SO": [
+      "630713"
+    ]
+  },
+  "Thanjavur": {
+    "Vadapathimangalam S.O": [
+      "610206"
+    ],
+    "Pullabudangudi S.O": [
+      "612301"
+    ],
+    "Avoor S.O": [
+      "612701"
+    ],
+    "Alangudi NID S.O": [
+      "612801"
+    ],
+    "Haridwaramangalam S.O": [
+      "612802"
+    ],
+    "Puvanur S.O": [
+      "612803"
+    ],
+    "Valangaman S.O": [
+      "612804"
+    ],
+    "Thanjavur H.O": [
+      "613001"
+    ],
+    "Karuntattankudi S.O": [
+      "613002"
+    ],
+    "Vennar Bank S.O": [
+      "613003"
+    ],
+    "Thanjavur Medical College S.O": [
+      "613004"
+    ],
+    "Raja Serfoji Govt College S.O": [
+      "613005"
+    ],
+    "Thanjavur Pandt Colony S.O": [
+      "613006"
+    ],
+    "Voc Nagar S.O": [
+      "613007"
+    ],
+    "Thanjavur North Gate S.O": [
+      "613008"
+    ],
+    "Thanjavur West S.O": [
+      "613009"
+    ],
+    "Tamil University S.O": [
+      "613010"
+    ],
+    "Nadukaveri S.O": [
+      "613101"
+    ],
+    "Thogur S.O": [
+      "613102"
+    ],
+    "Thiruppanthuruthi S.O": [
+      "613103"
+    ],
+    "Tirukattupalli S.O": [
+      "613104"
+    ],
+    "Poondi TPL S.O": [
+      "613105"
+    ],
+    "Kalyanapuram S.O": [
+      "613201"
+    ],
+    "Kandiyur S.O": [
+      "613202"
+    ],
+    "Thillaisthanam S.O": [
+      "613203"
+    ],
+    "Thiruvaiyaru S.O": [
+      "613204"
+    ],
+    "Vediapuram S.O": [
+      "613205"
+    ],
+    "Kurungulam Melpathi S.O": [
+      "613303"
+    ],
+    "Tirumalaisamudram East S.O": [
+      "613401"
+    ],
+    "Sengipatti S.O": [
+      "613402"
+    ],
+    "Vallam TJ S.O": [
+      "613403"
+    ],
+    "Mariammancoil S.O": [
+      "613501"
+    ],
+    "Pundi TJ S.O": [
+      "613502"
+    ],
+    "Sri Pushpam College S.O": [
+      "613503"
+    ],
+    "Saliamangalam S.O": [
+      "613504"
+    ],
+    "Alakkudi S.O": [
+      "613601"
+    ],
+    "Budalur S.O": [
+      "613602"
+    ],
+    "Mannargudi H.O": [
+      "614001"
+    ],
+    "Idangankottai Melaiyur S.O": [
+      "614013"
+    ],
+    "Pamani MNG S.O": [
+      "614014"
+    ],
+    "Paravakottai S.O": [
+      "614015"
+    ],
+    "Serangolam S.O": [
+      "614016"
+    ],
+    "Tirumakottai S.O": [
+      "614017"
+    ],
+    "Ullikottai S.O": [
+      "614018"
+    ],
+    "Vaduvur S.O": [
+      "614019"
+    ],
+    "Painganadu S.O": [
+      "614020"
+    ],
+    "Koothanallur S.O": [
+      "614101"
+    ],
+    "Lakshmangudi S.O": [
+      "614102"
+    ],
+    "Podakudi S.O": [
+      "614103"
+    ],
+    "Ayyampet S.O": [
+      "614201"
+    ],
+    "Ganapathi Agraharam S.O": [
+      "614202"
+    ],
+    "Kabistalam S.O": [
+      "614203"
+    ],
+    "Pandaravadai S.O": [
+      "614204"
+    ],
+    "Papanasam H.O": [
+      "614205"
+    ],
+    "Pasupathikoil S.O": [
+      "614206"
+    ],
+    "Rajaghiri S.O": [
+      "614207"
+    ],
+    "Sundaraperumalkoil S.O": [
+      "614208"
+    ],
+    "Valoothoor S.O": [
+      "614210"
+    ],
+    "Chakrapalli S.O": [
+      "614211"
+    ],
+    "Melattur S.O (Thanjavur)": [
+      "614301"
+    ],
+    "Tirukkarugavur S.O": [
+      "614302"
+    ],
+    "Vadakkumangudi S.O": [
+      "614303"
+    ],
+    "Ammapet S.O": [
+      "614401"
+    ],
+    "Kokkeri S.O": [
+      "614402"
+    ],
+    "Kovilvenni S.O": [
+      "614403"
+    ],
+    "Nidamangalam S.O": [
+      "614404"
+    ],
+    "Peruvazhandan S.O": [
+      "614705"
+    ],
+    "Kottur S.O (Tiruvarur)": [
+      "614708"
+    ],
+    "Naduvakalappal S.O": [
+      "614710"
+    ],
+    "Adichapuram S.O": [
+      "614717"
+    ]
+  },
+  "Theni": {
+    "Genguvarpatti S.O": [
+      "625203"
+    ],
+    "Aundipatti S.O": [
+      "625512"
+    ],
+    "Bodinayakanur H.O": [
+      "625513"
+    ],
+    "Chinnamanur S.O": [
+      "625515"
+    ],
+    "Cumbum S.O (Theni)": [
+      "625516"
+    ],
+    "Gandamanayakanur S.O": [
+      "625517"
+    ],
+    "Gudalur S.O": [
+      "625518"
+    ],
+    "Kamatchipuram S.O": [
+      "625520"
+    ],
+    "Kamayakoundanpatti S.O": [
+      "625521"
+    ],
+    "Kombai S.O": [
+      "625522"
+    ],
+    "Lakshmipuram S.O (Theni)": [
+      "625523"
+    ],
+    "Pannaipuram S.O": [
+      "625524"
+    ],
+    "Periyar Project S.O": [
+      "625525"
+    ],
+    "Royappanpatti S.O": [
+      "625526"
+    ],
+    "Sedapatti S.O": [
+      "625527"
+    ],
+    "Sillamarathupatti S.O": [
+      "625528"
+    ],
+    "Sindhupatti S.O": [
+      "625529"
+    ],
+    "Thevaram S.O": [
+      "625530"
+    ],
+    "Theni S.O": [
+      "625531"
+    ],
+    "Usilampatti S.O": [
+      "625532"
+    ],
+    "Uthamapalayam S.O": [
+      "625533"
+    ],
+    "Veerapandi S.O (Theni)": [
+      "625534"
+    ],
+    "Yelumalai S.O": [
+      "625535"
+    ],
+    "T.Subbulapuram S.O": [
+      "625536"
+    ],
+    "Uthappanayakanur S.O": [
+      "625537"
+    ],
+    "Odaipatti S.O": [
+      "625540"
+    ],
+    "Markayankottai SO": [
+      "625552"
+    ],
+    "C.Pudupatti S.O": [
+      "625556"
+    ],
+    "Varadharajnagar S.O": [
+      "625562"
+    ],
+    "Kadamalaikundu S.O": [
+      "625579"
+    ],
+    "Subburajnagar S.O": [
+      "625582"
+    ],
+    "Periyakulam H.O": [
+      "625601"
+    ],
+    "Devadanapatti S.O": [
+      "625602"
+    ],
+    "Vadugapatti S.O": [
+      "625603"
+    ],
+    "Periyakulam East S.O": [
+      "625604"
+    ],
+    "Tamarakulam S.O": [
+      "625605"
+    ],
+    "Saptur S.O": [
+      "625705"
+    ]
+  },
+  "Thoothukudi (Tuticorin)": {},
+  "Tiruchirappalli": {},
+  "Tirunelveli": {
+    "Tirunelveli HO": [
+      "627001"
+    ],
+    "Palayankottai HO": [
+      "627002"
+    ],
+    "Vannarpettai SO": [
+      "627003"
+    ],
+    "Tirunelveli Pettai SO": [
+      "627004"
+    ],
+    "Melapalayam SO Tirunelveli": [
+      "627005"
+    ],
+    "Tirunelveli Town SO": [
+      "627006"
+    ],
+    "Perumalpuram SO": [
+      "627007"
+    ],
+    "Gandhinagar SO Tirunelveli": [
+      "627008"
+    ],
+    "Tirunelveli Collectorate SO": [
+      "627009"
+    ],
+    "Industrial Colony Pettai SO": [
+      "627010"
+    ],
+    "Maharajangar SO": [
+      "627011"
+    ],
+    "Manonmaniam Sundaranar Univers SO": [
+      "627012"
+    ],
+    "Dalapathisamudram SO": [
+      "627101"
+    ],
+    "Dohnavur SO": [
+      "627102"
+    ],
+    "Eruvadi SO": [
+      "627103"
+    ],
+    "Idindakarai SO": [
+      "627104"
+    ],
+    "Kavalkinaru SO": [
+      "627105"
+    ],
+    "Kudankulam SO": [
+      "627106"
+    ],
+    "Mavadi SO": [
+      "627107"
+    ],
+    "Nanguneri SO": [
+      "627108"
+    ],
+    "Panagudi SO": [
+      "627109"
+    ],
+    "Parappadi SO": [
+      "627110"
+    ],
+    "Radhapuram SO": [
+      "627111"
+    ],
+    "Samugarengapuram SO": [
+      "627112"
+    ],
+    "Terkukallikulam SO": [
+      "627113"
+    ],
+    "Terkukarungulam SO": [
+      "627114"
+    ],
+    "Tirukurungudi SO": [
+      "627115"
+    ],
+    "Vadakangulam SO": [
+      "627116"
+    ],
+    "Vallioor SO": [
+      "627117"
+    ],
+    "Vijayanarayanam SO": [
+      "627118"
+    ],
+    "Vijayanarayanam Naval Base SO": [
+      "627119"
+    ],
+    "Anuvijay Township SO": [
+      "627120"
+    ],
+    "Kuttapuli SO": [
+      "627127"
+    ],
+    "Mahendragiri SO": [
+      "627133"
+    ],
+    "Maruthakulam SO": [
+      "627151"
+    ],
+    "Mundradaippu SO": [
+      "627152"
+    ],
+    "Manur SO": [
+      "627201"
+    ],
+    "Ukkirankottai SO": [
+      "627202"
+    ],
+    "Burkitmanagaram SO": [
+      "627351"
+    ],
+    "Gangaikondan SO": [
+      "627352"
+    ],
+    "Kizhanatham SO": [
+      "627353"
+    ],
+    "Mulaikaraipatti SO": [
+      "627354"
+    ],
+    "Munanjipatti SO": [
+      "627355"
+    ],
+    "Munnirpallam SO": [
+      "627356"
+    ],
+    "Sankarnagar SO": [
+      "627357"
+    ],
+    "Tachanallur SO": [
+      "627358"
+    ],
+    "Rajavallipuram SO": [
+      "627359"
+    ],
+    "Ambasamudram HO": [
+      "627401"
+    ],
+    "Alwarkurichi SO": [
+      "627412"
+    ],
+    "Brahmadesam SO Tirunelveli": [
+      "627413"
+    ],
+    "Cheranmahadevi SO": [
+      "627414"
+    ],
+    "Kadayam SO": [
+      "627415"
+    ],
+    "Kallidaikurichi SO": [
+      "627416"
+    ],
+    "Karaikurichi SO Tirunelveli": [
+      "627417"
+    ],
+    "Kila Ambur SO": [
+      "627418"
+    ],
+    "Manjolai SO": [
+      "627420"
+    ],
+    "Manimuthar Project SO": [
+      "627421"
+    ],
+    "Papanasam Mills SO": [
+      "627422"
+    ],
+    "Pottalpudur SO": [
+      "627423"
+    ],
+    "Ravanasamudram SO": [
+      "627424"
+    ],
+    "Vickramasingapuram SO": [
+      "627425"
+    ],
+    "Viravanallur SO": [
+      "627426"
+    ],
+    "Nalumukku SO": [
+      "627427"
+    ],
+    "Agasthiyarpatti SO": [
+      "627428"
+    ],
+    "Gopalasamudram SO": [
+      "627451"
+    ],
+    "Melaseval SO": [
+      "627452"
+    ],
+    "Pattamadai SO": [
+      "627453"
+    ],
+    "Kalakad SO": [
+      "627501"
+    ],
+    "Padmaneri SO": [
+      "627502"
+    ],
+    "Mukkudal SO": [
+      "627601"
+    ],
+    "Pappagudi SO": [
+      "627602"
+    ],
+    "Vadakku Ariyanayagipuram Petta SO": [
+      "627603"
+    ],
+    "Suttamally SO": [
+      "627604"
+    ],
+    "Idayangudi SO": [
+      "627651"
+    ],
+    "Ittamozhi SO": [
+      "627652"
+    ],
+    "Pettaikulam SO": [
+      "627654"
+    ],
+    "Tisayanvillai SO": [
+      "627657"
+    ]
+  },
+  "Tiruppur": {},
+  "Tiruvallur": {},
+  "Tiruvannamalai": {
+    "Anukkavoor SO": [
+      "604401"
+    ],
+    "Hasanamapettai SO": [
+      "604402"
+    ],
+    "Kilkodungalur SO": [
+      "604403"
+    ],
+    "Kilkovalavedu SO": [
+      "604404"
+    ],
+    "Marudadu SO": [
+      "604405"
+    ],
+    "Tellar SO": [
+      "604406"
+    ],
+    "Tiruvettipuram SO": [
+      "604407"
+    ],
+    "Vandavasi SO": [
+      "604408"
+    ],
+    "Valkadai SO": [
+      "604409"
+    ],
+    "Vembakkam SO": [
+      "604410"
+    ],
+    "Desur SO": [
+      "604501"
+    ],
+    "Malayur SO": [
+      "604502"
+    ],
+    "Pernamallur SO": [
+      "604503"
+    ],
+    "Tirumani SO": [
+      "604504"
+    ],
+    "Vallam Arni SO": [
+      "604505"
+    ],
+    "Kilpennathur SO": [
+      "604601"
+    ],
+    "Tiruvannamalai HO": [
+      "606601"
+    ],
+    "Sriramanashramam SO": [
+      "606603"
+    ],
+    "Vengikkal SO": [
+      "606604"
+    ],
+    "Somasipadi SO": [
+      "606611"
+    ],
+    "Chengam SO": [
+      "606701"
+    ],
+    "Kanji SO": [
+      "606702"
+    ],
+    "Melpallipattu SO": [
+      "606703"
+    ],
+    "Pachal SO Tiruvannamalai": [
+      "606704"
+    ],
+    "Pudupalayam SO Tiruvannamalai": [
+      "606705"
+    ],
+    "Sathanurdam SO": [
+      "606706"
+    ],
+    "Tandarampattu SO": [
+      "606707"
+    ],
+    "Tanipadi SO": [
+      "606708"
+    ],
+    "Thukkapettai SO": [
+      "606709"
+    ],
+    "Paramanandal SO": [
+      "606710"
+    ],
+    "Kalasapakkam SO": [
+      "606751"
+    ],
+    "Mangalam SO Tiruvannamalai": [
+      "606752"
+    ],
+    "Vanapuram SO": [
+      "606753"
+    ],
+    "Vettavalam SO": [
+      "606754"
+    ],
+    "Avur SO": [
+      "606755"
+    ],
+    "Chettupattu Polur SO": [
+      "606801"
+    ],
+    "Nayudumangalam SO": [
+      "606802"
+    ],
+    "Polur SO Tiruvannamalai": [
+      "606803"
+    ],
+    "Tandarai SO": [
+      "606804"
+    ],
+    "Turinjapuram SO": [
+      "606805"
+    ],
+    "Pavithiram SO": [
+      "606806"
+    ],
+    "Nedungunam SO": [
+      "606807"
+    ],
+    "Kattampoondi SO": [
+      "606808"
+    ],
+    "Thachampattu SO": [
+      "606811"
+    ],
+    "Adamangalam SO": [
+      "606901"
+    ],
+    "Devikapuram SO": [
+      "606902"
+    ],
+    "Kalambur SO": [
+      "606903"
+    ],
+    "Mandakolathur SO": [
+      "606904"
+    ],
+    "Santhavasal SO": [
+      "606905"
+    ],
+    "Vilvarani SO": [
+      "606906"
+    ],
+    "Vadamadimangalam SO": [
+      "606907"
+    ],
+    "Kadaladi SO Tiruvannamalai": [
+      "606908"
+    ],
+    "Akkur SO Tiruvannamalai": [
+      "631701"
+    ],
+    "Mamandur Kanchipuram SO": [
+      "631702"
+    ],
+    "Arni HO": [
+      "632301"
+    ],
+    "Kannamangalam SO": [
+      "632311"
+    ],
+    "Kattukanur SO": [
+      "632312"
+    ],
+    "Kolappalur SO Tiruvannamalai": [
+      "632313"
+    ],
+    "Kunnathur Arni SO": [
+      "632314"
+    ],
+    "Onnupuram SO": [
+      "632315"
+    ],
+    "Chevur SO": [
+      "632316"
+    ],
+    "Sathiyaviziyanagaram SO": [
+      "632317"
+    ],
+    "Kammavanpettai SO": [
+      "632319"
+    ],
+    "Susainagar SO": [
+      "632326"
+    ]
+  },
+  "Tiruvarur": {},
+  "Vellore": {
+    "Vellore H.O": [
+      "632001"
+    ],
+    "Thorapadi S.O": [
+      "632002"
+    ],
+    "Vellore Fort S.O": [
+      "632004"
+    ],
+    "Gandhinagar S.O (Vellore)": [
+      "632006"
+    ],
+    "Katpadi S.O": [
+      "632007"
+    ],
+    "Shenbakkam S.O": [
+      "632008"
+    ],
+    "Sathuvachari S.O": [
+      "632009"
+    ],
+    "Abdullapuram S.O": [
+      "632010"
+    ],
+    "T.B. Sanatorium S.O": [
+      "632011"
+    ],
+    "Saidapet S.O (Vellore)": [
+      "632012"
+    ],
+    "Konavattam S.O": [
+      "632013"
+    ],
+    "Vellore Institute Of Technology S.O": [
+      "632014"
+    ],
+    "Ariyur S.O (Vellore)": [
+      "632055"
+    ],
+    "Munjurpattu S.O": [
+      "632057"
+    ],
+    "Pennathur S.O": [
+      "632058"
+    ],
+    "TAMILNADU INDUSTRIAL EXPLOSIVES LTD": [
+      "632059"
+    ],
+    "Anaikattu S.O": [
+      "632101"
+    ],
+    "Kaniyambadi S.O": [
+      "632102"
+    ],
+    "Odugathur S.O": [
+      "632103"
+    ],
+    "Virinjipuram S.O": [
+      "632104"
+    ],
+    "Ussoor S.O": [
+      "632105"
+    ],
+    "S.L.R. Sanatorium S.O": [
+      "632106"
+    ],
+    "Guruvarajapalayam S.O": [
+      "632107"
+    ],
+    "Cholavaram S.O": [
+      "632113"
+    ],
+    "Sathyamangalam (Vellore)S.O": [
+      "632114"
+    ],
+    "Thiruvalluvar University S.O": [
+      "632115"
+    ],
+    "Latteri S.O": [
+      "632202"
+    ],
+    "Vaduganthangal S.O": [
+      "632204"
+    ]
+  },
+  "Viluppuram": {},
+  "Virudhunagar": {
+    "Virudhunagar HO": [
+      "626001"
+    ],
+    "Virudhunagar Collectorate SO": [
+      "626002"
+    ],
+    "Virudhunagar Industrial Estate SO": [
+      "626003"
+    ],
+    "Palavanatham SO": [
+      "626004"
+    ],
+    "Amathur SO": [
+      "626005"
+    ],
+    "Aruppukottai HO": [
+      "626101"
+    ],
+    "Chatrapatti SO Virudhunagar": [
+      "626102"
+    ],
+    "Erichanatham SO": [
+      "626103"
+    ],
+    "Kalkurichi SO": [
+      "626104"
+    ],
+    "Kallurani SO": [
+      "626105"
+    ],
+    "Kariapatti SO": [
+      "626106"
+    ],
+    "Kovilangulam SO": [
+      "626107"
+    ],
+    "Kumarasamy Raja Nagar SO": [
+      "626108"
+    ],
+    "Mallanginar SO": [
+      "626109"
+    ],
+    "Mohamed Sahibpuram SO": [
+      "626110"
+    ],
+    "Muhavur SO": [
+      "626111"
+    ],
+    "Palayampatti SO": [
+      "626112"
+    ],
+    "Pandalgudi SO": [
+      "626113"
+    ],
+    "Paralachi SO": [
+      "626114"
+    ],
+    "Sethu Institute of Technology SO": [
+      "626115"
+    ],
+    "W Pudupatti SO": [
+      "626116"
+    ],
+    "Rajapalayam HO": [
+      "626117"
+    ],
+    "MReddiapatti SO": [
+      "626118"
+    ],
+    "Sankaralingapuram SO": [
+      "626119"
+    ],
+    "Seithur SO": [
+      "626121"
+    ],
+    "Settiyarpatti SO": [
+      "626122"
+    ],
+    "Sivakasi HO": [
+      "626123"
+    ],
+    "Sivakasi West SO": [
+      "626124"
+    ],
+    "Srivilliputhur SO": [
+      "626125"
+    ],
+    "Sundarapandiam SO": [
+      "626126"
+    ],
+    "Tamilnadu Cements Alangulam SO": [
+      "626127"
+    ],
+    "Thayilpatti SO": [
+      "626128"
+    ],
+    "Tiruchuli SO": [
+      "626129"
+    ],
+    "Tiruthangal SO": [
+      "626130"
+    ],
+    "Vembakottai SO": [
+      "626131"
+    ],
+    "Watrap SO": [
+      "626132"
+    ],
+    "Kummapatti SO": [
+      "626133"
+    ],
+    "Chettikurichi SO": [
+      "626134"
+    ],
+    "Srivilliputhur Court Complex SO": [
+      "626135"
+    ],
+    "Kilarajakularaman SO": [
+      "626136"
+    ],
+    "Pillayarkulam SO": [
+      "626137"
+    ],
+    "Kunnur SO": [
+      "626138"
+    ],
+    "Cholapuram South SO": [
+      "626139"
+    ],
+    "Sevalpatti SO": [
+      "626140"
+    ],
+    "Malli SO": [
+      "626141"
+    ],
+    "Sundaranachiarpuram SO": [
+      "626142"
+    ],
+    "Maharajapuram SO": [
+      "626149"
+    ],
+    "Athipatti SO": [
+      "626161"
+    ],
+    "Dhalavaipuram SO": [
+      "626188"
+    ],
+    "Sivakasi East SO": [
+      "626189"
+    ],
+    "Elayirampannai SO": [
+      "626201"
+    ],
+    "Nenmeni SO": [
+      "626202"
+    ],
+    "Sattur SO": [
+      "626203"
+    ],
+    "Ramasamy Raja Nagar SO": [
+      "626204"
+    ],
+    "Uppathur SO": [
+      "626205"
+    ],
+    "Narikudi SO": [
+      "626607"
+    ],
+    "Viracholan SO": [
+      "626612"
+    ]
+  }
+}

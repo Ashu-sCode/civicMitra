@@ -1,0 +1,4002 @@
+{
+  "Agra": {
+    "Agra HO": [
+      "282001"
+    ],
+    "SANJAY PLACE SO": [
+      "282002"
+    ],
+    "Agra Fort HO": [
+      "282003"
+    ],
+    "TAJ NAGRI": [
+      "282004"
+    ],
+    "Dayal Bagh": [
+      "282005"
+    ],
+    "YAMUNA BRIDGE  SO": [
+      "282006"
+    ],
+    "SIKANDRA SO": [
+      "282007"
+    ],
+    "IAF SO": [
+      "282008"
+    ],
+    "COD SO": [
+      "282009"
+    ],
+    "SHAHGANJ SO": [
+      "282010"
+    ],
+    "Achhnera SO": [
+      "283101"
+    ],
+    "Akola SO": [
+      "283102"
+    ],
+    "Bah SO": [
+      "283104"
+    ],
+    "BV Bichpuri SO": [
+      "283105"
+    ],
+    "Fatehpur Sikri": [
+      "283110"
+    ],
+    "Fatehabad": [
+      "283111"
+    ],
+    "IRADAT NAGAR SO": [
+      "283112"
+    ],
+    "Bhadrauli SO": [
+      "283113"
+    ],
+    "JAITPUR SO": [
+      "283114"
+    ],
+    "JAGNER SO": [
+      "283115"
+    ],
+    "KAGROL SO": [
+      "283119"
+    ],
+    "KHERAGARH SO": [
+      "283121"
+    ],
+    "KIRAOLI SO": [
+      "283122"
+    ],
+    "PINAHAT": [
+      "283123"
+    ],
+    "SAIYAN  SO": [
+      "283124"
+    ],
+    "SHAMSABAD SO": [
+      "283125"
+    ],
+    "KHANDAULI SO": [
+      "283126"
+    ],
+    "Barhan SO": [
+      "283201"
+    ],
+    "Etmadpur": [
+      "283202"
+    ]
+  },
+  "Aligarh": {
+    "Aligarh HO": [
+      "202001"
+    ],
+    "Aligarh Muslim University S.O": [
+      "202002"
+    ],
+    "Akrabad S.O": [
+      "202121"
+    ],
+    "Aligarh Dairy Farm S.O": [
+      "202122"
+    ],
+    "Gonda SO": [
+      "202123"
+    ],
+    "Iglas SO": [
+      "202124"
+    ],
+    "Harduaganj SO": [
+      "202125"
+    ],
+    "Jawan SO": [
+      "202126"
+    ],
+    "Kasimpur SO": [
+      "202127"
+    ],
+    "Jalali SO": [
+      "202128"
+    ],
+    "Kauriyaganj SO": [
+      "202129"
+    ],
+    "Chharra SO": [
+      "202130"
+    ],
+    "Bijauli S.O": [
+      "202131"
+    ],
+    "Chandaus S.O": [
+      "202132"
+    ],
+    "Dadon SO": [
+      "202133"
+    ],
+    "Gangiri SO": [
+      "202134"
+    ],
+    "Gomat SO": [
+      "202135"
+    ],
+    "Gabhana SO": [
+      "202136"
+    ],
+    "Jattari SO": [
+      "202137"
+    ],
+    "Khair SO": [
+      "202138"
+    ],
+    "K G W Sasni SO": [
+      "202139"
+    ],
+    "Lodha SO": [
+      "202140"
+    ],
+    "Dayal Nagar SO": [
+      "202141"
+    ],
+    "Birpura S.O": [
+      "202142"
+    ],
+    "Somna SO": [
+      "202143"
+    ],
+    "Beswan S.O": [
+      "202145"
+    ],
+    "Mangalayatan University SO": [
+      "202146"
+    ],
+    "Palirajapur SO": [
+      "202150"
+    ],
+    "Pisawah SO": [
+      "202155"
+    ],
+    "Tappal SO": [
+      "202165"
+    ],
+    "Bijaigarh S.O": [
+      "202170"
+    ],
+    "Atrauli S.O": [
+      "202280"
+    ],
+    "J D Singh SO": [
+      "202281"
+    ],
+    "Malviya Nagar SO Aligarh": [
+      "202282"
+    ],
+    "Hathras SO": [
+      "204101"
+    ],
+    "Hathras Jn RS SO": [
+      "204102"
+    ],
+    "Kachaura SO": [
+      "204211"
+    ],
+    "Hasayan SO": [
+      "204212"
+    ],
+    "Mursan SO": [
+      "204213"
+    ],
+    "Purdilpur SO": [
+      "204214"
+    ],
+    "Sikandra Rao SO": [
+      "204215"
+    ],
+    "Sasni SO": [
+      "204216"
+    ],
+    "Mendu SO": [
+      "204217"
+    ]
+  },
+  "Allahabad": {},
+  "Ambedkar Nagar": {},
+  "Amethi (Chatrapati Sahuji Mahraj Nagar)": {},
+  "Amroha (J.P. Nagar)": {},
+  "Auraiya": {},
+  "Azamgarh": {
+    "DUBARI SO": [
+      "221601"
+    ],
+    "MARYADPUR SO": [
+      "221602"
+    ],
+    "Madhu Ban SO": [
+      "221603"
+    ],
+    "HALDHARPUR SO": [
+      "221705"
+    ],
+    "Ratan Pura SO": [
+      "221706"
+    ],
+    "Aharaula SO": [
+      "223221"
+    ],
+    "Ambari SO": [
+      "223222"
+    ],
+    "Ataraulia SO": [
+      "223223"
+    ],
+    "DIDARGANJ SO": [
+      "223224"
+    ],
+    "MAHUL SO": [
+      "223225"
+    ],
+    "PUSPNAGAR SO": [
+      "223226"
+    ],
+    "Sanjar Pur SO": [
+      "223227"
+    ],
+    "Mau HO": [
+      "275101"
+    ],
+    "INDARA": [
+      "275102"
+    ],
+    "Kushmaur SO": [
+      "275103"
+    ],
+    "JAMALMIRZAPUR SO": [
+      "275105"
+    ],
+    "Amila SO": [
+      "275301"
+    ],
+    "Bhopaura SO": [
+      "275302"
+    ],
+    "Dohari  Ghat SO": [
+      "275303"
+    ],
+    "GHOSI SO": [
+      "275304"
+    ],
+    "KOPAGANJ SO": [
+      "275305"
+    ],
+    "KOIRIYAPAR SO": [
+      "275306"
+    ],
+    "Semari Jamal Pur SO": [
+      "275307"
+    ],
+    "Azamgarh HO": [
+      "276001"
+    ],
+    "Bilaria Ganj SO": [
+      "276121"
+    ],
+    "RAUNAPAR SO": [
+      "276122"
+    ],
+    "Tarawa SO": [
+      "276123"
+    ],
+    "Ajamat Garh Estate SO": [
+      "276124"
+    ],
+    "Bankat SO": [
+      "276125"
+    ],
+    "Bansgaon SO Azamgarh": [
+      "276126"
+    ],
+    "Bazar Gosain SO": [
+      "276127"
+    ],
+    "CHANDESAR": [
+      "276128"
+    ],
+    "Chiraia Kot SO": [
+      "276129"
+    ],
+    "JAHANAGANJ SO": [
+      "276131"
+    ],
+    "KANDHARAPUR SO": [
+      "276135"
+    ],
+    "LATGHAT SO": [
+      "276136"
+    ],
+    "MAHARAJGANJ SO": [
+      "276137"
+    ],
+    "SAGRI SO": [
+      "276138"
+    ],
+    "Sardaha SO": [
+      "276139"
+    ],
+    "JIYANPUR SO": [
+      "276140"
+    ],
+    "Terahi SO": [
+      "276141"
+    ],
+    "KOILSA SO": [
+      "276142"
+    ],
+    "MITTOOPUR": [
+      "276143"
+    ],
+    "DEOGAON SO": [
+      "276201"
+    ],
+    "LALGANJ SO": [
+      "276202"
+    ],
+    "MEHNAJPUR SO": [
+      "276203"
+    ],
+    "MEHNAGAR SO": [
+      "276204"
+    ],
+    "MOHAMMADPUR SO": [
+      "276205"
+    ],
+    "NIZAMBAD SO": [
+      "276206"
+    ],
+    "RANI KI SARAI SO": [
+      "276207"
+    ],
+    "Tika Pur SO": [
+      "276208"
+    ],
+    "PAWAI SO": [
+      "276288"
+    ],
+    "Bardah SO": [
+      "276301"
+    ],
+    "GAMBHIRPUR SO": [
+      "276302"
+    ],
+    "Thekma SO": [
+      "276303"
+    ],
+    "PHOOLPUR SO": [
+      "276304"
+    ],
+    "Saraimeer SO": [
+      "276305"
+    ],
+    "Suraj Pur SO": [
+      "276306"
+    ],
+    "KARAHA SO": [
+      "276402"
+    ],
+    "Mohammadabad Gohna SO": [
+      "276403"
+    ],
+    "MUBARAKPUR SO": [
+      "276404"
+    ],
+    "Walid Pur SO": [
+      "276405"
+    ],
+    "Sathion SO": [
+      "276406"
+    ]
+  },
+  "Baghpat": {
+    "Ailum SO": [
+      "247771"
+    ],
+    "Jalalabad SO Muzaffarnagar": [
+      "247772"
+    ],
+    "Jhinjhana SO": [
+      "247773"
+    ],
+    "Kairana SO": [
+      "247774"
+    ],
+    "Kandhala SO": [
+      "247775"
+    ],
+    "Shamli SO": [
+      "247776"
+    ],
+    "Thanabhawan SO": [
+      "247777"
+    ],
+    "Un SO Muzaffarnagar": [
+      "247778"
+    ],
+    "Khekra SO": [
+      "250101"
+    ],
+    "Sarurpur Khurd SO": [
+      "250344"
+    ],
+    "Binauli SO": [
+      "250345"
+    ],
+    "Rasulpur Rohta SO": [
+      "250502"
+    ],
+    "Agarwal Mandi SO": [
+      "250601"
+    ],
+    "Aminagar Sarai SO": [
+      "250606"
+    ],
+    "Baghpat SO": [
+      "250609"
+    ],
+    "Baraut HO": [
+      "250611"
+    ],
+    "Dhikauli SO": [
+      "250615"
+    ],
+    "Chhaprauli SO": [
+      "250617"
+    ],
+    "Sarurpur Kalan SO": [
+      "250619"
+    ],
+    "Bamnauli SO": [
+      "250620"
+    ],
+    "Baoli SO": [
+      "250621"
+    ],
+    "Doghat SO": [
+      "250622"
+    ],
+    "Kishanpur Baral SO": [
+      "250623"
+    ],
+    "Tikri SO": [
+      "250625"
+    ],
+    "Baleni SO": [
+      "250626"
+    ],
+    "Babri SO": [
+      "251305"
+    ]
+  },
+  "Bahraich": {
+    "Bahraich HO": [
+      "271801"
+    ],
+    "Kalpipara SO": [
+      "271802"
+    ],
+    "Patna Malhipur SO": [
+      "271803"
+    ],
+    "Laxman Nagar Bazar SO": [
+      "271804"
+    ],
+    "Shravasti SO": [
+      "271805"
+    ],
+    "Khutehna Chauraha SO": [
+      "271806"
+    ],
+    "Bisheswarganj SO": [
+      "271821"
+    ],
+    "Mahsi Tahsil SO": [
+      "271824"
+    ],
+    "Barnapur SO": [
+      "271825"
+    ],
+    "Shivpur SO Bahraich": [
+      "271830"
+    ],
+    "Bhinga SO": [
+      "271831"
+    ],
+    "Gilaula SO": [
+      "271835"
+    ],
+    "Sirsia SO": [
+      "271840"
+    ],
+    "MATEHI CHAFARIA S.O": [
+      "271841"
+    ],
+    "Ikauna SO": [
+      "271845"
+    ],
+    "Kharighat SO": [
+      "271851"
+    ],
+    "Mihinpurwa SO": [
+      "271855"
+    ],
+    "Nanpara SO": [
+      "271865"
+    ],
+    "Chilwaria SO": [
+      "271870"
+    ],
+    "Payagpur SO": [
+      "271871"
+    ],
+    "Huzoorpur SO": [
+      "271872"
+    ],
+    "Risia SO": [
+      "271875"
+    ],
+    "Rupaidiha SO": [
+      "271881"
+    ],
+    "Matera RS SO": [
+      "271882"
+    ],
+    "Jarwal Road SO": [
+      "271901"
+    ],
+    "Fakharpur SO": [
+      "271902"
+    ],
+    "Kaiserganj SO": [
+      "271903"
+    ],
+    "Jarwal SO": [
+      "271904"
+    ]
+  },
+  "Ballia": {
+    "Chilkahar SO": [
+      "221701"
+    ],
+    "GARHMALPUR SO": [
+      "221709"
+    ],
+    "NAGRA SO": [
+      "221711"
+    ],
+    "RASRA HO": [
+      "221712"
+    ],
+    "Chitbaragaon SO": [
+      "221713"
+    ],
+    "BILTHARA ROAD SO": [
+      "221715"
+    ],
+    "Kidihirapur SO": [
+      "221716"
+    ],
+    "Nawanagar SO Ballia": [
+      "221717"
+    ],
+    "Khandwa SO": [
+      "221718"
+    ],
+    "BALLIA HO": [
+      "277001"
+    ],
+    "Garwar SO": [
+      "277121"
+    ],
+    "RATSAR SO": [
+      "277123"
+    ],
+    "Pur SO Ballia": [
+      "277124"
+    ],
+    "Bairia SO Ballia": [
+      "277201"
+    ],
+    "Bansdih SO": [
+      "277202"
+    ],
+    "Bansdih Road SO": [
+      "277203"
+    ],
+    "Dallan Chhapra SO": [
+      "277204"
+    ],
+    "Dubey Chhapra SO": [
+      "277205"
+    ],
+    "Maniar SO": [
+      "277207"
+    ],
+    "Raniganj Bazar SO": [
+      "277208"
+    ],
+    "REOTI SO": [
+      "277209"
+    ],
+    "Chhata SO Ballia": [
+      "277210"
+    ],
+    "Sahatwar SO": [
+      "277211"
+    ],
+    "VBNarayanpur SO": [
+      "277213"
+    ],
+    "Karanchhapa SO": [
+      "277214"
+    ],
+    "Lalganj Ballia SO": [
+      "277216"
+    ],
+    "Kheosar SO": [
+      "277219"
+    ],
+    "Basantpur SO Ballia": [
+      "277301"
+    ],
+    "Kharasara SO": [
+      "277302"
+    ],
+    "SIKANDERPUR SO": [
+      "277303"
+    ],
+    "SUKHPURA SO": [
+      "277304"
+    ],
+    "Bharsar SO": [
+      "277401"
+    ],
+    "Haldi SO Ballia": [
+      "277402"
+    ],
+    "Majhua SO": [
+      "277403"
+    ],
+    "Korantadih SO": [
+      "277501"
+    ],
+    "Narhi SO": [
+      "277502"
+    ],
+    "Phehpana SO": [
+      "277503"
+    ],
+    "SOHAON SO": [
+      "277504"
+    ],
+    "Sagarpali SO": [
+      "277506"
+    ]
+  },
+  "Balrampur": {},
+  "Banda": {
+    "Banda HO": [
+      "210001"
+    ],
+    "Khurand RS SO": [
+      "210120"
+    ],
+    "Baberu SO": [
+      "210121"
+    ],
+    "Oran S.O": [
+      "210122"
+    ],
+    "Chillatara SO": [
+      "210123"
+    ],
+    "Kamasin SO": [
+      "210125"
+    ],
+    "Pailani SO": [
+      "210126"
+    ],
+    "Tindwari SO": [
+      "210128"
+    ],
+    "Naraini SO": [
+      "210129"
+    ],
+    "Atarra SO": [
+      "210201"
+    ],
+    "Badausa SO": [
+      "210202"
+    ],
+    "Bisanda SO": [
+      "210203"
+    ],
+    "Chitrakot SO": [
+      "210204"
+    ],
+    "Karwi MDG": [
+      "210205"
+    ],
+    "Pahari SO Chitrakoot": [
+      "210206"
+    ],
+    "Rajapur SO Chitrakoot": [
+      "210207"
+    ],
+    "Manikpur SO Chitrakoot": [
+      "210208"
+    ],
+    "Mauchhibu SO": [
+      "210209"
+    ],
+    "Hamirpur HO": [
+      "210301"
+    ],
+    "Ingohta SO": [
+      "210341"
+    ],
+    "Charkhari State SO": [
+      "210421"
+    ],
+    "Jaria SO Hamirpur": [
+      "210422"
+    ],
+    "Jaitpur SO Mahoba": [
+      "210423"
+    ],
+    "Kabrai SO": [
+      "210424"
+    ],
+    "Kharela SO": [
+      "210425"
+    ],
+    "Kulpahar SO": [
+      "210426"
+    ],
+    "Mahoba SO": [
+      "210427"
+    ],
+    "Majhagawan SO": [
+      "210428"
+    ],
+    "Panwari SO": [
+      "210429"
+    ],
+    "Gohand SO": [
+      "210430"
+    ],
+    "Rath SO": [
+      "210431"
+    ],
+    "Sarila State SO": [
+      "210432"
+    ],
+    "Srinagar SO Mahoba": [
+      "210433"
+    ],
+    "Bewar SO Hamirpur": [
+      "210501"
+    ],
+    "Baruwa Sumerpur SO": [
+      "210502"
+    ],
+    "Khanna SO": [
+      "210504"
+    ],
+    "Kurara SO": [
+      "210505"
+    ],
+    "Muskara SO": [
+      "210506"
+    ],
+    "Ragaul SO": [
+      "210507"
+    ]
+  },
+  "Barabanki": {
+    "Barabanki HO": [
+      "225001"
+    ],
+    "Gandhi Aashram SO": [
+      "225003"
+    ],
+    "Kothi SO Barabanki": [
+      "225119"
+    ],
+    "Usmanpur SO": [
+      "225120"
+    ],
+    "Harakh SO": [
+      "225121"
+    ],
+    "Satrikh SO": [
+      "225122"
+    ],
+    "Somaiya Nagar SO": [
+      "225123"
+    ],
+    "Haidergarh SO": [
+      "225124"
+    ],
+    "Subeha SO": [
+      "225125"
+    ],
+    "Trivediganj SO": [
+      "225126"
+    ],
+    "Bahramghat SO": [
+      "225201"
+    ],
+    "Burhwal Sugar Mill SO": [
+      "225202"
+    ],
+    "Jahangeerabad Raj SO": [
+      "225203"
+    ],
+    "Masauli SO": [
+      "225204"
+    ],
+    "Ramnagar SO Barabanki": [
+      "225205"
+    ],
+    "Saadatganj SO Barabanki": [
+      "225206"
+    ],
+    "Sirauli Gaus Pur SO": [
+      "225207"
+    ],
+    "Tilokpur SO Barabanki": [
+      "225208"
+    ],
+    "Dewa Sharif SO": [
+      "225301"
+    ],
+    "Kursi SO": [
+      "225302"
+    ],
+    "Mohammad Pur Khaley SO": [
+      "225303"
+    ],
+    "Suratganj SO": [
+      "225304"
+    ],
+    "Tehsil Fateh Pur SO": [
+      "225305"
+    ],
+    "Shahpur Bhagauli SO": [
+      "225306"
+    ],
+    "Aliabad SO": [
+      "225401"
+    ],
+    "Dariya Bad SO": [
+      "225403"
+    ],
+    "Dariyabad RS SO": [
+      "225404"
+    ],
+    "Kotwa Sarak S.O": [
+      "225405"
+    ],
+    "Ram Sanehi Ghat SO": [
+      "225409"
+    ],
+    "Safderganj SO": [
+      "225412"
+    ],
+    "Sidhaur SO": [
+      "225413"
+    ],
+    "Zaidpur SO": [
+      "225414"
+    ],
+    "Tikait Nagar SO": [
+      "225415"
+    ],
+    "Asandra SO": [
+      "225416"
+    ]
+  },
+  "Bareilly": {
+    "Bareilly HO": [
+      "243001"
+    ],
+    "Airforce Station": [
+      "243002"
+    ],
+    "Bareilly City": [
+      "243003"
+    ],
+    "ITBP": [
+      "243004"
+    ],
+    "Shamat Ganj SO": [
+      "243005"
+    ],
+    "RKUniversity SO": [
+      "243006"
+    ],
+    "Izzatnagar": [
+      "243122"
+    ],
+    "PACDso SO": [
+      "243123"
+    ],
+    "Bhuta": [
+      "243126"
+    ],
+    "Baheri": [
+      "243201"
+    ],
+    "Bhojipura": [
+      "243202"
+    ],
+    "Deorania": [
+      "243203"
+    ],
+    "Aonla SO": [
+      "243301"
+    ],
+    "Bisharatganj": [
+      "243302"
+    ],
+    "Ram Nagar SO Bareilly": [
+      "243303"
+    ],
+    "Bhamora SO": [
+      "243401"
+    ],
+    "Ballia SO": [
+      "243402"
+    ],
+    "Iffco Township SO": [
+      "243403"
+    ],
+    "Senthal SO": [
+      "243407"
+    ],
+    "B R Factory": [
+      "243501"
+    ],
+    "CBGanj": [
+      "243502"
+    ],
+    "Faridpur": [
+      "243503"
+    ],
+    "Meerganj SO Bareilly": [
+      "243504"
+    ],
+    "Shahi SO": [
+      "243505"
+    ],
+    "Fatehganj East": [
+      "243506"
+    ],
+    "Pilibhit HO": [
+      "262001"
+    ],
+    "Amaria SO": [
+      "262121"
+    ],
+    "Pooranpur SO": [
+      "262122"
+    ],
+    "Jograjpur SO": [
+      "262123"
+    ],
+    "Kali Nagar SO": [
+      "262124"
+    ],
+    "Bisalpur SO": [
+      "262201"
+    ],
+    "Bilsanda SO": [
+      "262202"
+    ],
+    "Barkhera SO": [
+      "262203"
+    ],
+    "Majhola SO Bareilly": [
+      "262302"
+    ],
+    "Neoria SO": [
+      "262305"
+    ],
+    "Nawabganj SO Bareilly": [
+      "262406"
+    ]
+  },
+  "Basti": {
+    "Basti HO": [
+      "272001"
+    ],
+    "Purani Basti SO": [
+      "272002"
+    ],
+    "Bankati Bazar SO": [
+      "272123"
+    ],
+    "Mahson SO": [
+      "272124"
+    ],
+    "Dudhara SO": [
+      "272125"
+    ],
+    "Semariyawan SO": [
+      "272126"
+    ],
+    "Amorha": [
+      "272127"
+    ],
+    "Bishesharganj SO": [
+      "272128"
+    ],
+    "Shankarpur SO": [
+      "272129"
+    ],
+    "Parasrampur SO": [
+      "272130"
+    ],
+    "Captainganj SO": [
+      "272131"
+    ],
+    "Rayath SO": [
+      "272148"
+    ],
+    "Hanumanganj SO": [
+      "272150"
+    ],
+    "Rudranagar SO": [
+      "272151"
+    ],
+    "Daldala SO": [
+      "272152"
+    ],
+    "Bansi S.O": [
+      "272153"
+    ],
+    "Dharamsinghwa SO": [
+      "272154"
+    ],
+    "Harraiya SO": [
+      "272155"
+    ],
+    "Babhnan SO": [
+      "272161"
+    ],
+    "Dhanghata SO": [
+      "272162"
+    ],
+    "Gaur RS SO": [
+      "272163"
+    ],
+    "Hariharpur SO": [
+      "272164"
+    ],
+    "Hainsar Bazar SO": [
+      "272165"
+    ],
+    "Lalganj Basti SO": [
+      "272171"
+    ],
+    "Mahuli SO": [
+      "272172"
+    ],
+    "Maghar SO": [
+      "272173"
+    ],
+    "Khalilabad SO": [
+      "272175"
+    ],
+    "Ganpatganj SO": [
+      "272176"
+    ],
+    "Banpur SO": [
+      "272177"
+    ],
+    "Munderwa SO": [
+      "272178"
+    ],
+    "Paikolia SO": [
+      "272181"
+    ],
+    "Walterganj SO": [
+      "272182"
+    ],
+    "Domariyaganj SO": [
+      "272189"
+    ],
+    "Saltauwa SO": [
+      "272190"
+    ],
+    "Hallaur SO": [
+      "272191"
+    ],
+    "Itwa SO": [
+      "272192"
+    ],
+    "Bhanwapur SO": [
+      "272193"
+    ],
+    "Asnahra SO": [
+      "272194"
+    ],
+    "Bayara SO": [
+      "272195"
+    ],
+    "Bakhira SO": [
+      "272199"
+    ],
+    "Barhni SO": [
+      "272201"
+    ],
+    "Birdpur SO": [
+      "272202"
+    ],
+    "Naugarh SO": [
+      "272203"
+    ],
+    "Udairajganj SO": [
+      "272204"
+    ],
+    "Shoharatgarh SO": [
+      "272205"
+    ],
+    "Sheopatinagar SO": [
+      "272206"
+    ],
+    "SIDDHARTH NAGAR H.O": [
+      "272207"
+    ],
+    "Uska Bazar SO": [
+      "272208"
+    ],
+    "Santha SO": [
+      "272270"
+    ],
+    "Menhdawal SO": [
+      "272271"
+    ],
+    "Kalwari SO": [
+      "272301"
+    ],
+    "Nagar Bazar SO": [
+      "272302"
+    ]
+  },
+  "Bhadohi": {},
+  "Bijnor": {
+    "Bijnor HO": [
+      "246701"
+    ],
+    "Mandawar SO Bijnor": [
+      "246721"
+    ],
+    "Afzalgarh SO": [
+      "246722"
+    ],
+    "Balawali SO": [
+      "246723"
+    ],
+    "Badhapur SO": [
+      "246724"
+    ],
+    "Chandpur SO": [
+      "246725"
+    ],
+    "Haldaur SO": [
+      "246726"
+    ],
+    "Hassupura SO": [
+      "246727"
+    ],
+    "Jhalu SO": [
+      "246728"
+    ],
+    "Chandpur Sugar Factory SO": [
+      "246729"
+    ],
+    "Kiratpur SO": [
+      "246731"
+    ],
+    "Nagal SO Bijnor": [
+      "246732"
+    ],
+    "Nehtaur SO": [
+      "246733"
+    ],
+    "Noorpur SO": [
+      "246734"
+    ],
+    "Rajakatajpur SO": [
+      "246735"
+    ],
+    "Bashta SO": [
+      "246736"
+    ],
+    "Rahu Nagli SO": [
+      "246737"
+    ],
+    "Sahaspur SO Bijnor": [
+      "246745"
+    ],
+    "Seohara SO": [
+      "246746"
+    ],
+    "Sherkot SO": [
+      "246747"
+    ],
+    "Sahanpur SO": [
+      "246749"
+    ],
+    "Dhampur HO": [
+      "246761"
+    ],
+    "Nagina SO Bijnor": [
+      "246762"
+    ],
+    "Najibabad SO": [
+      "246763"
+    ],
+    "Kotwali SO Bijnor": [
+      "246764"
+    ]
+  },
+  "Budaun": {
+    "IA Babrala SO": [
+      "242021"
+    ],
+    "Budaun HO": [
+      "243601"
+    ],
+    "Samrer SO": [
+      "243630"
+    ],
+    "Allapur SO": [
+      "243631"
+    ],
+    "Asafpur SO": [
+      "243632"
+    ],
+    "Bilsi SO": [
+      "243633"
+    ],
+    "Binawar SO": [
+      "243634"
+    ],
+    "Dataganj SO": [
+      "243635"
+    ],
+    "Kachhla SO": [
+      "243636"
+    ],
+    "Kakrala SO": [
+      "243637"
+    ],
+    "Sahaswan SO": [
+      "243638"
+    ],
+    "Ujhani SO": [
+      "243639"
+    ],
+    "Usehat SO": [
+      "243641"
+    ],
+    "Bisauli SO": [
+      "243720"
+    ],
+    "Gunnaur SO": [
+      "243722"
+    ],
+    "Islamnagar SO": [
+      "243723"
+    ],
+    "Rudain SO": [
+      "243724"
+    ],
+    "Saidpur SO Budaun": [
+      "243725"
+    ],
+    "Wazirganj SO Budaun": [
+      "243726"
+    ],
+    "Rajpura SO Budaun": [
+      "243727"
+    ],
+    "Babrala SO": [
+      "243751"
+    ]
+  },
+  "Bulandshahr": {},
+  "Chandauli": {},
+  "Chitrakoot": {},
+  "Deoria": {
+    "Deoria HO": [
+      "274001"
+    ],
+    "Bodarwar SO": [
+      "274149"
+    ],
+    "Bhaluani SO": [
+      "274182"
+    ],
+    "Baitalpur SO": [
+      "274201"
+    ],
+    "Gauri Bazar SO": [
+      "274202"
+    ],
+    "HATA SO": [
+      "274203"
+    ],
+    "Rudrapur SO": [
+      "274204"
+    ],
+    "Madanpur SO": [
+      "274205"
+    ],
+    "Hetimpur S O": [
+      "274206"
+    ],
+    "Sukrauli SO": [
+      "274207"
+    ],
+    "Saraon SO": [
+      "274208"
+    ],
+    "Captainganj SO": [
+      "274301"
+    ],
+    "Dudhai SO": [
+      "274302"
+    ],
+    "Kathkuiyan SO": [
+      "274303"
+    ],
+    "Padrauna HO": [
+      "274304"
+    ],
+    "Ramkola SO": [
+      "274305"
+    ],
+    "Laxmiganj SO": [
+      "274306"
+    ],
+    "Padrauna Sugar Factory SO": [
+      "274307"
+    ],
+    "Padrauna City SO": [
+      "274308"
+    ],
+    "Padrauna Chhavani SO": [
+      "274309"
+    ],
+    "Fazilnagar SO": [
+      "274401"
+    ],
+    "Kasia S O": [
+      "274402"
+    ],
+    "KUSHINAGAR SO": [
+      "274403"
+    ],
+    "Patherdewa SO": [
+      "274404"
+    ],
+    "Rampur SO": [
+      "274405"
+    ],
+    "Seorahi SO": [
+      "274406"
+    ],
+    "Tamkuhi SO": [
+      "274407"
+    ],
+    "Tarkulwa SO": [
+      "274408"
+    ],
+    "Tarya Sujan SO": [
+      "274409"
+    ],
+    "Khukhundoo SO": [
+      "274501"
+    ],
+    "Lar SO": [
+      "274502"
+    ],
+    "Lar Road SO": [
+      "274505"
+    ],
+    "Majhauli Raj SO": [
+      "274506"
+    ],
+    "Pindi SO": [
+      "274508"
+    ],
+    "Salaempur SO": [
+      "274509"
+    ],
+    "Barhaj SO": [
+      "274601"
+    ],
+    "Bhagalpur SO": [
+      "274602"
+    ],
+    "Gaura Jai Nagar SO": [
+      "274603"
+    ],
+    "Paina SO": [
+      "274604"
+    ],
+    "Bhatani SO": [
+      "274701"
+    ],
+    "Bhatpar Rani SO": [
+      "274702"
+    ],
+    "Paratappur SO": [
+      "274703"
+    ],
+    "Bankata SO": [
+      "274704"
+    ],
+    "Ghanti SO": [
+      "274705"
+    ],
+    "Chhitauni SO": [
+      "274801"
+    ],
+    "Raja Bazar Khadda SO": [
+      "274802"
+    ],
+    "Deoria Railway Station SO": [
+      "274806"
+    ],
+    "SANT VINOBA MARG SO": [
+      "274807"
+    ],
+    "Chakara Gosai SO": [
+      "274808"
+    ]
+  },
+  "Etah": {
+    "Etah HO": [
+      "207001"
+    ],
+    "Aruna Nagar SO": [
+      "207002"
+    ],
+    "Brahm Sajiwan SO": [
+      "207003"
+    ],
+    "Pilua SO": [
+      "207120"
+    ],
+    "Sakeet SO": [
+      "207121"
+    ],
+    "Nidholi Kalan SO": [
+      "207122"
+    ],
+    "Kasganj SO": [
+      "207123"
+    ],
+    "Bilram SO": [
+      "207124"
+    ],
+    "Mirehachi SO": [
+      "207125"
+    ],
+    "Amanpur SO": [
+      "207241"
+    ],
+    "Gunjdundwara SO": [
+      "207242"
+    ],
+    "Patiali SO": [
+      "207243"
+    ],
+    "Raja Ka Rampur SO": [
+      "207244"
+    ],
+    "Sahawar SO": [
+      "207245"
+    ],
+    "Sirhpura SO": [
+      "207246"
+    ],
+    "Aliganj SO Etah": [
+      "207247"
+    ],
+    "Dhumri SO": [
+      "207248"
+    ],
+    "Jaithra SO": [
+      "207249"
+    ],
+    "Sarai Aghat SO": [
+      "207250"
+    ],
+    "Awagarh SO": [
+      "207301"
+    ],
+    "Jalesar SO": [
+      "207302"
+    ],
+    "Marehara SO": [
+      "207401"
+    ],
+    "Neoli SO": [
+      "207402"
+    ],
+    "Soron SO": [
+      "207403"
+    ]
+  },
+  "Etawah": {
+    "Etawah HO": [
+      "206001"
+    ],
+    "I T I Etawah SO": [
+      "206002"
+    ],
+    "Ram Lila Road SO": [
+      "206003"
+    ],
+    "Aheripur SO": [
+      "206120"
+    ],
+    "Ajitmal SO": [
+      "206121"
+    ],
+    "Auraiya HO": [
+      "206122"
+    ],
+    "Baralokpur SO": [
+      "206123"
+    ],
+    "Bakewar SO": [
+      "206124"
+    ],
+    "Chakar Nagar SO": [
+      "206125"
+    ],
+    "Ekdil SO": [
+      "206126"
+    ],
+    "Lakhana SO": [
+      "206127"
+    ],
+    "Mandir Mahewa SO": [
+      "206128"
+    ],
+    "Muradganj SO": [
+      "206129"
+    ],
+    "Saifai SO": [
+      "206130"
+    ],
+    "Udi SO": [
+      "206131"
+    ],
+    "Achhalda SO": [
+      "206241"
+    ],
+    "Bharthana SO": [
+      "206242"
+    ],
+    "Bidhuna SO": [
+      "206243"
+    ],
+    "Dibiapur SO": [
+      "206244"
+    ],
+    "Jaswant Nagar SO": [
+      "206245"
+    ],
+    "Kanchausi Bazar SO": [
+      "206246"
+    ],
+    "Phaphund SO": [
+      "206247"
+    ],
+    "Sahar SO Auraiya": [
+      "206248"
+    ],
+    "Ruruganj SO": [
+      "206249"
+    ],
+    "Harchandpur SO Auraiya": [
+      "206250"
+    ],
+    "Bela SO Auraiya": [
+      "206251"
+    ],
+    "Airwa Katra SO": [
+      "206252"
+    ],
+    "Basrehar SO": [
+      "206253"
+    ],
+    "Malhosi SO": [
+      "206255"
+    ]
+  },
+  "Faizabad": {},
+  "Farrukhabad": {},
+  "Fatehpur": {
+    "Fatehpur HO": [
+      "212601"
+    ],
+    "Asother SO": [
+      "212620"
+    ],
+    "Ghazipur SO Fatehpur": [
+      "212621"
+    ],
+    "Bahrampur SO": [
+      "212622"
+    ],
+    "Amauli SO": [
+      "212631"
+    ],
+    "Bindki SO": [
+      "212635"
+    ],
+    "Dhata SO": [
+      "212641"
+    ],
+    "Haswa SO": [
+      "212645"
+    ],
+    "Chheolaha SO": [
+      "212650"
+    ],
+    "Husainganj SO Fatehpur": [
+      "212651"
+    ],
+    "Hathgaon SO": [
+      "212652"
+    ],
+    "Erayan SO": [
+      "212653"
+    ],
+    "Jamraon SO": [
+      "212654"
+    ],
+    "Khaga SO": [
+      "212655"
+    ],
+    "Khakhreru SO": [
+      "212656"
+    ],
+    "Khajuha SO": [
+      "212657"
+    ],
+    "Kishanpur SO Fatehpur": [
+      "212658"
+    ],
+    "Kora Jahanabad SO": [
+      "212659"
+    ],
+    "Lalauli SO": [
+      "212661"
+    ],
+    "Bahua SO": [
+      "212663"
+    ],
+    "Malwan RS SO": [
+      "212664"
+    ],
+    "Mauhar SO": [
+      "212665"
+    ]
+  },
+  "Firozabad": {},
+  "Gautam Buddha Nagar": {},
+  "Ghaziabad": {
+    "Ghaziabad HO": [
+      "201001"
+    ],
+    "Kavi Nagar SO": [
+      "201002"
+    ],
+    "Meerut Road SO": [
+      "201003"
+    ],
+    "Hindon Air Field SO": [
+      "201004"
+    ],
+    "Sahibabad SO": [
+      "201005"
+    ],
+    "Chikamberpur SO": [
+      "201006"
+    ],
+    "Mohan Nagar SO": [
+      "201007"
+    ],
+    "Ghaziabad City SO": [
+      "201009"
+    ],
+    "IESahibabad SO": [
+      "201010"
+    ],
+    "Chandra Nagar SO": [
+      "201011"
+    ],
+    "Vasundhra SO": [
+      "201012"
+    ],
+    "Govindpuram SO": [
+      "201013"
+    ],
+    "Shipra Sun City SO": [
+      "201014"
+    ],
+    "Hindon Nagar SO": [
+      "201015"
+    ],
+    "Crossings Republik SO": [
+      "201016"
+    ],
+    "Raj Nagar Extension SO": [
+      "201017"
+    ],
+    "Vaishali SO": [
+      "201019"
+    ],
+    "Khora SO": [
+      "201020"
+    ],
+    "Bhojpur SO": [
+      "201022"
+    ],
+    "Loni SO": [
+      "201102"
+    ],
+    "Tronica City SO": [
+      "201103"
+    ],
+    "Govindpuri SO": [
+      "201201"
+    ],
+    "Modi Nagar SO": [
+      "201204"
+    ],
+    "Murad Nagar SO": [
+      "201206"
+    ],
+    "New Hapur HO": [
+      "245101"
+    ],
+    "Babugarh SO": [
+      "245201"
+    ],
+    "Garhmukteshwar SO": [
+      "245205"
+    ],
+    "Simbhaoli SO": [
+      "245207"
+    ],
+    "Bahadurgarh SO": [
+      "245208"
+    ],
+    "Dhaulana SO": [
+      "245301"
+    ],
+    "Pilkhuwa  SO": [
+      "245304"
+    ]
+  },
+  "Ghazipur": {
+    "BARA": [
+      "232325"
+    ],
+    "Dildarnagar SO": [
+      "232326"
+    ],
+    "Gahmar SO": [
+      "232327"
+    ],
+    "Reotipur SO": [
+      "232328"
+    ],
+    "Zamania SO": [
+      "232329"
+    ],
+    "Usia SO": [
+      "232330"
+    ],
+    "Zamania RS SO": [
+      "232331"
+    ],
+    "Tarighat SO": [
+      "232332"
+    ],
+    "Satramganj Bazar SO": [
+      "232333"
+    ],
+    "Dharhni SO": [
+      "232336"
+    ],
+    "Karahiya SO": [
+      "232339"
+    ],
+    "Deoria SO Ghazipur": [
+      "232340"
+    ],
+    "SUHWAL SO": [
+      "232341"
+    ],
+    "Ghazipur HO": [
+      "233001"
+    ],
+    "Peernagar SO": [
+      "233002"
+    ],
+    "Aurihar SO": [
+      "233221"
+    ],
+    "Gangauli SO": [
+      "233222"
+    ],
+    "Rampur SO Ghazipur": [
+      "233223"
+    ],
+    "Karanda SO": [
+      "233224"
+    ],
+    "Karimuddinpur SO": [
+      "233225"
+    ],
+    "Mardah SO": [
+      "233226"
+    ],
+    "Mohammadabad Yusufpur SO": [
+      "233227"
+    ],
+    "Tajpur Dehma SO": [
+      "233228"
+    ],
+    "BARACHAWAR SO": [
+      "233229"
+    ],
+    "Kasimabad SO": [
+      "233230"
+    ],
+    "BHAWARKOL SO": [
+      "233231"
+    ],
+    "Goshandepur SO": [
+      "233232"
+    ],
+    "Khardiha SO": [
+      "233233"
+    ],
+    "Sherpur Kalan SO": [
+      "233234"
+    ],
+    "BIRNO SO": [
+      "233300"
+    ],
+    "Mubarakpur SO Ghazipur": [
+      "233301"
+    ],
+    "Nandganj SO": [
+      "233302"
+    ],
+    "Nonhara SO": [
+      "233303"
+    ],
+    "Saidpur SO Ghazipur": [
+      "233304"
+    ],
+    "ZANGIPUR SO": [
+      "233305"
+    ],
+    "Deokali SO": [
+      "233306"
+    ],
+    "BHIMAPAR SO": [
+      "233307"
+    ],
+    "Malikpura SO": [
+      "233310"
+    ],
+    "NSS Mill SO": [
+      "233311"
+    ],
+    "Bahadurganj": [
+      "275201"
+    ],
+    "Dullahpur SO": [
+      "275202"
+    ],
+    "Jakhania SO": [
+      "275203"
+    ],
+    "Sadat SO": [
+      "275204"
+    ],
+    "Shadiabad SO": [
+      "275205"
+    ]
+  },
+  "Gonda": {
+    "Gonda HO": [
+      "271001"
+    ],
+    "Bargaon Gonda SO": [
+      "271002"
+    ],
+    "Bus Station SO Gonda": [
+      "271003"
+    ],
+    "Kauria SO": [
+      "271122"
+    ],
+    "Khorasha SO": [
+      "271123"
+    ],
+    "Wazeerganj SO": [
+      "271124"
+    ],
+    "Balpur SO": [
+      "271125"
+    ],
+    "BBSingh SO": [
+      "271126"
+    ],
+    "Chandapur SO Gonda": [
+      "271129"
+    ],
+    "Balrampur HO": [
+      "271201"
+    ],
+    "Intyathok SO": [
+      "271202"
+    ],
+    "Jarwa SO": [
+      "271203"
+    ],
+    "Khargoopur SO": [
+      "271204"
+    ],
+    "Mahrajganj SO Balrampur": [
+      "271205"
+    ],
+    "Pachperwa SO": [
+      "271206"
+    ],
+    "Shivpura SO": [
+      "271207"
+    ],
+    "Tulsipur SO": [
+      "271208"
+    ],
+    "Jaiprabha Gram SO": [
+      "271209"
+    ],
+    "Gainsari SO": [
+      "271210"
+    ],
+    "Purani Bazar Pachperwa SO": [
+      "271215"
+    ],
+    "Motiganj SO Gonda": [
+      "271301"
+    ],
+    "Mankapur Bazar SO": [
+      "271302"
+    ],
+    "Nawabganj SO Gonda": [
+      "271303"
+    ],
+    "Nawabganj S F SO": [
+      "271304"
+    ],
+    "Maskanwa Rs SO": [
+      "271305"
+    ],
+    "Rehra Bazar SO": [
+      "271306"
+    ],
+    "Sadullanagar SO": [
+      "271307"
+    ],
+    "Iti Mankapur SO": [
+      "271308"
+    ],
+    "DPGhat SO": [
+      "271309"
+    ],
+    "Bankatwa Dehat SO": [
+      "271310"
+    ],
+    "Bargadi Kot SO": [
+      "271311"
+    ],
+    "Gaura Chawki SO": [
+      "271312"
+    ],
+    "Babhnan Sugar Factory SO": [
+      "271313"
+    ],
+    "Pure Shivdayal Ganj SO": [
+      "271319"
+    ],
+    "Belser SO": [
+      "271401"
+    ],
+    "Begamganj SO": [
+      "271402"
+    ],
+    "Tarabganj SO": [
+      "271403"
+    ],
+    "Colonelganj SO Gonda": [
+      "271502"
+    ],
+    "Katra Bazar SO Gonda": [
+      "271503"
+    ],
+    "Paraspur SO": [
+      "271504"
+    ],
+    "Bishunpur Bairiya SO": [
+      "271601"
+    ],
+    "Dhaneypur SO": [
+      "271602"
+    ],
+    "Srinagar SO Gonda": [
+      "271603"
+    ],
+    "Utraula SO": [
+      "271604"
+    ],
+    "Sriduttganj SO": [
+      "271607"
+    ],
+    "Chamrupur SO": [
+      "271609"
+    ],
+    "Mathura Bazar SO": [
+      "271861"
+    ]
+  },
+  "Gorakhpur": {
+    "Gorakhpur HO": [
+      "273001"
+    ],
+    "A.P.Station S.O": [
+      "273002"
+    ],
+    "Arogyamandir SO": [
+      "273003"
+    ],
+    "Basharatpur SO": [
+      "273004"
+    ],
+    "Gita Press SO": [
+      "273005"
+    ],
+    "Gita Vatika SO": [
+      "273006"
+    ],
+    "Fertilizer Factory S.O": [
+      "273007"
+    ],
+    "Kunraghat S.O": [
+      "273008"
+    ],
+    "Gorakhpur University SO": [
+      "273009"
+    ],
+    "M.M.M.E.College S.O": [
+      "273010"
+    ],
+    "Railway Colony SO Gorakhpur": [
+      "273012"
+    ],
+    "BRD Medical College SO": [
+      "273013"
+    ],
+    "Pac Camp SO": [
+      "273014"
+    ],
+    "Gorakhnath Mandir SO": [
+      "273015"
+    ],
+    "Shivpurinewcolony SO": [
+      "273016"
+    ],
+    "Siddharth Enclave SO": [
+      "273017"
+    ],
+    "Ghughli R.S. S.O": [
+      "273151"
+    ],
+    "Pipraich S.O": [
+      "273152"
+    ],
+    "Anandnagar S.O  Maharajganj": [
+      "273155"
+    ],
+    "Bribgemanganj S.O": [
+      "273157"
+    ],
+    "Campierganj S.O": [
+      "273158"
+    ],
+    "Dhani Bazar S.O": [
+      "273161"
+    ],
+    "Laxmipur Maharajganj S.O": [
+      "273162"
+    ],
+    "Siswa Bazar S.O": [
+      "273163"
+    ],
+    "Nautanwa Bazar S.O": [
+      "273164"
+    ],
+    "Pepeeganj S.O": [
+      "273165"
+    ],
+    "Chauri Chaura S.O": [
+      "273201"
+    ],
+    "Sardar Nagar S.O": [
+      "273202"
+    ],
+    "Brahmpur S.O Gorakhpur": [
+      "273203"
+    ],
+    "Mithaura Bazar S.O": [
+      "273207"
+    ],
+    "Sahajanwa SO": [
+      "273209"
+    ],
+    "Dhakhwa Bazar SO": [
+      "273211"
+    ],
+    "Khajni SO": [
+      "273212"
+    ],
+    "Sikriganj SO": [
+      "273213"
+    ],
+    "Partawal Bazar S.O": [
+      "273301"
+    ],
+    "Bhitauli Bazar S.O": [
+      "273302"
+    ],
+    "Maharajganj H.O": [
+      "273303"
+    ],
+    "Nichlaul S.O": [
+      "273304"
+    ],
+    "Thuthibari S.O": [
+      "273305"
+    ],
+    "Bhathat S.O": [
+      "273306"
+    ],
+    "Sonauli S.O": [
+      "273308"
+    ],
+    "Koluhi S.O": [
+      "273309"
+    ],
+    "Paniyara S.O": [
+      "273310"
+    ],
+    "Orwalliya S.O": [
+      "273311"
+    ],
+    "CHOWK BAZAR SO": [
+      "273312"
+    ],
+    "Bhowapar SO": [
+      "273401"
+    ],
+    "Barhalganj SO": [
+      "273402"
+    ],
+    "Bansgaon SO Gorakhpur": [
+      "273403"
+    ],
+    "Belghat SO": [
+      "273404"
+    ],
+    "Barhi S.O Gorakhpur": [
+      "273405"
+    ],
+    "Unwal SO": [
+      "273406"
+    ],
+    "Uruwa Bazar SO": [
+      "273407"
+    ],
+    "Gola SO Gorakhpur": [
+      "273408"
+    ],
+    "Deidiha SO": [
+      "273409"
+    ],
+    "Gagaha SO": [
+      "273411"
+    ],
+    "Shivpur SO Gorakhpur": [
+      "273412"
+    ],
+    "Kauriram SO": [
+      "273413"
+    ]
+  },
+  "Hamirpur": {
+    "Bilaspur Bilaspur HP HO": [
+      "174001"
+    ],
+    "Bassi Kehloor SO": [
+      "174002"
+    ],
+    "Harlog SO": [
+      "174003"
+    ],
+    "Kandraur SO": [
+      "174004"
+    ],
+    "Raghunath Pura SO": [
+      "174005"
+    ],
+    "Swarghat SO": [
+      "174011"
+    ],
+    "Panjgain SO": [
+      "174012"
+    ],
+    "Barmana SO": [
+      "174013"
+    ],
+    "Behal SO": [
+      "174015"
+    ],
+    "Jejwin SO": [
+      "174017"
+    ],
+    "Ghumarwin SO": [
+      "174021"
+    ],
+    "Dadhol SO": [
+      "174023"
+    ],
+    "Auhar SO": [
+      "174024"
+    ],
+    "Kuthera BLP SO": [
+      "174026"
+    ],
+    "Lehri Sarail SO": [
+      "174027"
+    ],
+    "Hatwar SO": [
+      "174028"
+    ],
+    "Berthin SO": [
+      "174029"
+    ],
+    "Tallai SO": [
+      "174030"
+    ],
+    "Jhandutta SO": [
+      "174031"
+    ],
+    "Namhol SO": [
+      "174032"
+    ],
+    "Jukhala SO": [
+      "174033"
+    ],
+    "Geharwin SO": [
+      "174034"
+    ],
+    "Kalol SO Bilaspur HP": [
+      "174035"
+    ],
+    "NTPC Jamthal SO": [
+      "174036"
+    ],
+    "AIIMS Bilaspur S.O": [
+      "174037"
+    ],
+    "Bhakra Dam SO": [
+      "174201"
+    ],
+    "Bani SO HamirpurHP": [
+      "174304"
+    ],
+    "Barsar HO": [
+      "174305"
+    ],
+    "Bahina SO": [
+      "174309"
+    ],
+    "Naina Devi SO": [
+      "174310"
+    ],
+    "Salauni SO": [
+      "174311"
+    ],
+    "Jaure Amb SO": [
+      "174312"
+    ],
+    "Hareta SO": [
+      "174405"
+    ],
+    "Dhaned SO": [
+      "174505"
+    ],
+    "Chakmoh SO": [
+      "176039"
+    ],
+    "Bijhari SO": [
+      "176040"
+    ],
+    "Bhota SO": [
+      "176041"
+    ],
+    "Mair SO": [
+      "176042"
+    ],
+    "Ladraur SO": [
+      "176043"
+    ],
+    "Mundkhar SO": [
+      "176044"
+    ],
+    "Bhoranj SO": [
+      "176045"
+    ],
+    "Jahu SO": [
+      "176048"
+    ],
+    "Maharal SO": [
+      "176049"
+    ],
+    "Bhaleth SO": [
+      "176108"
+    ],
+    "Jangal Beri SO": [
+      "176109"
+    ],
+    "Sujanpur Tira SO": [
+      "176110"
+    ],
+    "Patlander SO": [
+      "176111"
+    ],
+    "Hamirpur HO HP Circle": [
+      "177001"
+    ],
+    "Govt Degree College Hamirpur SO": [
+      "177005"
+    ],
+    "Kashmir SO": [
+      "177006"
+    ],
+    "Chabutra SO": [
+      "177007"
+    ],
+    "Kuthera SO": [
+      "177020"
+    ],
+    "Bagwara SO": [
+      "177021"
+    ],
+    "Uhal SO": [
+      "177022"
+    ],
+    "Tauni Devi SO": [
+      "177023"
+    ],
+    "Bhareri SO": [
+      "177024"
+    ],
+    "Kanjian SO": [
+      "177025"
+    ],
+    "Galore SO": [
+      "177026"
+    ],
+    "Kot SO HamirpurHP": [
+      "177027"
+    ],
+    "Kakkar SO": [
+      "177028"
+    ],
+    "Lambloo SO": [
+      "177029"
+    ],
+    "Nadaun SO": [
+      "177033"
+    ],
+    "Sera SO": [
+      "177038"
+    ],
+    "Kangoo SO": [
+      "177040"
+    ],
+    "Dhaneta SO": [
+      "177041"
+    ],
+    "Jalari SO": [
+      "177042"
+    ],
+    "Bara SO HamirpurHP": [
+      "177044"
+    ],
+    "Rail SO": [
+      "177045"
+    ],
+    "Rangas SO": [
+      "177048"
+    ],
+    "Bahanwin SO": [
+      "177118"
+    ],
+    "Bumbloo SO": [
+      "177119"
+    ],
+    "Basaral SO": [
+      "177301"
+    ],
+    "Didwin SO": [
+      "177401"
+    ],
+    "Parol SO": [
+      "177501"
+    ],
+    "Awah Devi SO": [
+      "177601"
+    ]
+  },
+  "Hapur (Panchsheel Nagar)": {},
+  "Hardoi": {
+    "Hardoi HO": [
+      "241001"
+    ],
+    "Aihrori SO": [
+      "241121"
+    ],
+    "Baghauli SO": [
+      "241122"
+    ],
+    "Pali SO Hardoi": [
+      "241123"
+    ],
+    "Shahabad SO Hardoi": [
+      "241124"
+    ],
+    "Behta Gokul SO": [
+      "241125"
+    ],
+    "Kachhauna SO": [
+      "241126"
+    ],
+    "Sandila I Estate SO": [
+      "241127"
+    ],
+    "Behander SO": [
+      "241201"
+    ],
+    "Bharawan SO": [
+      "241202"
+    ],
+    "Dhikunni SO": [
+      "241203"
+    ],
+    "Sandila SO": [
+      "241204"
+    ],
+    "Bilgram SO": [
+      "241301"
+    ],
+    "Madhoganj SO Hardoi": [
+      "241302"
+    ],
+    "Mallawan SO": [
+      "241303"
+    ],
+    "Beniganj SO": [
+      "241304"
+    ],
+    "Gaus Ganj SO": [
+      "241305"
+    ],
+    "Barwan SO Hardoi": [
+      "241401"
+    ],
+    "Harpalpur SO Hardoi": [
+      "241402"
+    ],
+    "Sandi SO": [
+      "241403"
+    ],
+    "Gopamau SO": [
+      "241404"
+    ],
+    "Hariyawan SO": [
+      "241405"
+    ],
+    "Pihani SO": [
+      "241406"
+    ],
+    "Saadat Nagar SO": [
+      "241407"
+    ]
+  },
+  "Hathras": {},
+  "Jalaun": {},
+  "Jaunpur": {
+    "Jaunpur HO": [
+      "222001"
+    ],
+    "Jaunpur Kty SO": [
+      "222002"
+    ],
+    "Purvanchal Vishwa Vidyalaya SO": [
+      "222003"
+    ],
+    "MALHANI BAZAR SO": [
+      "222004"
+    ],
+    "Ramdayalganj SO": [
+      "222105"
+    ],
+    "Naupedwa SO": [
+      "222109"
+    ],
+    "Badlapur SO": [
+      "222125"
+    ],
+    "RAJA BAZAR SO JAUNPUR": [
+      "222126"
+    ],
+    "Baderi SO": [
+      "222127"
+    ],
+    "Bazar Neorhia SO": [
+      "222128"
+    ],
+    "Chandwak SO": [
+      "222129"
+    ],
+    "Sikrara SO": [
+      "222131"
+    ],
+    "Fatehganj SO Jaunpur": [
+      "222132"
+    ],
+    "Gaurabadshahpur SO": [
+      "222133"
+    ],
+    "Gulzarganj SO": [
+      "222135"
+    ],
+    "Jalalpur SO Jaunpur": [
+      "222136"
+    ],
+    "Jamalapur SO": [
+      "222137"
+    ],
+    "Kajgaon SO Jaunpur": [
+      "222138"
+    ],
+    "Khetasarai SO": [
+      "222139"
+    ],
+    "Saraiharakhu SO": [
+      "222141"
+    ],
+    "Kerakat SO": [
+      "222142"
+    ],
+    "Machhali Shahar SO": [
+      "222143"
+    ],
+    "Baraipar SO": [
+      "222144"
+    ],
+    "Mahraj Ganj SO": [
+      "222145"
+    ],
+    "Kutir Chakkey SO": [
+      "222146"
+    ],
+    "Leorua SO": [
+      "222148"
+    ],
+    "Sgrd College Dobhi SO": [
+      "222149"
+    ],
+    "Mariahun SO": [
+      "222161"
+    ],
+    "Barsathi SO": [
+      "222162"
+    ],
+    "Meerganj SO Jaunpur": [
+      "222165"
+    ],
+    "Muftiganj SO": [
+      "222170"
+    ],
+    "Singramau SO": [
+      "222175"
+    ],
+    "Zafarabad SO": [
+      "222180"
+    ],
+    "Thanagaddi SO": [
+      "222181"
+    ],
+    "Balwarganj SO": [
+      "222201"
+    ],
+    "Mungra Badshahpur SO": [
+      "222202"
+    ],
+    "Rampur SO Jaunpur": [
+      "222203"
+    ],
+    "Nibhapur SO": [
+      "222204"
+    ],
+    "SULTANPUR SO": [
+      "222205"
+    ],
+    "Shahganj SO Jaunpur": [
+      "223101"
+    ],
+    "Patti Narendra SO": [
+      "223102"
+    ],
+    "Saraimohiddin SO": [
+      "223103"
+    ],
+    "Khuthan SO": [
+      "223104"
+    ],
+    "Soithakalan SO": [
+      "223105"
+    ]
+  },
+  "Jhansi": {
+    "JHANSI HO": [
+      "284001"
+    ],
+    "Jhansi City SO": [
+      "284002"
+    ],
+    "Sipri Bazar SO": [
+      "284003"
+    ],
+    "BHEL SO Jhansi": [
+      "284120"
+    ],
+    "Baragaon SO Jhansi": [
+      "284121"
+    ],
+    "Bansi SO Lalitpur": [
+      "284122"
+    ],
+    "Barh SO Lalitpur": [
+      "284123"
+    ],
+    "Jakhaura SO": [
+      "284124"
+    ],
+    "Lakeviewcamp SO": [
+      "284125"
+    ],
+    "Talbehat SO": [
+      "284126"
+    ],
+    "Bhattagaon SO": [
+      "284127"
+    ],
+    "Mlb Medical College SO": [
+      "284128"
+    ],
+    "33 Bn Pac Jhansi SO": [
+      "284135"
+    ],
+    "Matatila SO": [
+      "284136"
+    ],
+    "Barwasagar SO": [
+      "284201"
+    ],
+    "Gursarai SO": [
+      "284202"
+    ],
+    "Garautha SO": [
+      "284203"
+    ],
+    "Mauranipur SO": [
+      "284204"
+    ],
+    "Ranipur SO Jhansi": [
+      "284205"
+    ],
+    "Tori Fatehpur SO": [
+      "284206"
+    ],
+    "Chirgaon SO Jhansi": [
+      "284301"
+    ],
+    "Erich SO": [
+      "284302"
+    ],
+    "Moth SO": [
+      "284303"
+    ],
+    "Samthar SO": [
+      "284304"
+    ],
+    "Parichha Thermal Power Project SO": [
+      "284305"
+    ],
+    "Poonchh SO": [
+      "284306"
+    ],
+    "Babina Cantt SO": [
+      "284401"
+    ],
+    "Banpur SO Lalitpur": [
+      "284402"
+    ],
+    "LALITPUR HO": [
+      "284403"
+    ],
+    "Madawra SO": [
+      "284404"
+    ],
+    "Mahroni SO": [
+      "284405"
+    ],
+    "Narahat SO": [
+      "284406"
+    ],
+    "Raksa SO": [
+      "284419"
+    ],
+    "Rajghat Dam Project SO": [
+      "284501"
+    ],
+    "ORAI HO": [
+      "285001"
+    ],
+    "Bangra SO": [
+      "285121"
+    ],
+    "Dakore SO": [
+      "285122"
+    ],
+    "Jalaun SO": [
+      "285123"
+    ],
+    "Jagammanpur SO": [
+      "285124"
+    ],
+    "Kuthond SO": [
+      "285125"
+    ],
+    "Madhogarh SO Jalaun": [
+      "285126"
+    ],
+    "Rampura SO Jalaun": [
+      "285127"
+    ],
+    "Hadrukh SO": [
+      "285128"
+    ],
+    "Umri SO Jalaun": [
+      "285129"
+    ],
+    "Madaripur SO": [
+      "285130"
+    ],
+    "Ait SO": [
+      "285201"
+    ],
+    "Ata SO": [
+      "285202"
+    ],
+    "Baoni Estate SO": [
+      "285203"
+    ],
+    "Kalpi SO": [
+      "285204"
+    ],
+    "Konch SO Jalaun": [
+      "285205"
+    ],
+    "Nadigaon SO": [
+      "285206"
+    ],
+    "Kotra SO Jalaun": [
+      "285223"
+    ]
+  },
+  "Kannauj": {},
+  "Kanpur Dehat": {},
+  "Kanpur Nagar": {},
+  "Kanshiram Nagar (Kasganj)": {},
+  "Kaushambi": {},
+  "Kushinagar (Padrauna)": {},
+  "Lakhimpur - Kheri": {},
+  "Lalitpur": {},
+  "Lucknow": {
+    "Dilkusha SO": [
+      "226002"
+    ],
+    "Lucknow Chowk HO": [
+      "226003"
+    ],
+    "Rajendranagar SO Lucknow": [
+      "226004"
+    ],
+    "Alambagh SO": [
+      "226005"
+    ],
+    "Mahanagar SO": [
+      "226006"
+    ],
+    "New Hyderabad SO": [
+      "226007"
+    ],
+    "Sarojini Nagar SO": [
+      "226008"
+    ],
+    "AMAUSI AD SO": [
+      "226009"
+    ],
+    "Gomti Nagar SO": [
+      "226010"
+    ],
+    "MANAK NAGAR SO": [
+      "226011"
+    ],
+    "LDA Colony SO": [
+      "226012"
+    ],
+    "IIM Lucknow SO": [
+      "226013"
+    ],
+    "Sgpgi SO": [
+      "226014"
+    ],
+    "Cimap SO": [
+      "226015"
+    ],
+    "Indira Nagar SO": [
+      "226016"
+    ],
+    "Avas Vikas Colony SO Lucknow": [
+      "226017"
+    ],
+    "Aminabad Park SO": [
+      "226018"
+    ],
+    "Industria Area Chinhat SO": [
+      "226019"
+    ],
+    "Niralanagar SO": [
+      "226020"
+    ],
+    "Jankipuram SO": [
+      "226021"
+    ],
+    "Vikas Nagar SO": [
+      "226022"
+    ],
+    "MANAS NAGAR SO": [
+      "226023"
+    ],
+    "Aliganj SO": [
+      "226024"
+    ],
+    "B R A University SO": [
+      "226025"
+    ],
+    "Sanatan Dharam Vidya Peeth SO": [
+      "226026"
+    ],
+    "UPG Camp SO": [
+      "226027"
+    ],
+    "Chinhat SO": [
+      "226028"
+    ],
+    "Vrindavan Colony SO": [
+      "226029"
+    ],
+    "Sushant Golf City SO": [
+      "226030"
+    ],
+    "Jankipuram Extension SO": [
+      "226031"
+    ],
+    "Kakori SO": [
+      "226101"
+    ],
+    "Malihabad SO": [
+      "226102"
+    ],
+    "Rahimabad SO": [
+      "226103"
+    ],
+    "MALL SO": [
+      "226104"
+    ],
+    "Bakshi Ka Talab SO": [
+      "226201"
+    ],
+    "FFTC INDAURABAGH SO": [
+      "226202"
+    ],
+    "Itaunja SO": [
+      "226203"
+    ],
+    "Mohanlalganj SO": [
+      "226301"
+    ],
+    "Nigohan SO": [
+      "226302"
+    ],
+    "Nagram SO": [
+      "226303"
+    ],
+    "Banthara SO Lucknow": [
+      "226401"
+    ],
+    "Gosainganj SO": [
+      "226501"
+    ]
+  },
+  "Maharajganj": {},
+  "Mahoba": {},
+  "Mainpuri": {
+    "Mainpuri HO": [
+      "205001"
+    ],
+    "Tindauli SO": [
+      "205119"
+    ],
+    "Ghiror SO": [
+      "205121"
+    ],
+    "Ajitganj SO": [
+      "205247"
+    ],
+    "Baranahal SO": [
+      "205261"
+    ],
+    "Bhongaon SO": [
+      "205262"
+    ],
+    "Jeonti SO": [
+      "205263"
+    ],
+    "Karhal SO Mainpuri": [
+      "205264"
+    ],
+    "Kuraoli SO": [
+      "205265"
+    ],
+    "Sultanganj SO Mainpuri": [
+      "205267"
+    ],
+    "Kurra SO": [
+      "205268"
+    ],
+    "Bewar SO Mainpuri": [
+      "205301"
+    ],
+    "Kishni SO": [
+      "205303"
+    ],
+    "Kusmara SO": [
+      "205304"
+    ],
+    "Oef  Firozabad SO": [
+      "283103"
+    ],
+    "Parham SO": [
+      "283130"
+    ],
+    "Shikohabad SO": [
+      "283135"
+    ],
+    "Jasrana SO": [
+      "283136"
+    ],
+    "Shikohabad RS SO": [
+      "283141"
+    ],
+    "Pariyar SO": [
+      "283142"
+    ],
+    "Makkhanpur SO": [
+      "283145"
+    ],
+    "Sirsaganj SO": [
+      "283151"
+    ],
+    "Eka SO": [
+      "283152"
+    ],
+    "Firozabad HO": [
+      "283203"
+    ],
+    "Tundla SO": [
+      "283204"
+    ],
+    "Collectorate firozabad SO": [
+      "283205"
+    ],
+    "Kotla SO Firozabad": [
+      "283206"
+    ],
+    "Phariha SO": [
+      "283207"
+    ]
+  },
+  "Mathura": {
+    "Mathura HO": [
+      "281001"
+    ],
+    "Gayatri Tapo Bhoomi SO": [
+      "281003"
+    ],
+    "Krishna Nagar SO Mathura": [
+      "281004"
+    ],
+    "Mathura Refinery SO": [
+      "281005"
+    ],
+    "Refinery Nagar SO": [
+      "281006"
+    ],
+    "Jalesar RS SO": [
+      "281104"
+    ],
+    "Vrindaban SO": [
+      "281121"
+    ],
+    "Farah SO": [
+      "281122"
+    ],
+    "Sonkh SO": [
+      "281123"
+    ],
+    "Bajna SO Mathura": [
+      "281201"
+    ],
+    "Mant SO": [
+      "281202"
+    ],
+    "Nauhjhil SO": [
+      "281203"
+    ],
+    "Raya SO": [
+      "281204"
+    ],
+    "Surir SO": [
+      "281205"
+    ],
+    "Sonai SO Mathura": [
+      "281206"
+    ],
+    "Baldeo SO": [
+      "281301"
+    ],
+    "Bisawar SO": [
+      "281302"
+    ],
+    "Gokul SO": [
+      "281303"
+    ],
+    "Mahaban SO": [
+      "281305"
+    ],
+    "Sadabad SO": [
+      "281306"
+    ],
+    "Sahpau SO": [
+      "281307"
+    ],
+    "Jugasana SO": [
+      "281308"
+    ],
+    "Chhata SO Mathura": [
+      "281401"
+    ],
+    "Kosi Kalan SO": [
+      "281403"
+    ],
+    "Shergarh SO Mathura": [
+      "281404"
+    ],
+    "Barsana SO": [
+      "281405"
+    ],
+    "Chaumuhan SO": [
+      "281406"
+    ],
+    "Aring SO": [
+      "281501"
+    ],
+    "Goverdhan SO": [
+      "281502"
+    ],
+    "Radhakund SO": [
+      "281504"
+    ]
+  },
+  "Mau": {},
+  "Meerut": {
+    "Kharkhauda SO": [
+      "245206"
+    ],
+    "Meerut Cantt HO": [
+      "250001"
+    ],
+    "Meerut City HO": [
+      "250002"
+    ],
+    "Meerut Kutchery SO": [
+      "250003"
+    ],
+    "L L R M Medcollege SO": [
+      "250004"
+    ],
+    "MIET SO": [
+      "250005"
+    ],
+    "I E Partapur SO": [
+      "250103"
+    ],
+    "Kithore SO": [
+      "250104"
+    ],
+    "Machhara SO": [
+      "250106"
+    ],
+    "Modipuram SO": [
+      "250110"
+    ],
+    "Mohiuddinpur SO": [
+      "250205"
+    ],
+    "Daurala SO": [
+      "250221"
+    ],
+    "Lawar SO": [
+      "250222"
+    ],
+    "Sakoti Tanda SO": [
+      "250223"
+    ],
+    "Dabathwa SO": [
+      "250341"
+    ],
+    "Sardhana SO": [
+      "250342"
+    ],
+    "Mawana SO": [
+      "250401"
+    ],
+    "Mawana Factory SO": [
+      "250402"
+    ],
+    "Hastinapur SO": [
+      "250404"
+    ],
+    "Parikshitgarh SO": [
+      "250406"
+    ],
+    "Jani SO": [
+      "250501"
+    ]
+  },
+  "Mirzapur": {
+    "Mirzapur HO": [
+      "231001"
+    ],
+    "Chopan SO": [
+      "231205"
+    ],
+    "Churk SO": [
+      "231206"
+    ],
+    "Dalla SO": [
+      "231207"
+    ],
+    "Dudhi SO": [
+      "231208"
+    ],
+    "Gurma Markundi SO": [
+      "231209"
+    ],
+    "Ghorawal SO": [
+      "231210"
+    ],
+    "Lalganj Mirzapur SO": [
+      "231211"
+    ],
+    "Amwar SO": [
+      "231212"
+    ],
+    "Ram Garh SO": [
+      "231213"
+    ],
+    "Rajpur SO Sonbhadra": [
+      "231215"
+    ],
+    "Robertsganj HO": [
+      "231216"
+    ],
+    "Renukoot SO": [
+      "231217"
+    ],
+    "Renusagar SO": [
+      "231218"
+    ],
+    "Obra SO Sonbhadra": [
+      "231219"
+    ],
+    "Beena Project SO": [
+      "231220"
+    ],
+    "Turra SO": [
+      "231221"
+    ],
+    "Shaktinagar SO Sonbhadra": [
+      "231222"
+    ],
+    "Beej Pur SO": [
+      "231223"
+    ],
+    "Kakari Project SO": [
+      "231224"
+    ],
+    "Anpara Tps SO": [
+      "231225"
+    ],
+    "Wyndhamganj SO": [
+      "231226"
+    ],
+    "Ahraura SO": [
+      "231301"
+    ],
+    "Adalhat SO": [
+      "231302"
+    ],
+    "Bijaipur SO Mirzapur": [
+      "231303"
+    ],
+    "Chunar SO": [
+      "231304"
+    ],
+    "Narainpur SO Mirzapur": [
+      "231305"
+    ],
+    "Sikhar SO": [
+      "231306"
+    ],
+    "Vindhyachal SO": [
+      "231307"
+    ],
+    "Kubari Patehara SO": [
+      "231309"
+    ],
+    "Chunar Cement Factory SO": [
+      "231311"
+    ],
+    "Chilh SO": [
+      "231312"
+    ],
+    "Jigna RS SO": [
+      "231313"
+    ],
+    "Jamua SO Mirzapur": [
+      "231314"
+    ],
+    "Kachhwa SO Mirzapur": [
+      "231501"
+    ]
+  },
+  "Moradabad": {
+    "Moradabad HO": [
+      "244001"
+    ],
+    "Pakbara SO": [
+      "244102"
+    ],
+    "Majhola SO Moradabad": [
+      "244103"
+    ],
+    "Mundha SO": [
+      "244104"
+    ],
+    "Vikas Bhawan Moradabad SO": [
+      "244105"
+    ],
+    "Amroha HO": [
+      "244221"
+    ],
+    "Joya SO": [
+      "244222"
+    ],
+    "Bhartiya Gram SO": [
+      "244223"
+    ],
+    "Bachhraon SO": [
+      "244225"
+    ],
+    "Dhanaura SO": [
+      "244231"
+    ],
+    "Gajraula SO": [
+      "244235"
+    ],
+    "Rajab Pur SO": [
+      "244236"
+    ],
+    "Hasanpur SO Jyotiba Phule Nagar": [
+      "244241"
+    ],
+    "Ujhari SO": [
+      "244242"
+    ],
+    "Kundan Nagar SO": [
+      "244245"
+    ],
+    "Nawgawan SO": [
+      "244251"
+    ],
+    "Rehra SO": [
+      "244255"
+    ],
+    "Sirsi SO Moradabad": [
+      "244301"
+    ],
+    "Sambhal SO": [
+      "244302"
+    ],
+    "Sarai Tarin SO": [
+      "244303"
+    ],
+    "Asmoli SO": [
+      "244304"
+    ],
+    "Dilari SO": [
+      "244401"
+    ],
+    "Pipalsana RS SO": [
+      "244402"
+    ],
+    "Bahjoi SO": [
+      "244410"
+    ],
+    "Bilari SO": [
+      "244411"
+    ],
+    "Chandausi SO": [
+      "244412"
+    ],
+    "Kundarki SO": [
+      "244413"
+    ],
+    "Narauli SO": [
+      "244414"
+    ],
+    "Raja Ka Sahaspur SO": [
+      "244415"
+    ],
+    "Kanth SO": [
+      "244501"
+    ],
+    "Aghwanpur SO": [
+      "244504"
+    ],
+    "Thakurdwara SO": [
+      "244601"
+    ],
+    "Surjan Nagar SO": [
+      "244602"
+    ],
+    "Milak SO": [
+      "244701"
+    ],
+    "Rampur HO": [
+      "244901"
+    ],
+    "Bilaspur Rampur SO": [
+      "244921"
+    ],
+    "Shahbad SO Rampur": [
+      "244922"
+    ],
+    "Bilaspur Chini Mill SO": [
+      "244923"
+    ],
+    "Suar SO": [
+      "244924"
+    ],
+    "Tanda Badli SO": [
+      "244925"
+    ],
+    "Modipur SO": [
+      "244926"
+    ],
+    "Said Nagar SO": [
+      "244927"
+    ],
+    "Kemri SO Rampur": [
+      "244928"
+    ]
+  },
+  "Muzaffarnagar": {
+    "Muzaffarnagar HO": [
+      "251001"
+    ],
+    "Muzaffar Nagar City SO": [
+      "251002"
+    ],
+    "Industrial Estate SO Muzaffarnagar": [
+      "251003"
+    ],
+    "Khatauli SO": [
+      "251201"
+    ],
+    "Rohana Mills SO": [
+      "251202"
+    ],
+    "Mansurpur SO": [
+      "251203"
+    ],
+    "Alipur Kheri SO": [
+      "251301"
+    ],
+    "Baghra SO Muzaffarnagar": [
+      "251306"
+    ],
+    "Barla SO": [
+      "251307"
+    ],
+    "Bhopa SO": [
+      "251308"
+    ],
+    "Budhana SO": [
+      "251309"
+    ],
+    "Basera SO": [
+      "251310"
+    ],
+    "Charthawal SO": [
+      "251311"
+    ],
+    "Jansath SO": [
+      "251314"
+    ],
+    "Miranpur SO": [
+      "251315"
+    ],
+    "Morna SO": [
+      "251316"
+    ],
+    "Shahpur Muzaffarnagar SO": [
+      "251318"
+    ],
+    "Sisauli SO": [
+      "251319"
+    ],
+    "Ramraj SO": [
+      "251320"
+    ],
+    "Purkazi SO": [
+      "251327"
+    ]
+  },
+  "Pilibhit": {},
+  "Pratapgarh": {
+    "Kalakankar SO": [
+      "229408"
+    ],
+    "Kaithola SO": [
+      "229410"
+    ],
+    "Pratapgarh HO": [
+      "230001"
+    ],
+    "Pratapgarh City SO": [
+      "230002"
+    ],
+    "PDCHAURAHA SO": [
+      "230121"
+    ],
+    "Amargarh SO Pratapgarh": [
+      "230124"
+    ],
+    "Atheha SO": [
+      "230125"
+    ],
+    "Babuganj SO": [
+      "230126"
+    ],
+    "Dalippur SO Pratapgarh": [
+      "230127"
+    ],
+    "Derwa SO": [
+      "230128"
+    ],
+    "Jethwara SO": [
+      "230129"
+    ],
+    "Laxmanpur SO": [
+      "230130"
+    ],
+    "Katra Medniganj SO": [
+      "230131"
+    ],
+    "Lalganj": [
+      "230132"
+    ],
+    "PIRTHIGANJ BAZAR SO": [
+      "230133"
+    ],
+    "Oraiyadeeh SO": [
+      "230134"
+    ],
+    "Patti": [
+      "230135"
+    ],
+    "Sagra SO": [
+      "230136"
+    ],
+    "Sahebganj SO": [
+      "230137"
+    ],
+    "Saifabad SO": [
+      "230138"
+    ],
+    "Sangipur SO": [
+      "230139"
+    ],
+    "Sangramgarh SO": [
+      "230141"
+    ],
+    "Shitlaganj SO": [
+      "230142"
+    ],
+    "Babaganj SO": [
+      "230143"
+    ],
+    "Ajgara SO": [
+      "230144"
+    ],
+    "Bhadri SO": [
+      "230201"
+    ],
+    "Garhi Manikpur SO": [
+      "230202"
+    ],
+    "Kunda": [
+      "230204"
+    ],
+    "Gaura R S SO": [
+      "230301"
+    ],
+    "Jamtali SO": [
+      "230302"
+    ],
+    "Raniganj SO": [
+      "230304"
+    ],
+    "Suwansa SO": [
+      "230306"
+    ],
+    "Kohdaur SO": [
+      "230401"
+    ],
+    "Mandhata SO": [
+      "230402"
+    ],
+    "Madhoganj SO": [
+      "230403"
+    ],
+    "Vishwanathganj SO": [
+      "230404"
+    ],
+    "Darchhut SO": [
+      "230405"
+    ],
+    "Antu SO": [
+      "230501"
+    ],
+    "Garwara SO": [
+      "230502"
+    ],
+    "Kishunganj SO": [
+      "230503"
+    ]
+  },
+  "RaeBareli": {},
+  "Rampur": {},
+  "Saharanpur": {
+    "Saharanpur HO": [
+      "247001"
+    ],
+    "PTC SO": [
+      "247002"
+    ],
+    "Babail Buzurg SO": [
+      "247120"
+    ],
+    "Behat SO Saharanpur": [
+      "247121"
+    ],
+    "Badshahi Bagh SO": [
+      "247122"
+    ],
+    "Muzaffrabad SO": [
+      "247129"
+    ],
+    "Chilkana SO": [
+      "247231"
+    ],
+    "Sarsawa SO": [
+      "247232"
+    ],
+    "Ambehta SO": [
+      "247340"
+    ],
+    "Gangoh SO": [
+      "247341"
+    ],
+    "Nakur SO": [
+      "247342"
+    ],
+    "Titron SO": [
+      "247343"
+    ],
+    "Rampur SO Saharanpur": [
+      "247451"
+    ],
+    "Nanauta SO": [
+      "247452"
+    ],
+    "Jaroda Panda SO": [
+      "247453"
+    ],
+    "Nagal SO Saharanpur": [
+      "247551"
+    ],
+    "Deoband SO": [
+      "247554"
+    ],
+    "Chhutmalpur SO": [
+      "247662"
+    ],
+    "Gagalheri SO": [
+      "247669"
+    ]
+  },
+  "Sambhal (Bhim Nagar)": {},
+  "Sant Kabir Nagar": {},
+  "Shahjahanpur": {
+    "Shahjahanpur HO": [
+      "242001"
+    ],
+    "Banda SO Shahjahanpur": [
+      "242042"
+    ],
+    "R B Kalan SO": [
+      "242127"
+    ],
+    "Allahganj SO": [
+      "242220"
+    ],
+    "Jalalabad SO Shahjahanpur": [
+      "242221"
+    ],
+    "Kant SO": [
+      "242223"
+    ],
+    "M Ashram SO": [
+      "242226"
+    ],
+    "Miranpur Katra SO": [
+      "242301"
+    ],
+    "Khera Bajhera SO": [
+      "242303"
+    ],
+    "Khudaganj SO": [
+      "242305"
+    ],
+    "Rosa RS SO": [
+      "242306"
+    ],
+    "Tilhar SO": [
+      "242307"
+    ],
+    "Powayan SO": [
+      "242401"
+    ],
+    "Khutar SO": [
+      "242405"
+    ],
+    "Rosa SO": [
+      "242406"
+    ],
+    "Nigohi SO": [
+      "242407"
+    ]
+  },
+  "Shamali (Prabuddh Nagar)": {},
+  "Shravasti": {},
+  "Siddharth Nagar": {},
+  "Sitapur": {
+    "Sitapur HO": [
+      "261001"
+    ],
+    "HS Mills SO": [
+      "261121"
+    ],
+    "Husainganj SO Sitapur": [
+      "261125"
+    ],
+    "Khairabad SO Sitapur": [
+      "261131"
+    ],
+    "Laharpur SO": [
+      "261135"
+    ],
+    "Singhnapur SO": [
+      "261136"
+    ],
+    "Maholi SO": [
+      "261141"
+    ],
+    "Manpur SO Sitapur": [
+      "261145"
+    ],
+    "Pisawan SO": [
+      "261151"
+    ],
+    "Biswan SO": [
+      "261201"
+    ],
+    "Jahangirabad SO Sitapur": [
+      "261202"
+    ],
+    "Mahmudabad SO": [
+      "261203"
+    ],
+    "Rampur Mathura SO": [
+      "261204"
+    ],
+    "Reosa SO": [
+      "261205"
+    ],
+    "Saraiyan Raja Saheb SO": [
+      "261206"
+    ],
+    "Talgaon SO": [
+      "261207"
+    ],
+    "Tambour SO": [
+      "261208"
+    ],
+    "Bhandia SO": [
+      "261301"
+    ],
+    "Kamlapur SO Sitapur": [
+      "261302"
+    ],
+    "Sidhauli SO": [
+      "261303"
+    ],
+    "Atariya SO": [
+      "261304"
+    ],
+    "Mishrikh SO": [
+      "261401"
+    ],
+    "Naimisharanya SO": [
+      "261402"
+    ],
+    "Aurangabad SO Sitapur": [
+      "261403"
+    ],
+    "Parsada SO": [
+      "261404"
+    ],
+    "Machharehta SO": [
+      "261405"
+    ]
+  },
+  "Sonbhadra": {},
+  "Sultanpur": {
+    "Koiripur SO": [
+      "222301"
+    ],
+    "Lambhua SO": [
+      "222302"
+    ],
+    "Maharani Pachchhim SO": [
+      "222303"
+    ],
+    "Bharkhare SO": [
+      "227304"
+    ],
+    "Amethi HO": [
+      "227405"
+    ],
+    "Bhadar SO": [
+      "227406"
+    ],
+    "Bisesarganj SO": [
+      "227407"
+    ],
+    "Dhammaur SO": [
+      "227408"
+    ],
+    "Gauriganj SO": [
+      "227409"
+    ],
+    "Shahgarh SO Sultanpur": [
+      "227411"
+    ],
+    "H A L Korwa SO": [
+      "227412"
+    ],
+    "Tikarmafi SO": [
+      "227413"
+    ],
+    "Gaura Jamon SO": [
+      "227801"
+    ],
+    "Aliganj Bazar SO": [
+      "227805"
+    ],
+    "Bazar Baldirai SO": [
+      "227806"
+    ],
+    "Pindara SO": [
+      "227807"
+    ],
+    "Hasanpur SO Sultanpur": [
+      "227808"
+    ],
+    "Jagdishpur SO Sultanpur": [
+      "227809"
+    ],
+    "Sukul Ka Bazar SO": [
+      "227811"
+    ],
+    "Wallipur SO": [
+      "227812"
+    ],
+    "Musafirkhana SO": [
+      "227813"
+    ],
+    "Ataula SO": [
+      "227814"
+    ],
+    "Haliapur SO": [
+      "227815"
+    ],
+    "Raniganj SO Sultanpur": [
+      "227816"
+    ],
+    "Jagdishpur Industrial Area SO": [
+      "227817"
+    ],
+    "Sultanpur Avadh HO": [
+      "228001"
+    ],
+    "Kamla Nehru Institute SO": [
+      "228118"
+    ],
+    "Gosainganj SO Sultanpur": [
+      "228119"
+    ],
+    "Baraunsa SO": [
+      "228120"
+    ],
+    "Atarsuma SO": [
+      "228121"
+    ],
+    "Dwarikaganj SO": [
+      "228125"
+    ],
+    "Dostpur SO": [
+      "228131"
+    ],
+    "Deara SO": [
+      "228132"
+    ],
+    "Belahari SO": [
+      "228133"
+    ],
+    "Jaisinghpur SO Sultanpur": [
+      "228141"
+    ],
+    "Mahmoodpur Semri SO": [
+      "228142"
+    ],
+    "Kadipur SO": [
+      "228145"
+    ],
+    "Kurebhar SO": [
+      "228151"
+    ],
+    "Kurwar SO": [
+      "228155"
+    ],
+    "Ramganj SO Sultanpur": [
+      "228159"
+    ],
+    "Tawakkalpur Nagra SO": [
+      "228161"
+    ],
+    "Akhandnagar SO": [
+      "228171"
+    ],
+    "Belwai SO": [
+      "228172"
+    ]
+  },
+  "Unnao": {},
+  "Varanasi": {},
+  "Misc": {}
+}

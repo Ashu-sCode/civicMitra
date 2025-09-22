@@ -1,0 +1,660 @@
+{
+  "Anantnag": {},
+  "Bandipore": {},
+  "Baramulla": {
+    "Baramulla H.O": [
+      "193101"
+    ],
+    "Khawaja Bagh S.O": [
+      "193103"
+    ],
+    "Kreeri S.O": [
+      "193108"
+    ],
+    "WAGOORA S.O": [
+      "193109"
+    ],
+    "Pattan S.O": [
+      "193121"
+    ],
+    "Boniyar S.O": [
+      "193122"
+    ],
+    "Uri S.O": [
+      "193123"
+    ],
+    "Sopore S.O": [
+      "193201"
+    ],
+    "Handwara S.O": [
+      "193221"
+    ],
+    "Kupwara S.O": [
+      "193222"
+    ],
+    "Sogam S.O": [
+      "193223"
+    ],
+    "TREHGAM S.O": [
+      "193224"
+    ],
+    "Tangdhar S.O": [
+      "193225"
+    ],
+    "Rohama S.O": [
+      "193301"
+    ],
+    "Langate S.O": [
+      "193302"
+    ],
+    "Dangiwacha S.O": [
+      "193303"
+    ],
+    "Sonawari S.O": [
+      "193501"
+    ],
+    "Bandipora S.O": [
+      "193502"
+    ],
+    "Gurez S.O": [
+      "193503"
+    ],
+    "Safapora S.O": [
+      "193504"
+    ],
+    "Aloosa S.O": [
+      "193505"
+    ]
+  },
+  "Budgam": {},
+  "Doda": {},
+  "Ganderbal": {},
+  "Jammu": {
+    "Jammu HO": [
+      "180001"
+    ],
+    "Talab Tillo SO": [
+      "180002"
+    ],
+    "Jammu Cantt SO": [
+      "180003"
+    ],
+    "Gandhinagar HO": [
+      "180004"
+    ],
+    "Rehari Mohalla SO": [
+      "180005"
+    ],
+    "New University Campus SO": [
+      "180006"
+    ],
+    "Janipur SO": [
+      "180007"
+    ],
+    "SKUASTCHATHA SO": [
+      "180009"
+    ],
+    "Gangyal SO": [
+      "180010"
+    ],
+    "Sainik Colony SO": [
+      "180011"
+    ],
+    "Railway Station SO": [
+      "180012"
+    ],
+    "Roopnagar Jammu Tawi SO": [
+      "180013"
+    ],
+    "Chani Himat SO": [
+      "180015"
+    ],
+    "Vinaik Bazar SO": [
+      "180016"
+    ],
+    "Majeen SO": [
+      "180017"
+    ],
+    "Udheywala SO": [
+      "180018"
+    ],
+    "Sidhra Housing colony": [
+      "180019"
+    ],
+    "TRIKUTA NAGAR": [
+      "180020"
+    ],
+    "Miran Sahib SO": [
+      "181101"
+    ],
+    "RSPura SO": [
+      "181102"
+    ],
+    "Dablehar SO": [
+      "181111"
+    ],
+    "Paloura SO": [
+      "181121"
+    ],
+    "Bhalwal SO": [
+      "181122"
+    ],
+    "Bantalab SO": [
+      "181123"
+    ],
+    "Bsf Camp Paloura SO": [
+      "181124"
+    ],
+    "Arnia SO": [
+      "181131"
+    ],
+    "Bishnah Adda SO": [
+      "181132"
+    ],
+    "Bari Brahmna Icomplex SO": [
+      "181133"
+    ],
+    "Ramgarh SO Jammu": [
+      "181141"
+    ],
+    "Gurah Salathia SO": [
+      "181143"
+    ],
+    "Purmandal SO": [
+      "181145"
+    ],
+    "Bathindi SO": [
+      "181152"
+    ],
+    "Akhnoor SO": [
+      "181201"
+    ],
+    "Jourian SO": [
+      "181202"
+    ],
+    "Khour SO": [
+      "181203"
+    ],
+    "Pallanwala SO": [
+      "181204"
+    ],
+    "Muthi SO": [
+      "181205"
+    ],
+    "Dumana SO": [
+      "181206"
+    ],
+    "Pargwal SO": [
+      "181207"
+    ],
+    "Kandoli Nagrota SO": [
+      "181221"
+    ],
+    "Dansal SO": [
+      "181224"
+    ],
+    "Kathua HO": [
+      "184101"
+    ],
+    "Ie Kathua SO": [
+      "184102"
+    ],
+    "Mini Sectt Kathua SO": [
+      "184104"
+    ],
+    "Vijaypur SO": [
+      "184120"
+    ],
+    "Samba SO": [
+      "184121"
+    ],
+    "Ghagwal SO": [
+      "184141"
+    ],
+    "Hiranagar SO": [
+      "184142"
+    ],
+    "Barwal SO": [
+      "184143"
+    ],
+    "Dialachak SO": [
+      "184144"
+    ],
+    "Rajpura SO Kathua": [
+      "184145"
+    ],
+    "Sanjimore SO": [
+      "184148"
+    ],
+    "Parole SO": [
+      "184151"
+    ],
+    "Lakhanpur SO Kathua": [
+      "184152"
+    ],
+    "Basoli SO": [
+      "184201"
+    ],
+    "Mahanpur SO": [
+      "184202"
+    ],
+    "Bhaddu SO": [
+      "184203"
+    ],
+    "Billawar SO": [
+      "184204"
+    ],
+    "Ramkot SO Kathua": [
+      "184205"
+    ],
+    "Bani SO Kathua": [
+      "184206"
+    ],
+    "Nagrota Gujroo SO": [
+      "184210"
+    ],
+    "Chowki Choura SO": [
+      "185154"
+    ]
+  },
+  "Kargil": {},
+  "Kathua": {},
+  "Kishtwar": {},
+  "Kulgam": {},
+  "Kupwara": {},
+  "Leh": {
+    "Leh H.O": [
+      "194101"
+    ],
+    "Drass S.O": [
+      "194102"
+    ],
+    "Kargil S.O": [
+      "194103"
+    ],
+    "Chuglamsar S.O": [
+      "194104"
+    ],
+    "Khalsi S.O": [
+      "194106"
+    ],
+    "SASPOL S.O": [
+      "194107"
+    ],
+    "Mulbek S.O": [
+      "194109"
+    ],
+    "Thiksay S.O": [
+      "194201"
+    ],
+    "NYOMA MUD": [
+      "194202"
+    ],
+    "Sankoo S.O": [
+      "194301"
+    ],
+    "Padum S.O": [
+      "194302"
+    ],
+    "Panikhar S.O": [
+      "194303"
+    ],
+    "Diskit S.O": [
+      "194401"
+    ]
+  },
+  "Poonch": {},
+  "Pulwama": {},
+  "Rajouri": {
+    "Poonch SO": [
+      "185101"
+    ],
+    "Mandi SO": [
+      "185102"
+    ],
+    "Samote SO": [
+      "185121"
+    ],
+    "Rajouri HO": [
+      "185131"
+    ],
+    "Jawaharnagar SO Rajauri": [
+      "185132"
+    ],
+    "Post Graduate College Rajouri SO": [
+      "185133"
+    ],
+    "Darhal Malkan SO": [
+      "185135"
+    ],
+    "Naushera SO": [
+      "185151"
+    ],
+    "Lamberi SO": [
+      "185152"
+    ],
+    "Sunderbani SO": [
+      "185153"
+    ],
+    "Bhawani SO": [
+      "185155"
+    ],
+    "Kangri SO": [
+      "185156"
+    ],
+    "Solki SO": [
+      "185201"
+    ],
+    "Kalakot SO": [
+      "185202"
+    ],
+    "Dharamsal Mendhar SO": [
+      "185211"
+    ],
+    "Thanamandi SO": [
+      "185212"
+    ],
+    "Budhal SO": [
+      "185233"
+    ],
+    "Baba Ghulam Shah Badshah University SO": [
+      "185234"
+    ]
+  },
+  "Ramban": {},
+  "Reasi": {},
+  "Samba": {},
+  "Shopian": {},
+  "Srinagar": {
+    "Srinagar GPO": [
+      "190001"
+    ],
+    "SR Gunj SO": [
+      "190002"
+    ],
+    "Rainawari SO": [
+      "190003"
+    ],
+    "Batwara SO": [
+      "190004"
+    ],
+    "Sanat Nagar SO": [
+      "190005"
+    ],
+    "Kashmir University": [
+      "190006"
+    ],
+    "SK Airport SO": [
+      "190007"
+    ],
+    "Jawahar Nagar": [
+      "190008"
+    ],
+    "New Secretariat Srinagar SO": [
+      "190009"
+    ],
+    "Karan Nagar SO Srinagar": [
+      "190010"
+    ],
+    "Naushehra SO": [
+      "190011"
+    ],
+    "Zainakote SO": [
+      "190012"
+    ],
+    "Hyderpora SO": [
+      "190014"
+    ],
+    "Natipora SO": [
+      "190015"
+    ],
+    "Parimpora SO": [
+      "190017"
+    ],
+    "Bemina SO": [
+      "190018"
+    ],
+    "Bagh e Mehtab SO": [
+      "190019"
+    ],
+    "Buchpora SO": [
+      "190020"
+    ],
+    "Humhama SO": [
+      "190021"
+    ],
+    "Lal Bazar SO": [
+      "190023"
+    ],
+    "Zakoora": [
+      "190024"
+    ],
+    "SKUAST SO": [
+      "190025"
+    ],
+    "Nodal Delivery Center Srinagar": [
+      "190099"
+    ],
+    "Pantha Chowk SO": [
+      "191101"
+    ],
+    "Wuyan SO": [
+      "191102"
+    ],
+    "Khrew SO": [
+      "191103"
+    ],
+    "Budgam SO": [
+      "191111"
+    ],
+    "Chrar Sharif SO": [
+      "191112"
+    ],
+    "Chadoora SO": [
+      "191113"
+    ],
+    "Brein": [
+      "191121"
+    ],
+    "Tulmulla SO": [
+      "191131"
+    ],
+    "Rangreth SO": [
+      "191132"
+    ],
+    "Ganderbal": [
+      "191201"
+    ],
+    "Kangan SO": [
+      "191202"
+    ],
+    "Anantnag HO": [
+      "192101"
+    ],
+    "Pampore SO": [
+      "192121"
+    ],
+    "Awantipora SO": [
+      "192122"
+    ],
+    "Tral SO": [
+      "192123"
+    ],
+    "Bijbehara SO": [
+      "192124"
+    ],
+    "Martand SO": [
+      "192125"
+    ],
+    "Pahalgam SO": [
+      "192126"
+    ],
+    "S K Gund": [
+      "192129"
+    ],
+    "Achabal SO": [
+      "192201"
+    ],
+    "Kokarnag SO": [
+      "192202"
+    ],
+    "Dialgam": [
+      "192210"
+    ],
+    "Dooru SO": [
+      "192211"
+    ],
+    "Verinag SO": [
+      "192212"
+    ],
+    "Qazigund SO": [
+      "192221"
+    ],
+    "Kulgam SO": [
+      "192231"
+    ],
+    "Yaripora SO": [
+      "192232"
+    ],
+    "Damhal Hanji Pora SO": [
+      "192233"
+    ],
+    "Pulwama SO": [
+      "192301"
+    ],
+    "Hawl SO": [
+      "192302"
+    ],
+    "Shopian SO": [
+      "192303"
+    ],
+    "Kakapora": [
+      "192304"
+    ],
+    "Achan SO": [
+      "192305"
+    ],
+    "Srigufwara SO": [
+      "192401"
+    ],
+    "Rajpora": [
+      "193306"
+    ],
+    "Magam SO": [
+      "193401"
+    ],
+    "Tangmarg SO": [
+      "193402"
+    ],
+    "Gulmarg SO": [
+      "193403"
+    ],
+    "Kunzer SO": [
+      "193404"
+    ],
+    "Beerwah SO": [
+      "193411"
+    ]
+  },
+  "Udhampur": {
+    "Udhampur HO": [
+      "182101"
+    ],
+    "Garhi SO Udhampur": [
+      "182121"
+    ],
+    "Ramnagar SO Udhampur": [
+      "182122"
+    ],
+    "Jaganoo SO": [
+      "182124"
+    ],
+    "Mir SO": [
+      "182125"
+    ],
+    "Roan SO": [
+      "182126"
+    ],
+    "Majalta SO": [
+      "182127"
+    ],
+    "Majouri SO": [
+      "182128"
+    ],
+    "Chenani SO": [
+      "182141"
+    ],
+    "Kud SO": [
+      "182142"
+    ],
+    "Batote SO": [
+      "182143"
+    ],
+    "Ramban SO": [
+      "182144"
+    ],
+    "Ramsu SO": [
+      "182145"
+    ],
+    "Banihal SO": [
+      "182146"
+    ],
+    "Kastigarh SO": [
+      "182147"
+    ],
+    "Chanderkot SO": [
+      "182148"
+    ],
+    "Mantalai SO": [
+      "182161"
+    ],
+    "Khellani SO": [
+      "182201"
+    ],
+    "Doda SO Doda": [
+      "182202"
+    ],
+    "Thathri SO": [
+      "182203"
+    ],
+    "Kishtwar SO": [
+      "182204"
+    ],
+    "Palmar SO": [
+      "182205"
+    ],
+    "Dul Hasti Project SO": [
+      "182206"
+    ],
+    "GANDOH SO": [
+      "182207"
+    ],
+    "Udrana SO": [
+      "182221"
+    ],
+    "Bhaderwah SO": [
+      "182222"
+    ],
+    "Katra SO Udhampur": [
+      "182301"
+    ],
+    "Reasi SO": [
+      "182311"
+    ],
+    "Jyotipuram SO": [
+      "182312"
+    ],
+    "Arnas SO": [
+      "182313"
+    ],
+    "Mahore SO Udhampur": [
+      "182315"
+    ],
+    "SMVDU SO": [
+      "182320"
+    ],
+    "Poni SO": [
+      "185203"
+    ]
+  }
+}

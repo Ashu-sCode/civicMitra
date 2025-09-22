@@ -1,0 +1,790 @@
+{
+  "Ambala": {
+    "Ambala G.P.O.": [
+      "133001"
+    ],
+    "Kuldeep Nagar S.O": [
+      "133004"
+    ],
+    "Babyal S.O": [
+      "133005"
+    ],
+    "Ind estate S.O": [
+      "133006"
+    ],
+    "Majri S.O": [
+      "133008"
+    ],
+    "Defence Colony S.O": [
+      "133010"
+    ],
+    "Bihta S.O (Ambala)": [
+      "133101"
+    ],
+    "Kesri S.O": [
+      "133102"
+    ],
+    "Saraswati Nagar S.O": [
+      "133103"
+    ],
+    "Saha S.O": [
+      "133104"
+    ],
+    "Barara S.O": [
+      "133201"
+    ],
+    "Dhin S.O": [
+      "133202"
+    ],
+    "Mullana S.O": [
+      "133203"
+    ],
+    "Sadhaura S.O": [
+      "133204"
+    ],
+    "Adhoya S.O": [
+      "133205"
+    ],
+    "Sarawan S.O": [
+      "133206"
+    ],
+    "M.M.E.Complex Mulana S.O": [
+      "133207"
+    ],
+    "B.C.W. Suraj Pur S.O": [
+      "133301"
+    ],
+    "Kalka S.O": [
+      "133302"
+    ],
+    "Ambala City H.O": [
+      "134003"
+    ],
+    "Jandli S.O": [
+      "134005"
+    ],
+    "Baldev Nagar S.O": [
+      "134007"
+    ],
+    "Durga Nagar S.O": [
+      "134008"
+    ],
+    "H.M.T.Pinjore S.O": [
+      "134101"
+    ],
+    "Pinjore S.O": [
+      "134102"
+    ],
+    "I.T.B.P.  Bhanu S.O": [
+      "134103"
+    ],
+    "C.R.P.F. Pinjore S.O": [
+      "134104"
+    ],
+    "Amravati  Enclave SO": [
+      "134105"
+    ],
+    "Chandi Mandir Cantt S.O": [
+      "134107"
+    ],
+    "G.K. Panchkula S.O": [
+      "134108"
+    ],
+    "Panchkula Sector 8 S.O": [
+      "134109"
+    ],
+    "Panchkula Sector 4 S.O": [
+      "134112"
+    ],
+    "Sector 15 Panchkula S.O": [
+      "134113"
+    ],
+    "Mansa  Devi Sec 5 S.O": [
+      "134114"
+    ],
+    "Sector 26 Panchkula S.O": [
+      "134116"
+    ],
+    "Sector 20 Panchkula S.O": [
+      "134117"
+    ],
+    "Barwala S.O (Panchkula)": [
+      "134118"
+    ],
+    "Jatwar S.O": [
+      "134201"
+    ],
+    "Shahzadpur S.O.": [
+      "134202"
+    ],
+    "Naraingarh S.O": [
+      "134203"
+    ],
+    "Raipur Rani S.O": [
+      "134204"
+    ],
+    "Morni S.O": [
+      "134205"
+    ],
+    "Yamunanagar H.O": [
+      "135001"
+    ],
+    "Jagdhari Work Shop S.O": [
+      "135002"
+    ],
+    "Jagadhri S.O": [
+      "135003"
+    ],
+    "Thermal Colony Yamuna Nagar S.O": [
+      "135004"
+    ],
+    "Partap Nagar S.O": [
+      "135021"
+    ],
+    "Buriya S.O": [
+      "135101"
+    ],
+    "Bilaspur (Yamunanagar) S.O": [
+      "135102"
+    ],
+    "Chhachrauli S.O": [
+      "135103"
+    ],
+    "Bhudkalan S.O": [
+      "135106"
+    ],
+    "Radaur S.O": [
+      "135133"
+    ]
+  },
+  "Bhiwani": {
+    "Bhiwani HO": [
+      "127021"
+    ],
+    "Chiriya SO": [
+      "127022"
+    ],
+    "Baund SO": [
+      "127025"
+    ],
+    "Birhi Kalan SO": [
+      "127026"
+    ],
+    "Chang SO": [
+      "127027"
+    ],
+    "Behl SO": [
+      "127028"
+    ],
+    "Kairu SO": [
+      "127029"
+    ],
+    "Jui Khurd SO": [
+      "127030"
+    ],
+    "Tigrana SO": [
+      "127031"
+    ],
+    "Bawani Khera SO": [
+      "127032"
+    ],
+    "Jamalpur SO Bhiwani": [
+      "127035"
+    ],
+    "Tosham SO": [
+      "127040"
+    ],
+    "Mundhal Khurd SO": [
+      "127041"
+    ],
+    "Sanwar SO Bhiwani": [
+      "127042"
+    ],
+    "Rodhan SO": [
+      "127043"
+    ],
+    "Barwa SO": [
+      "127045"
+    ],
+    "Siwani SO": [
+      "127046"
+    ],
+    "Bapora SO": [
+      "127111"
+    ],
+    "Kharak Kalan SO": [
+      "127114"
+    ],
+    "Loharu SO": [
+      "127201"
+    ],
+    "Charkhi  Dadri Hsgii SO": [
+      "127306"
+    ],
+    "Achina SO": [
+      "127307"
+    ],
+    "Badhara SO": [
+      "127308"
+    ],
+    "Manheru SO": [
+      "127309"
+    ],
+    "Jhojhu SO": [
+      "127310"
+    ],
+    "Neemariwali PO": [
+      "127311"
+    ],
+    "Nihalgard PO": [
+      "127312"
+    ]
+  },
+  "Charkhi Dadri": {},
+  "Faridabad": {
+    "Faridabad NIT HO": [
+      "121001"
+    ],
+    "Faridabad Sector 16a  SO": [
+      "121002"
+    ],
+    "Amarnagar SO Faridabad": [
+      "121003"
+    ],
+    "Ballabgarh SO": [
+      "121004"
+    ],
+    "Faridabad Sector 22 SO": [
+      "121005"
+    ],
+    "Faridabad Sector 7 SO": [
+      "121006"
+    ],
+    "Escortsnagar Faridabad SO": [
+      "121007"
+    ],
+    "Faridabad Sector 29 SO": [
+      "121008"
+    ],
+    "Surajkund Faridabad SO": [
+      "121009"
+    ],
+    "Nhpc Colony Faridabad SO": [
+      "121010"
+    ],
+    "Sector21D  SO": [
+      "121012"
+    ],
+    "Sec91 SO": [
+      "121013"
+    ],
+    "Greater Faridabad PO": [
+      "121014"
+    ],
+    "Sector55 PO": [
+      "121015"
+    ],
+    "Tigaon SO": [
+      "121101"
+    ],
+    "Palwal SO": [
+      "121102"
+    ],
+    "Hathin SO": [
+      "121103"
+    ],
+    "Aurangabad SO Faridabad": [
+      "121105"
+    ],
+    "Hodal SO": [
+      "121106"
+    ],
+    "Hassanpur SO": [
+      "121107"
+    ]
+  },
+  "Fatehabad": {},
+  "Gurgaon": {
+    "Gurgaon HO": [
+      "122001"
+    ],
+    "DLF QE SO": [
+      "122002"
+    ],
+    "Gurgaon Sector 45 SO": [
+      "122003"
+    ],
+    "Narsinghpur SO": [
+      "122004"
+    ],
+    "Air Force SO": [
+      "122005"
+    ],
+    "Railwary Road SO": [
+      "122006"
+    ],
+    "Industrial Estate SO Gurgaon": [
+      "122007"
+    ],
+    "Galleria DLFIV SO": [
+      "122009"
+    ],
+    "Gurgaon Sector 56 SO": [
+      "122011"
+    ],
+    "Vatika India Sec 82 SO": [
+      "122012"
+    ],
+    "Palam Road SO": [
+      "122015"
+    ],
+    "Industrial Complex Dundahera SO": [
+      "122016"
+    ],
+    "Palam Vihar SO Gurgaon": [
+      "122017"
+    ],
+    "Gurgaon South City II SO": [
+      "122018"
+    ],
+    "Nsg Camp Manesar SO": [
+      "122051"
+    ],
+    "IMT Manesar SO": [
+      "122052"
+    ],
+    "CRPF Kadarpur SO": [
+      "122098"
+    ],
+    "Badshahpur SO": [
+      "122101"
+    ],
+    "Bhondsi SO": [
+      "122102"
+    ],
+    "Sohna SO": [
+      "122103"
+    ],
+    "Ferozepur Jhirka SO": [
+      "122104"
+    ],
+    "Tauru SO": [
+      "122105"
+    ],
+    "Nuh SO": [
+      "122107"
+    ],
+    "Nagina SO Gurgaon": [
+      "122108"
+    ],
+    "Bhorakalan SO": [
+      "122413"
+    ],
+    "Nanukalan SO": [
+      "122414"
+    ],
+    "Khalilpur SO": [
+      "122502"
+    ],
+    "Pataudi SO": [
+      "122503"
+    ],
+    "Haillymandi SO": [
+      "122504"
+    ],
+    "Garhi Harsaru SO": [
+      "122505"
+    ],
+    "Farrukh Nagar SO": [
+      "122506"
+    ],
+    "Punhana SO": [
+      "122508"
+    ],
+    "Narnaul HO": [
+      "123001"
+    ],
+    "Mandi Ateli SO": [
+      "123021"
+    ],
+    "Nangal Chaudhry SO": [
+      "123023"
+    ],
+    "Satnali SO": [
+      "123024"
+    ],
+    "Kanina SO": [
+      "123027"
+    ],
+    "Nangal Sirohi SO": [
+      "123028"
+    ],
+    "Mohindergarh SO": [
+      "123029"
+    ],
+    "Central University Haryana Mohindergarh SO": [
+      "123031"
+    ],
+    "Bawania SO": [
+      "123034"
+    ],
+    "Palhawas SO": [
+      "123035"
+    ],
+    "Khori SO": [
+      "123101"
+    ],
+    "Kund SO": [
+      "123102"
+    ],
+    "Khol SO": [
+      "123103"
+    ],
+    "Dharuhera SO": [
+      "123106"
+    ],
+    "Industrial Area Dharuhera SO": [
+      "123110"
+    ],
+    "Guriani SO": [
+      "123301"
+    ],
+    "Kosli SO": [
+      "123302"
+    ],
+    "Nahar SO": [
+      "123303"
+    ],
+    "Nehrugarh SO": [
+      "123304"
+    ],
+    "Rewari SO": [
+      "123401"
+    ],
+    "Dahina SO": [
+      "123411"
+    ],
+    "Dharan SO": [
+      "123412"
+    ],
+    "Bawal SO": [
+      "123501"
+    ]
+  },
+  "Hisar": {},
+  "Jhajjar": {},
+  "Jind": {},
+  "Kaithal": {},
+  "Karnal": {
+    "Julana S.O": [
+      "126101"
+    ],
+    "Jind H.O": [
+      "126102"
+    ],
+    "Dharthrath S.O": [
+      "126110"
+    ],
+    "Alewa S.O": [
+      "126111"
+    ],
+    "Safidon S.O": [
+      "126112"
+    ],
+    "Pillukhera S.O": [
+      "126113"
+    ],
+    "Shamlo Kalan S.O": [
+      "126114"
+    ],
+    "Uchana S.O": [
+      "126115"
+    ],
+    "Narwana S.O": [
+      "126116"
+    ],
+    "Naguran S.O": [
+      "126125"
+    ],
+    "Dhanoda Kalan S.O": [
+      "126152"
+    ],
+    "Karnal H.O": [
+      "132001"
+    ],
+    "Kunjpura S.O": [
+      "132022"
+    ],
+    "S.S. Kunjpura S.O": [
+      "132023"
+    ],
+    "Nissing S.O": [
+      "132024"
+    ],
+    "Padha SO": [
+      "132035"
+    ],
+    "Jundla S.O": [
+      "132036"
+    ],
+    "Madhuban S.O (Karnal)": [
+      "132037"
+    ],
+    "Assandh S.O": [
+      "132039"
+    ],
+    "Ballah S.O": [
+      "132040"
+    ],
+    "Indri S.O": [
+      "132041"
+    ],
+    "Salwan S.O": [
+      "132046"
+    ],
+    "Garhi Birbal S.O": [
+      "132054"
+    ],
+    "Samalkha S.O": [
+      "132101"
+    ],
+    "Patti Kalyana S.O": [
+      "132102"
+    ],
+    "Panipat H.O": [
+      "132103"
+    ],
+    "Panipat Khadi Ashram S.O": [
+      "132104"
+    ],
+    "Panipat Thermal Project S.O": [
+      "132105"
+    ],
+    "Panipat NFL S.O": [
+      "132106"
+    ],
+    "Israna S.O": [
+      "132107"
+    ],
+    "Panipat Beas Project S.O": [
+      "132108"
+    ],
+    "Madlauda S.O": [
+      "132113"
+    ],
+    "Gharunda S.O": [
+      "132114"
+    ],
+    "Hathwala S.O": [
+      "132115"
+    ],
+    "Taraori S.O": [
+      "132116"
+    ],
+    "Nilokheri S.O": [
+      "132117"
+    ],
+    "Atta S.O": [
+      "132122"
+    ],
+    "Panipat Refinary S.O": [
+      "132140"
+    ],
+    "Neoltha S.O": [
+      "132145"
+    ],
+    "Nigdhu S.O": [
+      "132157"
+    ]
+  },
+  "Kurukshetra": {
+    "Dhand S.O": [
+      "136020"
+    ],
+    "Kaul S.O": [
+      "136021"
+    ],
+    "Pundri S.O": [
+      "136026"
+    ],
+    "Kaithal S.O": [
+      "136027"
+    ],
+    "Gumthala Garhu S.O": [
+      "136030"
+    ],
+    "Siwan S.O": [
+      "136033"
+    ],
+    "Chika S.O": [
+      "136034"
+    ],
+    "Guhla S.O": [
+      "136035"
+    ],
+    "Amin S.O": [
+      "136038"
+    ],
+    "Fatehpur S.O (Kaithal)": [
+      "136042"
+    ],
+    "Pai S.O": [
+      "136043"
+    ],
+    "Rajound S.O": [
+      "136044"
+    ],
+    "Kalayat S.O": [
+      "136117"
+    ],
+    "Kurukshetra H.O": [
+      "136118"
+    ],
+    "Kurukshetra University S.O": [
+      "136119"
+    ],
+    "Pehowa S.O": [
+      "136128"
+    ],
+    "Ismailabad S.O": [
+      "136129"
+    ],
+    "Jhansa S.O": [
+      "136130"
+    ],
+    "Pipli S.O": [
+      "136131"
+    ],
+    "Ladwa S.O": [
+      "136132"
+    ],
+    "Mohri S.O": [
+      "136134"
+    ],
+    "Shahabad(M) S.O": [
+      "136135"
+    ],
+    "Thol S.O": [
+      "136136"
+    ],
+    "Babain S.O": [
+      "136156"
+    ]
+  },
+  "Mahendragarh": {},
+  "Mewat": {},
+  "Palwal": {},
+  "Panchkula": {},
+  "Panipat": {},
+  "Rewari": {},
+  "Rohtak": {
+    "Rohtak HO": [
+      "124001"
+    ],
+    "Police Training Center Sunaria SO": [
+      "124010"
+    ],
+    "Asthal Bohar SO": [
+      "124021"
+    ],
+    "Mokhra SO": [
+      "124022"
+    ],
+    "Dujana SO": [
+      "124102"
+    ],
+    "Jhajjar SO": [
+      "124103"
+    ],
+    "Nehru College Jhajjar SO": [
+      "124104"
+    ],
+    "Badli SO Jhajjar": [
+      "124105"
+    ],
+    "Matanhail SO": [
+      "124106"
+    ],
+    "Dighal SO": [
+      "124107"
+    ],
+    "Machrauli SO": [
+      "124108"
+    ],
+    "Dhakla SO": [
+      "124109"
+    ],
+    "Madina SO": [
+      "124111"
+    ],
+    "Mehem SO": [
+      "124112"
+    ],
+    "Kalanaur SO Rohtak": [
+      "124113"
+    ],
+    "Power Plant Jharli SO": [
+      "124141"
+    ],
+    "Bahu SO": [
+      "124142"
+    ],
+    "Sahlawas SO": [
+      "124146"
+    ],
+    "Beri SO": [
+      "124201"
+    ],
+    "Dubaldhan SO": [
+      "124202"
+    ],
+    "Sanghi SO": [
+      "124303"
+    ],
+    "Bhalaut SO": [
+      "124401"
+    ],
+    "Hassangarh SO": [
+      "124404"
+    ],
+    "Kansala SO": [
+      "124406"
+    ],
+    "Anwal SO": [
+      "124411"
+    ],
+    "Kahnaur SO": [
+      "124412"
+    ],
+    "Sampla SO": [
+      "124501"
+    ],
+    "Charra SO": [
+      "124504"
+    ],
+    "Assaudha SO": [
+      "124505"
+    ],
+    "Mandothi SO": [
+      "124506"
+    ],
+    "Bahadurgarh HO": [
+      "124507"
+    ],
+    "Bahadurgarh Mandi SO": [
+      "124508"
+    ],
+    "Nindana SO": [
+      "124513"
+    ],
+    "Lakhan Majra SO": [
+      "124514"
+    ],
+    "MET Dadri Toe S.O": [
+      "124515"
+    ]
+  },
+  "Sirsa": {},
+  "Sonipat": {},
+  "Yamunanagar": {}
+}

@@ -1,0 +1,2101 @@
+{
+  "Agar Malwa": {},
+  "Alirajpur": {},
+  "Anuppur": {},
+  "Ashoknagar": {},
+  "Balaghat": {
+    "Seoni H.O": [
+      "480661"
+    ],
+    "Barghat S.O": [
+      "480667"
+    ],
+    "Ari S.O": [
+      "480771"
+    ],
+    "Korai S.O": [
+      "480880"
+    ],
+    "Khawasa S.O (Seoni)": [
+      "480881"
+    ],
+    "Bandol S.O": [
+      "480882"
+    ],
+    "Chhapara S.O": [
+      "480884"
+    ],
+    "Lakhnadon S.O": [
+      "480886"
+    ],
+    "Adegaon S.O": [
+      "480887"
+    ],
+    "Dhuma S.O": [
+      "480888"
+    ],
+    "Kanhiwada S.O": [
+      "480990"
+    ],
+    "Khairapalari S.O": [
+      "480991"
+    ],
+    "Keolari S.O": [
+      "480994"
+    ],
+    "Ugli S.O": [
+      "480996"
+    ],
+    "Ghansore S.O": [
+      "480997"
+    ],
+    "Kahani S.O": [
+      "480999"
+    ],
+    "Balaghat H.O": [
+      "481001"
+    ],
+    "Birsa S.O": [
+      "481051"
+    ],
+    "Bharveli S.O": [
+      "481102"
+    ],
+    "Ukwa S.O": [
+      "481105"
+    ],
+    "Baihar S.O": [
+      "481111"
+    ],
+    "Kirnapur S.O": [
+      "481115"
+    ],
+    "Malanjkhand S.O": [
+      "481116"
+    ],
+    "Garhi S.O (Balaghat)": [
+      "481117"
+    ],
+    "Lanji S.O": [
+      "481222"
+    ],
+    "Karanja S.O (Balaghat)": [
+      "481224"
+    ],
+    "Hatta S.O (Balaghat)": [
+      "481226"
+    ],
+    "Waraseoni S.O": [
+      "481331"
+    ],
+    "Budbuda S.O": [
+      "481332"
+    ],
+    "Rampaily S.O": [
+      "481335"
+    ],
+    "Khairlanji S.O": [
+      "481337"
+    ],
+    "Lalbarra S.O": [
+      "481441"
+    ],
+    "Katangi S.O (Balaghat)": [
+      "481445"
+    ],
+    "Tirodi S.O": [
+      "481449"
+    ],
+    "Lamta S.O": [
+      "481551"
+    ],
+    "Paraswada S.O": [
+      "481556"
+    ]
+  },
+  "Barwani": {},
+  "Betul": {},
+  "Bhind": {},
+  "Bhopal": {
+    "Bhopal G.P.O.": [
+      "462001"
+    ],
+    "Vidya Vihar S.O": [
+      "462002"
+    ],
+    "C.T.T.Nagar H.O": [
+      "462003"
+    ],
+    "Satpura S.O": [
+      "462004"
+    ],
+    "Jahangirabad S.O (Bhopal)": [
+      "462008"
+    ],
+    "Sikandri Sarai S.O": [
+      "462010"
+    ],
+    "Shiksha Mandal S.O": [
+      "462011"
+    ],
+    "R.S.Nagar S.O": [
+      "462016"
+    ],
+    "AIIMS S.O": [
+      "462020"
+    ],
+    "Bhel H.O": [
+      "462022"
+    ],
+    "Govindpura S.O": [
+      "462023"
+    ],
+    "H.E. Hospital S.O": [
+      "462024"
+    ],
+    "University S.O (Bhopal)": [
+      "462026"
+    ],
+    "Arera Hills S.O": [
+      "462027"
+    ],
+    "Kokta S.O": [
+      "462028"
+    ],
+    "Bairagarh S.O": [
+      "462030"
+    ],
+    "3 EME Centre S.O": [
+      "462031"
+    ],
+    "RGPV S.O": [
+      "462033"
+    ],
+    "Gandhi Nagar (Bhopal) S.O": [
+      "462036"
+    ],
+    "Peoples Campus S.O": [
+      "462037"
+    ],
+    "M.L. Nagar S.O": [
+      "462038"
+    ],
+    "Trilanga S.O": [
+      "462039"
+    ],
+    "IBD Hallmark city kolar road": [
+      "462040"
+    ],
+    "Ayodhaya Nagar S.O": [
+      "462041"
+    ],
+    "Kolar Road S.O": [
+      "462042"
+    ],
+    "Bag Mungalia S.O": [
+      "462043"
+    ],
+    "Suraj Nagar S.O": [
+      "462044"
+    ],
+    "Bangrasia S.O": [
+      "462045"
+    ],
+    "Mandideep S.O": [
+      "462046"
+    ],
+    "Misord S.O": [
+      "462047"
+    ],
+    "IISER Bhouri S.O": [
+      "462066"
+    ],
+    "Nodal Delivery Centre Bhopal G.P.O.": [
+      "462099"
+    ],
+    "Nariyalkheda S.O": [
+      "462100"
+    ],
+    "Dillod S.O": [
+      "462101"
+    ],
+    "Nazirabad S.O": [
+      "462120"
+    ],
+    "Berasia Bhopal S.O": [
+      "463106"
+    ],
+    "Lalariya S.O": [
+      "463111"
+    ],
+    "Obedullaganj S.O": [
+      "464993"
+    ]
+  },
+  "Burhanpur": {},
+  "Chhatarpur": {
+    "Chhatarpur H.O": [
+      "471001"
+    ],
+    "Chandra Nagar S.O": [
+      "471101"
+    ],
+    "Bamitha S.O": [
+      "471105"
+    ],
+    "Harpalpur S.O": [
+      "471111"
+    ],
+    "Nowgong S.O": [
+      "471201"
+    ],
+    "Gulganj S.O": [
+      "471301"
+    ],
+    "Badamalehara S.O": [
+      "471311"
+    ],
+    "Ghaura S.O": [
+      "471313"
+    ],
+    "Ishanagar S.O": [
+      "471315"
+    ],
+    "Buxwaha S.O": [
+      "471318"
+    ],
+    "Bijawar S.O": [
+      "471405"
+    ],
+    "Satai S.O": [
+      "471408"
+    ],
+    "Gadimalehara S.O": [
+      "471411"
+    ],
+    "Maharajpur S.O": [
+      "471501"
+    ],
+    "Jujhar Nagar S.O": [
+      "471510"
+    ],
+    "Laundi S.O": [
+      "471515"
+    ],
+    "Gaurihar S.O": [
+      "471516"
+    ],
+    "Chandla S.O": [
+      "471525"
+    ],
+    "Khajuraho S.O": [
+      "471606"
+    ],
+    "Rajnagar S.O": [
+      "471625"
+    ],
+    "Tikamgarh H.O": [
+      "472001"
+    ],
+    "Kundeshwar S.O": [
+      "472005"
+    ],
+    "Badagaon S.O": [
+      "472010"
+    ],
+    "Mohangarh S.O": [
+      "472101"
+    ],
+    "Baldeogarh S.O": [
+      "472111"
+    ],
+    "Khargapur S.O": [
+      "472115"
+    ],
+    "Jatara S.O": [
+      "472118"
+    ],
+    "Palera S.O": [
+      "472221"
+    ],
+    "Orchha S.O": [
+      "472246"
+    ],
+    "Lidhora S.O": [
+      "472331"
+    ],
+    "Prithvipur S.O": [
+      "472336"
+    ],
+    "Jeron S.O": [
+      "472337"
+    ],
+    "Digoda S.O": [
+      "472339"
+    ],
+    "Niwari S.O": [
+      "472442"
+    ],
+    "Taricharkala S.O": [
+      "472445"
+    ],
+    "Teharka S.O": [
+      "472447"
+    ]
+  },
+  "Chhindwara": {
+    "Betul H.O": [
+      "460001"
+    ],
+    "Betul Bazaar S.O": [
+      "460004"
+    ],
+    "Athanair S.O": [
+      "460110"
+    ],
+    "Bhainsdehi S.O": [
+      "460220"
+    ],
+    "Khedisaoligarh S.O": [
+      "460225"
+    ],
+    "Chicholi S.O": [
+      "460330"
+    ],
+    "Shahpur S.O (Betul)": [
+      "460440"
+    ],
+    "Ghoradongari S.O": [
+      "460443"
+    ],
+    "Sarni S.O": [
+      "460447"
+    ],
+    "Pathakheda S.O": [
+      "460449"
+    ],
+    "Amla S.O": [
+      "460551"
+    ],
+    "Amla Depot S.O": [
+      "460553"
+    ],
+    "Bordehi S.O": [
+      "460554"
+    ],
+    "Sainkheda S.O (Betul)": [
+      "460557"
+    ],
+    "Multai S.O": [
+      "460661"
+    ],
+    "Dunawa S.O": [
+      "460663"
+    ],
+    "Prabhat Pattan S.O": [
+      "460665"
+    ],
+    "Rai Amla S.O": [
+      "460666"
+    ],
+    "Masod S.O": [
+      "460668"
+    ],
+    "Chhindwara H.O": [
+      "480001"
+    ],
+    "CHANDANGAON SO": [
+      "480003"
+    ],
+    "Mohgaon Haveli S.O": [
+      "480105"
+    ],
+    "Sausar S.O": [
+      "480106"
+    ],
+    "Umaranala S.O": [
+      "480107"
+    ],
+    "Lodhikheda S.O": [
+      "480108"
+    ],
+    "Piplanarayanwar S.O": [
+      "480109"
+    ],
+    "Chand S.O": [
+      "480110"
+    ],
+    "Bichhua S.O": [
+      "480111"
+    ],
+    "MOHKHED SO": [
+      "480112"
+    ],
+    "Chourai S.O": [
+      "480115"
+    ],
+    "Amarwara S.O": [
+      "480221"
+    ],
+    "Singodi S.O": [
+      "480223"
+    ],
+    "Harrai S.O": [
+      "480224"
+    ],
+    "Saori Bazaar S.O": [
+      "480331"
+    ],
+    "Pandhurna S.O": [
+      "480334"
+    ],
+    "Seoni Sausar S.O": [
+      "480337"
+    ],
+    "Teegaon S.O": [
+      "480338"
+    ],
+    "Parasia S.O": [
+      "480441"
+    ],
+    "Chandametta S.O": [
+      "480447"
+    ],
+    "Eklehra S.O": [
+      "480449"
+    ],
+    "Junnardeo S.O": [
+      "480551"
+    ],
+    "Damua S.O": [
+      "480555"
+    ],
+    "Newton Chikhali S.O": [
+      "480557"
+    ],
+    "Tamia S.O": [
+      "480559"
+    ]
+  },
+  "Damoh": {},
+  "Datia": {},
+  "Dewas": {},
+  "Dhar": {},
+  "Dindori": {},
+  "Guna": {
+    "Guna H.O": [
+      "473001"
+    ],
+    "Aroun S.O": [
+      "473101"
+    ],
+    "Bamori S.O": [
+      "473105"
+    ],
+    "Ruthiyai S.O": [
+      "473110"
+    ],
+    "N.F.L.Vijaipur S.O": [
+      "473111"
+    ],
+    "Gail Complex S.O": [
+      "473112"
+    ],
+    "Myana S.O": [
+      "473113"
+    ],
+    "Binaganj S.O": [
+      "473115"
+    ],
+    "Chachauda S.O": [
+      "473118"
+    ],
+    "Kumbhraj S.O": [
+      "473222"
+    ],
+    "Raghogarh S.O": [
+      "473226"
+    ],
+    "Bajranggarh S.O": [
+      "473249"
+    ],
+    "Maksudangarh S.O": [
+      "473287"
+    ],
+    "Shadora S.O": [
+      "473330"
+    ],
+    "Ashoknagar H.O": [
+      "473331"
+    ],
+    "Naisarai S.O": [
+      "473332"
+    ],
+    "Esagarh S.O": [
+      "473335"
+    ],
+    "Piprai S.O": [
+      "473440"
+    ],
+    "Mungaoli S.O": [
+      "473443"
+    ],
+    "Sehrai S.O": [
+      "473444"
+    ],
+    "Bahadurpur S.O": [
+      "473445"
+    ],
+    "Chanderi S.O": [
+      "473446"
+    ],
+    "Shivpuri H.O": [
+      "473551"
+    ],
+    "Bamorkalan S.O": [
+      "473585"
+    ],
+    "Katthamil Shivpuri S.O": [
+      "473638"
+    ],
+    "Karera S.O": [
+      "473660"
+    ],
+    "T.C.Karera S.O": [
+      "473662"
+    ],
+    "Dinara S.O (Shivpuri": [
+      "473665"
+    ],
+    "Manpura S.O": [
+      "473670"
+    ],
+    "Kolaras S.O": [
+      "473770"
+    ],
+    "Jagatpur S.O (Shivpuri": [
+      "473774"
+    ],
+    "Pohari S.O": [
+      "473775"
+    ],
+    "Rannod S.O": [
+      "473781"
+    ],
+    "Berad S.O": [
+      "473793"
+    ],
+    "Magroni S.O": [
+      "473865"
+    ],
+    "Narwar S.O (Shivpuri": [
+      "473880"
+    ],
+    "Badarwas S.O": [
+      "473885"
+    ],
+    "Khaniyadhana S.O": [
+      "473990"
+    ],
+    "Pichhore S.O": [
+      "473995"
+    ]
+  },
+  "Gwalior": {
+    "Lashkar H.O": [
+      "474001"
+    ],
+    "Gwalior R.S. S.O": [
+      "474002"
+    ],
+    "GWALIOR CITY SO": [
+      "474003"
+    ],
+    "Birla Nagar S.O": [
+      "474004"
+    ],
+    "Gwalior Residency S.O": [
+      "474005"
+    ],
+    "Morar H.O": [
+      "474006"
+    ],
+    "Moti Mahal S.O": [
+      "474007"
+    ],
+    "Gwalior Fort S.O": [
+      "474008"
+    ],
+    "Lashkar City S.O": [
+      "474009"
+    ],
+    "Moti Jheel S.O": [
+      "474010"
+    ],
+    "R. K. Puri Gwalior SO": [
+      "474011"
+    ],
+    "S.P. Ashram S.O": [
+      "474012"
+    ],
+    "AB VIII TM Gwalior S.O": [
+      "474015"
+    ],
+    "Maharajpura A.F. S.O": [
+      "474020"
+    ],
+    "Antri S.O (Gwalior": [
+      "475001"
+    ],
+    "Behat S.O (Gwalior": [
+      "475002"
+    ],
+    "Tekanpur S.O": [
+      "475005"
+    ],
+    "Dabra S.O": [
+      "475110"
+    ],
+    "Pichhore Gird S.O": [
+      "475115"
+    ],
+    "Bhitarwar S.O": [
+      "475220"
+    ],
+    "Mohna S.O": [
+      "475330"
+    ],
+    "Bhandair S.O": [
+      "475335"
+    ],
+    "Salon B. S.O": [
+      "475336"
+    ],
+    "Datia S.O": [
+      "475661"
+    ],
+    "Unnao S.O": [
+      "475671"
+    ],
+    "Tharet S.O": [
+      "475673"
+    ],
+    "Indergarh S.O (Datia": [
+      "475675"
+    ],
+    "Seondha S.O": [
+      "475682"
+    ],
+    "Sonagir S.O": [
+      "475685"
+    ],
+    "Baroni Datia S.O": [
+      "475686"
+    ]
+  },
+  "Harda": {},
+  "Hoshangabad": {},
+  "Indore": {},
+  "Jabalpur": {
+    "Jabalpur H.O": [
+      "482001"
+    ],
+    "Jabalpur City S.O": [
+      "482002"
+    ],
+    "Garha S.O (Jabalpur)": [
+      "482003"
+    ],
+    "Adhartal S.O": [
+      "482004"
+    ],
+    "Khamaria S.O (Jabalpur)": [
+      "482005"
+    ],
+    "Vidyut Nagar S.O (Jabalpur)": [
+      "482008"
+    ],
+    "Vehicle Factory S.O": [
+      "482009"
+    ],
+    "Richhai S.O": [
+      "482010"
+    ],
+    "Gokulpur S.O": [
+      "482011"
+    ],
+    "Bilhari S.O": [
+      "482020"
+    ],
+    "R.F.R.C. S.O": [
+      "482021"
+    ],
+    "Bargi S.O": [
+      "482051"
+    ],
+    "Bargi Nagar S.O": [
+      "482056"
+    ],
+    "Barela S.O": [
+      "483001"
+    ],
+    "Bheraghat S.O": [
+      "483053"
+    ],
+    "Katangi S.O (Jabalpur)": [
+      "483105"
+    ],
+    "Kundam S.O": [
+      "483110"
+    ],
+    "Patan S.O (Jabalpur)": [
+      "483113"
+    ],
+    "Shahpura (Jabalpur) S.O": [
+      "483119"
+    ],
+    "Panagar S.O (Jabalpur)": [
+      "483220"
+    ],
+    "Gosalpur S.O": [
+      "483222"
+    ],
+    "Sihora(MP) S.O": [
+      "483225"
+    ],
+    "Bahori Band S.O": [
+      "483330"
+    ],
+    "Bakal S.O": [
+      "483331"
+    ],
+    "Umaria Pan S.O": [
+      "483332"
+    ],
+    "Saroli Majhgawan S.O": [
+      "483334"
+    ],
+    "Majholi S.O": [
+      "483336"
+    ],
+    "Sleemnabad S.O": [
+      "483440"
+    ],
+    "Niwar S.O": [
+      "483442"
+    ],
+    "Katni H.O": [
+      "483501"
+    ],
+    "Katni Cement Factory S.O": [
+      "483504"
+    ],
+    "Barhi S.O (Katni)": [
+      "483770"
+    ],
+    "Badwara S.O": [
+      "483773"
+    ],
+    "Vijayraghavgarh S.O": [
+      "483775"
+    ],
+    "Kymore S.O": [
+      "483880"
+    ],
+    "Rithi S.O": [
+      "483990"
+    ]
+  },
+  "Jhabua": {},
+  "Katni": {},
+  "Khandwa": {
+    "Khandwa H.O": [
+      "450001"
+    ],
+    "Kharkalan S.O": [
+      "450051"
+    ],
+    "Bir S.O (East Nimar)": [
+      "450110"
+    ],
+    "Mundi S.O": [
+      "450112"
+    ],
+    "Punasa S.O": [
+      "450114"
+    ],
+    "Naya Harsud S.O": [
+      "450116"
+    ],
+    "Khalwa S.O": [
+      "450117"
+    ],
+    "Narmada Nagar S.O (East Nimar)": [
+      "450119"
+    ],
+    "Nepanagar S.O": [
+      "450221"
+    ],
+    "Burhanpur S.O": [
+      "450331"
+    ],
+    "Khaknar S.O": [
+      "450332"
+    ],
+    "Rustampur S.O": [
+      "450337"
+    ],
+    "Shahpur (Nimar) S.O": [
+      "450445"
+    ],
+    "Nimarkhedi S.O": [
+      "450551"
+    ],
+    "Mandhata Omkareshwar S.O": [
+      "450554"
+    ],
+    "Pandhana S.O": [
+      "450661"
+    ],
+    "Chhegaon Makhan S.O": [
+      "450771"
+    ],
+    "Jaswadi S.O": [
+      "450881"
+    ],
+    "Jawar S.O (East Nimar)": [
+      "450991"
+    ],
+    "Khargone H.O": [
+      "451001"
+    ],
+    "Sanawad S.O": [
+      "451111"
+    ],
+    "Bedia S.O": [
+      "451113"
+    ],
+    "SELDA S.O": [
+      "451114"
+    ],
+    "Barwaha S.O": [
+      "451115"
+    ],
+    "Karhi S.O": [
+      "451220"
+    ],
+    "Mandleshwar S.O": [
+      "451221"
+    ],
+    "Maheshwar S.O": [
+      "451224"
+    ],
+    "Piplya Buzurg S.O": [
+      "451225"
+    ],
+    "Kasrawad S.O": [
+      "451228"
+    ],
+    "Bhikangaon S.O": [
+      "451331"
+    ],
+    "Jhirnia S.O": [
+      "451332"
+    ],
+    "Gogawa S.O": [
+      "451335"
+    ],
+    "Un S.O (West Nimar)": [
+      "451440"
+    ],
+    "Bistan S.O": [
+      "451441"
+    ],
+    "Segaon S.O (West Nimar)": [
+      "451442"
+    ],
+    "Rajpur Barwani S.O": [
+      "451447"
+    ],
+    "Julwania S.O": [
+      "451449"
+    ],
+    "Barwani S.O": [
+      "451551"
+    ],
+    "Anjad S.O": [
+      "451556"
+    ],
+    "Thikari S.O": [
+      "451660"
+    ],
+    "Sendhwa S.O": [
+      "451666"
+    ],
+    "Pansemal S.O": [
+      "451770"
+    ],
+    "Khetia S.O": [
+      "451881"
+    ]
+  },
+  "Khargone": {},
+  "Mandla": {
+    "Mandla H.O": [
+      "481661"
+    ],
+    "Padariyanarayan Ganj S.O": [
+      "481662"
+    ],
+    "Mohgaon S.O": [
+      "481663"
+    ],
+    "Ghughri S.O": [
+      "481664"
+    ],
+    "Maharajpur S.O (Mandla)": [
+      "481665"
+    ],
+    "Beejadandi S.O": [
+      "481666"
+    ],
+    "Pindrai S.O": [
+      "481668"
+    ],
+    "Chabi S.O": [
+      "481672"
+    ],
+    "Chiraidongri S.O": [
+      "481768"
+    ],
+    "Bamni S.O": [
+      "481771"
+    ],
+    "Nainpur S.O": [
+      "481776"
+    ],
+    "Samnapur S.O": [
+      "481778"
+    ],
+    "Shahpur S.O (Dindori)": [
+      "481879"
+    ],
+    "Dindori S.O (Dindori)": [
+      "481880"
+    ],
+    "Gadasarai S.O": [
+      "481882"
+    ],
+    "Bajag S.O": [
+      "481883"
+    ],
+    "Gorakhpur S.O": [
+      "481884"
+    ],
+    "Niwas S.O": [
+      "481885"
+    ],
+    "Shahpura Niwas S.O": [
+      "481990"
+    ],
+    "Bhuabichhia S.O": [
+      "481995"
+    ],
+    "Sijhora S.O": [
+      "481996"
+    ],
+    "Anjania S.O": [
+      "481998"
+    ]
+  },
+  "Mandsaur": {
+    "Mandsaur H.O": [
+      "458001"
+    ],
+    "Mandsaur City S.O": [
+      "458002"
+    ],
+    "Manasa S.O": [
+      "458110"
+    ],
+    "Mahagarh S.O": [
+      "458113"
+    ],
+    "Kukdeshwar S.O": [
+      "458116"
+    ],
+    "Rampura S.O (Neemuch)": [
+      "458118"
+    ],
+    "Sarwania Maharaj S.O": [
+      "458220"
+    ],
+    "Ratangarh S.O": [
+      "458226"
+    ],
+    "Singoli S.O": [
+      "458228"
+    ],
+    "Jawad S.O": [
+      "458330"
+    ],
+    "Jeeran S.O": [
+      "458336"
+    ],
+    "Malhargarh S.O": [
+      "458339"
+    ],
+    "Laduna S.O": [
+      "458389"
+    ],
+    "Neemuch H.O": [
+      "458441"
+    ],
+    "Nayagaon C F S.O": [
+      "458468"
+    ],
+    "Khor S.O": [
+      "458470"
+    ],
+    "Narayangarh S.O (Mandsaur)": [
+      "458553"
+    ],
+    "Budha S.O": [
+      "458556"
+    ],
+    "Nahargarh S.O": [
+      "458558"
+    ],
+    "Piplia S.O": [
+      "458664"
+    ],
+    "Dalauda S.O": [
+      "458667"
+    ],
+    "Kachnara Flag S.O": [
+      "458669"
+    ],
+    "Gandhi Sagar S.O": [
+      "458771"
+    ],
+    "Bhanpura S.O": [
+      "458775"
+    ],
+    "Bhensoda Mandi S.O": [
+      "458778"
+    ],
+    "Garoth S.O": [
+      "458880"
+    ],
+    "Shamgarh S.O": [
+      "458883"
+    ],
+    "Suwasara Mandi S.O": [
+      "458888"
+    ],
+    "Degaon Mali S.O": [
+      "458895"
+    ],
+    "Sitamau S.O": [
+      "458990"
+    ]
+  },
+  "Morena": {
+    "Morena H.O": [
+      "476001"
+    ],
+    "Ambah S.O": [
+      "476111"
+    ],
+    "Porsa S.O": [
+      "476115"
+    ],
+    "Dimni S.O": [
+      "476134"
+    ],
+    "Baghchini S.O": [
+      "476219"
+    ],
+    "Joura S.O": [
+      "476221"
+    ],
+    "Kelaras S.O": [
+      "476224"
+    ],
+    "Pahadgarh S.O": [
+      "476228"
+    ],
+    "Sabalgarh S.O": [
+      "476229"
+    ],
+    "Bijaipur S.O (Sheopur": [
+      "476332"
+    ],
+    "Beerpur S.O": [
+      "476335"
+    ],
+    "Sheopur S.O": [
+      "476337"
+    ],
+    "Sheopur Baroda S.O": [
+      "476339"
+    ],
+    "Karhal S.O (Sheopur": [
+      "476355"
+    ],
+    "Banmore S.O": [
+      "476444"
+    ],
+    "Khadiahar S.O": [
+      "476554"
+    ],
+    "Bhind H.O": [
+      "477001"
+    ],
+    "Nai Zameen Bhind S.O": [
+      "477105"
+    ],
+    "Attair S.O": [
+      "477111"
+    ],
+    "Gohad S.O": [
+      "477116"
+    ],
+    "Malanpur S.O": [
+      "477117"
+    ],
+    "Mau S.O": [
+      "477222"
+    ],
+    "Amayan S.O": [
+      "477227"
+    ],
+    "Umri S.O (Bhind": [
+      "477331"
+    ],
+    "Akoda S.O": [
+      "477332"
+    ],
+    "Sagra S.O (Bhind": [
+      "477333"
+    ],
+    "Raun S.O": [
+      "477335"
+    ],
+    "Mihona S.O": [
+      "477441"
+    ],
+    "Lahar S.O": [
+      "477445"
+    ],
+    "Aswar S.O": [
+      "477446"
+    ],
+    "Daboh S.O": [
+      "477447"
+    ],
+    "Alampur S.O (Bhind": [
+      "477449"
+    ],
+    "Rawatpura sarkar ashram S.O": [
+      "477450"
+    ],
+    "Phoop S.O": [
+      "477555"
+    ],
+    "Mehgoun S.O": [
+      "477557"
+    ],
+    "Barhi S.O (Bhind": [
+      "477566"
+    ],
+    "Gormi S.O": [
+      "477660"
+    ]
+  },
+  "Narsinghpur": {},
+  "Neemuch": {},
+  "Panna": {},
+  "Raisen": {},
+  "Rajgarh": {},
+  "Ratlam": {
+    "Ratlam H.O": [
+      "457001"
+    ],
+    "Alote S.O": [
+      "457114"
+    ],
+    "Tal S.O": [
+      "457118"
+    ],
+    "Kharwa kalan S.O": [
+      "457119"
+    ],
+    "Namli S.O": [
+      "457222"
+    ],
+    "Jaora S.O": [
+      "457226"
+    ],
+    "Piploda S.O": [
+      "457331"
+    ],
+    "Sukheda S.O": [
+      "457333"
+    ],
+    "Ringnod S.O": [
+      "457336"
+    ],
+    "Dhodhar RS S.O": [
+      "457339"
+    ],
+    "KALUKHEDA S.O": [
+      "457340"
+    ],
+    "Bilpank S.O": [
+      "457441"
+    ],
+    "Sailana S.O": [
+      "457550"
+    ],
+    "Bajna S.O (Ratlam)": [
+      "457555"
+    ],
+    "Jhabua H.O": [
+      "457661"
+    ],
+    "Bamnia S.O": [
+      "457770"
+    ],
+    "Khawasa S.O (Jhabua)": [
+      "457772"
+    ],
+    "Petlawad S.O": [
+      "457773"
+    ],
+    "Raipuria S.O": [
+      "457775"
+    ],
+    "Thandla S.O": [
+      "457777"
+    ],
+    "Meghnagar S.O": [
+      "457779"
+    ],
+    "Chandra Shekhar Azad Nagar": [
+      "457882"
+    ],
+    "Katthiwada S.O": [
+      "457885"
+    ],
+    "Alirajpur S.O": [
+      "457887"
+    ],
+    "Sondwa S.O": [
+      "457888"
+    ],
+    "Jobat S.O": [
+      "457990"
+    ],
+    "Ranapur S.O": [
+      "457993"
+    ]
+  },
+  "Rewa": {
+    "Rewa H.O": [
+      "486001"
+    ],
+    "Rewa Engineering College S.O": [
+      "486002"
+    ],
+    "Rewa APSU S.O": [
+      "486003"
+    ],
+    "Rewa Bansagar Coloney S.O": [
+      "486005"
+    ],
+    "Chorahata S.O": [
+      "486006"
+    ],
+    "Mangawan S.O": [
+      "486111"
+    ],
+    "Raipur Karchulion S.O": [
+      "486114"
+    ],
+    "Garh S.O": [
+      "486115"
+    ],
+    "Katra S.O (Rewa)": [
+      "486117"
+    ],
+    "Manikwar S.O": [
+      "486123"
+    ],
+    "Teonthar S.O": [
+      "486220"
+    ],
+    "Jawa S.O": [
+      "486223"
+    ],
+    "Chak S.O": [
+      "486226"
+    ],
+    "Mauganj S.O": [
+      "486331"
+    ],
+    "Dhera S.O": [
+      "486333"
+    ],
+    "Hanumana S.O": [
+      "486335"
+    ],
+    "Raghunathganj S.O": [
+      "486338"
+    ],
+    "Naigarhi S.O": [
+      "486340"
+    ],
+    "Deotalab S.O": [
+      "486341"
+    ],
+    "Laxmanpur S.O (Rewa)": [
+      "486440"
+    ],
+    "Baikunthpur S.O": [
+      "486441"
+    ],
+    "Semariya S.O": [
+      "486445"
+    ],
+    "Beeda S.O": [
+      "486446"
+    ],
+    "Patehara S.O": [
+      "486447"
+    ],
+    "Sirmour S.O": [
+      "486448"
+    ],
+    "Jaypee Nagar S.O": [
+      "486450"
+    ],
+    "Govindgarh S.O (Rewa)": [
+      "486550"
+    ],
+    "Gurh S.O": [
+      "486553"
+    ],
+    "Dabhaura S.O": [
+      "486556"
+    ],
+    "Sidhi H.O": [
+      "486661"
+    ],
+    "Majauli S.O": [
+      "486666"
+    ],
+    "Madwas S.O": [
+      "486669"
+    ],
+    "Sihawal S.O": [
+      "486670"
+    ],
+    "Bahri S.O": [
+      "486675"
+    ],
+    "Churhat S.O": [
+      "486771"
+    ],
+    "Rampur Naikin S.O": [
+      "486775"
+    ],
+    "Bharatpur S.O (Sidhi)": [
+      "486776"
+    ],
+    "Jiawan S.O": [
+      "486881"
+    ],
+    "Chitrangi S.O": [
+      "486882"
+    ],
+    "Nigahi Project S.O": [
+      "486884"
+    ],
+    "Vindhyanagar S.O": [
+      "486885"
+    ],
+    "Waidhan S.O": [
+      "486886"
+    ],
+    "Amlori Project S.O": [
+      "486887"
+    ],
+    "Dudhichua Project S.O": [
+      "486888"
+    ],
+    "Singrauli Colliery S.O": [
+      "486889"
+    ],
+    "Jayant Colliery S.O": [
+      "486890"
+    ],
+    "Gorbi S.O": [
+      "486892"
+    ]
+  },
+  "Sagar": {
+    "Sagar Cantt H.O": [
+      "470001"
+    ],
+    "Sagar City S.O": [
+      "470002"
+    ],
+    "Sagar University S.O": [
+      "470003"
+    ],
+    "Sagar Makronia Camp S.O": [
+      "470004"
+    ],
+    "Bamora S.O": [
+      "470021"
+    ],
+    "Bilahra Raja S.O": [
+      "470051"
+    ],
+    "Bina S.O": [
+      "470113"
+    ],
+    "Jaruakheda S.O": [
+      "470115"
+    ],
+    "Khurai S.O": [
+      "470117"
+    ],
+    "Khimlasa S.O": [
+      "470118"
+    ],
+    "Rahatgarh S.O": [
+      "470119"
+    ],
+    "Sihora S.O (Sagar)": [
+      "470120"
+    ],
+    "Bina BPCL Refinery S.O": [
+      "470124"
+    ],
+    "Jaisinagar S.O": [
+      "470125"
+    ],
+    "Surkhi S.O": [
+      "470221"
+    ],
+    "Gaurjhamar S.O": [
+      "470223"
+    ],
+    "Deori S.O (Sagar)": [
+      "470226"
+    ],
+    "Rehli S.O": [
+      "470227"
+    ],
+    "Dhana S.O": [
+      "470228"
+    ],
+    "Garhakota S.O": [
+      "470229"
+    ],
+    "Garhakota Nadipar S.O": [
+      "470232"
+    ],
+    "Kesli S.O": [
+      "470235"
+    ],
+    "Banda Belai S.O": [
+      "470335"
+    ],
+    "Karrapur S.O": [
+      "470337"
+    ],
+    "Shahgarh S.O (Sagar)": [
+      "470339"
+    ],
+    "DALPATPUR S.O.": [
+      "470340"
+    ],
+    "Malthone S.O": [
+      "470441"
+    ],
+    "Bandri S.O": [
+      "470442"
+    ],
+    "Damoh H.O": [
+      "470661"
+    ],
+    "Nohata S.O": [
+      "470663"
+    ],
+    "Bandakpur S.O": [
+      "470664"
+    ],
+    "Pathariya S.O": [
+      "470666"
+    ],
+    "Shahpur Magrone S.O": [
+      "470669"
+    ],
+    "Bansa Tarkheda S.O": [
+      "470672"
+    ],
+    "Batiagarh S.O": [
+      "470673"
+    ],
+    "Narsingarh S.O": [
+      "470675"
+    ],
+    "Hindoriya S.O": [
+      "470771"
+    ],
+    "Patera S.O": [
+      "470772"
+    ],
+    "Hatta S.O (Damoh)": [
+      "470775"
+    ],
+    "Tendukheda S.O": [
+      "470880"
+    ],
+    "Jabera S.O": [
+      "470881"
+    ]
+  },
+  "Satna": {
+    "Satna H.O": [
+      "485001"
+    ],
+    "Satna Birla Vikas S.O": [
+      "485005"
+    ],
+    "Ramvan S.O": [
+      "485111"
+    ],
+    "Babupur S.O": [
+      "485112"
+    ],
+    "Madhogarh S.O (Satna)": [
+      "485113"
+    ],
+    "Sagmania S.O": [
+      "485114"
+    ],
+    "Rampur Baghelan S.O": [
+      "485115"
+    ],
+    "Jaitwara S.O": [
+      "485221"
+    ],
+    "Birsinghpur S.O": [
+      "485226"
+    ],
+    "Kotar S.O": [
+      "485227"
+    ],
+    "Majhgawan S.O": [
+      "485331"
+    ],
+    "M G  G V chitrakoot S.O": [
+      "485334"
+    ],
+    "Sohawal S.O": [
+      "485441"
+    ],
+    "Nagod S.O": [
+      "485446"
+    ],
+    "Singhpur S.O (Satna)": [
+      "485447"
+    ],
+    "Jaso S.O": [
+      "485551"
+    ],
+    "Unchehara S.O": [
+      "485661"
+    ],
+    "Kothi S.O (Satna)": [
+      "485666"
+    ],
+    "Maihar S.O": [
+      "485771"
+    ],
+    "Sarlanagar S.O": [
+      "485772"
+    ],
+    "Amadara S.O": [
+      "485773"
+    ],
+    "Nadan S.O": [
+      "485774"
+    ],
+    "Amarpatan S.O": [
+      "485775"
+    ],
+    "Kathaha S.O": [
+      "485778"
+    ],
+    "Ramnagar S.O (Satna)": [
+      "485881"
+    ],
+    "Panna MDG S.O": [
+      "488001"
+    ],
+    "Kakrehti S.O": [
+      "488050"
+    ],
+    "Gunour S.O": [
+      "488059"
+    ],
+    "Ajaigarh S.O": [
+      "488220"
+    ],
+    "Dharampur S.O": [
+      "488222"
+    ],
+    "Devendra Nagar S.O": [
+      "488333"
+    ],
+    "Amanganj S.O": [
+      "488441"
+    ],
+    "Simariya S.O": [
+      "488442"
+    ],
+    "Raipura S.O": [
+      "488443"
+    ],
+    "Pawai S.O": [
+      "488446"
+    ],
+    "Shahnagar S.O": [
+      "488448"
+    ]
+  },
+  "Sehore": {
+    "Rajgarh(Bia) H.O": [
+      "465661"
+    ],
+    "Kurawar S.O (Rajgarh)": [
+      "465667"
+    ],
+    "Narsinghgarh S.O": [
+      "465669"
+    ],
+    "Biaora S.O": [
+      "465674"
+    ],
+    "Suthalia S.O": [
+      "465677"
+    ],
+    "Khilchipur S.O": [
+      "465679"
+    ],
+    "Talen S.O": [
+      "465680"
+    ],
+    "Pachore S.O": [
+      "465683"
+    ],
+    "Boda S.O": [
+      "465685"
+    ],
+    "Khujner S.O": [
+      "465687"
+    ],
+    "Chhapiheda S.O": [
+      "465689"
+    ],
+    "Zeerapur S.O": [
+      "465691"
+    ],
+    "Machalpur S.O": [
+      "465693"
+    ],
+    "Sarangpur S.O": [
+      "465697"
+    ],
+    "Sehore H.O": [
+      "466001"
+    ],
+    "Bilkisganj S.O": [
+      "466111"
+    ],
+    "Amlaha S.O": [
+      "466113"
+    ],
+    "Kotri S.O (Sehore)": [
+      "466114"
+    ],
+    "Ichawar S.O": [
+      "466115"
+    ],
+    "Ashta S.O": [
+      "466116"
+    ],
+    "Metwada S.O": [
+      "466118"
+    ],
+    "Siddikganj S.O": [
+      "466120"
+    ],
+    "Maina S.O": [
+      "466125"
+    ],
+    "Jawar S.O (Sehore)": [
+      "466221"
+    ],
+    "Bhairunda Sub Post Office": [
+      "466331"
+    ],
+    "Budhni T.N. S.O": [
+      "466445"
+    ],
+    "Rehti S.O": [
+      "466446"
+    ],
+    "Baktara S.O": [
+      "466448"
+    ],
+    "Shahganj S.O (Sehore)": [
+      "466554"
+    ],
+    "Shyampur S.O (Sehore)": [
+      "466651"
+    ],
+    "Doraha S.O (Sehore)": [
+      "466661"
+    ],
+    "Ahmedpur S.O (Sehore)": [
+      "466665"
+    ]
+  },
+  "Seoni": {},
+  "Shahdol": {
+    "Shahdol H.O": [
+      "484001"
+    ],
+    "Burhar S.O": [
+      "484110"
+    ],
+    "Venkatnagar S.O": [
+      "484113"
+    ],
+    "Dhanpuri S.O": [
+      "484114"
+    ],
+    "Amai Colliery S.O": [
+      "484116"
+    ],
+    "Amlai Paper Mills S.O": [
+      "484117"
+    ],
+    "S.K. Nagar S.O": [
+      "484120"
+    ],
+    "Chachai S.O": [
+      "484220"
+    ],
+    "Anuppur S.O": [
+      "484224"
+    ],
+    "Jaithari S.O": [
+      "484330"
+    ],
+    "Kotma S.O": [
+      "484334"
+    ],
+    "Kotma Colliery S.O": [
+      "484336"
+    ],
+    "Bijuri S.O": [
+      "484440"
+    ],
+    "Jamuna Colliery S.O": [
+      "484444"
+    ],
+    "Rajnagar Colliery S.O": [
+      "484446"
+    ],
+    "Amadand S.O": [
+      "484447"
+    ],
+    "Birsinghpur Pali S.O": [
+      "484551"
+    ],
+    "Nowrozabad S.O": [
+      "484555"
+    ],
+    "Chandia S.O": [
+      "484660"
+    ],
+    "Umaria S.O": [
+      "484661"
+    ],
+    "Bandhavgarh National Park S.O": [
+      "484664"
+    ],
+    "Manpur S.O (Umaria)": [
+      "484665"
+    ],
+    "Jaitpur S.O (Shahdol)": [
+      "484669"
+    ],
+    "Gohparu S.O": [
+      "484770"
+    ],
+    "Jaisinghnagar S.O": [
+      "484771"
+    ],
+    "Beohari S.O": [
+      "484774"
+    ],
+    "Bansagar S.O": [
+      "484776"
+    ],
+    "Rajendragram S.O": [
+      "484881"
+    ],
+    "Amarkantak S.O": [
+      "484886"
+    ],
+    "Igntu Amarkantak S.O.": [
+      "484887"
+    ]
+  },
+  "Shajapur": {},
+  "Sheopur": {},
+  "Shivpuri": {},
+  "Sidhi": {},
+  "Singrauli": {},
+  "Tikamgarh": {},
+  "Ujjain": {
+    "Ujjain H.O": [
+      "456001"
+    ],
+    "Ujjain  Bherugarh S.O": [
+      "456003"
+    ],
+    "Ujjain  City S.O": [
+      "456006"
+    ],
+    "Ujjain  M.L.Nagar S.O": [
+      "456010"
+    ],
+    "Unhel S.O": [
+      "456221"
+    ],
+    "Baledi S.O": [
+      "456222"
+    ],
+    "Khachraud S.O": [
+      "456224"
+    ],
+    "Bhatpachlana S.O": [
+      "456313"
+    ],
+    "Birlagram  Nagda S.O": [
+      "456331"
+    ],
+    "Nagda S.O": [
+      "456335"
+    ],
+    "Piploda  Baghla S.O": [
+      "456337"
+    ],
+    "Mehidpur  Road S.O": [
+      "456440"
+    ],
+    "Jharda S.O": [
+      "456441"
+    ],
+    "Mehidpur S.O": [
+      "456443"
+    ],
+    "Ghattia S.O": [
+      "456550"
+    ],
+    "Tajpur S.O (Ujjain)": [
+      "456661"
+    ],
+    "Narwar S.O (Ujjain)": [
+      "456664"
+    ],
+    "Tarana S.O": [
+      "456665"
+    ],
+    "Makdone S.O": [
+      "456668"
+    ],
+    "Kanasia S.O": [
+      "456770"
+    ],
+    "Barnagar S.O": [
+      "456771"
+    ],
+    "Runija S.O": [
+      "456776"
+    ],
+    "Shajapur H.O": [
+      "465001"
+    ],
+    "Maksi S.O": [
+      "465106"
+    ],
+    "Berchha S.O": [
+      "465110"
+    ],
+    "Sundersi S.O": [
+      "465113"
+    ],
+    "Polai Kalan S.O": [
+      "465116"
+    ],
+    "AWANTIPUR BARODIYA": [
+      "465118"
+    ],
+    "Kalisindh S.O": [
+      "465220"
+    ],
+    "Akodia S.O": [
+      "465223"
+    ],
+    "Barodia Kumaria S.O": [
+      "465226"
+    ],
+    "Salsalai S.O": [
+      "465227"
+    ],
+    "Kanad S.O": [
+      "465230"
+    ],
+    "Shujalpur  Mandi S.O": [
+      "465333"
+    ],
+    "Jamner S.O (Shajapur)": [
+      "465335"
+    ],
+    "Kalapipal S.O": [
+      "465337"
+    ],
+    "Khokra Kalan S.O": [
+      "465339"
+    ],
+    "Agar Malwa S.O": [
+      "465441"
+    ],
+    "Nalkheda S.O": [
+      "465445"
+    ],
+    "Susner S.O": [
+      "465447"
+    ],
+    "Soyat Kalan S.O": [
+      "465449"
+    ],
+    "Barode S.O": [
+      "465550"
+    ]
+  },
+  "Umaria": {},
+  "Vidisha": {
+    "Vidisha H.O": [
+      "464001"
+    ],
+    "Shamshabad S.O (Vidisha)": [
+      "464111"
+    ],
+    "Pipalkheda S.O": [
+      "464113"
+    ],
+    "Lateri S.O": [
+      "464114"
+    ],
+    "Gulabganj S.O": [
+      "464220"
+    ],
+    "Ganjbasoda S.O": [
+      "464221"
+    ],
+    "Kurwai S.O": [
+      "464224"
+    ],
+    "Khamkheda S.O": [
+      "464226"
+    ],
+    "Sironj S.O": [
+      "464228"
+    ],
+    "Bamora R.S S.O": [
+      "464240"
+    ],
+    "Nateran S.O": [
+      "464258"
+    ],
+    "Gyraspur S.O": [
+      "464331"
+    ],
+    "Tyonda S.O": [
+      "464334"
+    ],
+    "Pathari S.O (Vidisha)": [
+      "464337"
+    ],
+    "Raisen H.O": [
+      "464551"
+    ],
+    "Sultanganj SO": [
+      "464570"
+    ],
+    "Dehgaon S.O": [
+      "464573"
+    ],
+    "Salamatpur Mandi S.O": [
+      "464651"
+    ],
+    "Sanchi S.O": [
+      "464661"
+    ],
+    "Badi S.O": [
+      "464665"
+    ],
+    "Bareli S.O": [
+      "464668"
+    ],
+    "Khargone S.O": [
+      "464671"
+    ],
+    "Bamhori S.O": [
+      "464672"
+    ],
+    "Udaipura S.O": [
+      "464770"
+    ],
+    "Deori S.O (Raisen)": [
+      "464774"
+    ],
+    "Begumganj S.O": [
+      "464881"
+    ],
+    "Gairatganj S.O": [
+      "464884"
+    ],
+    "Silwani S.O": [
+      "464886"
+    ],
+    "Sultanpur S.O (Raisen)": [
+      "464986"
+    ],
+    "Goharganj S.O": [
+      "464990"
+    ]
+  },
+  "Misc": {}
+}

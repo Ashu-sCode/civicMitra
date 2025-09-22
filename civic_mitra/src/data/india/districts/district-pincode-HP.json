@@ -1,0 +1,1104 @@
+{
+  "Bilaspur": {
+    "Bilaspur BilaspurCGH HO": [
+      "495001"
+    ],
+    "Sakri": [
+      "495003"
+    ],
+    "Bilaspur RS SO": [
+      "495004"
+    ],
+    "South Eastern Coals Limited": [
+      "495006"
+    ],
+    "Koni SO": [
+      "495009"
+    ],
+    "Ganiyari SO": [
+      "495112"
+    ],
+    "Kargi Road SO": [
+      "495113"
+    ],
+    "Lormi SO": [
+      "495115"
+    ],
+    "Belgahana SO": [
+      "495116"
+    ],
+    "Pendra Road SO": [
+      "495117"
+    ],
+    "Marwahi SO": [
+      "495118"
+    ],
+    "Pendra SO": [
+      "495119"
+    ],
+    "Chakarbhata Camp SO": [
+      "495220"
+    ],
+    "Hirri Mines SO": [
+      "495222"
+    ],
+    "Bilha SO": [
+      "495224"
+    ],
+    "Takhatpur SO": [
+      "495330"
+    ],
+    "Mungeli SO": [
+      "495334"
+    ],
+    "Patharia SO": [
+      "495335"
+    ],
+    "Ratanpur SO Bilaspur": [
+      "495442"
+    ],
+    "Dhelwadih": [
+      "495444"
+    ],
+    "Katghora SO": [
+      "495445"
+    ],
+    "Hardi Bazar SO": [
+      "495446"
+    ],
+    "Banki Mongra SO": [
+      "495447"
+    ],
+    "PondiUproda SO": [
+      "495448"
+    ],
+    "Pali SO Korba": [
+      "495449"
+    ],
+    "Jamnipali SO": [
+      "495450"
+    ],
+    "Wcl Gevra Project SO": [
+      "495452"
+    ],
+    "Kusmunda Colliery SO": [
+      "495454"
+    ],
+    "Balgi Project Korba SO": [
+      "495455"
+    ],
+    "Jairam Nagar SO": [
+      "495550"
+    ],
+    "Masturi SO": [
+      "495551"
+    ],
+    "Akaltara SO": [
+      "495552"
+    ],
+    "Nariyara SO": [
+      "495553"
+    ],
+    "Pamgarh SO": [
+      "495554"
+    ],
+    "Ujwal Nagar SO Bilaspur": [
+      "495555"
+    ],
+    "Kharod SO": [
+      "495556"
+    ],
+    "Seorinarayan SO": [
+      "495557"
+    ],
+    "Baloda SO": [
+      "495559"
+    ],
+    "Bamhni Bazar SO": [
+      "495660"
+    ],
+    "Birra SO": [
+      "495661"
+    ],
+    "Gopal Nagar SO Chattisgarh Circle": [
+      "495663"
+    ],
+    "Janjgir HO": [
+      "495668"
+    ],
+    "VIDYUT NAGAR LACHHANPUR S.O.": [
+      "495669"
+    ],
+    "Champa SO": [
+      "495671"
+    ],
+    "Bhaisma SO": [
+      "495674"
+    ],
+    "Korba HO": [
+      "495677"
+    ],
+    "Manikpur Colliery SO": [
+      "495682"
+    ],
+    "Rajgamar Colliery SO": [
+      "495683"
+    ],
+    "Balco Nagar Korba SO": [
+      "495684"
+    ],
+    "Saragaon SO": [
+      "495686"
+    ],
+    "Baradwar SO": [
+      "495687"
+    ],
+    "Dabhra SO": [
+      "495688"
+    ],
+    "Sakti SO": [
+      "495689"
+    ],
+    "Jaijaipur SO": [
+      "495690"
+    ],
+    "Malkharoda SO": [
+      "495691"
+    ],
+    "Chandrapur SO Janjgirchampa": [
+      "495692"
+    ],
+    "Adbhar SO": [
+      "495695"
+    ]
+  },
+  "Chamba": {
+    "Sihunta SO": [
+      "176207"
+    ],
+    "Bakloh SO": [
+      "176301"
+    ],
+    "Chowari SO": [
+      "176302"
+    ],
+    "Banikhet SO": [
+      "176303"
+    ],
+    "Dalhousie SO": [
+      "176304"
+    ],
+    "Dalhousie cantt": [
+      "176305"
+    ],
+    "BATHRI BAZAR SO": [
+      "176306"
+    ],
+    "Sahoo SO": [
+      "176307"
+    ],
+    "BHALEI SO": [
+      "176308"
+    ],
+    "Garola SO": [
+      "176309"
+    ],
+    "Chamba HO": [
+      "176310"
+    ],
+    "Mehla SO": [
+      "176311"
+    ],
+    "Sundla SO": [
+      "176312"
+    ],
+    "Kakira SO": [
+      "176313"
+    ],
+    "Sultanpur SO": [
+      "176314"
+    ],
+    "Bharmour SO": [
+      "176315"
+    ],
+    "Bhanjraru Tissa": [
+      "176316"
+    ],
+    "Surangani SO": [
+      "176317"
+    ],
+    "Hardaspura SO": [
+      "176318"
+    ],
+    "Pukhri SO": [
+      "176319"
+    ],
+    "Salooni SO": [
+      "176320"
+    ],
+    "Nakror SO": [
+      "176321"
+    ],
+    "Killar Pangi SO": [
+      "176323"
+    ],
+    "Gehra SO": [
+      "176324"
+    ],
+    "Samleu SO": [
+      "176325"
+    ],
+    "Holi SO": [
+      "176326"
+    ],
+    "Telka": [
+      "176330"
+    ]
+  },
+  "Hamirpur": {
+    "Bilaspur Bilaspur HP HO": [
+      "174001"
+    ],
+    "Bassi Kehloor SO": [
+      "174002"
+    ],
+    "Harlog SO": [
+      "174003"
+    ],
+    "Kandraur SO": [
+      "174004"
+    ],
+    "Raghunath Pura SO": [
+      "174005"
+    ],
+    "Swarghat SO": [
+      "174011"
+    ],
+    "Panjgain SO": [
+      "174012"
+    ],
+    "Barmana SO": [
+      "174013"
+    ],
+    "Behal SO": [
+      "174015"
+    ],
+    "Jejwin SO": [
+      "174017"
+    ],
+    "Ghumarwin SO": [
+      "174021"
+    ],
+    "Dadhol SO": [
+      "174023"
+    ],
+    "Auhar SO": [
+      "174024"
+    ],
+    "Kuthera BLP SO": [
+      "174026"
+    ],
+    "Lehri Sarail SO": [
+      "174027"
+    ],
+    "Hatwar SO": [
+      "174028"
+    ],
+    "Berthin SO": [
+      "174029"
+    ],
+    "Tallai SO": [
+      "174030"
+    ],
+    "Jhandutta SO": [
+      "174031"
+    ],
+    "Namhol SO": [
+      "174032"
+    ],
+    "Jukhala SO": [
+      "174033"
+    ],
+    "Geharwin SO": [
+      "174034"
+    ],
+    "Kalol SO Bilaspur HP": [
+      "174035"
+    ],
+    "NTPC Jamthal SO": [
+      "174036"
+    ],
+    "AIIMS Bilaspur S.O": [
+      "174037"
+    ],
+    "Bhakra Dam SO": [
+      "174201"
+    ],
+    "Bani SO HamirpurHP": [
+      "174304"
+    ],
+    "Barsar HO": [
+      "174305"
+    ],
+    "Bahina SO": [
+      "174309"
+    ],
+    "Naina Devi SO": [
+      "174310"
+    ],
+    "Salauni SO": [
+      "174311"
+    ],
+    "Jaure Amb SO": [
+      "174312"
+    ],
+    "Hareta SO": [
+      "174405"
+    ],
+    "Dhaned SO": [
+      "174505"
+    ],
+    "Chakmoh SO": [
+      "176039"
+    ],
+    "Bijhari SO": [
+      "176040"
+    ],
+    "Bhota SO": [
+      "176041"
+    ],
+    "Mair SO": [
+      "176042"
+    ],
+    "Ladraur SO": [
+      "176043"
+    ],
+    "Mundkhar SO": [
+      "176044"
+    ],
+    "Bhoranj SO": [
+      "176045"
+    ],
+    "Jahu SO": [
+      "176048"
+    ],
+    "Maharal SO": [
+      "176049"
+    ],
+    "Bhaleth SO": [
+      "176108"
+    ],
+    "Jangal Beri SO": [
+      "176109"
+    ],
+    "Sujanpur Tira SO": [
+      "176110"
+    ],
+    "Patlander SO": [
+      "176111"
+    ],
+    "Hamirpur HO HP Circle": [
+      "177001"
+    ],
+    "Govt Degree College Hamirpur SO": [
+      "177005"
+    ],
+    "Kashmir SO": [
+      "177006"
+    ],
+    "Chabutra SO": [
+      "177007"
+    ],
+    "Kuthera SO": [
+      "177020"
+    ],
+    "Bagwara SO": [
+      "177021"
+    ],
+    "Uhal SO": [
+      "177022"
+    ],
+    "Tauni Devi SO": [
+      "177023"
+    ],
+    "Bhareri SO": [
+      "177024"
+    ],
+    "Kanjian SO": [
+      "177025"
+    ],
+    "Galore SO": [
+      "177026"
+    ],
+    "Kot SO HamirpurHP": [
+      "177027"
+    ],
+    "Kakkar SO": [
+      "177028"
+    ],
+    "Lambloo SO": [
+      "177029"
+    ],
+    "Nadaun SO": [
+      "177033"
+    ],
+    "Sera SO": [
+      "177038"
+    ],
+    "Kangoo SO": [
+      "177040"
+    ],
+    "Dhaneta SO": [
+      "177041"
+    ],
+    "Jalari SO": [
+      "177042"
+    ],
+    "Bara SO HamirpurHP": [
+      "177044"
+    ],
+    "Rail SO": [
+      "177045"
+    ],
+    "Rangas SO": [
+      "177048"
+    ],
+    "Bahanwin SO": [
+      "177118"
+    ],
+    "Bumbloo SO": [
+      "177119"
+    ],
+    "Basaral SO": [
+      "177301"
+    ],
+    "Didwin SO": [
+      "177401"
+    ],
+    "Parol SO": [
+      "177501"
+    ],
+    "Awah Devi SO": [
+      "177601"
+    ]
+  },
+  "Kangra": {},
+  "Kinnaur": {},
+  "Kullu": {},
+  "Lahaul &amp; Spiti": {},
+  "Mandi": {
+    "Mandi HO": [
+      "175001"
+    ],
+    "Bhojpur SO Mandi": [
+      "175002"
+    ],
+    "Kotli SO": [
+      "175003"
+    ],
+    "Bhambla SO": [
+      "175004"
+    ],
+    "Kataula SO": [
+      "175005"
+    ],
+    "Gagal SO": [
+      "175006"
+    ],
+    "Gopalpur SO Mandi": [
+      "175007"
+    ],
+    "Ner Chowk SO": [
+      "175008"
+    ],
+    "Tattapani SO": [
+      "175009"
+    ],
+    "Churag SO": [
+      "175010"
+    ],
+    "Karsog SO": [
+      "175011"
+    ],
+    "Padhar SO": [
+      "175012"
+    ],
+    "Barot SO": [
+      "175013"
+    ],
+    "Drubbal SO": [
+      "175014"
+    ],
+    "Joginder Nagar SO": [
+      "175015"
+    ],
+    "Ladbharole SO": [
+      "175016"
+    ],
+    "Slapper SO": [
+      "175017"
+    ],
+    "Sunder Nagar1 SO": [
+      "175018"
+    ],
+    "Sunder Nagar Township HO": [
+      "175019"
+    ],
+    "Gumma (Mandi) S.O": [
+      "175020"
+    ],
+    "Bhangrotu SO": [
+      "175021"
+    ],
+    "Rewalsar SO": [
+      "175023"
+    ],
+    "Sarkaghat SO": [
+      "175024"
+    ],
+    "Sajao Pipluso SO": [
+      "175025"
+    ],
+    "Tihra SO": [
+      "175026"
+    ],
+    "Baggi SO": [
+      "175027"
+    ],
+    "Chachiot SO": [
+      "175028"
+    ],
+    "Gohar SO": [
+      "175029"
+    ],
+    "Dehar SO": [
+      "175030"
+    ],
+    "Jaidevi SO": [
+      "175031"
+    ],
+    "Chauntra SO": [
+      "175032"
+    ],
+    "Baldwara SO": [
+      "175033"
+    ],
+    "Samaila SO": [
+      "175034"
+    ],
+    "Bagsaid SO": [
+      "175035"
+    ],
+    "Gurkotha SO": [
+      "175036"
+    ],
+    "Cholthra SO": [
+      "175037"
+    ],
+    "Nihri SO": [
+      "175038"
+    ],
+    "Jachh SO": [
+      "175039"
+    ],
+    "Dharampur SO Mandi": [
+      "175040"
+    ],
+    "Rakhoh SO": [
+      "175042"
+    ],
+    "Chail Chowk SO": [
+      "175045"
+    ],
+    "Pangna SO": [
+      "175046"
+    ],
+    "Janjehli SO": [
+      "175047"
+    ],
+    "Thunag SO": [
+      "175048"
+    ],
+    "Jamni SO": [
+      "175049"
+    ],
+    "Marhi SO": [
+      "175050"
+    ],
+    "Seoh SO": [
+      "175051"
+    ],
+    "Saigaloo SO": [
+      "175052"
+    ],
+    "Kamand SO": [
+      "175075"
+    ],
+    "Kullu HO": [
+      "175101"
+    ],
+    "Bhutti SO": [
+      "175102"
+    ],
+    "Bahang SO": [
+      "175103"
+    ],
+    "Larenkelo SO": [
+      "175104"
+    ],
+    "Jaree SO": [
+      "175105"
+    ],
+    "Balichowki SO": [
+      "175106"
+    ],
+    "Aut SO": [
+      "175121"
+    ],
+    "Banjar SO": [
+      "175123"
+    ],
+    "Pandoh SO": [
+      "175124"
+    ],
+    "Bhuntar SO": [
+      "175125"
+    ],
+    "Shamshi SO": [
+      "175126"
+    ],
+    "Raison SO": [
+      "175128"
+    ],
+    "Katrain SO": [
+      "175129"
+    ],
+    "Naggar SO": [
+      "175130"
+    ],
+    "Manali SO Kullu": [
+      "175131"
+    ],
+    "Keylong HO": [
+      "175132"
+    ],
+    "Lote SO Lahul  Spiti": [
+      "175133"
+    ],
+    "Sainj SO": [
+      "175134"
+    ],
+    "Haripur SO Kullu": [
+      "175136"
+    ],
+    "Babeli SO": [
+      "175138"
+    ],
+    "Jahalman SO": [
+      "175139"
+    ],
+    "Gondhla SO": [
+      "175140"
+    ],
+    "Garsa SO": [
+      "175141"
+    ],
+    "Udaipur SO HP Circle": [
+      "175142"
+    ],
+    "Jagatsukh SO": [
+      "175143"
+    ],
+    "Sandhole SO": [
+      "176090"
+    ]
+  },
+  "Shimla": {
+    "Shimla GPO": [
+      "171001"
+    ],
+    "Shimla East SO": [
+      "171002"
+    ],
+    "AGPO SO": [
+      "171003"
+    ],
+    "Ambedkarchowk SO": [
+      "171004"
+    ],
+    "Summerhill SO": [
+      "171005"
+    ],
+    "Sanjauli SO": [
+      "171006"
+    ],
+    "Mashobra SO": [
+      "171007"
+    ],
+    "Jutogh SO": [
+      "171008"
+    ],
+    "Kasumpti SO": [
+      "171009"
+    ],
+    "Tara Devi SO": [
+      "171010"
+    ],
+    "Totu SO": [
+      "171011"
+    ],
+    "Dhalli SO": [
+      "171012"
+    ],
+    "Mehli SO": [
+      "171013"
+    ],
+    "Ghanahatti SO": [
+      "171014"
+    ],
+    "Baldeyan SO": [
+      "171015"
+    ],
+    "Basanatpur SO": [
+      "171018"
+    ],
+    "Jalog SO": [
+      "171019"
+    ],
+    "Dhami SO": [
+      "171103"
+    ],
+    "Theog SO": [
+      "171201"
+    ],
+    "Kotkhai SO": [
+      "171202"
+    ],
+    "Tikkar SO": [
+      "171203"
+    ],
+    "Kiari SO": [
+      "171204"
+    ],
+    "Jubbal SO": [
+      "171205"
+    ],
+    "Hatkoti SO": [
+      "171206"
+    ],
+    "Rohru SO": [
+      "171207"
+    ],
+    "Chirgaon SO Shimla": [
+      "171208"
+    ],
+    "Fagu SO Shimla": [
+      "171209"
+    ],
+    "Nerwa SO": [
+      "171210"
+    ],
+    "Chopal SO": [
+      "171211"
+    ],
+    "Matiana SO": [
+      "171212"
+    ],
+    "Narkanda SO": [
+      "171213"
+    ],
+    "Jangla SO": [
+      "171214"
+    ],
+    "Mandhole SO": [
+      "171215"
+    ],
+    "Mandal SO Shimla": [
+      "171216"
+    ],
+    "Kupvi SO": [
+      "171217"
+    ],
+    "Junga SO": [
+      "171218"
+    ],
+    "Shoghi SO": [
+      "171219"
+    ],
+    "Bagain SO": [
+      "171220"
+    ],
+    "Kawar SO": [
+      "171221"
+    ],
+    "Sandhu SO": [
+      "171222"
+    ],
+    "Arhal SO": [
+      "171223"
+    ],
+    "Summer Kot SO": [
+      "171224"
+    ],
+    "Baghi SO Shimla": [
+      "171225"
+    ],
+    "Balag SO": [
+      "171226"
+    ],
+    "Sunni Bhajji SO": [
+      "171301"
+    ]
+  },
+  "Sirmaur (Sirmour)": {},
+  "Solan": {
+    "Darla SO": [
+      "171102"
+    ],
+    "Nahan HO": [
+      "173001"
+    ],
+    "Majra SO Sirmaur": [
+      "173021"
+    ],
+    "Dadahu SO": [
+      "173022"
+    ],
+    "Sangrah SO": [
+      "173023"
+    ],
+    "Sarahan SO": [
+      "173024"
+    ],
+    "Paonta Sahib SO": [
+      "173025"
+    ],
+    "Kw Bhood SO": [
+      "173026"
+    ],
+    "Shillai SO": [
+      "173027"
+    ],
+    "Sataun SO": [
+      "173029"
+    ],
+    "Kala Amb SO": [
+      "173030"
+    ],
+    "Dhualakuan": [
+      "173031"
+    ],
+    "Haripurdhar": [
+      "173032"
+    ],
+    "Narag": [
+      "173033"
+    ],
+    "Rajgarh Siramur SO": [
+      "173101"
+    ],
+    "Nohra SO": [
+      "173104"
+    ],
+    "Garkhal SO": [
+      "173201"
+    ],
+    "Sanawar SO": [
+      "173202"
+    ],
+    "Kasauli SO": [
+      "173204"
+    ],
+    "Baddi SO": [
+      "173205"
+    ],
+    "Subathu SO": [
+      "173206"
+    ],
+    "Kunihar SO": [
+      "173207"
+    ],
+    "Arki SO": [
+      "173208"
+    ],
+    "Dharampur SO Solan": [
+      "173209"
+    ],
+    "Dagshai SO": [
+      "173210"
+    ],
+    "Saproon SO": [
+      "173211"
+    ],
+    "Solan HO": [
+      "173212"
+    ],
+    "Chambaghat SO": [
+      "173213"
+    ],
+    "Solan Brewery SO": [
+      "173214"
+    ],
+    "Kandaghat SO": [
+      "173215"
+    ],
+    "Chail SO Solan": [
+      "173217"
+    ],
+    "Diggal SO": [
+      "173218"
+    ],
+    "Parwanoo SO": [
+      "173220"
+    ],
+    "Domehar SO": [
+      "173221"
+    ],
+    "Mamlig SO": [
+      "173222"
+    ],
+    "Oachghat SO": [
+      "173223"
+    ],
+    "Jubbar SO": [
+      "173225"
+    ],
+    "Kumarhatti SO": [
+      "173229"
+    ],
+    "Nauni SO": [
+      "173230"
+    ],
+    "Patta SO": [
+      "173233"
+    ],
+    "Waknaghat SO": [
+      "173234"
+    ],
+    "Dhundan SO": [
+      "173235"
+    ],
+    "Kuthar SO": [
+      "173236"
+    ],
+    "Panjhera": [
+      "173237"
+    ],
+    "Nalagarh SO": [
+      "174101"
+    ],
+    "Ramshahar SO": [
+      "174102"
+    ],
+    "Barotiwala SO": [
+      "174103"
+    ]
+  },
+  "Una": {
+    "Santokhgarh SO": [
+      "174301"
+    ],
+    "Dhussara SO": [
+      "174302"
+    ],
+    "Una HO": [
+      "174303"
+    ],
+    "Dehlan SO": [
+      "174306"
+    ],
+    "Bangana SO": [
+      "174307"
+    ],
+    "Lathiani SO": [
+      "174308"
+    ],
+    "Chowki Maniar SO": [
+      "174314"
+    ],
+    "Mehatpur SO Una": [
+      "174315"
+    ],
+    "Bhera SO": [
+      "174316"
+    ],
+    "Bhadsali SO": [
+      "174317"
+    ],
+    "Marwari SO": [
+      "174319"
+    ],
+    "Talmehra SO": [
+      "174320"
+    ],
+    "Thanakalan SO": [
+      "174321"
+    ],
+    "Pubowal SO": [
+      "174503"
+    ],
+    "Tahliwal SO": [
+      "174507"
+    ],
+    "Dulehar SO": [
+      "176601"
+    ],
+    "Raipur SO Una": [
+      "177031"
+    ],
+    "Sohari SO": [
+      "177039"
+    ],
+    "Bharwain SO": [
+      "177109"
+    ],
+    "Chintpurni SO": [
+      "177110"
+    ],
+    "Gagret SO": [
+      "177201"
+    ],
+    "Mubarikpur SO": [
+      "177202"
+    ],
+    "Amb SO": [
+      "177203"
+    ],
+    "Daulatpurchowk SO": [
+      "177204"
+    ],
+    "Ambota SO": [
+      "177205"
+    ],
+    "Oel SO Una": [
+      "177206"
+    ],
+    "Pandogha SO": [
+      "177207"
+    ],
+    "Panjawar SO": [
+      "177208"
+    ],
+    "Saloh SO": [
+      "177209"
+    ],
+    "Nehri Nauranga SO": [
+      "177210"
+    ],
+    "Thathal SO": [
+      "177211"
+    ],
+    "Ghanari SO": [
+      "177212"
+    ],
+    "Gondpur Banera SO": [
+      "177213"
+    ],
+    "Sunkali SO": [
+      "177219"
+    ],
+    "Haroli SO": [
+      "177220"
+    ]
+  }
+}

@@ -1,0 +1,1603 @@
+{
+  "Ahmedabad": {},
+  "Amreli": {
+    "Savarkundla SO": [
+      "364515"
+    ],
+    "Jira SO": [
+      "364521"
+    ],
+    "Badhada SO": [
+      "364522"
+    ],
+    "Vanda SO": [
+      "364525"
+    ],
+    "Vijpadi SO": [
+      "364530"
+    ],
+    "Damnagar SO": [
+      "365220"
+    ],
+    "Chamaradi SO": [
+      "365410"
+    ],
+    "Babra SO Amreli": [
+      "365421"
+    ],
+    "Lathi SO Amreli": [
+      "365430"
+    ],
+    "Chavand SO": [
+      "365435"
+    ],
+    "Bagasra SO": [
+      "365440"
+    ],
+    "Kunkavav SO": [
+      "365450"
+    ],
+    "Motaankadiya SO": [
+      "365455"
+    ],
+    "Vaghaniya SO": [
+      "365456"
+    ],
+    "Lunidhar SO": [
+      "365460"
+    ],
+    "Vadia SO": [
+      "365480"
+    ],
+    "Liliya SO": [
+      "365535"
+    ],
+    "Jafrabad SO Amreli": [
+      "365540"
+    ],
+    "UTCL Kovaya SO": [
+      "365541"
+    ],
+    "Dedan SO": [
+      "365550"
+    ],
+    "Dungar SO": [
+      "365555"
+    ],
+    "Rajula SO": [
+      "365560"
+    ],
+    "Amreli HO": [
+      "365601"
+    ],
+    "Babapur SO": [
+      "365610"
+    ],
+    "Chital SO": [
+      "365620"
+    ],
+    "Chalala SO": [
+      "365630"
+    ],
+    "Motasamdhiyala SO": [
+      "365635"
+    ],
+    "Dhari SO": [
+      "365640"
+    ],
+    "Bhader SO": [
+      "365645"
+    ],
+    "Khambha SO": [
+      "365650"
+    ],
+    "Timbi S.O": [
+      "365730"
+    ]
+  },
+  "Anand": {
+    "Boriavi SO": [
+      "387310"
+    ],
+    "Anand HO": [
+      "388001"
+    ],
+    "Anand Agri Inst  Anand SO": [
+      "388110"
+    ],
+    "Vallabh  Vidyanagar SO": [
+      "388120"
+    ],
+    "Boria SO Anand": [
+      "388130"
+    ],
+    "Bhalej SO": [
+      "388205"
+    ],
+    "Ode SO": [
+      "388210"
+    ],
+    "Thamna SO Anand": [
+      "388215"
+    ],
+    "Umreth SO": [
+      "388220"
+    ],
+    "Dakor SO": [
+      "388225"
+    ],
+    "Kalsar SO": [
+      "388230"
+    ],
+    "Timbana Muvada S.O": [
+      "388235"
+    ],
+    "Wanakbori TPS SO": [
+      "388239"
+    ],
+    "Sevalia  Rs SO": [
+      "388245"
+    ],
+    "Thasra SO": [
+      "388250"
+    ],
+    "Vadasinor SO": [
+      "388255"
+    ],
+    "Birpur SO Kheda": [
+      "388260"
+    ],
+    "Pandva SO": [
+      "388265"
+    ],
+    "Adas SO": [
+      "388305"
+    ],
+    "Vasad SO": [
+      "388306"
+    ],
+    "Kantharia SO": [
+      "388307"
+    ],
+    "Ajarpura SO": [
+      "388310"
+    ],
+    "Bakrol SO": [
+      "388315"
+    ],
+    "Chikhodra SO": [
+      "388320"
+    ],
+    "Karamsad SO": [
+      "388325"
+    ],
+    "Khambholej SO": [
+      "388330"
+    ],
+    "Kunjrav SO": [
+      "388335"
+    ],
+    "Mogar SO": [
+      "388340"
+    ],
+    "Mogri SO": [
+      "388345"
+    ],
+    "Napad SO": [
+      "388350"
+    ],
+    "Navli SO": [
+      "388355"
+    ],
+    "Samarkha SO": [
+      "388360"
+    ],
+    "Sarsa SO": [
+      "388365"
+    ],
+    "Vadod SO": [
+      "388370"
+    ],
+    "Anklav SO": [
+      "388510"
+    ],
+    "Bamangam SO": [
+      "388520"
+    ],
+    "Bhadran SO": [
+      "388530"
+    ],
+    "Borsad SO": [
+      "388540"
+    ],
+    "Alarsa SO": [
+      "388543"
+    ],
+    "Kavitha SO": [
+      "388545"
+    ],
+    "Napa SO": [
+      "388560"
+    ]
+  },
+  "Aravalli": {},
+  "Banaskantha (Palanpur)": {},
+  "Bharuch": {
+    "Gajera SO": [
+      "391810"
+    ],
+    "Bharuch HO": [
+      "392001"
+    ],
+    "Zadeshwar SO": [
+      "392011"
+    ],
+    "Maktampur SO": [
+      "392012"
+    ],
+    "Narmada Nagar SO Bharuch": [
+      "392015"
+    ],
+    "Dayadra SO": [
+      "392020"
+    ],
+    "Samni SO": [
+      "392025"
+    ],
+    "Shuklatirth SO": [
+      "392030"
+    ],
+    "Sarbhan SO": [
+      "392035"
+    ],
+    "Tankari SO": [
+      "392040"
+    ],
+    "Amod SO": [
+      "392110"
+    ],
+    "Dahej SO": [
+      "392130"
+    ],
+    "Jolva SO": [
+      "392135"
+    ],
+    "Vagra SO": [
+      "392140"
+    ],
+    "Jambusar SO": [
+      "392150"
+    ],
+    "Kora SO Bharuch": [
+      "392155"
+    ],
+    "Karmad SO": [
+      "392160"
+    ],
+    "Pakhajan SO": [
+      "392165"
+    ],
+    "Kavi SO": [
+      "392170"
+    ],
+    "Sarod SO": [
+      "392180"
+    ],
+    "Nabipur SO": [
+      "392210"
+    ],
+    "Urja Nagar SO": [
+      "392215"
+    ],
+    "Palej SO": [
+      "392220"
+    ],
+    "Ikhar SO": [
+      "392230"
+    ],
+    "Tankaria SO": [
+      "392240"
+    ],
+    "Ankleshwar SO": [
+      "393001"
+    ],
+    "Ankleshwar IE SO": [
+      "393002"
+    ],
+    "ONGC Colony SO": [
+      "393010"
+    ],
+    "Avidha SO": [
+      "393017"
+    ],
+    "Sajod SO": [
+      "393020"
+    ],
+    "Selamba SO": [
+      "393025"
+    ],
+    "Hansot SO": [
+      "393030"
+    ],
+    "Dediapada SO": [
+      "393040"
+    ],
+    "Ambawadi SO Bharuch": [
+      "393041"
+    ],
+    "Sagbara SO": [
+      "393050"
+    ],
+    "Bhalod SO Vadodara": [
+      "393105"
+    ],
+    "Jhagadia SO": [
+      "393110"
+    ],
+    "Rajpardi SO": [
+      "393115"
+    ],
+    "Umalla SO": [
+      "393120"
+    ],
+    "Dehali SO": [
+      "393125"
+    ],
+    "Netrang SO": [
+      "393130"
+    ],
+    "Valia SO": [
+      "393135"
+    ],
+    "Pratap Nagar SO Narmada": [
+      "393140"
+    ],
+    "Rajpipla SO": [
+      "393145"
+    ],
+    "Lachharas SO": [
+      "393150"
+    ],
+    "Ekta Nagar S.O": [
+      "393151"
+    ],
+    "Panoli SO": [
+      "394115"
+    ],
+    "Ilav SO": [
+      "394810"
+    ]
+  },
+  "Bhavnagar": {
+    "Bhavnagar HO": [
+      "364001"
+    ],
+    "Bhavnagar Takhteshwar SO": [
+      "364002"
+    ],
+    "Bhavnagar Para SO": [
+      "364003"
+    ],
+    "Bhavnagar Chitra SO": [
+      "364004"
+    ],
+    "Bhavnagar Anandnagar SO": [
+      "364005"
+    ],
+    "Bhavnagar Station Road SO": [
+      "364006"
+    ],
+    "Bhandariya SO": [
+      "364050"
+    ],
+    "Vartej SO": [
+      "364060"
+    ],
+    "Koliyak SO": [
+      "364070"
+    ],
+    "Alang SBY SO": [
+      "364081"
+    ],
+    "Gogha SO": [
+      "364110"
+    ],
+    "Tansa SO": [
+      "364120"
+    ],
+    "Datha SO": [
+      "364130"
+    ],
+    "Pithalpur SO": [
+      "364135"
+    ],
+    "Talaja SO": [
+      "364140"
+    ],
+    "Thaliya SO": [
+      "364145"
+    ],
+    "Trapaj SO": [
+      "364150"
+    ],
+    "Amargadh SO": [
+      "364210"
+    ],
+    "Sanosara SO": [
+      "364230"
+    ],
+    "Sihor SO": [
+      "364240"
+    ],
+    "Songadh SO": [
+      "364250"
+    ],
+    "Tana SO": [
+      "364260"
+    ],
+    "Gheti SO": [
+      "364265"
+    ],
+    "Palitana SO": [
+      "364270"
+    ],
+    "Parvadi SO": [
+      "364275"
+    ],
+    "Motakhuntavada SO": [
+      "364280"
+    ],
+    "Mahuva SO Bhavnagar": [
+      "364290"
+    ],
+    "Bhadrod SO": [
+      "364295"
+    ],
+    "Vallabhipur SO": [
+      "364310"
+    ],
+    "Ratanpur Bhal SO": [
+      "364313"
+    ],
+    "Dhola SO": [
+      "364320"
+    ],
+    "Umrala SO": [
+      "364330"
+    ],
+    "Gariyadhar SO": [
+      "364505"
+    ],
+    "Jesar SO": [
+      "364510"
+    ],
+    "Botad SO": [
+      "364710"
+    ],
+    "Paliyad SO": [
+      "364720"
+    ],
+    "Dhasa Gam SO": [
+      "364730"
+    ],
+    "Dhasa Jn SO": [
+      "364740"
+    ],
+    "Gadhada Sn SO": [
+      "364750"
+    ],
+    "Ningala SO": [
+      "364760"
+    ],
+    "Ugamedi SO": [
+      "364765"
+    ]
+  },
+  "Botad": {},
+  "Chhota Udepur": {},
+  "Dahod": {},
+  "Dangs (Ahwa)": {},
+  "Devbhoomi Dwarka": {},
+  "Gandhinagar": {
+    "Gandhinagar Sector 6 SO": [
+      "382006"
+    ],
+    "Gandhinagar Sector 7 SO": [
+      "382007"
+    ],
+    "Gandhinagar Gujarat HO": [
+      "382010"
+    ],
+    "Gandhinagar Sector 16 SO": [
+      "382016"
+    ],
+    "Gandhinagar Sector 21 SO": [
+      "382021"
+    ],
+    "Gandhinagar Sector 28 SO": [
+      "382028"
+    ],
+    "Thermal Power Station SO": [
+      "382041"
+    ],
+    "CRPF Campus G Nagar SO": [
+      "382042"
+    ],
+    "BSF GANDHINAGAR SO": [
+      "382045"
+    ],
+    "Gift City SO": [
+      "382050"
+    ],
+    "IIT Gandhinagar SO": [
+      "382055"
+    ],
+    "Sanand SO": [
+      "382110"
+    ],
+    "Godhavi SO": [
+      "382115"
+    ],
+    "Detroj SO": [
+      "382120"
+    ],
+    "Mandal SO Ahmedabad": [
+      "382130"
+    ],
+    "Rampura SO Ahmedabad": [
+      "382140"
+    ],
+    "Katosan Road SO": [
+      "382145"
+    ],
+    "Viramgam SO": [
+      "382150"
+    ],
+    "Virochannagar SO": [
+      "382170"
+    ],
+    "Changodar SO": [
+      "382213"
+    ],
+    "Bavla SO": [
+      "382220"
+    ],
+    "Dholka SO": [
+      "382225"
+    ],
+    "Lothal Bhurkhi RS SO": [
+      "382230"
+    ],
+    "Koth SO": [
+      "382240"
+    ],
+    "Ranpur SO": [
+      "382245"
+    ],
+    "Polarpur SO": [
+      "382250"
+    ],
+    "Jalila SO": [
+      "382255"
+    ],
+    "Chaloda SO": [
+      "382260"
+    ],
+    "Kauka SO": [
+      "382265"
+    ],
+    "Dehgam SO": [
+      "382305"
+    ],
+    "Bahiyal SO": [
+      "382308"
+    ],
+    "Rakhial RS SO": [
+      "382315"
+    ],
+    "Sadra SO": [
+      "382320"
+    ],
+    "Chhala SO": [
+      "382321"
+    ],
+    "Dabhoda SO": [
+      "382355"
+    ],
+    "Kudasan SO": [
+      "382419"
+    ],
+    "Adalaj SO": [
+      "382421"
+    ],
+    "Uvarsad SO": [
+      "382422"
+    ],
+    "Kasturinagar SO": [
+      "382423"
+    ],
+    "Koba SO": [
+      "382426"
+    ],
+    "Bhat SO": [
+      "382428"
+    ],
+    "Barwala Ghelasha SO": [
+      "382450"
+    ],
+    "Dholera SO": [
+      "382455"
+    ],
+    "Dhandhuka SO": [
+      "382460"
+    ],
+    "Bhadiad SO": [
+      "382463"
+    ],
+    "Fedra SO": [
+      "382465"
+    ],
+    "Shantigram S.O": [
+      "382501"
+    ],
+    "Pethapur SO": [
+      "382610"
+    ],
+    "Randheja SO": [
+      "382620"
+    ],
+    "Rupal SO": [
+      "382630"
+    ],
+    "Sardhav SO": [
+      "382640"
+    ],
+    "Unava  Balva SO": [
+      "382650"
+    ],
+    "Kalol HO": [
+      "382721"
+    ],
+    "Santej SO": [
+      "382722"
+    ],
+    "Kalol Industrial Estate SO": [
+      "382725"
+    ],
+    "Chhatral SO": [
+      "382729"
+    ],
+    "Nardipur SO": [
+      "382735"
+    ],
+    "Pansar SO": [
+      "382740"
+    ],
+    "Charada SO": [
+      "382810"
+    ],
+    "Lodra SO": [
+      "382835"
+    ],
+    "Mansa SO Gandhi Nagar": [
+      "382845"
+    ],
+    "Pundhara SO": [
+      "382855"
+    ]
+  },
+  "Gir Somnath": {},
+  "Jamnagar": {
+    "Bhanvad SO": [
+      "360510"
+    ],
+    "Verad SO": [
+      "360515"
+    ],
+    "Dhrafa SO": [
+      "360520"
+    ],
+    "Jamjodhpur SO": [
+      "360530"
+    ],
+    "Satapar S.O": [
+      "360531"
+    ],
+    "Kharedi SO": [
+      "360540"
+    ],
+    "Jamnagar HO": [
+      "361001"
+    ],
+    "Bedeshwar SO": [
+      "361002"
+    ],
+    "Aerodromme SO": [
+      "361003"
+    ],
+    "Udyognagar SO": [
+      "361004"
+    ],
+    "Digvijay Plot SO": [
+      "361005"
+    ],
+    "Khodiyar Colony SO": [
+      "361006"
+    ],
+    "Gulabnagar SO": [
+      "361007"
+    ],
+    "Patel Colony SO": [
+      "361008"
+    ],
+    "Vadinar SO": [
+      "361010"
+    ],
+    "Hadiana SO": [
+      "361011"
+    ],
+    "Dared S.O": [
+      "361012"
+    ],
+    "Khandhera SO": [
+      "361013"
+    ],
+    "Aliabada SO": [
+      "361110"
+    ],
+    "Dhuvav SO": [
+      "361120"
+    ],
+    "Jamwanthali SO": [
+      "361130"
+    ],
+    "Digvijay Gram SO": [
+      "361140"
+    ],
+    "Reliance Greens SO": [
+      "361142"
+    ],
+    "Valsura SO": [
+      "361150"
+    ],
+    "Kalavad SO": [
+      "361160"
+    ],
+    "Nikava SO": [
+      "361162"
+    ],
+    "Lalpur SO Jamnagar": [
+      "361170"
+    ],
+    "Dhrol SO": [
+      "361210"
+    ],
+    "Latipur SO": [
+      "361220"
+    ],
+    "Balachadi SO": [
+      "361230"
+    ],
+    "Balambha SO": [
+      "361240"
+    ],
+    "Jodia SO": [
+      "361250"
+    ],
+    "Kanalush SO": [
+      "361280"
+    ],
+    "Khambhalia SO": [
+      "361305"
+    ],
+    "Bhadthar SO": [
+      "361306"
+    ],
+    "Salaya SO": [
+      "361310"
+    ],
+    "Bhatia SO": [
+      "361315"
+    ],
+    "Jamkalyanpur SO": [
+      "361320"
+    ],
+    "Raval SO": [
+      "361325"
+    ],
+    "Bet SO": [
+      "361330"
+    ],
+    "Dwarka SO": [
+      "361335"
+    ],
+    "Mithapur SO Jamnagar": [
+      "361345"
+    ],
+    "Surajkaradi SO": [
+      "361347"
+    ],
+    "Okha SO": [
+      "361350"
+    ],
+    "Amran SO": [
+      "363655"
+    ]
+  },
+  "Junagadh": {
+    "Junagadh Azad Chowk SO": [
+      "362001"
+    ],
+    "Junagadh Joshipura SO": [
+      "362002"
+    ],
+    "Majevadi SO": [
+      "362011"
+    ],
+    "Timbavadi SO": [
+      "362015"
+    ],
+    "Bhesan SO": [
+      "362020"
+    ],
+    "RanpurS SO": [
+      "362030"
+    ],
+    "Dolatpara SO": [
+      "362037"
+    ],
+    "Bilkha SO": [
+      "362110"
+    ],
+    "Sarsai SO": [
+      "362120"
+    ],
+    "Visavadar SO": [
+      "362130"
+    ],
+    "Sasan Gir SO": [
+      "362135"
+    ],
+    "Akolvadi SO": [
+      "362140"
+    ],
+    "Talala SO": [
+      "362150"
+    ],
+    "ShapurS SO": [
+      "362205"
+    ],
+    "Lushala SO": [
+      "362215"
+    ],
+    "Keshod SO": [
+      "362220"
+    ],
+    "Agatrai SO": [
+      "362222"
+    ],
+    "Kevadra SO": [
+      "362227"
+    ],
+    "Malia Hatina SO": [
+      "362245"
+    ],
+    "Chorvad SO": [
+      "362250"
+    ],
+    "Sherbaug SO": [
+      "362255"
+    ],
+    "Mendarda SO": [
+      "362260"
+    ],
+    "Bagdu SO": [
+      "362263"
+    ],
+    "Veraval SO": [
+      "362265"
+    ],
+    "Prabhas Patan SO": [
+      "362268"
+    ],
+    "Sutrapada SO": [
+      "362275"
+    ],
+    "Vadal SO": [
+      "362310"
+    ],
+    "Choki SO": [
+      "362315"
+    ],
+    "Delvada SO": [
+      "362510"
+    ],
+    "Diu SO": [
+      "362520"
+    ],
+    "Girgadhda SO": [
+      "362530"
+    ],
+    "Ghoghla SO": [
+      "362540"
+    ],
+    "Sanakhda SO": [
+      "362550"
+    ],
+    "Una SO": [
+      "362560"
+    ],
+    "Dhokadva SO": [
+      "362565"
+    ],
+    "Wanakbara SO": [
+      "362570"
+    ],
+    "VanthaliS SO": [
+      "362610"
+    ],
+    "Ghantvad SO": [
+      "362710"
+    ],
+    "Ambujanagar SO": [
+      "362715"
+    ],
+    "Kodinar SO": [
+      "362720"
+    ]
+  },
+  "Kachchh": {},
+  "Kheda (Nadiad)": {},
+  "Mahisagar": {},
+  "Mehsana": {},
+  "Morbi": {},
+  "Narmada (Rajpipla)": {},
+  "Navsari": {
+    "Khergam SO": [
+      "396040"
+    ],
+    "Rumla SO": [
+      "396060"
+    ],
+    "Bigri SO": [
+      "396110"
+    ],
+    "Amalsad SO": [
+      "396310"
+    ],
+    "Bilimora SO": [
+      "396321"
+    ],
+    "Antalia SO": [
+      "396325"
+    ],
+    "Gadat SO Navsari": [
+      "396350"
+    ],
+    "Gandevi SO": [
+      "396360"
+    ],
+    "Kachholi SO": [
+      "396370"
+    ],
+    "Devsar SO": [
+      "396380"
+    ],
+    "Aat SO": [
+      "396403"
+    ],
+    "Abrama SO": [
+      "396406"
+    ],
+    "Alipore SO": [
+      "396409"
+    ],
+    "Bori Falia SO": [
+      "396412"
+    ],
+    "Dabhel SO": [
+      "396415"
+    ],
+    "Gurukulsupa SO": [
+      "396418"
+    ],
+    "Jalalpore SO": [
+      "396421"
+    ],
+    "Kaliawadi SO": [
+      "396427"
+    ],
+    "Kharel SO": [
+      "396430"
+    ],
+    "Khadsupa Boarding SO": [
+      "396433"
+    ],
+    "Maroli Bazar SO": [
+      "396436"
+    ],
+    "Matvad SO": [
+      "396439"
+    ],
+    "Navsari HO": [
+      "396445"
+    ],
+    "Eru Ac SO": [
+      "396450"
+    ],
+    "Panar SO": [
+      "396460"
+    ],
+    "Sisodra SO": [
+      "396463"
+    ],
+    "Satem SO": [
+      "396466"
+    ],
+    "Ugat SO": [
+      "396469"
+    ],
+    "Vedchha SO": [
+      "396472"
+    ],
+    "Vesma SO": [
+      "396475"
+    ],
+    "Chikhli SO Navsari": [
+      "396521"
+    ],
+    "Degam SO": [
+      "396530"
+    ],
+    "Fadvel SO": [
+      "396540"
+    ],
+    "Rankuva SO": [
+      "396560"
+    ],
+    "Digendranagar SO": [
+      "396570"
+    ],
+    "Vansda SO": [
+      "396580"
+    ],
+    "Unai SO": [
+      "396590"
+    ]
+  },
+  "Panchmahal (Godhra)": {},
+  "Patan": {
+    "Balisana SO": [
+      "384110"
+    ],
+    "Sidhpur SO": [
+      "384151"
+    ],
+    "Chanasma SO": [
+      "384220"
+    ],
+    "Vadavali SO": [
+      "384221"
+    ],
+    "Dhinoj SO": [
+      "384225"
+    ],
+    "Lanva SO": [
+      "384229"
+    ],
+    "Kamboi SO": [
+      "384230"
+    ],
+    "Harij SO": [
+      "384240"
+    ],
+    "Mujpur SO": [
+      "384241"
+    ],
+    "Sami SO": [
+      "384245"
+    ],
+    "Sankheshwar SO": [
+      "384246"
+    ],
+    "Kungher SO": [
+      "384255"
+    ],
+    "Manund SO": [
+      "384260"
+    ],
+    "Patan HO": [
+      "384265"
+    ],
+    "Patan Siddhraj Road SO": [
+      "384266"
+    ],
+    "Sariyad SO": [
+      "384272"
+    ],
+    "Ranuj SO": [
+      "384275"
+    ],
+    "Wagdod SO": [
+      "384285"
+    ],
+    "Kakoshi SO": [
+      "384290"
+    ],
+    "Radhanpur SO": [
+      "385340"
+    ],
+    "Santalpur SO": [
+      "385350"
+    ],
+    "Varahi SO": [
+      "385360"
+    ]
+  },
+  "Porbandar": {
+    "Adityana SO": [
+      "360545"
+    ],
+    "Ranavav SO": [
+      "360550"
+    ],
+    "Ranakandorana SO": [
+      "360570"
+    ],
+    "Porbandar HO": [
+      "360575"
+    ],
+    "Porbandar Birla Sagar SO": [
+      "360576"
+    ],
+    "Bokhira SO": [
+      "360579"
+    ],
+    "Bagvadar SO": [
+      "360590"
+    ],
+    "Mangrol SO Junagadh": [
+      "362225"
+    ],
+    "Mangrol Bundar SO": [
+      "362226"
+    ],
+    "Madhavpur SO": [
+      "362230"
+    ],
+    "Shil SO": [
+      "362240"
+    ],
+    "Bantwa SO": [
+      "362620"
+    ],
+    "Nanadia SO": [
+      "362625"
+    ],
+    "Manavadar SO": [
+      "362630"
+    ],
+    "Sardargadh SO": [
+      "362640"
+    ],
+    "Kutiyana S.O": [
+      "362650"
+    ]
+  },
+  "Rajkot": {
+    "Rajkot HO": [
+      "360001"
+    ],
+    "Rajkot Bhaktinagar SO": [
+      "360002"
+    ],
+    "Rajkot Bedipara SO": [
+      "360003"
+    ],
+    "Rajkot Postal Colony SO": [
+      "360004"
+    ],
+    "Rajkot Sau Uni Area SO": [
+      "360005"
+    ],
+    "Rajkot Madhapar DSO": [
+      "360006"
+    ],
+    "Rajkot Raiya Road SO": [
+      "360007"
+    ],
+    "Kasturbadham SO": [
+      "360020"
+    ],
+    "Rajkot Metoda Gidc SO": [
+      "360021"
+    ],
+    "KOTHARIA SO Rajkot": [
+      "360022"
+    ],
+    "KUVADAVA SO": [
+      "360023"
+    ],
+    "Veraval Shapar SO": [
+      "360024"
+    ],
+    "Sardhar SO": [
+      "360025"
+    ],
+    "Sapar Veraval SO": [
+      "360026"
+    ],
+    "Rajkot Bedi DSO": [
+      "360028"
+    ],
+    "Virnagar SO": [
+      "360060"
+    ],
+    "Paddhari SO": [
+      "360110"
+    ],
+    "Wankaner SO": [
+      "363621"
+    ],
+    "Dhuva S.O": [
+      "363623"
+    ],
+    "Jetpar M SO": [
+      "363630"
+    ],
+    "Morbi MDG SO": [
+      "363641"
+    ],
+    "Morbi Lal Baug SO": [
+      "363642"
+    ],
+    "Sakat Sanala SO": [
+      "363643"
+    ],
+    "Tankara SO": [
+      "363650"
+    ],
+    "Dahisara SO Rajkot": [
+      "363660"
+    ],
+    "Maliya Miyana SO": [
+      "363670"
+    ]
+  },
+  "Sabarkantha (Himmatnagar)": {},
+  "Surat": {
+    "Mota Varachha SO": [
+      "394101"
+    ],
+    "Utran Power House SO": [
+      "394105"
+    ],
+    "Amroli SO": [
+      "394107"
+    ],
+    "Kim SO": [
+      "394110"
+    ],
+    "GIPCL SO": [
+      "394112"
+    ],
+    "Kosamba RS SO": [
+      "394120"
+    ],
+    "Hathuran SO": [
+      "394125"
+    ],
+    "Sayan SO": [
+      "394130"
+    ],
+    "Udhna SO": [
+      "394210"
+    ],
+    "Pandesara IE SO": [
+      "394221"
+    ],
+    "Sachin SO": [
+      "394230"
+    ],
+    "Lajpore SO": [
+      "394235"
+    ],
+    "Hajira SO": [
+      "394270"
+    ],
+    "Velachha SO": [
+      "394405"
+    ],
+    "Mota Miya Mangrol SO": [
+      "394410"
+    ],
+    "Mosali SO": [
+      "394421"
+    ],
+    "Vankal SO": [
+      "394430"
+    ],
+    "Zankhvav SO": [
+      "394440"
+    ],
+    "Umarpada SO": [
+      "394445"
+    ],
+    "Bhatha SO": [
+      "394510"
+    ],
+    "Kribhconagar SO": [
+      "394515"
+    ],
+    "Adityanagar SO": [
+      "394516"
+    ],
+    "Mora SO Surat": [
+      "394517"
+    ],
+    "Ongc Nagar SO": [
+      "394518"
+    ],
+    "Variav SO": [
+      "394520"
+    ],
+    "Mor SO": [
+      "394530"
+    ],
+    "Olpad SO": [
+      "394540"
+    ],
+    "Dumas SO": [
+      "394550"
+    ],
+    "Nanpura HO": [
+      "395001"
+    ],
+    "Sagrampura Putli SO": [
+      "395002"
+    ],
+    "Surat HO": [
+      "395003"
+    ],
+    "Katargam SO": [
+      "395004"
+    ],
+    "Rander SO": [
+      "395005"
+    ],
+    "Varachha Road SO": [
+      "395006"
+    ],
+    "SVR College SO": [
+      "395007"
+    ],
+    "A K Road SO": [
+      "395008"
+    ],
+    "Navyug College SO": [
+      "395009"
+    ],
+    "Bombay Market SO": [
+      "395010"
+    ],
+    "Puna Kumbharia SO": [
+      "395011"
+    ],
+    "Limbayat SO": [
+      "395012"
+    ],
+    "Sarthana SO": [
+      "395013"
+    ],
+    "Althan SO": [
+      "395017"
+    ],
+    "Bhestan SO": [
+      "395023"
+    ]
+  },
+  "Surendranagar": {
+    "Surendranagar HO": [
+      "363001"
+    ],
+    "Joravarnagar SO": [
+      "363020"
+    ],
+    "Wadhwancity SO": [
+      "363030"
+    ],
+    "Dudhrej SO": [
+      "363040"
+    ],
+    "Vana SO": [
+      "363110"
+    ],
+    "VITHALGADH SO": [
+      "363115"
+    ],
+    "Dhrangadhra SO": [
+      "363310"
+    ],
+    "Rajsitapur SO": [
+      "363320"
+    ],
+    "Halvad SO": [
+      "363330"
+    ],
+    "Mayurnagar SO": [
+      "363351"
+    ],
+    "Chuda SO": [
+      "363410"
+    ],
+    "Limbdi SO": [
+      "363421"
+    ],
+    "Panshina SO": [
+      "363423"
+    ],
+    "Shiyani SO": [
+      "363427"
+    ],
+    "Sayla SO Surendra Nagar": [
+      "363430"
+    ],
+    "Kholadiyad SO": [
+      "363435"
+    ],
+    "Sudamada SO": [
+      "363440"
+    ],
+    "Muli SO": [
+      "363510"
+    ],
+    "Chotila SO": [
+      "363520"
+    ],
+    "Thangadh SO": [
+      "363530"
+    ],
+    "Bajana SO": [
+      "363745"
+    ],
+    "Dasada SO": [
+      "363750"
+    ],
+    "Zinzuwada SO": [
+      "363755"
+    ],
+    "Kharaghoda SO": [
+      "363760"
+    ],
+    "Patdi SO": [
+      "363765"
+    ],
+    "Lakhtar SO": [
+      "363775"
+    ],
+    "Adariyana SO": [
+      "363780"
+    ]
+  },
+  "Tapi (Vyara)": {},
+  "Vadodara": {},
+  "Valsad": {
+    "Valsad HO": [
+      "396001"
+    ],
+    "Valsad Abrama SO": [
+      "396002"
+    ],
+    "Valsad Sugar Factory SO": [
+      "396007"
+    ],
+    "Atul SO": [
+      "396020"
+    ],
+    "Hanuman Bhagda SO": [
+      "396030"
+    ],
+    "Valsad IE SO": [
+      "396035"
+    ],
+    "Atgam SO": [
+      "396045"
+    ],
+    "Dharampur SO Valsad": [
+      "396050"
+    ],
+    "Amba Talat SO": [
+      "396051"
+    ],
+    "Ronvel SO": [
+      "396055"
+    ],
+    "Nanivahiyal SO": [
+      "396065"
+    ],
+    "Kaprada SO": [
+      "396067"
+    ],
+    "Bhilad SO": [
+      "396105"
+    ],
+    "Kolak SO": [
+      "396115"
+    ],
+    "Khatalwada SO": [
+      "396120"
+    ],
+    "Killa Pardi SO": [
+      "396125"
+    ],
+    "Nanapondha SO": [
+      "396126"
+    ],
+    "Maroli Sanjan SO": [
+      "396130"
+    ],
+    "Nargol SO": [
+      "396135"
+    ],
+    "Phansa SO": [
+      "396140"
+    ],
+    "Pardi Paria SO": [
+      "396145"
+    ],
+    "Sanjan SO": [
+      "396150"
+    ],
+    "Sarigam SO": [
+      "396155"
+    ],
+    "Solsumba SO": [
+      "396165"
+    ],
+    "Umargam SO": [
+      "396170"
+    ],
+    "Umargam IE SO": [
+      "396171"
+    ],
+    "Udvada SO": [
+      "396180"
+    ],
+    "Udvada RS SO": [
+      "396185"
+    ],
+    "Vapi SO": [
+      "396191"
+    ],
+    "Dadra SO": [
+      "396193"
+    ],
+    "Vapi IE SO": [
+      "396195"
+    ],
+    "Daman SO": [
+      "396210"
+    ],
+    "Daman IE SO": [
+      "396215"
+    ],
+    "Moti Daman SO": [
+      "396220"
+    ],
+    "Silvassa SO": [
+      "396230"
+    ],
+    "Naroli SO": [
+      "396235"
+    ],
+    "Karad Daman Project SO": [
+      "396240"
+    ],
+    "Dungri SO Valsad": [
+      "396375"
+    ],
+    "Untdi SO": [
+      "396385"
+    ]
+  }
+}

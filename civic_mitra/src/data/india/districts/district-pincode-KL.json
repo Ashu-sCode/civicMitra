@@ -1,0 +1,939 @@
+{
+  "Alappuzha": {},
+  "Ernakulam": {
+    "Kochi HO": [
+      "682001"
+    ],
+    "Mattancherry SO": [
+      "682002"
+    ],
+    "Willingdon Island SO": [
+      "682003"
+    ],
+    "Kochi Naval Base SO": [
+      "682004"
+    ],
+    "Thoppumpady SO": [
+      "682005"
+    ],
+    "Palluruthy SO": [
+      "682006"
+    ],
+    "Kumbalangi SO": [
+      "682007"
+    ],
+    "Kannamali SO": [
+      "682008"
+    ],
+    "North End SO": [
+      "682009"
+    ],
+    "Edakochi SO": [
+      "682010"
+    ],
+    "Ernakulam HO": [
+      "682011"
+    ],
+    "Pachalam SO": [
+      "682012"
+    ],
+    "Thevara SO": [
+      "682013"
+    ],
+    "Perumanur SO": [
+      "682015"
+    ],
+    "Kochi MGRoad SO": [
+      "682016"
+    ],
+    "Kaloor SO": [
+      "682017"
+    ],
+    "Ernakulam North SO": [
+      "682018"
+    ],
+    "Vyttila SO": [
+      "682019"
+    ],
+    "Kadavanthara SO": [
+      "682020"
+    ],
+    "Thrikkakara SO": [
+      "682021"
+    ],
+    "Kochi University SO": [
+      "682022"
+    ],
+    "Vaduthala SO": [
+      "682023"
+    ],
+    "Edapally SO": [
+      "682024"
+    ],
+    "Palarivattom SO": [
+      "682025"
+    ],
+    "Elamakkara SO": [
+      "682026"
+    ],
+    "ChittoorEkm SO": [
+      "682027"
+    ],
+    "Vennala SO": [
+      "682028"
+    ],
+    "Matsyapuri SO": [
+      "682029"
+    ],
+    "Kakkanad SO": [
+      "682030"
+    ],
+    "Shanmugham Road SO": [
+      "682031"
+    ],
+    "Thammanam SO": [
+      "682032"
+    ],
+    "Changampuzha Nagar SO": [
+      "682033"
+    ],
+    "Cheranallur SO": [
+      "682034"
+    ],
+    "Ernakulam College SO": [
+      "682035"
+    ],
+    "Panampilly Nagar SO": [
+      "682036"
+    ],
+    "Cochin Special Economic Zone SO": [
+      "682037"
+    ],
+    "Poonithura SO": [
+      "682038"
+    ],
+    "Rajagiri Valley SO": [
+      "682039"
+    ],
+    "Nettoor SO": [
+      "682040"
+    ],
+    "AIMS Ponekkara SO": [
+      "682041"
+    ],
+    "InfoparkKochi SO": [
+      "682042"
+    ],
+    "Tripunithura SO": [
+      "682301"
+    ],
+    "Ambalamugal SO": [
+      "682302"
+    ],
+    "Ambalamedu SO": [
+      "682303"
+    ],
+    "Maradu SO": [
+      "682304"
+    ],
+    "Thiruvamkulam SO": [
+      "682305"
+    ],
+    "Eroor SO Ernakulam": [
+      "682306"
+    ],
+    "Udayamperoor SO": [
+      "682307"
+    ],
+    "Puthencruz SO": [
+      "682308"
+    ],
+    "Irimbanam SO": [
+      "682309"
+    ],
+    "Vadavucode SO": [
+      "682310"
+    ],
+    "Chottanikkara SO": [
+      "682312"
+    ],
+    "Arakunnam SO": [
+      "682313"
+    ],
+    "Mulanthuruthy SO": [
+      "682314"
+    ],
+    "Kanjiramattom SO": [
+      "682315"
+    ],
+    "KULAYATTIKKARA": [
+      "682317"
+    ],
+    "Ayyampilly SO": [
+      "682501"
+    ],
+    "Edavanakad SO": [
+      "682502"
+    ],
+    "Elamkunnapuzha SO": [
+      "682503"
+    ],
+    "Mulavukad SO": [
+      "682504"
+    ],
+    "Narakkal SO": [
+      "682505"
+    ],
+    "Panangad SO Ernakulam": [
+      "682506"
+    ],
+    "Mundamveli SO": [
+      "682507"
+    ],
+    "Ochanthuruth SO": [
+      "682508"
+    ],
+    "Nayarambalam SO": [
+      "682509"
+    ],
+    "Malipuram SO": [
+      "682511"
+    ],
+    "Kalamassery SO": [
+      "683104"
+    ],
+    "Udyogamandal SO": [
+      "683501"
+    ],
+    "Hmt Colony SO": [
+      "683503"
+    ]
+  },
+  "Idukki": {
+    "Elappara SO": [
+      "685501"
+    ],
+    "Vagamon SO": [
+      "685503"
+    ],
+    "Upputhara SO": [
+      "685505"
+    ],
+    "Ayyappancoil SO": [
+      "685507"
+    ],
+    "Kattappana HO": [
+      "685508"
+    ],
+    "Kumily SO": [
+      "685509"
+    ],
+    "Kanchiyar SO": [
+      "685511"
+    ],
+    "Anakkara SO Idukki": [
+      "685512"
+    ],
+    "Erattayar SO": [
+      "685514"
+    ],
+    "Kattappana South SO": [
+      "685515"
+    ],
+    "Peermade SO": [
+      "685531"
+    ],
+    "Peruvanthanam SO": [
+      "685532"
+    ],
+    "Vandiperiyar SO": [
+      "685533"
+    ],
+    "Viswanathapuram SO": [
+      "685535"
+    ],
+    "Vandanmettu SO": [
+      "685551"
+    ],
+    "Kallar SO": [
+      "685552"
+    ],
+    "Nedumkandam SO": [
+      "685553"
+    ],
+    "Udumbanchola SO": [
+      "685554"
+    ],
+    "Adimali SO": [
+      "685561"
+    ],
+    "Kallarkutty SO": [
+      "685562"
+    ],
+    "Vellathooval SO": [
+      "685563"
+    ],
+    "Chithirapuram SO": [
+      "685565"
+    ],
+    "Rajakad SO": [
+      "685566"
+    ],
+    "Parathode SO Idukki": [
+      "685571"
+    ],
+    "Karimannoor SO": [
+      "685581"
+    ],
+    "Kodikulam SO": [
+      "685582"
+    ],
+    "Vazhithala SO": [
+      "685583"
+    ],
+    "Thodupuzha HO": [
+      "685584"
+    ],
+    "Thodupuzha East SO": [
+      "685585"
+    ],
+    "Karimkunnam SO": [
+      "685586"
+    ],
+    "Muttom EK SO": [
+      "685587"
+    ],
+    "Kalayanthani SO": [
+      "685588"
+    ],
+    "Moolamattom SO": [
+      "685589"
+    ],
+    "Kudayathur SO": [
+      "685590"
+    ],
+    "Arakulam SO": [
+      "685591"
+    ],
+    "Udumbannur SO": [
+      "685595"
+    ],
+    "Kulamavu SO": [
+      "685601"
+    ],
+    "Idukki Colony SO": [
+      "685602"
+    ],
+    "Idukki Painavu SO": [
+      "685603"
+    ],
+    "Murickassery SO": [
+      "685604"
+    ],
+    "Muthalakodam SO": [
+      "685605"
+    ],
+    "Kanjikuzhi  Idukki SO": [
+      "685606"
+    ],
+    "Vannapuram SO": [
+      "685607"
+    ],
+    "Vengallur SO": [
+      "685608"
+    ],
+    "Thankamany SO": [
+      "685609"
+    ],
+    "Munnar SO": [
+      "685612"
+    ],
+    "Devikulam SO": [
+      "685613"
+    ],
+    "Talliar SO": [
+      "685614"
+    ],
+    "Ellapatti SO": [
+      "685615"
+    ],
+    "Mattuppatti SO": [
+      "685616"
+    ],
+    "Surianalle SO": [
+      "685618"
+    ],
+    "Santhanpara SO": [
+      "685619"
+    ],
+    "Maraiyur SO": [
+      "685620"
+    ]
+  },
+  "Kannur": {},
+  "Kasaragod": {
+    "Kasaragod HO": [
+      "671121"
+    ],
+    "Talangara SO": [
+      "671122"
+    ],
+    "Vidyanagar SO Kasargod": [
+      "671123"
+    ],
+    "Kudlu SO": [
+      "671124"
+    ],
+    "Trikarpur SO": [
+      "671310"
+    ],
+    "Elambachi SO": [
+      "671311"
+    ],
+    "Padne SO": [
+      "671312"
+    ],
+    "Chervathur SO": [
+      "671313"
+    ],
+    "Nileshwar SO": [
+      "671314"
+    ],
+    "Kanhangad HO": [
+      "671315"
+    ],
+    "Bekal Fort SO": [
+      "671316"
+    ],
+    "Kalnad SO": [
+      "671317"
+    ],
+    "Bekal SO": [
+      "671318"
+    ],
+    "Udma SO": [
+      "671319"
+    ],
+    "PERIYE S.O": [
+      "671320"
+    ],
+    "Kumbla SO": [
+      "671321"
+    ],
+    "Uppala SO": [
+      "671322"
+    ],
+    "Manjeshwar SO": [
+      "671323"
+    ],
+    "Mangalpady SO": [
+      "671324"
+    ],
+    "Chittarikkal SO": [
+      "671326"
+    ],
+    "Paivalike SO": [
+      "671348"
+    ],
+    "Thuruthi SO": [
+      "671351"
+    ],
+    "Anandashrama SO": [
+      "671531"
+    ],
+    "Rajapuram SO": [
+      "671532"
+    ],
+    "Parappa SO": [
+      "671533"
+    ],
+    "Vellarikundu SO": [
+      "671534"
+    ],
+    "Changala SO": [
+      "671541"
+    ],
+    "Muliyar SO": [
+      "671542"
+    ],
+    "Mulleria SO": [
+      "671543"
+    ],
+    "Perdala SO": [
+      "671551"
+    ],
+    "Perla SO": [
+      "671552"
+    ]
+  },
+  "Kollam": {},
+  "Kottayam": {
+    "Kottayam HO": [
+      "686001"
+    ],
+    "Kottayam Collectorate SO": [
+      "686002"
+    ],
+    "Kottayam West SO": [
+      "686003"
+    ],
+    "Muttambalam SO": [
+      "686004"
+    ],
+    "Thazhathangady SO": [
+      "686005"
+    ],
+    "Nattassery S H Mount SO": [
+      "686006"
+    ],
+    "Pallom SO": [
+      "686007"
+    ],
+    "Gandhi Nagar SO Kottayam": [
+      "686008"
+    ],
+    "Rubber Board SO": [
+      "686009"
+    ],
+    "Vadavathoor SO": [
+      "686010"
+    ],
+    "Puthupalli SO": [
+      "686011"
+    ],
+    "Pakkil SO": [
+      "686012"
+    ],
+    "Nattakom SO": [
+      "686013"
+    ],
+    "Olessa SO": [
+      "686014"
+    ],
+    "Aymanam SO": [
+      "686015"
+    ],
+    "Kumaranalloor SO": [
+      "686016"
+    ],
+    "Kudamaloor SO": [
+      "686017"
+    ],
+    "Manganam SO": [
+      "686018"
+    ],
+    "Manarcaudu SO": [
+      "686019"
+    ],
+    "Kiliroor North SO": [
+      "686020"
+    ],
+    "Pariyaram SO Kottayam": [
+      "686021"
+    ],
+    "Chengalam South SO": [
+      "686022"
+    ],
+    "Malloossery SO": [
+      "686041"
+    ],
+    "Erattupetta SO": [
+      "686121"
+    ],
+    "Aruvithura SO": [
+      "686122"
+    ],
+    "Thidanad SO": [
+      "686123"
+    ],
+    "Vaikom HO": [
+      "686141"
+    ],
+    "Udayanapuram SO": [
+      "686143"
+    ],
+    "Kudavechoor SO": [
+      "686144"
+    ],
+    "Padinjarekkara SO": [
+      "686146"
+    ],
+    "Meenadom SO": [
+      "686516"
+    ],
+    "Priyadarsini Hills SO": [
+      "686560"
+    ],
+    "Mannanam SO": [
+      "686561"
+    ],
+    "Athirampuzha SO": [
+      "686562"
+    ],
+    "Kumarakom SO": [
+      "686563"
+    ],
+    "Ayarkunnam SO": [
+      "686564"
+    ],
+    "Kadaplamattom SO": [
+      "686571"
+    ],
+    "Kidangoor SO": [
+      "686572"
+    ],
+    "Puliyannoor SO": [
+      "686573"
+    ],
+    "Arunapuram SO": [
+      "686574"
+    ],
+    "Pala HO": [
+      "686575"
+    ],
+    "Ramapuram Bazar SO": [
+      "686576"
+    ],
+    "Poovarani SO": [
+      "686577"
+    ],
+    "Bharananganam SO": [
+      "686578"
+    ],
+    "Plassanal SO": [
+      "686579"
+    ],
+    "Teekoy SO": [
+      "686580"
+    ],
+    "Poonjar SO": [
+      "686581"
+    ],
+    "Poonjar Thekkekara SO": [
+      "686582"
+    ],
+    "Kidangoor South SO": [
+      "686583"
+    ],
+    "Cherpunkal SO": [
+      "686584"
+    ],
+    "Moonnilavu SO": [
+      "686586"
+    ],
+    "Vayala SO": [
+      "686587"
+    ],
+    "Neendoor SO": [
+      "686601"
+    ],
+    "Kaipuzha SO": [
+      "686602"
+    ],
+    "Manjoor SO": [
+      "686603"
+    ],
+    "Kaduthuruthy SO": [
+      "686604"
+    ],
+    "Thalayolaparambu SO": [
+      "686605"
+    ],
+    "Thirumani Venkita Puram SO": [
+      "686606"
+    ],
+    "Thalayazham SO": [
+      "686607"
+    ],
+    "Kulasekharamangalam SO": [
+      "686608"
+    ],
+    "Mevelloor SO": [
+      "686609"
+    ],
+    "Peruva SO": [
+      "686610"
+    ],
+    "Kallara SO Kottayam": [
+      "686611"
+    ],
+    "Njizhoor SO": [
+      "686612"
+    ],
+    "Muttuchira SO": [
+      "686613"
+    ],
+    "Newsprint Nagar SO": [
+      "686616"
+    ],
+    "Thellakom SO": [
+      "686630"
+    ],
+    "Ettumanur SO": [
+      "686631"
+    ],
+    "Kanakari SO": [
+      "686632"
+    ],
+    "Kuravilangadu SO": [
+      "686633"
+    ],
+    "Ozhavur SO": [
+      "686634"
+    ],
+    "Marangattupally SO": [
+      "686635"
+    ],
+    "Monippally SO": [
+      "686636"
+    ],
+    "Peroor SO": [
+      "686637"
+    ],
+    "Anthinad SO": [
+      "686651"
+    ],
+    "Melukavumattom SO": [
+      "686652"
+    ],
+    "Kadanad Meenachil SO": [
+      "686653"
+    ]
+  },
+  "Kozhikode": {},
+  "Malappuram": {},
+  "Palakkad": {},
+  "Pathanamthitta": {
+    "Pandalam SO Pathanamthitta": [
+      "689501"
+    ],
+    "Thumpamon SO": [
+      "689502"
+    ],
+    "Kulanada SO": [
+      "689503"
+    ],
+    "Mezhuveli SO": [
+      "689507"
+    ],
+    "Nariapuram SO": [
+      "689513"
+    ],
+    "Kidangannur SO": [
+      "689514"
+    ],
+    "Elavanthitta SO": [
+      "689625"
+    ],
+    "Kozhencherry SO": [
+      "689641"
+    ],
+    "Naranganam SO": [
+      "689642"
+    ],
+    "Elanthur SO": [
+      "689643"
+    ],
+    "Kuzhikala SO": [
+      "689644"
+    ],
+    "Pathanamthitta HO": [
+      "689645"
+    ],
+    "Mallasseri SO": [
+      "689646"
+    ],
+    "Omallurkla SO": [
+      "689647"
+    ],
+    "Kaipattur SO": [
+      "689648"
+    ],
+    "Kadammanitta SO": [
+      "689649"
+    ],
+    "Cherukole Kozhencherri SO": [
+      "689650"
+    ],
+    "Punnakkad SO": [
+      "689652"
+    ],
+    "Kumbazhamuri SO": [
+      "689653"
+    ],
+    "Kozhencherry  Thekkemala SO": [
+      "689654"
+    ],
+    "Vallicode Kottayam SO": [
+      "689656"
+    ],
+    "Kumpalampoika SO": [
+      "689661"
+    ],
+    "Vadasserikara SO": [
+      "689662"
+    ],
+    "Chittar SO": [
+      "689663"
+    ],
+    "Malayalapuzha Eram SO": [
+      "689664"
+    ],
+    "Malayalapuzha Thazham SO": [
+      "689666"
+    ],
+    "Seethathode SO": [
+      "689667"
+    ],
+    "Churulicode SO": [
+      "689668"
+    ],
+    "Mylapra SO": [
+      "689671"
+    ],
+    "Ranny SO": [
+      "689672"
+    ],
+    "Rannypazhavangadi SO": [
+      "689673"
+    ],
+    "Angadi SO Pathanamthitta": [
+      "689674"
+    ],
+    "Ettichuvadu SO": [
+      "689675"
+    ],
+    "Makkapuzha SO": [
+      "689676"
+    ],
+    "Chellakkad SO": [
+      "689677"
+    ],
+    "Mylapra Town SO": [
+      "689678"
+    ],
+    "Konny SO": [
+      "689691"
+    ],
+    "Payyanamon SO": [
+      "689692"
+    ],
+    "Koodal SO": [
+      "689693"
+    ],
+    "Kalanjoor SO": [
+      "689694"
+    ],
+    "Pathanapuram SO": [
+      "689695"
+    ],
+    "Piravanthur SO": [
+      "689696"
+    ],
+    "Vakayar SO": [
+      "689698"
+    ],
+    "Thannithode SO": [
+      "689699"
+    ],
+    "Ranny Perinad SO": [
+      "689711"
+    ],
+    "Poruvazhy SO": [
+      "690520"
+    ],
+    "Sasthamcottah SO": [
+      "690521"
+    ],
+    "Sooranad SO": [
+      "690522"
+    ],
+    "Kunnathur East SO": [
+      "690540"
+    ],
+    "Sooranad North SO": [
+      "690561"
+    ],
+    "Punalur HO": [
+      "691305"
+    ],
+    "Anchal SO": [
+      "691306"
+    ],
+    "Edamon SO": [
+      "691307"
+    ],
+    "Thenmala SO": [
+      "691308"
+    ],
+    "Kalthuruthy SO": [
+      "691309"
+    ],
+    "Kulathupuzha SO": [
+      "691310"
+    ],
+    "Channapettah SO": [
+      "691311"
+    ],
+    "Eroor SO Kollam": [
+      "691312"
+    ],
+    "Elampal SO": [
+      "691322"
+    ],
+    "Valacode SO": [
+      "691331"
+    ],
+    "Punalur Paper Mills SO": [
+      "691332"
+    ],
+    "Tholicode SO": [
+      "691333"
+    ],
+    "Kunnicode SO": [
+      "691508"
+    ],
+    "Pattazhy SO": [
+      "691522"
+    ],
+    "Adur Kla HO": [
+      "691523"
+    ],
+    "Elamannur SO": [
+      "691524"
+    ],
+    "Thattayil SO": [
+      "691525"
+    ],
+    "Enathu SO": [
+      "691526"
+    ],
+    "Mannady SO Pathanamthitta": [
+      "691530"
+    ],
+    "Ayur SO": [
+      "691533"
+    ],
+    "Manakala SO": [
+      "691551"
+    ],
+    "Kadambanad SO": [
+      "691552"
+    ],
+    "Kadambanad South SO": [
+      "691553"
+    ],
+    "Parakode SO": [
+      "691554"
+    ],
+    "Kodumon SO": [
+      "691555"
+    ],
+    "Nedumon SO": [
+      "691556"
+    ]
+  },
+  "Thiruvananthapuram": {},
+  "Thrissur": {},
+  "Wayanad": {}
+}
