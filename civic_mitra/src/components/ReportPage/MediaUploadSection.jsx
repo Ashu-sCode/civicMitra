@@ -20,7 +20,7 @@ export default function MediaUploadSection({ mediaFiles, setMediaFiles }) {
   return (
     <div className="max-w-2xl mx-auto mt-4 p-4 bg-gray-50 dark:bg-gray-800 rounded-md border border-gray-200 dark:border-gray-700">
       <label className="block mb-2 text-gray-800 dark:text-gray-200 font-semibold">
-        Attach Media (optional)
+        Attach Media 
       </label>
 
       <div className="flex flex-wrap gap-4">
