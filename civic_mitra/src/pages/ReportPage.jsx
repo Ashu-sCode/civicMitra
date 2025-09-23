@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import CategorySelection from "../components/ReportPage/CategorySelection";
 import LocationInput from "../components/ReportPage/LocationInput";
-import { categories as categoryGroups } from "../data/categories";
+import MediaUploadSection from "../components/ReportPage/MediaUploadSection";
 
 const ReportPage = () => {
   // -----------------------------
@@ -14,31 +14,27 @@ const ReportPage = () => {
   // States
   // -----------------------------
   const [selectedCategory, setSelectedCategory] = useState(null);
-
+  const [mediaFiles, setMediaFiles] = useState([]);
   const [location, setLocation] = useState(null); // {lat, lng}
-
   const [addressData, setAddressData] = useState({
     address: "",
     city: "",
     district: "",
     state: "",
     stateCode: "",
-    country: "India", // default since it's only India dataset
+    country: "India",
     pincode: "",
   });
+  const [description, setDescription] = useState("");
+  const [consent, setConsent] = useState(false);
 
   // -----------------------------
   // Handlers
   // -----------------------------
   const handleCategorySelect = (categoryName) => {
     setSelectedCategory(categoryName);
-
-    // Smooth scroll to location form
     if (locationRef.current) {
-      locationRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      locationRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -50,10 +46,17 @@ const ReportPage = () => {
       return;
     }
 
+    if (!consent) {
+      alert("Please provide consent to submit the report.");
+      return;
+    }
+
     console.log("✅ Report Submitted:", {
       category: selectedCategory,
       location,
       addressData,
+      description,
+      mediaFiles,
     });
 
     alert(
@@ -72,6 +75,9 @@ const ReportPage = () => {
       country: "India",
       pincode: "",
     });
+    setDescription("");
+    setMediaFiles([]);
+    setConsent(false);
   };
 
   // -----------------------------
@@ -99,11 +105,51 @@ const ReportPage = () => {
         />
       </div>
 
+      {/* Media Upload */}
+      <MediaUploadSection mediaFiles={mediaFiles} setMediaFiles={setMediaFiles} />
+
+      {/* Issue Description */}
+      <div className="max-w-2xl mx-auto mt-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-md border border-gray-200 dark:border-gray-700">
+        <label className="block text-gray-800 dark:text-gray-200 font-semibold mb-1">
+          Describe the issue
+        </label>
+        <textarea
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          placeholder="Provide any additional details about the issue..."
+          className="w-full p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 transition"
+          rows={4}
+          maxLength={500}
+        />
+        <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          {description.length}/500 characters
+        </p>
+      </div>
+
+      {/* Consent */}
+      <div className="max-w-2xl mx-auto mt-4 flex items-center gap-2">
+        <input
+          type="checkbox"
+          id="consent"
+          checked={consent}
+          onChange={() => setConsent(!consent)}
+          className="w-4 h-4"
+        />
+        <label htmlFor="consent" className="text-gray-700 dark:text-gray-300 text-sm">
+          I consent to submit this report
+        </label>
+      </div>
+
       {/* Submit Button */}
       <div className="max-w-2xl mx-auto p-4 mt-6">
         <button
           onClick={handleSubmit}
-          className="w-full bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-md transition"
+          disabled={!selectedCategory || !location || !addressData.address || !consent}
+          className={`w-full font-semibold py-3 px-4 rounded-md transition 
+            ${!selectedCategory || !location || !addressData.address || !consent
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white"
+            }`}
         >
           Submit Report
         </button>
@@ -113,8 +159,7 @@ const ReportPage = () => {
       {selectedCategory && location && addressData.address && (
         <div className="max-w-2xl mx-auto mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
           <p className="text-blue-800 dark:text-blue-200 font-semibold">
-            You are reporting:{" "}
-            <span className="italic">{selectedCategory}</span> at "
+            You are reporting: <span className="italic">{selectedCategory}</span> at "
             <span className="italic">{addressData.address}</span>"
           </p>
           <p className="text-gray-700 dark:text-gray-300 text-sm mt-1">
@@ -124,6 +169,27 @@ const ReportPage = () => {
             {addressData.country}
             {addressData.pincode && ` - ${addressData.pincode}`}
           </p>
+
+          {/* Media Thumbnails */}
+          {mediaFiles.length > 0 && (
+            <div className="flex gap-2 mt-2 flex-wrap">
+              {mediaFiles.map((file, idx) => (
+                <img
+                  key={idx}
+                  src={typeof file === "string" ? file : URL.createObjectURL(file)}
+                  alt="preview"
+                  className="w-16 h-16 object-cover rounded-md border border-gray-300 dark:border-gray-600"
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Description preview */}
+          {description && (
+            <p className="text-gray-800 dark:text-gray-200 mt-2 text-sm">
+              <strong>Details:</strong> {description}
+            </p>
+          )}
         </div>
       )}
     </div>
