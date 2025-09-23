@@ -6,23 +6,25 @@ import { categories as categoryGroups } from "../data/categories";
 
 const ReportPage = () => {
   // -----------------------------
-  // States
+  // Refs
   // -----------------------------
   const locationRef = useRef(null);
 
-  // Selected category name
+  // -----------------------------
+  // States
+  // -----------------------------
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // Map location
   const [location, setLocation] = useState(null); // {lat, lng}
 
-  // Address details
   const [addressData, setAddressData] = useState({
     address: "",
     city: "",
     district: "",
     state: "",
-    country: "",
+    stateCode: "",
+    country: "India", // default since it's only India dataset
+    pincode: "",
   });
 
   // -----------------------------
@@ -31,9 +33,12 @@ const ReportPage = () => {
   const handleCategorySelect = (categoryName) => {
     setSelectedCategory(categoryName);
 
-    // Scroll to location input smoothly
+    // Smooth scroll to location form
     if (locationRef.current) {
-      locationRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      locationRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
   };
 
@@ -45,7 +50,7 @@ const ReportPage = () => {
       return;
     }
 
-    console.log("Report Submitted:", {
+    console.log("✅ Report Submitted:", {
       category: selectedCategory,
       location,
       addressData,
@@ -55,7 +60,7 @@ const ReportPage = () => {
       `Report submitted successfully for "${selectedCategory}" at "${addressData.address}"`
     );
 
-    // Reset everything
+    // Reset all states
     setSelectedCategory(null);
     setLocation(null);
     setAddressData({
@@ -63,7 +68,9 @@ const ReportPage = () => {
       city: "",
       district: "",
       state: "",
-      country: "",
+      stateCode: "",
+      country: "India",
+      pincode: "",
     });
   };
 
@@ -83,13 +90,14 @@ const ReportPage = () => {
       />
 
       {/* Location Input */}
-      <LocationInput
-        location={location}
-        setLocation={setLocation}
-        addressData={addressData}
-        setAddressData={setAddressData}
-        nextRef={locationRef}
-      />
+      <div ref={locationRef}>
+        <LocationInput
+          location={location}
+          setLocation={setLocation}
+          addressData={addressData}
+          setAddressData={setAddressData}
+        />
+      </div>
 
       {/* Submit Button */}
       <div className="max-w-2xl mx-auto p-4 mt-6">
@@ -105,12 +113,16 @@ const ReportPage = () => {
       {selectedCategory && location && addressData.address && (
         <div className="max-w-2xl mx-auto mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
           <p className="text-blue-800 dark:text-blue-200 font-semibold">
-            You are reporting: <span className="italic">{selectedCategory}</span> at "
+            You are reporting:{" "}
+            <span className="italic">{selectedCategory}</span> at "
             <span className="italic">{addressData.address}</span>"
           </p>
           <p className="text-gray-700 dark:text-gray-300 text-sm mt-1">
-            {addressData.city}, {addressData.district}, {addressData.state},{" "}
+            {addressData.city && `${addressData.city}, `}
+            {addressData.district && `${addressData.district}, `}
+            {addressData.state && `${addressData.state}, `}
             {addressData.country}
+            {addressData.pincode && ` - ${addressData.pincode}`}
           </p>
         </div>
       )}
