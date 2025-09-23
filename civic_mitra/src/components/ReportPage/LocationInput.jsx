@@ -1,13 +1,12 @@
 // src/components/Report/LocationInput.jsx
 import React, { useRef, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, useMapEvents } from "react-leaflet";
-
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import AddressForm from "./AddressForm";
 import statesData from "../../data/india/states.json";
 
-/* Leaflet icons */
+/* Leaflet marker icons */
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
 import iconUrl from "leaflet/dist/images/marker-icon.png";
 import shadowUrl from "leaflet/dist/images/marker-shadow.png";
@@ -23,19 +22,14 @@ const markerIcon = new L.Icon({
   iconAnchor: [12, 41],
 });
 
-export default function LocationInput({
-  location,
-  setLocation,
-  addressData,
-  setAddressData,
-}) {
+export default function LocationInput({ location, setLocation, addressData, setAddressData }) {
   const mapRef = useRef(null);
 
-  // -----------------------------------
-  // Map marker from clicks
-  // -----------------------------------
+  // -------------------------------
+  // Map click + draggable marker
+  // -------------------------------
   function LocationMarkerInner() {
-    useMapEvents({
+    const map = useMapEvents({
       click(e) {
         const { lat, lng } = e.latlng;
         setLocation({ lat, lng });
@@ -43,11 +37,27 @@ export default function LocationInput({
       },
     });
 
-    return location ? (
-      <Marker position={[location.lat, location.lng]} icon={markerIcon} />
-    ) : null;
+    if (!location) return null;
+
+    return (
+      <Marker
+        position={[location.lat, location.lng]}
+        icon={markerIcon}
+        draggable={true}
+        eventHandlers={{
+          dragend: (e) => {
+            const { lat, lng } = e.target.getLatLng();
+            setLocation({ lat, lng });
+            reverseGeocode(lat, lng);
+          },
+        }}
+      />
+    );
   }
 
+  // -------------------------------
+  // Smooth recenter map
+  // -------------------------------
   function RecenterMap({ lat, lng }) {
     const map = useMapEvents({});
     useEffect(() => {
@@ -58,9 +68,9 @@ export default function LocationInput({
     return null;
   }
 
-  // -----------------------------------
-  // Reverse geocode -> fills state/district/city/pincode
-  // -----------------------------------
+  // -------------------------------
+  // Reverse geocode for address
+  // -------------------------------
   const reverseGeocode = async (lat, lng) => {
     try {
       const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lng}`;
@@ -69,13 +79,10 @@ export default function LocationInput({
       const addr = data.address || {};
 
       const stateName = addr.state || addr.state_district || "";
-      const districtName =
-        addr.district || addr.county || addr.region || addr.suburb || "";
-      const cityName =
-        addr.city || addr.town || addr.village || addr.hamlet || "";
+      const districtName = addr.district || addr.county || addr.region || addr.suburb || "";
+      const cityName = addr.city || addr.town || addr.village || addr.hamlet || "";
       const postcode = addr.postcode || "";
 
-      // find stateCode
       const stateCode = Object.keys(statesData).find(
         (k) => (statesData[k] || "").toLowerCase() === stateName.toLowerCase()
       );
@@ -102,9 +109,9 @@ export default function LocationInput({
     }
   };
 
-  // -----------------------------------
-  // Geolocation
-  // -----------------------------------
+  // -------------------------------
+  // Detect user location
+  // -------------------------------
   const detectLocation = () => {
     if (!navigator.geolocation) {
       alert("Geolocation not supported");
@@ -123,9 +130,9 @@ export default function LocationInput({
     );
   };
 
-  // -----------------------------------
-  // Handle pincode -> geocode + move map
-  // -----------------------------------
+  // -------------------------------
+  // Handle pincode selection
+  // -------------------------------
   const handlePincodeSelect = async (pincode) => {
     if (!pincode) return;
     try {
@@ -137,7 +144,7 @@ export default function LocationInput({
         const lat = parseFloat(arr[0].lat);
         const lng = parseFloat(arr[0].lon);
         setLocation({ lat, lng });
-        if (mapRef.current) mapRef.current.setView([lat, lng], 14);
+        if (mapRef.current) mapRef.current.setView([lat, lng], 16);
         setAddressData((prev) => ({ ...prev, pincode, lat, lng }));
       } else {
         setAddressData((prev) => ({ ...prev, pincode }));
@@ -148,14 +155,12 @@ export default function LocationInput({
     }
   };
 
-  // -----------------------------------
+  // -------------------------------
   // Render
-  // -----------------------------------
+  // -------------------------------
   return (
     <section className="w-full max-w-3xl mx-auto p-4 mt-8">
-      <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-        Enter Location
-      </h2>
+      <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">Enter Location</h2>
 
       <button
         onClick={detectLocation}
@@ -168,9 +173,7 @@ export default function LocationInput({
         type="text"
         placeholder="Enter landmark or address"
         value={addressData.address || ""}
-        onChange={(e) =>
-          setAddressData((prev) => ({ ...prev, address: e.target.value }))
-        }
+        onChange={(e) => setAddressData((prev) => ({ ...prev, address: e.target.value }))}
         className="w-full p-3 mb-4 rounded-md border border-gray-300 dark:border-gray-600 
                    focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 
                    bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition"
@@ -183,6 +186,7 @@ export default function LocationInput({
         onPincodeSelect={handlePincodeSelect}
         location={location}
       />
+
       <div className="relative h-72 sm:h-96 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg">
         {/* Map */}
         <MapContainer
@@ -190,20 +194,16 @@ export default function LocationInput({
           zoom={location ? 16 : 5}
           style={{ height: "100%", width: "100%" }}
           whenCreated={(mapInstance) => (mapRef.current = mapInstance)}
-          className="z-0"
         >
           <TileLayer
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <LocationMarkerInner />
-          {/* 👇 add this */}
-          {location?.lat && location?.lng && (
-            <RecenterMap lat={location.lat} lng={location.lng} />
-          )}
+          {location?.lat && location?.lng && <RecenterMap lat={location.lat} lng={location.lng} />}
         </MapContainer>
 
-        {/* Floating controls */}
+        {/* Floating Controls */}
         <div className="absolute top-3 right-3 flex flex-col gap-2">
           <button
             onClick={detectLocation}
@@ -214,9 +214,7 @@ export default function LocationInput({
           </button>
           <button
             onClick={() => {
-              if (mapRef.current && location) {
-                mapRef.current.setView([location.lat, location.lng], 16);
-              }
+              if (mapRef.current && location) mapRef.current.setView([location.lat, location.lng], 16);
             }}
             className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md px-3 py-2 shadow hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             title="Center on Marker"
@@ -225,12 +223,10 @@ export default function LocationInput({
           </button>
         </div>
 
-        {/* Address bar overlay */}
+        {/* Address overlay */}
         {addressData?.address && (
           <div className="absolute bottom-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 text-sm p-2 sm:p-3 border-t border-gray-200 dark:border-gray-700">
-            <p className="truncate text-gray-700 dark:text-gray-300">
-              📌 {addressData.address}
-            </p>
+            <p className="truncate text-gray-700 dark:text-gray-300">📌 {addressData.address}</p>
           </div>
         )}
       </div>
