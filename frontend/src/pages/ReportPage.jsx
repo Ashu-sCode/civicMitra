@@ -80,7 +80,7 @@ const ReportPage = () => {
       mediaFiles: mediaFileNames,
     };
 
-    console.log("✅ Report Submitted:", reportData);
+    console.log("✅ Report Submitted:", JSON.stringify(reportData));
 
     toast.success(
       `Report submitted successfully for "${selectedCategory}" at "${addressData.address}"`,
