@@ -16,9 +16,9 @@ const ReportPage = () => {
   // States
   // -----------------------------
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [mediaFiles, setMediaFiles] = useState([]); // store File objects
-  const [mediaPreviews, setMediaPreviews] = useState([]); // for previews
-  const [location, setLocation] = useState(null); // {lat, lng}
+  const [mediaFiles, setMediaFiles] = useState([]);
+  const [mediaPreviews, setMediaPreviews] = useState([]);
+  const [location, setLocation] = useState(null);
   const [addressData, setAddressData] = useState({
     address: "",
     city: "",
@@ -30,20 +30,22 @@ const ReportPage = () => {
   });
   const [description, setDescription] = useState("");
   const [consent, setConsent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [priority, setPriority] = useState("Normal"); // <-- NEW: priority state
 
   // -----------------------------
   // Effects - Generate Previews
   // -----------------------------
   useEffect(() => {
-    if (mediaFiles.length < 1) return;
+    if (!mediaFiles.length) {
+      setMediaPreviews([]);
+      return;
+    }
 
     const previews = mediaFiles.map((file) => URL.createObjectURL(file));
     setMediaPreviews(previews);
 
-    // cleanup memory when files change
-    return () => {
-      previews.forEach((url) => URL.revokeObjectURL(url));
-    };
+    return () => previews.forEach((url) => URL.revokeObjectURL(url));
   }, [mediaFiles]);
 
   // -----------------------------
@@ -56,7 +58,7 @@ const ReportPage = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!selectedCategory || !location || !addressData.address) {
@@ -69,40 +71,54 @@ const ReportPage = () => {
       return;
     }
 
-    // Extract file names for backend
-    const mediaFileNames = mediaFiles.map((file) => file.name);
+    try {
+      setLoading(true);
 
-    const reportData = {
-      category: selectedCategory,
-      location,
-      addressData,
-      description,
-      mediaFiles: mediaFileNames,
-    };
+      const formData = new FormData();
+      formData.append("category", selectedCategory);
+      formData.append("description", description);
+      formData.append("location", JSON.stringify(location));
+      formData.append("addressData", JSON.stringify(addressData));
+      formData.append("priority", priority); // <-- send priority to backend
+      mediaFiles.forEach((file) => formData.append("mediaFiles", file));
 
-    console.log("✅ Report Submitted:", JSON.stringify(reportData));
+      const res = await fetch("http://localhost:5000/api/reports", {
+        method: "POST",
+        body: formData,
+      });
 
-    toast.success(
-      `Report submitted successfully for "${selectedCategory}" at "${addressData.address}"`,
-      { position: "top-right", duration: 5000 }
-    );
+      const data = await res.json();
 
-    // Reset all states
-    setSelectedCategory(null);
-    setLocation(null);
-    setAddressData({
-      address: "",
-      city: "",
-      district: "",
-      state: "",
-      stateCode: "",
-      country: "India",
-      pincode: "",
-    });
-    setDescription("");
-    setMediaFiles([]);
-    setMediaPreviews([]);
-    setConsent(false);
+      if (res.ok) {
+        toast.success(`Report submitted successfully! Priority: ${priority}`, { duration: 5000 });
+        console.log("✅ Report Saved:", data);
+
+        // Reset all states
+        setSelectedCategory(null);
+        setLocation(null);
+        setAddressData({
+          address: "",
+          city: "",
+          district: "",
+          state: "",
+          stateCode: "",
+          country: "India",
+          pincode: "",
+        });
+        setDescription("");
+        setMediaFiles([]);
+        setMediaPreviews([]);
+        setConsent(false);
+        setPriority("Normal");
+      } else {
+        toast.error(data.error || "Failed to submit report");
+      }
+    } catch (error) {
+      console.error("❌ Submit Error:", error);
+      toast.error("Server error. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   // -----------------------------
@@ -115,10 +131,7 @@ const ReportPage = () => {
       </h1>
 
       {/* Category Selection */}
-      <CategorySelection
-        onCategorySelect={handleCategorySelect}
-        selectedCategory={selectedCategory}
-      />
+      <CategorySelection onCategorySelect={handleCategorySelect} selectedCategory={selectedCategory} />
 
       {/* Location Input */}
       <div ref={locationRef}>
@@ -136,15 +149,26 @@ const ReportPage = () => {
       {/* Description Input */}
       <DescriptionInput description={description} setDescription={setDescription} />
 
+      {/* Priority Selector */}
+      <div className="max-w-2xl mx-auto mt-4">
+        <label className="text-gray-700 dark:text-gray-300 text-sm font-medium mb-1 block">
+          Priority (for AI/ML classification later)
+        </label>
+        <select
+          value={priority}
+          onChange={(e) => setPriority(e.target.value)}
+          className="w-full p-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+        >
+          <option value="Low">Low</option>
+          <option value="Normal">Normal</option>
+          <option value="High">High</option>
+          <option value="Critical">Critical</option>
+        </select>
+      </div>
+
       {/* Consent */}
       <div className="max-w-2xl mx-auto mt-4 flex items-center gap-2">
-        <input
-          type="checkbox"
-          id="consent"
-          checked={consent}
-          onChange={() => setConsent(!consent)}
-          className="w-4 h-4"
-        />
+        <input type="checkbox" id="consent" checked={consent} onChange={() => setConsent(!consent)} className="w-4 h-4" />
         <label htmlFor="consent" className="text-gray-700 dark:text-gray-300 text-sm">
           I consent to submit this report
         </label>
@@ -154,15 +178,14 @@ const ReportPage = () => {
       <div className="max-w-2xl mx-auto p-4 mt-6">
         <button
           onClick={handleSubmit}
-          disabled={!selectedCategory || !location || !addressData.address || !consent}
-          className={`w-full font-semibold py-3 px-4 rounded-md transition 
-            ${
-              !selectedCategory || !location || !addressData.address || !consent
-                ? "bg-gray-400 cursor-not-allowed"
-                : "bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white"
-            }`}
+          disabled={loading || !selectedCategory || !location || !addressData.address || !consent}
+          className={`w-full font-semibold py-3 px-4 rounded-md transition ${
+            !selectedCategory || !location || !addressData.address || !consent
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white"
+          }`}
         >
-          Submit Report
+          {loading ? "Submitting..." : "Submit Report"}
         </button>
       </div>
 
@@ -185,12 +208,7 @@ const ReportPage = () => {
           {mediaPreviews.length > 0 && (
             <div className="flex gap-2 mt-2 flex-wrap">
               {mediaPreviews.map((src, idx) => (
-                <img
-                  key={idx}
-                  src={src}
-                  alt={`preview-${idx}`}
-                  className="w-16 h-16 object-cover rounded-md border border-gray-300 dark:border-gray-600"
-                />
+                <img key={idx} src={src} alt={`preview-${idx}`} className="w-16 h-16 object-cover rounded-md border border-gray-300 dark:border-gray-600" />
               ))}
             </div>
           )}
@@ -201,6 +219,11 @@ const ReportPage = () => {
               <strong>Details:</strong> {description}
             </p>
           )}
+
+          {/* Priority preview */}
+          <p className="text-gray-800 dark:text-gray-200 mt-1 text-sm">
+            <strong>Priority:</strong> {priority}
+          </p>
         </div>
       )}
     </div>
