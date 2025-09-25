@@ -187,7 +187,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
         location={location}
       />
 
-      <div className="relative h-72 sm:h-96 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg">
+      <div className="relative h-72 sm:h-96 z-0 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg">
         {/* Map */}
         <MapContainer
           center={[location?.lat || 20, location?.lng || 77]}

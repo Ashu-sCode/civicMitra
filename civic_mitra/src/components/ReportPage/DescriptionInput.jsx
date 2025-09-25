@@ -1,5 +1,6 @@
 // src/components/ReportPage/DescriptionInput.jsx
 import React, { useState, useEffect, useRef } from "react";
+import { Mic, MicOff } from "lucide-react";
 
 const DescriptionInput = ({ description, setDescription, maxLength = 500 }) => {
   const [listening, setListening] = useState(false);
@@ -88,9 +89,7 @@ const DescriptionInput = ({ description, setDescription, maxLength = 500 }) => {
                   : "bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600"
               }`}
           >
-            <span className={`text-lg ${listening ? "animate-pulse" : ""}`}>
-              🎤
-            </span>
+            {listening ? <Mic className="w-5 h-5 animate-pulse" /> : <MicOff className="w-5 h-5" />}
             {listening ? "Listening..." : "Voice Input"}
           </button>
         )}
@@ -113,7 +112,6 @@ const DescriptionInput = ({ description, setDescription, maxLength = 500 }) => {
         </p>
       )}
 
-      {/* Tailwind animation for pulse-fast */}
       <style>
         {`
           @keyframes pulse-fast {

@@ -11,7 +11,7 @@ import {
   Star,
 } from "lucide-react";
 
-// --- Common issues for quick access (can also fetch tooltip from your data) ---
+// --- Common issues for quick access ---
 const commonIssues = [
   { name: "Potholes", icon: Car, tooltip: "Road damage or potholes" },
   { name: "Garbage Overflow", icon: Trash2, tooltip: "Uncollected waste or litter" },
@@ -24,7 +24,7 @@ const commonIssues = [
 export default function CategorySelection({ onCategorySelect, selectedCategory }) {
   const [selectedSub, setSelectedSub] = useState(selectedCategory || null);
   const [showMore, setShowMore] = useState(false);
-  const [expandedGroup, setExpandedGroup] = useState(null); // Only one group open at a time
+  const [expandedGroup, setExpandedGroup] = useState(null);
   const selectionRef = useRef(null);
 
   // Scroll into view when subcategory selected
@@ -34,28 +34,26 @@ export default function CategorySelection({ onCategorySelect, selectedCategory }
     }
   }, [selectedSub]);
 
-  // Handle subcategory selection
   const handleSelectSub = (sub) => {
     setSelectedSub(sub.name);
     onCategorySelect(sub.name);
   };
 
-  // Toggle group; only one group expanded at a time
   const toggleGroup = (groupName) => {
     setExpandedGroup((prev) => (prev === groupName ? null : groupName));
   };
 
-  // Render a single issue button with tooltip
   const renderButton = (sub) => {
     const Icon = sub.icon || AlertCircle;
     const isSelected = selectedSub === sub.name;
+
     return (
       <button
         key={sub.name}
         onClick={() => handleSelectSub(sub)}
         ref={isSelected ? selectionRef : null}
         title={sub.tooltip || ""}
-        className={`flex flex-col items-center p-4 rounded-xl shadow transition w-full
+        className={`flex flex-col justify-center items-center p-4 min-h-[120px] rounded-xl shadow transition-transform transform hover:scale-105 w-full
           ${isSelected
             ? "border-2 border-indigo-500 bg-indigo-50 dark:bg-indigo-900"
             : "bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 opacity-90"
@@ -80,9 +78,11 @@ export default function CategorySelection({ onCategorySelect, selectedCategory }
         <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">
           Common Issues
         </h3>
-        <div className="flex gap-3 overflow-x-auto py-2">
+        <div className="flex gap-3 overflow-x-auto py-2 snap-x snap-mandatory">
           {commonIssues.map((sub) => (
-            <div className="flex-shrink-0 w-32">{renderButton(sub)}</div>
+            <div key={sub.name} className="flex-shrink-0 w-32 snap-start">
+              {renderButton(sub)}
+            </div>
           ))}
         </div>
       </div>
@@ -113,7 +113,9 @@ export default function CategorySelection({ onCategorySelect, selectedCategory }
             {/* Subcategories Grid */}
             {expandedGroup === group.group && (
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-2">
-                {group.subcategories.map((sub) => renderButton(sub))}
+                {group.subcategories.map((sub) => (
+                  <div key={sub.name}>{renderButton(sub)}</div>
+                ))}
               </div>
             )}
           </div>
