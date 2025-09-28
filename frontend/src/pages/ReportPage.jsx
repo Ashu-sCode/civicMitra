@@ -31,7 +31,7 @@ const ReportPage = () => {
   const [description, setDescription] = useState("");
   const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [priority, setPriority] = useState("Normal"); // <-- NEW: priority state
+  const [priority, setPriority] = useState("Normal"); // priority kept separate
 
   // -----------------------------
   // Effects - Generate Previews
@@ -79,7 +79,7 @@ const ReportPage = () => {
       formData.append("description", description);
       formData.append("location", JSON.stringify(location));
       formData.append("addressData", JSON.stringify(addressData));
-      formData.append("priority", priority); // <-- send priority to backend
+      formData.append("priority", priority); // separate priority
       mediaFiles.forEach((file) => formData.append("mediaFiles", file));
 
       const res = await fetch("http://localhost:5000/api/reports", {
@@ -152,7 +152,7 @@ const ReportPage = () => {
       {/* Priority Selector */}
       <div className="max-w-2xl mx-auto mt-4">
         <label className="text-gray-700 dark:text-gray-300 text-sm font-medium mb-1 block">
-          Priority (for AI/ML classification later)
+          Priority
         </label>
         <select
           value={priority}
@@ -168,7 +168,13 @@ const ReportPage = () => {
 
       {/* Consent */}
       <div className="max-w-2xl mx-auto mt-4 flex items-center gap-2">
-        <input type="checkbox" id="consent" checked={consent} onChange={() => setConsent(!consent)} className="w-4 h-4" />
+        <input
+          type="checkbox"
+          id="consent"
+          checked={consent}
+          onChange={() => setConsent(!consent)}
+          className="w-4 h-4"
+        />
         <label htmlFor="consent" className="text-gray-700 dark:text-gray-300 text-sm">
           I consent to submit this report
         </label>
@@ -208,7 +214,12 @@ const ReportPage = () => {
           {mediaPreviews.length > 0 && (
             <div className="flex gap-2 mt-2 flex-wrap">
               {mediaPreviews.map((src, idx) => (
-                <img key={idx} src={src} alt={`preview-${idx}`} className="w-16 h-16 object-cover rounded-md border border-gray-300 dark:border-gray-600" />
+                <img
+                  key={idx}
+                  src={src}
+                  alt={`preview-${idx}`}
+                  className="w-16 h-16 object-cover rounded-md border border-gray-300 dark:border-gray-600"
+                />
               ))}
             </div>
           )}
