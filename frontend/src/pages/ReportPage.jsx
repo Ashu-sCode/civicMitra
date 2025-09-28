@@ -1,9 +1,9 @@
 // src/pages/ReportPage.jsx
 import React, { useRef, useState, useEffect } from "react";
-import CategorySelection from "../components/ReportPage/CategorySelection";
-import LocationInput from "../components/ReportPage/LocationInput";
-import MediaUploadSection from "../components/ReportPage/MediaUploadSection";
-import DescriptionInput from "../components/ReportPage/DescriptionInput";
+import CategorySelection from "../components/report/CategorySelection";
+import LocationInput from "../components/report/LocationInput";
+import MediaUploadSection from "../components/report/MediaUploadSection";
+import DescriptionInput from "../components/report/DescriptionInput";
 import toast from "react-hot-toast";
 
 const ReportPage = () => {

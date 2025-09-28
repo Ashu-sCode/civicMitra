@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -14,7 +13,7 @@ export default defineConfig({
       manifest: {
         name: "Civic Mitra PWA App",
         short_name: "Civic Mitra",
-        description: "A  Civic Mitra Installable PWA App",
+        description: "A Civic Mitra Installable PWA App",
         theme_color: "#2563eb",
         background_color: "#ffffff",
         display: "standalone",
@@ -34,4 +33,10 @@ export default defineConfig({
       },
     }),
   ],
+
+  server: {
+    allowedHosts: [
+      "73d3d829d138.ngrok-free.app", // <-- add your ngrok host here
+    ],
+  },
 });

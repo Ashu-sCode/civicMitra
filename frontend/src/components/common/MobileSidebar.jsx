@@ -3,7 +3,7 @@ import {
   X, Home, FileText, Search, Info, Phone, Sun, Moon, Download,
   Shield, User, Settings, LogOut, ChevronRight
 } from 'lucide-react';
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { Link } from 'react-router-dom';
 
 const MobileSidebar = ({ 

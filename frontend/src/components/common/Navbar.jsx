@@ -15,7 +15,7 @@ import {
   LogOut,
   ChevronDown,
 } from "lucide-react";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import MobileSidebar from "./MobileSidebar";
 import { Link } from "react-router-dom";
 

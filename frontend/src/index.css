@@ -53,3 +53,10 @@
     @apply max-w-4xl mx-auto px-4;
   }
 }
+
+
+.custom-cluster-icon {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}

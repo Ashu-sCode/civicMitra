@@ -3,7 +3,7 @@ import Hero from '../components/Landing/Hero';
 import Features from '../components/Landing/Features';
 import HowItWorks from '../components/Landing/HowItWorks';
 import InstallCTA from '../components/Landing/InstallCta';
-import Footer from '../components/Footer';
+import Footer from '../components/common/Footer';
 import { useTheme } from '../context/ThemeContext';
 
 const Landing = () => {
