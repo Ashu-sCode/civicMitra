@@ -6,18 +6,18 @@ const ReportCard = ({ report }) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const {
-    id,
-    category,
-    description,
-    mediaFiles,
-    priority,
+    trackingId,
+    category = "Unknown",
+    description = "",
+    mediaFiles = [],
+    priority = "Low",
     status = "Pending",
     addressData = {},
     createdAt,
   } = report;
 
-  const getCategoryIcon = (category) => {
-    const iconMap = {
+  const getCategoryIcon = (cat) => {
+    const icons = {
       "Roads & Transport Issues": "🛣️",
       "Sanitation & Solid Waste": "🗑️",
       "Water Supply & Sewerage": "💧",
@@ -29,26 +29,26 @@ const ReportCard = ({ report }) => {
       "Education & Libraries": "📚",
       "Disaster & Emergency": "🚨",
     };
-    return iconMap[category] || "📝";
+    return icons[cat] || "📝";
   };
 
-  const getStatusColor = (status) => {
-    const statusColors = {
+  const getStatusColor = (st) => {
+    const colors = {
       Pending: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
       "In Progress": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
       Resolved: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
       Rejected: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
     };
-    return statusColors[status] || statusColors.Pending;
+    return colors[st] || colors.Pending;
   };
 
-  const getPriorityColor = (priority) => {
-    const priorityColors = {
+  const getPriorityColor = (p) => {
+    const colors = {
       High: "bg-red-500 text-white dark:bg-red-600",
       Medium: "bg-yellow-500 text-gray-900 dark:bg-yellow-600 dark:text-gray-100",
       Low: "bg-green-500 text-white dark:bg-green-600",
     };
-    return priorityColors[priority] || priorityColors.Low;
+    return colors[p] || colors.Low;
   };
 
   const formatDate = (dateString) => {
@@ -79,7 +79,7 @@ const ReportCard = ({ report }) => {
                   {category}
                 </h3>
                 <p className="text-blue-100 text-xs font-medium">
-                  Report #{id || "Unknown"}
+                  Report #{trackingId || "Unknown"}
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ const ReportCard = ({ report }) => {
           </div>
 
           {/* Media Files Gallery */}
-          {mediaFiles && mediaFiles.length > 0 && (
+          {mediaFiles.length > 0 && (
             <div className="pt-3">
               <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 mb-2">
                 Evidence ({mediaFiles.length})
@@ -167,10 +167,16 @@ const ReportCard = ({ report }) => {
 
           {/* Action Buttons */}
           <div className="flex gap-2 pt-3">
-            <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+            <button
+              className="flex-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
+              onClick={() => window.open(`/track-report/${trackingId}`, "_blank")}
+            >
               View Details
             </button>
-            <button className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+            <button
+              className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 text-sm font-semibold py-2 px-4 rounded-lg transition-colors duration-200"
+              onClick={() => window.open(`/track-report/${trackingId}`, "_blank")}
+            >
               Track
             </button>
           </div>
