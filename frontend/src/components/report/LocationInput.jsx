@@ -6,7 +6,7 @@ import L from "leaflet";
 import AddressForm from "./AddressForm";
 import statesData from "../../data/india/states.json";
 
-/* Leaflet marker icons */
+// Leaflet marker icons
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
 import iconUrl from "leaflet/dist/images/marker-icon.png";
 import shadowUrl from "leaflet/dist/images/marker-shadow.png";
@@ -22,18 +22,26 @@ const markerIcon = new L.Icon({
   iconAnchor: [12, 41],
 });
 
+// Approximate bounding box of Jharkhand
+const jharkhandBounds = [
+  [22.0, 83.0], // southwest corner
+  [24.0, 87.0], // northeast corner
+];
+
 export default function LocationInput({ location, setLocation, addressData, setAddressData }) {
   const mapRef = useRef(null);
 
   // -------------------------------
-  // Map click + draggable marker
+  // Marker component with click & drag
   // -------------------------------
   function LocationMarkerInner() {
     const map = useMapEvents({
       click(e) {
         const { lat, lng } = e.latlng;
-        setLocation({ lat, lng });
-        reverseGeocode(lat, lng);
+        if (isWithinJharkhand(lat, lng)) {
+          setLocation({ lat, lng });
+          reverseGeocode(lat, lng);
+        }
       },
     });
 
@@ -47,8 +55,10 @@ export default function LocationInput({ location, setLocation, addressData, setA
         eventHandlers={{
           dragend: (e) => {
             const { lat, lng } = e.target.getLatLng();
-            setLocation({ lat, lng });
-            reverseGeocode(lat, lng);
+            if (isWithinJharkhand(lat, lng)) {
+              setLocation({ lat, lng });
+              reverseGeocode(lat, lng);
+            }
           },
         }}
       />
@@ -56,7 +66,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
   }
 
   // -------------------------------
-  // Smooth recenter map
+  // Center map smoothly
   // -------------------------------
   function RecenterMap({ lat, lng }) {
     const map = useMapEvents({});
@@ -69,7 +79,15 @@ export default function LocationInput({ location, setLocation, addressData, setA
   }
 
   // -------------------------------
-  // Reverse geocode for address
+  // Check if coordinates are in Jharkhand bounds
+  // -------------------------------
+  const isWithinJharkhand = (lat, lng) => {
+    const [[minLat, minLng], [maxLat, maxLng]] = jharkhandBounds;
+    return lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng;
+  };
+
+  // -------------------------------
+  // Reverse geocode to address
   // -------------------------------
   const reverseGeocode = async (lat, lng) => {
     try {
@@ -78,20 +96,23 @@ export default function LocationInput({ location, setLocation, addressData, setA
       const data = await res.json();
       const addr = data.address || {};
 
-      const stateName = addr.state || addr.state_district || "";
-      const districtName = addr.district || addr.county || addr.region || addr.suburb || "";
-      const cityName = addr.city || addr.town || addr.village || addr.hamlet || "";
+      const stateName = addr.state || "";
+      const districtName = addr.district || "";
+      const cityName = addr.city || addr.town || addr.village || "";
       const postcode = addr.postcode || "";
 
       const stateCode = Object.keys(statesData).find(
         (k) => (statesData[k] || "").toLowerCase() === stateName.toLowerCase()
       );
 
+      // Enforce Jharkhand only
+      if (stateName.toLowerCase() !== "jharkhand") return;
+
       setAddressData((prev) => ({
         ...prev,
         address: data.display_name || prev.address,
         state: stateName,
-        stateCode: stateCode || "",
+        stateCode: stateCode || "JH",
         district: districtName,
         city: cityName,
         pincode: postcode,
@@ -121,9 +142,13 @@ export default function LocationInput({ location, setLocation, addressData, setA
       (pos) => {
         const lat = pos.coords.latitude;
         const lng = pos.coords.longitude;
-        setLocation({ lat, lng });
-        if (mapRef.current) mapRef.current.setView([lat, lng], 16);
-        reverseGeocode(lat, lng);
+        if (isWithinJharkhand(lat, lng)) {
+          setLocation({ lat, lng });
+          if (mapRef.current) mapRef.current.setView([lat, lng], 16);
+          reverseGeocode(lat, lng);
+        } else {
+          alert("You are outside Jharkhand. Location cannot be selected.");
+        }
       },
       () => alert("Location access denied"),
       { enableHighAccuracy: true }
@@ -133,34 +158,46 @@ export default function LocationInput({ location, setLocation, addressData, setA
   // -------------------------------
   // Handle pincode selection
   // -------------------------------
-  const handlePincodeSelect = async (pincode) => {
-    if (!pincode) return;
-    try {
-      const q = encodeURIComponent(`${pincode}, India`);
-      const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${q}&limit=1`;
-      const res = await fetch(url);
-      const arr = await res.json();
-      if (arr && arr.length > 0) {
-        const lat = parseFloat(arr[0].lat);
-        const lng = parseFloat(arr[0].lon);
-        setLocation({ lat, lng });
-        if (mapRef.current) mapRef.current.setView([lat, lng], 16);
-        setAddressData((prev) => ({ ...prev, pincode, lat, lng }));
-      } else {
-        setAddressData((prev) => ({ ...prev, pincode }));
-      }
-    } catch (err) {
-      console.error("Pincode lookup failed:", err);
+ // -------------------------------
+// Handle pincode selection
+// -------------------------------
+const handlePincodeSelect = async (pincode) => {
+  if (!pincode) return;
+  try {
+    const q = encodeURIComponent(`${pincode}, Jharkhand, India`);
+    const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${q}&limit=1`;
+    const res = await fetch(url);
+    const arr = await res.json();
+    if (arr && arr.length > 0) {
+      let lat = parseFloat(arr[0].lat);
+      let lng = parseFloat(arr[0].lon);
+
+      // Snap to Jharkhand bounds if outside
+      const [[minLat, minLng], [maxLat, maxLng]] = jharkhandBounds;
+      lat = Math.min(Math.max(lat, minLat), maxLat);
+      lng = Math.min(Math.max(lng, minLng), maxLng);
+
+      setLocation({ lat, lng });
+      if (mapRef.current) mapRef.current.setView([lat, lng], 16);
+      setAddressData((prev) => ({ ...prev, pincode, lat, lng }));
+    } else {
       setAddressData((prev) => ({ ...prev, pincode }));
     }
-  };
+  } catch (err) {
+    console.error("Pincode lookup failed:", err);
+    setAddressData((prev) => ({ ...prev, pincode }));
+  }
+};
+
 
   // -------------------------------
   // Render
   // -------------------------------
   return (
     <section className="w-full max-w-3xl mx-auto p-4 mt-8">
-      <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">Enter Location</h2>
+      <h2 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">
+        Enter Location
+      </h2>
 
       <button
         onClick={detectLocation}
@@ -173,7 +210,9 @@ export default function LocationInput({ location, setLocation, addressData, setA
         type="text"
         placeholder="Enter landmark or address"
         value={addressData.address || ""}
-        onChange={(e) => setAddressData((prev) => ({ ...prev, address: e.target.value }))}
+        onChange={(e) =>
+          setAddressData((prev) => ({ ...prev, address: e.target.value }))
+        }
         className="w-full p-3 mb-4 rounded-md border border-gray-300 dark:border-gray-600 
                    focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 
                    bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition"
@@ -190,17 +229,23 @@ export default function LocationInput({ location, setLocation, addressData, setA
       <div className="relative h-72 sm:h-96 z-0 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg">
         {/* Map */}
         <MapContainer
-          center={[location?.lat || 20, location?.lng || 77]}
-          zoom={location ? 16 : 5}
+          center={[location?.lat || 23.5, location?.lng || 85]}
+          zoom={7}
           style={{ height: "100%", width: "100%" }}
           whenCreated={(mapInstance) => (mapRef.current = mapInstance)}
+          maxBounds={jharkhandBounds}
+          maxBoundsViscosity={1.0}
+          minZoom={6}
+          maxZoom={18}
         >
           <TileLayer
             attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <LocationMarkerInner />
-          {location?.lat && location?.lng && <RecenterMap lat={location.lat} lng={location.lng} />}
+          {location?.lat && location?.lng && (
+            <RecenterMap lat={location.lat} lng={location.lng} />
+          )}
         </MapContainer>
 
         {/* Floating Controls */}
@@ -214,7 +259,8 @@ export default function LocationInput({ location, setLocation, addressData, setA
           </button>
           <button
             onClick={() => {
-              if (mapRef.current && location) mapRef.current.setView([location.lat, location.lng], 16);
+              if (mapRef.current && location)
+                mapRef.current.setView([location.lat, location.lng], 16);
             }}
             className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md px-3 py-2 shadow hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             title="Center on Marker"
@@ -226,7 +272,9 @@ export default function LocationInput({ location, setLocation, addressData, setA
         {/* Address overlay */}
         {addressData?.address && (
           <div className="absolute bottom-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 text-sm p-2 sm:p-3 border-t border-gray-200 dark:border-gray-700">
-            <p className="truncate text-gray-700 dark:text-gray-300">📌 {addressData.address}</p>
+            <p className="truncate text-gray-700 dark:text-gray-300">
+              📌 {addressData.address}
+            </p>
           </div>
         )}
       </div>

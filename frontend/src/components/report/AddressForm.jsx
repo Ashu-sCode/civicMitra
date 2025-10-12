@@ -35,12 +35,7 @@ const importDistrictPincodeJSON = async (stateCode) => {
   return districtPincodeJSONCache[stateCode];
 };
 
-export default function AddressForm({
-  addressData,
-  setAddressData,
-  onPincodeSelect,
-  location,
-}) {
+export default function AddressForm({ addressData, setAddressData, onPincodeSelect, location }) {
   const [districts, setDistricts] = useState([]);
   const [districtCities, setDistrictCities] = useState({});
   const [districtPincodes, setDistrictPincodes] = useState({});
@@ -49,21 +44,17 @@ export default function AddressForm({
   const suggestionsRef = useRef(null);
 
   // ------------------------
-  // Load districts + pincodes
+  // Load districts + pincodes (Jharkhand only)
   // ------------------------
   useEffect(() => {
-    if (!addressData.stateCode) {
-      setDistricts([]);
-      setDistrictCities({});
-      setDistrictPincodes({});
-      setPincodeSuggestions([]);
-      return;
+    if (addressData.stateCode !== "JH") {
+      setAddressData((prev) => ({ ...prev, stateCode: "JH", state: statesData["JH"], district: "", city: "", pincode: "" }));
     }
 
     let cancelled = false;
     const load = async () => {
-      const dObj = await importDistrictJSON(addressData.stateCode);
-      const dpObj = await importDistrictPincodeJSON(addressData.stateCode);
+      const dObj = await importDistrictJSON("JH");
+      const dpObj = await importDistrictPincodeJSON("JH");
       if (cancelled) return;
 
       setDistricts(Object.keys(dObj || {}));
@@ -75,7 +66,7 @@ export default function AddressForm({
 
     load();
     return () => (cancelled = true);
-  }, [addressData.stateCode, setAddressData]);
+  }, [setAddressData]);
 
   // ------------------------
   // Build pincode suggestions
@@ -124,7 +115,7 @@ export default function AddressForm({
   }, [addressData.pincode, districtPincodes, setAddressData]);
 
   // ------------------------
-  // API fallback for pincode
+  // Other functions remain unchanged
   // ------------------------
   const fetchPincodeFromAPI = async (query) => {
     try {
@@ -149,11 +140,13 @@ export default function AddressForm({
     }
   };
 
-  const handleSelectSuggestion = (p) => {
-    setAddressData((prev) => ({ ...prev, pincode: p }));
-    setShowSuggestions(false);
-    if (typeof onPincodeSelect === "function") onPincodeSelect(p);
-  };
+// Inside AddressForm.jsx
+const handleSelectSuggestion = (p) => {
+  setAddressData((prev) => ({ ...prev, pincode: p }));
+  setShowSuggestions(false);
+  if (typeof onPincodeSelect === "function") onPincodeSelect(p); // IMPORTANT
+};
+
 
   const handlePincodeInput = (val) => {
     setAddressData((prev) => ({ ...prev, pincode: val }));
@@ -176,8 +169,8 @@ export default function AddressForm({
     if (!location) return;
     setAddressData((prev) => ({
       ...prev,
-      state: location.state || prev.state,
-      stateCode: location.stateCode || prev.stateCode,
+      state: "Jharkhand",
+      stateCode: "JH",
       district: location.district || prev.district,
       city: location.city || prev.city,
       pincode: location.pincode || prev.pincode,
@@ -195,39 +188,20 @@ export default function AddressForm({
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 relative">
-      {/* STATE */}
+      {/* STATE (locked to Jharkhand) */}
       <select
-        value={addressData.stateCode || ""}
-        onChange={(e) =>
-          setAddressData({
-            ...addressData,
-            stateCode: e.target.value,
-            state: statesData[e.target.value] || "",
-            district: "",
-            city: "",
-            pincode: "",
-          })
-        }
-        className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+        value="JH"
+        disabled
+        className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 cursor-not-allowed"
       >
-        <option value="">Select State</option>
-        {Object.entries(statesData).map(([code, name]) => (
-          <option key={code} value={code}>
-            {name}
-          </option>
-        ))}
+        <option value="JH">Jharkhand</option>
       </select>
 
       {/* DISTRICT */}
       <select
         value={addressData.district || ""}
         onChange={(e) =>
-          setAddressData((prev) => ({
-            ...prev,
-            district: e.target.value,
-            city: "",
-            pincode: "",
-          }))
+          setAddressData((prev) => ({ ...prev, district: e.target.value, city: "", pincode: "" }))
         }
         disabled={!districts.length}
         className="p-3 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
