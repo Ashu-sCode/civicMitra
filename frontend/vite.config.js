@@ -17,7 +17,8 @@ export default defineConfig({
         theme_color: "#2563eb",
         background_color: "#ffffff",
         display: "standalone",
-        start_url: ".",
+        start_url: "/dashboard",
+
         icons: [
           {
             src: "/pwa-192x192.png",
@@ -36,7 +37,7 @@ export default defineConfig({
 
   server: {
     allowedHosts: [
-      "73d3d829d138.ngrok-free.app", // <-- add your ngrok host here
+      "80124076cc51.ngrok-free.app", // <-- add your ngrok host here
     ],
     proxy: {
       "/api": "http://localhost:5000",

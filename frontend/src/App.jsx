@@ -8,6 +8,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import ReportListPage from "./pages/ReportListPage";
 import AdminReportList from "./admin/pages/AdminReportList";
 import AdminHotspotMap from "./admin/pages/AdminHotspotMap";
+import CitizenDashboard from "./pages/CitizenDashboard";
 
 export default function App() {
   // Flush local queue at startup
@@ -21,6 +22,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/report" element={<ReportPage />} />
+              <Route path="/dashboard" element={<CitizenDashboard />} />
               <Route path="/track-report" element={<ReportTracking />} />
               <Route path="/track-report/:trackingId" element={<ReportTracking />} />
               <Route path="/report-list" element={<ReportListPage />} />

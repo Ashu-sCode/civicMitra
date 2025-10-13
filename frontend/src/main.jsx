@@ -21,7 +21,7 @@ registerSW({
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ThemeProvider>
+ 
       <App />
      <Toaster
       position="top-right"
@@ -35,6 +35,6 @@ createRoot(document.getElementById("root")).render(
         },
       }}
     />
-    </ThemeProvider>
+
   </StrictMode>
 );
