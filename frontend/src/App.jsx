@@ -22,6 +22,7 @@ export default function App() {
               <Route path="/" element={<Landing />} />
               <Route path="/report" element={<ReportPage />} />
               <Route path="/track-report" element={<ReportTracking />} />
+              <Route path="/track-report/:trackingId" element={<ReportTracking />} />
               <Route path="/report-list" element={<ReportListPage />} />
               <Route path="/admin/report-list" element={<AdminReportList />} />
               <Route path="/admin/map" element={<AdminHotspotMap />} />

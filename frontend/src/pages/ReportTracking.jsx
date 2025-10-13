@@ -1,19 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import {
   Search,
-  MapPin,
-  Calendar,
-  FileText,
   AlertCircle,
   CheckCircle2,
   Clock,
-  User,
-  Download,
-  ExternalLink,
 } from "lucide-react";
 
 const TrackingPage = () => {
+  const { trackingId: routeId } = useParams(); // 👈 Get trackingId from URL
   const [trackingId, setTrackingId] = useState("");
   const [report, setReport] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -21,18 +17,15 @@ const TrackingPage = () => {
 
   const statusStages = ["Pending", "Acknowledged", "Assigned", "In Progress", "Resolved"];
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    if (!trackingId.trim()) return;
-
+  // 👇 Centralized function to fetch report
+  const fetchReport = async (id) => {
+    if (!id.trim()) return;
     setLoading(true);
     setError("");
     setReport(null);
 
     try {
-      const res = await axios.get(
-        `http://localhost:5000/api/reports/${trackingId.trim()}`
-      );
+      const res = await axios.get(`http://localhost:5000/api/reports/${id.trim()}`);
       if (res.data.success) {
         setReport(res.data.report);
         setTimeout(() => {
@@ -45,15 +38,27 @@ const TrackingPage = () => {
         setError("No report found for this tracking ID.");
       }
     } catch (err) {
-      console.error(err);
       setError(
-        err.response?.data?.error ||
-          "Something went wrong while fetching report."
+        err.response?.data?.error || "Something went wrong while fetching report."
       );
     } finally {
       setLoading(false);
     }
   };
+
+  // 👇 Handle manual search
+  const handleSearch = (e) => {
+    e.preventDefault();
+    fetchReport(trackingId);
+  };
+
+  // 👇 Auto-fetch when routeId exists (for direct URL visits)
+  useEffect(() => {
+    if (routeId) {
+      setTrackingId(routeId);
+      fetchReport(routeId);
+    }
+  }, [routeId]);
 
   const getStageIndex = (status) =>
     statusStages.findIndex((s) => s.toLowerCase() === status.toLowerCase()) ?? 0;
@@ -65,19 +70,6 @@ const TrackingPage = () => {
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-6">
           <div className="h-6 bg-white/30 rounded w-1/3 mb-2"></div>
           <div className="h-4 bg-white/20 rounded w-1/4"></div>
-        </div>
-        <div className="p-8 space-y-6">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-3">
-              <div className="h-4 bg-slate-200 dark:bg-gray-600 rounded w-2/3"></div>
-              <div className="h-4 bg-slate-200 dark:bg-gray-600 rounded w-1/2"></div>
-              <div className="h-4 bg-slate-200 dark:bg-gray-600 rounded w-3/4"></div>
-            </div>
-            <div className="space-y-3">
-              <div className="h-32 bg-slate-200 dark:bg-gray-600 rounded-xl"></div>
-              <div className="h-32 bg-slate-200 dark:bg-gray-600 rounded-xl"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -127,10 +119,9 @@ const TrackingPage = () => {
         </div>
       )}
 
-      {/* Skeleton while loading */}
       {loading && <LoadingSkeleton />}
 
-      {/* Report Results */}
+     {/* Report Results */}
       {report && (
         <div id="results-section" className="max-w-4xl mx-auto px-4 pb-16 mt-10">
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-slate-200/50 dark:border-gray-700 overflow-hidden">

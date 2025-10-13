@@ -154,10 +154,6 @@ export default function LocationInput({ location, setLocation, addressData, setA
       { enableHighAccuracy: true }
     );
   };
-
-  // -------------------------------
-  // Handle pincode selection
-  // -------------------------------
  // -------------------------------
 // Handle pincode selection
 // -------------------------------
