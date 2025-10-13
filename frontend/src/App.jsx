@@ -26,7 +26,6 @@ export default function App() {
               <Route path="/report-list" element={<ReportListPage />} />
               <Route path="/admin/report-list" element={<AdminReportList />} />
               <Route path="/admin/map" element={<AdminHotspotMap />} />
-            
             </Routes>
           </main>
         </div>

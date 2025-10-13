@@ -32,58 +32,22 @@ export default function LocationInput({ location, setLocation, addressData, setA
   const mapRef = useRef(null);
 
   // -------------------------------
-  // Marker component with click & drag
-  // -------------------------------
-  function LocationMarkerInner() {
-    const map = useMapEvents({
-      click(e) {
-        const { lat, lng } = e.latlng;
-        if (isWithinJharkhand(lat, lng)) {
-          setLocation({ lat, lng });
-          reverseGeocode(lat, lng);
-        }
-      },
-    });
-
-    if (!location) return null;
-
-    return (
-      <Marker
-        position={[location.lat, location.lng]}
-        icon={markerIcon}
-        draggable={true}
-        eventHandlers={{
-          dragend: (e) => {
-            const { lat, lng } = e.target.getLatLng();
-            if (isWithinJharkhand(lat, lng)) {
-              setLocation({ lat, lng });
-              reverseGeocode(lat, lng);
-            }
-          },
-        }}
-      />
-    );
-  }
-
-  // -------------------------------
-  // Center map smoothly
-  // -------------------------------
-  function RecenterMap({ lat, lng }) {
-    const map = useMapEvents({});
-    useEffect(() => {
-      if (lat && lng) {
-        map.setView([lat, lng], 16, { animate: true });
-      }
-    }, [lat, lng, map]);
-    return null;
-  }
-
-  // -------------------------------
   // Check if coordinates are in Jharkhand bounds
   // -------------------------------
   const isWithinJharkhand = (lat, lng) => {
     const [[minLat, minLng], [maxLat, maxLng]] = jharkhandBounds;
     return lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng;
+  };
+
+  // -------------------------------
+  // Clamp coordinates to Jharkhand bounds
+  // -------------------------------
+  const clampToJharkhand = (lat, lng) => {
+    const [[minLat, minLng], [maxLat, maxLng]] = jharkhandBounds;
+    return {
+      lat: Math.min(Math.max(lat, minLat + 0.0001), maxLat - 0.0001),
+      lng: Math.min(Math.max(lng, minLng + 0.0001), maxLng - 0.0001),
+    };
   };
 
   // -------------------------------
@@ -105,7 +69,7 @@ export default function LocationInput({ location, setLocation, addressData, setA
         (k) => (statesData[k] || "").toLowerCase() === stateName.toLowerCase()
       );
 
-      // Enforce Jharkhand only
+      // Only set if state is Jharkhand
       if (stateName.toLowerCase() !== "jharkhand") return;
 
       setAddressData((prev) => ({
@@ -131,60 +95,107 @@ export default function LocationInput({ location, setLocation, addressData, setA
   };
 
   // -------------------------------
+  // Marker component with click & drag
+  // -------------------------------
+  function LocationMarkerInner() {
+    const map = useMapEvents({
+      click(e) {
+        let { lat, lng } = e.latlng;
+        if (!isWithinJharkhand(lat, lng)) {
+          alert("❌ Selected location is outside Jharkhand. Please select within the state.");
+          ({ lat, lng } = clampToJharkhand(lat, lng));
+        }
+        setLocation({ lat, lng });
+        reverseGeocode(lat, lng);
+      },
+    });
+
+    if (!location) return null;
+
+    return (
+      <Marker
+        position={[location.lat, location.lng]}
+        icon={markerIcon}
+        draggable={true}
+        eventHandlers={{
+          dragend: (e) => {
+            let { lat, lng } = e.target.getLatLng();
+            if (!isWithinJharkhand(lat, lng)) {
+              alert("❌ Marker is outside Jharkhand. Snapping back inside.");
+              ({ lat, lng } = clampToJharkhand(lat, lng));
+              e.target.setLatLng([lat, lng]);
+            }
+            setLocation({ lat, lng });
+            reverseGeocode(lat, lng);
+          },
+        }}
+      />
+    );
+  }
+
+  // -------------------------------
+  // Center map smoothly
+  // -------------------------------
+  function RecenterMap({ lat, lng }) {
+    const map = useMapEvents({});
+    useEffect(() => {
+      if (lat && lng) map.setView([lat, lng], 16, { animate: true });
+    }, [lat, lng, map]);
+    return null;
+  }
+
+  // -------------------------------
   // Detect user location
   // -------------------------------
   const detectLocation = () => {
-    if (!navigator.geolocation) {
-      alert("Geolocation not supported");
-      return;
-    }
+    if (!navigator.geolocation) return alert("Geolocation not supported");
+
     navigator.geolocation.getCurrentPosition(
       (pos) => {
-        const lat = pos.coords.latitude;
-        const lng = pos.coords.longitude;
-        if (isWithinJharkhand(lat, lng)) {
-          setLocation({ lat, lng });
-          if (mapRef.current) mapRef.current.setView([lat, lng], 16);
-          reverseGeocode(lat, lng);
-        } else {
-          alert("You are outside Jharkhand. Location cannot be selected.");
+        let { latitude: lat, longitude: lng } = pos.coords;
+        if (!isWithinJharkhand(lat, lng)) {
+          alert("❌ You are outside Jharkhand. Selecting nearest point within state.");
+          ({ lat, lng } = clampToJharkhand(lat, lng));
         }
+        setLocation({ lat, lng });
+        if (mapRef.current) mapRef.current.setView([lat, lng], 16);
+        reverseGeocode(lat, lng);
       },
       () => alert("Location access denied"),
       { enableHighAccuracy: true }
     );
   };
- // -------------------------------
-// Handle pincode selection
-// -------------------------------
-const handlePincodeSelect = async (pincode) => {
-  if (!pincode) return;
-  try {
-    const q = encodeURIComponent(`${pincode}, Jharkhand, India`);
-    const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${q}&limit=1`;
-    const res = await fetch(url);
-    const arr = await res.json();
-    if (arr && arr.length > 0) {
-      let lat = parseFloat(arr[0].lat);
-      let lng = parseFloat(arr[0].lon);
 
-      // Snap to Jharkhand bounds if outside
-      const [[minLat, minLng], [maxLat, maxLng]] = jharkhandBounds;
-      lat = Math.min(Math.max(lat, minLat), maxLat);
-      lng = Math.min(Math.max(lng, minLng), maxLng);
+  // -------------------------------
+  // Handle pincode selection
+  // -------------------------------
+  const handlePincodeSelect = async (pincode) => {
+    if (!pincode) return;
+    try {
+      const q = encodeURIComponent(`${pincode}, Jharkhand, India`);
+      const url = `https://nominatim.openstreetmap.org/search?format=jsonv2&q=${q}&limit=1`;
+      const res = await fetch(url);
+      const arr = await res.json();
+      if (arr && arr.length > 0) {
+        let lat = parseFloat(arr[0].lat);
+        let lng = parseFloat(arr[0].lon);
 
-      setLocation({ lat, lng });
-      if (mapRef.current) mapRef.current.setView([lat, lng], 16);
-      setAddressData((prev) => ({ ...prev, pincode, lat, lng }));
-    } else {
+        if (!isWithinJharkhand(lat, lng)) {
+          alert("❌ Pincode is outside Jharkhand. Adjusted to nearest point within state.");
+          ({ lat, lng } = clampToJharkhand(lat, lng));
+        }
+
+        setLocation({ lat, lng });
+        if (mapRef.current) mapRef.current.setView([lat, lng], 16);
+        setAddressData((prev) => ({ ...prev, pincode, lat, lng }));
+      } else {
+        setAddressData((prev) => ({ ...prev, pincode }));
+      }
+    } catch (err) {
+      console.error("Pincode lookup failed:", err);
       setAddressData((prev) => ({ ...prev, pincode }));
     }
-  } catch (err) {
-    console.error("Pincode lookup failed:", err);
-    setAddressData((prev) => ({ ...prev, pincode }));
-  }
-};
-
+  };
 
   // -------------------------------
   // Render
@@ -209,9 +220,7 @@ const handlePincodeSelect = async (pincode) => {
         onChange={(e) =>
           setAddressData((prev) => ({ ...prev, address: e.target.value }))
         }
-        className="w-full p-3 mb-4 rounded-md border border-gray-300 dark:border-gray-600 
-                   focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 
-                   bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition"
+        className="w-full p-3 mb-4 rounded-md border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition"
       />
 
       {/* Address Form */}
