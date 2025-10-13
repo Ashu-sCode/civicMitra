@@ -17,15 +17,12 @@ import {
   Home,
   HelpCircle
 } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
 
 const CitizenDashboard = () => {
-  // Mock navigate function - replace with real useNavigate() in actual implementation
+  const navigate = useNavigate();
+  const { isDarkMode } = useTheme();
 
-
-   const navigate = useNavigate();
-
-
-  // Placeholder data for announcements
   const announcements = [
     {
       id: 1,
@@ -50,17 +47,16 @@ const CitizenDashboard = () => {
     }
   ];
 
-  // Main services data
   const services = [
     {
       id: 'report-issue',
       title: 'Report an Issue',
       description: 'Report potholes, garbage, or other civic problems',
       icon: FileText,
-      route: '/report-issue',
+      route: '/report',
       color: 'bg-red-500',
-      bgColor: 'bg-red-50',
-      textColor: 'text-red-700'
+      bgColor: 'bg-red-50 dark:bg-red-900',
+      textColor: 'text-red-700 dark:text-red-300'
     },
     {
       id: 'track-complaint',
@@ -69,8 +65,8 @@ const CitizenDashboard = () => {
       icon: Search,
       route: '/track-report',
       color: 'bg-blue-500',
-      bgColor: 'bg-blue-50',
-      textColor: 'text-blue-700'
+      bgColor: 'bg-blue-50 dark:bg-blue-900',
+      textColor: 'text-blue-700 dark:text-blue-300'
     },
     {
       id: 'civic-certificate',
@@ -79,8 +75,8 @@ const CitizenDashboard = () => {
       icon: File,
       route: '/apply-certificate',
       color: 'bg-green-500',
-      bgColor: 'bg-green-50',
-      textColor: 'text-green-700'
+      bgColor: 'bg-green-50 dark:bg-green-900',
+      textColor: 'text-green-700 dark:text-green-300'
     },
     {
       id: 'pay-bills',
@@ -89,8 +85,8 @@ const CitizenDashboard = () => {
       icon: CreditCard,
       route: '/pay-bills',
       color: 'bg-purple-500',
-      bgColor: 'bg-purple-50',
-      textColor: 'text-purple-700'
+      bgColor: 'bg-purple-50 dark:bg-purple-900',
+      textColor: 'text-purple-700 dark:text-purple-300'
     },
     {
       id: 'download-forms',
@@ -99,8 +95,8 @@ const CitizenDashboard = () => {
       icon: Download,
       route: '/download-forms',
       color: 'bg-indigo-500',
-      bgColor: 'bg-indigo-50',
-      textColor: 'text-indigo-700'
+      bgColor: 'bg-indigo-50 dark:bg-indigo-900',
+      textColor: 'text-indigo-700 dark:text-indigo-300'
     },
     {
       id: 'feedback',
@@ -109,8 +105,8 @@ const CitizenDashboard = () => {
       icon: MessageCircle,
       route: '/feedback',
       color: 'bg-orange-500',
-      bgColor: 'bg-orange-50',
-      textColor: 'text-orange-700'
+      bgColor: 'bg-orange-50 dark:bg-orange-900',
+      textColor: 'text-orange-700 dark:text-orange-300'
     },
     {
       id: 'public-notices',
@@ -119,8 +115,8 @@ const CitizenDashboard = () => {
       icon: Megaphone,
       route: '/public-notices',
       color: 'bg-yellow-500',
-      bgColor: 'bg-yellow-50',
-      textColor: 'text-yellow-700'
+      bgColor: 'bg-yellow-50 dark:bg-yellow-900',
+      textColor: 'text-yellow-700 dark:text-yellow-300'
     },
     {
       id: 'locate-office',
@@ -129,12 +125,11 @@ const CitizenDashboard = () => {
       icon: MapPin,
       route: '/locate-office',
       color: 'bg-teal-500',
-      bgColor: 'bg-teal-50',
-      textColor: 'text-teal-700'
+      bgColor: 'bg-teal-50 dark:bg-teal-900',
+      textColor: 'text-teal-700 dark:text-teal-300'
     }
   ];
 
-  // Quick stats data
   const quickStats = [
     {
       id: 1,
@@ -177,44 +172,46 @@ const CitizenDashboard = () => {
   const getAnnouncementIcon = (type) => {
     switch (type) {
       case 'warning':
-        return <AlertTriangle className="w-5 h-5 text-yellow-600" />;
+        return <AlertTriangle className="w-5 h-5 text-yellow-600 dark:text-yellow-400" />;
       case 'success':
-        return <CheckCircle2 className="w-5 h-5 text-green-600" />;
+        return <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400" />;
       default:
-        return <Megaphone className="w-5 h-5 text-blue-600" />;
+        return <Megaphone className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
     }
   };
 
   const getAnnouncementStyles = (type, urgent) => {
     const baseStyle = "flex-shrink-0 w-80 p-4 rounded-lg border-l-4 ";
     if (urgent) {
-      return baseStyle + "bg-red-50 border-red-400 shadow-md";
+      return baseStyle + "bg-red-50 dark:bg-red-900 border-red-400 dark:border-red-600 shadow-md";
     }
     switch (type) {
       case 'warning':
-        return baseStyle + "bg-yellow-50 border-yellow-400";
+        return baseStyle + "bg-yellow-50 dark:bg-yellow-900 border-yellow-400 dark:border-yellow-600";
       case 'success':
-        return baseStyle + "bg-green-50 border-green-400";
+        return baseStyle + "bg-green-50 dark:bg-green-900 border-green-400 dark:border-green-600";
       default:
-        return baseStyle + "bg-blue-50 border-blue-400";
+        return baseStyle + "bg-blue-50 dark:bg-blue-900 border-blue-400 dark:border-blue-600";
     }
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900 text-gray-200' : 'bg-gray-50 text-gray-900'}`}>
       {/* Welcome Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-6">
+      <div className={`px-4 py-6 ${isDarkMode ? 'bg-gradient-to-r from-blue-800 to-blue-900 text-white' : 'bg-gradient-to-r from-blue-600 to-blue-700 text-white'}`}>
         <div className="max-w-7xl mx-auto">
           <h1 className="text-2xl font-bold mb-2">Welcome to Civic Mitra</h1>
-          <p className="text-blue-100">Your gateway to government services in Jharkhand</p>
+          <p className={isDarkMode ? 'text-blue-200' : 'text-blue-100'}>
+            Your gateway to government services in Jharkhand
+          </p>
         </div>
       </div>
 
       {/* Announcements Banner */}
-      <div className="bg-white border-b border-gray-200 px-4 py-4">
+      <div className={`px-4 py-4 ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} border-b`}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">Important Announcements</h2>
-          <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-300">
+          <h2 className="text-lg font-semibold mb-3">Important Announcements</h2>
+          <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-500">
             {announcements.map((announcement) => (
               <div
                 key={announcement.id}
@@ -223,15 +220,15 @@ const CitizenDashboard = () => {
                 <div className="flex items-start gap-3">
                   {getAnnouncementIcon(announcement.type)}
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                    <h3 className="text-sm font-semibold mb-1">
                       {announcement.urgent && (
-                        <span className="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full mr-2">
+                        <span className="inline-block bg-red-100 dark:bg-red-700 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded-full mr-2">
                           URGENT
                         </span>
                       )}
                       {announcement.title}
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className={`text-sm leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                       {announcement.message}
                     </p>
                   </div>
@@ -245,7 +242,7 @@ const CitizenDashboard = () => {
       <div className="max-w-7xl mx-auto px-4 py-6">
         {/* Services Grid */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Government Services</h2>
+          <h2 className="text-xl font-bold mb-4">Government Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {services.map((service) => {
               const IconComponent = service.icon;
@@ -253,7 +250,7 @@ const CitizenDashboard = () => {
                 <button
                   key={service.id}
                   onClick={() => handleServiceClick(service.route)}
-                  className={`${service.bgColor} p-4 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1`}
+                  className={`${service.bgColor} p-4 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-200 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1`}
                 >
                   <div className="flex flex-col items-center text-center space-y-3">
                     <div className={`${service.color} p-3 rounded-full shadow-sm`}>
@@ -263,7 +260,7 @@ const CitizenDashboard = () => {
                       <h3 className={`font-semibold text-sm ${service.textColor} mb-1`}>
                         {service.title}
                       </h3>
-                      <p className="text-xs text-gray-600 leading-tight">
+                      <p className={`text-xs leading-tight ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                         {service.description}
                       </p>
                     </div>
@@ -274,110 +271,44 @@ const CitizenDashboard = () => {
           </div>
         </section>
 
-        {/* Quick Stats Section */}
+        {/* Quick Stats */}
         <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Your Activity</h2>
-          <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-300">
+          <h2 className="text-xl font-bold mb-4">Your Activity</h2>
+          <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-gray-500">
             {quickStats.map((stat) => {
               const IconComponent = stat.icon;
               return (
                 <div
                   key={stat.id}
-                  className="flex-shrink-0 bg-white p-4 rounded-lg shadow-sm border border-gray-200 min-w-[140px]"
+                  className={`flex-shrink-0 p-4 rounded-lg min-w-[140px] shadow-sm border ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'}`}
                 >
                   <div className="flex items-center justify-between mb-2">
                     <div className={`${stat.color} p-2 rounded-lg`}>
                       <IconComponent className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-2xl font-bold text-gray-900">{stat.value}</span>
+                    <span className="text-2xl font-bold">{stat.value}</span>
                   </div>
-                  <h3 className="font-semibold text-sm text-gray-900">{stat.title}</h3>
-                  <p className="text-xs text-gray-500">{stat.subtitle}</p>
+                  <h3 className="font-semibold text-sm">{stat.title}</h3>
+                  <p className="text-xs text-gray-400">{stat.subtitle}</p>
                 </div>
               );
             })}
           </div>
         </section>
-
-        {/* Quick Access Section */}
-        <section className="mb-8">
-          <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Access</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <button
-              onClick={() => navigate('/reports')}
-              className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow text-left"
-            >
-              <div className="flex items-center gap-3">
-                <div className="bg-blue-500 p-2 rounded-lg">
-                  <FileText className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">All My Reports</h3>
-                  <p className="text-sm text-gray-600">View complete history of submissions</p>
-                </div>
-              </div>
-            </button>
-            
-            <button
-              onClick={() => navigate('/emergency')}
-              className="bg-white p-4 rounded-lg border border-red-200 shadow-sm hover:shadow-md transition-shadow text-left border-l-4 border-l-red-500"
-            >
-              <div className="flex items-center gap-3">
-                <div className="bg-red-500 p-2 rounded-lg">
-                  <AlertTriangle className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Emergency Services</h3>
-                  <p className="text-sm text-gray-600">Report urgent issues requiring immediate attention</p>
-                </div>
-              </div>
-            </button>
-          </div>
-        </section>
       </div>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 px-4 py-6 mt-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-center space-x-8 text-center">
-            <button
-              onClick={() => navigate('/')}
-              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors"
-            >
-              <Home className="w-6 h-6" />
-              <span className="text-xs font-medium">Home</span>
+      <footer className={`px-4 py-6 mt-8 border-t ${isDarkMode ? 'border-gray-700 bg-gray-800 text-gray-200' : 'border-gray-200 bg-white text-gray-900'}`}>
+        <div className="max-w-7xl mx-auto flex justify-center space-x-8">
+          {[{icon: Home, label: 'Home', route: '/'}, {icon: FileText, label: 'My Reports', route: '/my-reports'}, {icon: Phone, label: 'Contact', route: '/contact-support'}, {icon: HelpCircle, label: 'Help', route: '/help'}].map((btn, i) => (
+            <button key={i} onClick={() => navigate(btn.route)} className="flex flex-col items-center space-y-1 hover:text-blue-500 transition-colors">
+              <btn.icon className="w-6 h-6" />
+              <span className="text-xs font-medium">{btn.label}</span>
             </button>
-            
-            <button
-              onClick={() => navigate('/my-reports')}
-              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors"
-            >
-              <FileText className="w-6 h-6" />
-              <span className="text-xs font-medium">My Reports</span>
-            </button>
-            
-            <button
-              onClick={() => navigate('/contact-support')}
-              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors"
-            >
-              <Phone className="w-6 h-6" />
-              <span className="text-xs font-medium">Contact</span>
-            </button>
-            
-            <button
-              onClick={() => navigate('/help')}
-              className="flex flex-col items-center space-y-1 text-gray-600 hover:text-blue-600 transition-colors"
-            >
-              <HelpCircle className="w-6 h-6" />
-              <span className="text-xs font-medium">Help</span>
-            </button>
-          </div>
-          
-          <div className="text-center mt-4 pt-4 border-t border-gray-100">
-            <p className="text-xs text-gray-500">
-              © 2024 Government of Jharkhand | Civic Mitra v2.0
-            </p>
-          </div>
+          ))}
+        </div>
+        <div className="text-center mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+          <p className="text-xs">{`© 2024 Government of Jharkhand | Civic Mitra v2.0`}</p>
         </div>
       </footer>
     </div>

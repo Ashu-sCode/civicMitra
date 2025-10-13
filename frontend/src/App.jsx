@@ -16,9 +16,9 @@ export default function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen">
+        <div className="flex flex-col min-h-screen">
           <Navbar />
-          <main className="p-4 container">
+          <main className="py-4 mx-auto container">
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/report" element={<ReportPage />} />
