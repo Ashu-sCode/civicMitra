@@ -15,6 +15,7 @@ import {
   Settings,
   LogOut,
   ChevronDown,
+  LayoutDashboard,
 } from "lucide-react";
 import { useTheme } from "../../context/ThemeContext";
 import MobileSidebar from "./MobileSidebar";
@@ -75,6 +76,7 @@ const Navbar = () => {
 
   const profileItems = [
     { name: "My Profile", path: "/profile", icon: User },
+    { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
     { name: "Settings", path: "/settings", icon: Settings },
     { name: "Logout", path: "/logout", icon: LogOut, isDestructive: true },
   ];

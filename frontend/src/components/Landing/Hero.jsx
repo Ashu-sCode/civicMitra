@@ -4,8 +4,8 @@ import { ArrowRight, Shield, Sparkles } from 'lucide-react';
 const Hero = ({ 
   headline = "CivicMitra – Your Digital Citizen Companion",
   subtext = "Report issues, track status, access citizen services, all in one place.",
-  ctaPrimary = { text: "Report an Issue", href: "/report" },
-  ctaSecondary = { text: "Learn More", href: "/about" },
+  ctaPrimary = { text: "Dashboard", href: "/dashboard" },
+  ctaSecondary = { text: "Report Issue", href: "/report" },
   illustration
 }) => {
   const [isVisible, setIsVisible] = useState(false);
