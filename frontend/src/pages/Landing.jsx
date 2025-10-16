@@ -133,4 +133,4 @@ const Landing = () => {
   );
 };
 
-xport default Landing;
+export default Landing;
