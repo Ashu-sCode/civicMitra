@@ -126,7 +126,7 @@ const Landing = () => {
           className="fixed bottom-20 right-4 lg:bottom-8 lg:right-8 w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110 z-40"
           aria-label="Scroll to top"
         >
-          <span className="text-xl">↑</span>
+          <span className="text-xl">↑</span
         </button>
       </main>
     </div>
