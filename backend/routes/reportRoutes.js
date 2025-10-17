@@ -138,6 +138,32 @@ router.get("/", async (req, res) => {
 });
 
 // -----------------------------
+// GET /api/reports/stats → Summary counts
+// -----------------------------
+router.get("/stats", async (req, res) => {
+  try {
+    // Use MySQL aggregate queries
+    const [totalResult] = await pool.query(`SELECT COUNT(*) AS totalReports FROM reports`);
+    const [resolvedResult] = await pool.query(`SELECT COUNT(*) AS resolvedReports FROM reports WHERE status='resolved'`);
+    const [pendingResult] = await pool.query(`SELECT COUNT(*) AS pendingReports FROM reports WHERE status='pending'`);
+    const [citiesResult] = await pool.query(`SELECT COUNT(DISTINCT city) AS citiesCovered FROM reports WHERE city IS NOT NULL AND city!=''`);
+
+    const stats = {
+      totalReports: totalResult[0].totalReports || 0,
+      resolvedReports: resolvedResult[0].resolvedReports || 0,
+      pendingReports: pendingResult[0].pendingReports || 0,
+      citiesCovered: citiesResult[0].citiesCovered || 0,
+    };
+
+    res.json({ success: true, stats });
+  } catch (error) {
+    console.error("❌ Error fetching report stats:", error);
+    res.status(500).json({ success: false, error: "Server error while fetching stats" });
+  }
+});
+
+
+// -----------------------------
 // GET /api/reports/:trackingId → Fetch single report
 // -----------------------------
 router.get("/:trackingId", async (req, res) => {
@@ -187,6 +213,7 @@ router.get("/:trackingId", async (req, res) => {
     res.status(500).json({ success: false, error: "Server error" });
   }
 });
+
 
 
 export default router;
