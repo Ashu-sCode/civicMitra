@@ -6,6 +6,7 @@ import HowItWorks from '../components/Landing/HowItWorks';
 import InstallCTA from '../components/Landing/InstallCta';
 import Footer from '../components/common/Footer';
 import { useTheme } from '../context/ThemeContext';
+import LandingStats from '../components/Landing/LandingStats';
 
 const Landing = () => {
   const { isDarkMode } = useTheme();
@@ -52,27 +53,7 @@ const Landing = () => {
         <InstallCTA />
 
         {/* Stats Section */}
-        <section className="py-16 bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { number: '10K+', label: 'Active Users' },
-                { number: '5K+', label: 'Issues Resolved' },
-                { number: '100+', label: 'Cities Covered' },
-                { number: '4.8★', label: 'User Rating' },
-              ].map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600 mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-600 dark:text-gray-400 text-sm">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <LandingStats />
 
         {/* Testimonials */}
         <section className="py-16 bg-white dark:bg-gray-800">

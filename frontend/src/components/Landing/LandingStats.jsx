@@ -1,6 +1,27 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import CountUp from "react-countup";
+
+// Animated number component
+const AnimatedNumber = ({ value, duration = 2000 }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const increment = value / (duration / 50); // update every 50ms
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= value) {
+        start = value;
+        clearInterval(timer);
+      }
+      setCount(Math.floor(start));
+    }, 50);
+
+    return () => clearInterval(timer);
+  }, [value, duration]);
+
+  return <span>{count.toLocaleString()}</span>;
+};
 
 const LandingStats = () => {
   const [stats, setStats] = useState(null);
@@ -60,7 +81,7 @@ const LandingStats = () => {
           {statItems.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 dark:from-blue-400 dark:to-blue-600 mb-2">
-                <CountUp end={stat.value} duration={2} separator="," />
+                <AnimatedNumber value={stat.value} />
                 {stat.label.includes("Reports") && "+"}
               </div>
               <div className="text-gray-600 dark:text-gray-400 text-sm">
