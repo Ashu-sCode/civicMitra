@@ -9,11 +9,13 @@ import ReportListPage from "./pages/ReportListPage";
 import AdminReportList from "./admin/pages/AdminReportList";
 import AdminHotspotMap from "./admin/pages/AdminHotspotMap";
 import CitizenDashboard from "./pages/CitizenDashboard";
+import { LanguageProvider } from "./context/LanguageContext";
 
 export default function App() {
   // Flush local queue at startup
 
   return (
+    <LanguageProvider>
     <ThemeProvider>
       <Router>
         <div className="flex flex-col min-h-screen">
@@ -33,5 +35,6 @@ export default function App() {
         </div>
       </Router>
     </ThemeProvider>
+    </LanguageProvider>
   );
 }

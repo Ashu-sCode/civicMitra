@@ -1,22 +1,33 @@
 // routes/reports.js
+// =============================================================
+// 📘 REPORTS API ROUTES
+// =============================================================
+// Base URL: /api/reports
+// Endpoints:
+//   POST   /              → Submit a new report
+//   GET    /              → Fetch all reports (optionally filter by trackingId)
+//   GET    /stats         → Fetch report statistics summary
+//   GET    /:trackingId   → Fetch single report by tracking ID
+// =============================================================
+
 import express from "express";
 import multer from "multer";
 import pool from "../db.js";
 
 const router = express.Router();
 
-// -----------------------------
-// Multer config
-// -----------------------------
+// =============================================================
+// 🧩 MULTER CONFIGURATION
+// =============================================================
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, "uploads/"),
   filename: (req, file, cb) => cb(null, Date.now() + "-" + file.originalname),
 });
 const upload = multer({ storage });
 
-// -----------------------------
-// Helper: Generate tracking ID from report row
-// -----------------------------
+// =============================================================
+// 🧠 HELPER FUNCTIONS
+// =============================================================
 const generateTrackingId = (report) => {
   const dateStr = new Date(report.createdAt)
     .toISOString()
@@ -25,43 +36,47 @@ const generateTrackingId = (report) => {
   return `CIV${dateStr}-${String(report.id).padStart(5, "0")}`;
 };
 
-// -----------------------------
-// POST /api/reports → Submit report
-// -----------------------------
+// =============================================================
+// 🟢 CREATE REPORT → POST /api/reports
+// =============================================================
 router.post("/", upload.array("mediaFiles"), async (req, res) => {
   try {
     const { category, description, location, addressData, priority } = req.body;
 
     if (!category || !location || !addressData) {
-      return res
-        .status(400)
-        .json({ success: false, error: "Missing required fields" });
+      return res.status(400).json({
+        success: false,
+        error: "Missing required fields",
+      });
     }
 
-    // Safely parse JSON strings
+    // Safe JSON parsing
     let parsedLocation, parsedAddress;
     try {
       parsedLocation = JSON.parse(location);
       parsedAddress = JSON.parse(addressData);
-    } catch (parseError) {
-      console.error("❌ JSON parse error:", parseError.message);
-      return res
-        .status(400)
-        .json({ success: false, error: "Invalid JSON in location or addressData" });
+    } catch (err) {
+      console.error("❌ JSON parse error:", err.message);
+      return res.status(400).json({
+        success: false,
+        error: "Invalid JSON in location or addressData",
+      });
     }
 
-    // Handle uploaded files
+    // Uploaded files
     const files = req.files ? req.files.map((f) => f.filename) : [];
 
     // Validate priority
     const validPriorities = ["Low", "Normal", "High", "Critical"];
-    const safePriority = validPriorities.includes(priority) ? priority : "Normal";
+    const safePriority = validPriorities.includes(priority)
+      ? priority
+      : "Normal";
 
-    // Insert report into database
+    // Insert into DB
     const [result] = await pool.query(
       `INSERT INTO reports 
-       (category, description, lat, lng, address, city, district, state, stateCode, country, pincode, mediaFiles, priority)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        (category, description, lat, lng, address, city, district, state, stateCode, country, pincode, mediaFiles, priority)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         category,
         description,
@@ -79,11 +94,13 @@ router.post("/", upload.array("mediaFiles"), async (req, res) => {
       ]
     );
 
-    // Generate tracking ID dynamically (do NOT store in DB)
-    const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, ""); // YYYYMMDD
-    const trackingId = `CIV${dateStr}-${String(result.insertId).padStart(5, "0")}`;
+    // Generate tracking ID (not stored in DB)
+    const dateStr = new Date().toISOString().slice(0, 10).replace(/-/g, "");
+    const trackingId = `CIV${dateStr}-${String(result.insertId).padStart(
+      5,
+      "0"
+    )}`;
 
-    // Send response with tracking ID
     res.json({
       success: true,
       message: "Report submitted successfully",
@@ -96,11 +113,10 @@ router.post("/", upload.array("mediaFiles"), async (req, res) => {
   }
 });
 
-// -----------------------------
-// -----------------------------
-// GET /api/reports → Fetch all reports
-// Optional query: ?trackingId=CIV20251011-00001
-// -----------------------------
+// =============================================================
+// 🟡 FETCH ALL REPORTS → GET /api/reports
+// Optional: ?trackingId=CIV20251011-00001
+// =============================================================
 router.get("/", async (req, res) => {
   try {
     const { trackingId } = req.query;
@@ -109,7 +125,7 @@ router.get("/", async (req, res) => {
       "SELECT * FROM reports ORDER BY createdAt DESC"
     );
 
-    // Transform rows
+    // Transform results
     let reports = rows.map((r) => ({
       ...r,
       mediaFiles: r.mediaFiles ? JSON.parse(r.mediaFiles) : [],
@@ -125,7 +141,7 @@ router.get("/", async (req, res) => {
       trackingId: generateTrackingId(r),
     }));
 
-    // Filter if trackingId query param is provided
+    // Filter by trackingId if provided
     if (trackingId) {
       reports = reports.filter((r) => r.trackingId === trackingId);
     }
@@ -137,16 +153,23 @@ router.get("/", async (req, res) => {
   }
 });
 
-// -----------------------------
-// GET /api/reports/stats → Summary counts
-// -----------------------------
+// =============================================================
+// 🔵 FETCH REPORT STATS → GET /api/reports/stats
+// =============================================================
 router.get("/stats", async (req, res) => {
   try {
-    // Use MySQL aggregate queries
-    const [totalResult] = await pool.query(`SELECT COUNT(*) AS totalReports FROM reports`);
-    const [resolvedResult] = await pool.query(`SELECT COUNT(*) AS resolvedReports FROM reports WHERE status='resolved'`);
-    const [pendingResult] = await pool.query(`SELECT COUNT(*) AS pendingReports FROM reports WHERE status='pending'`);
-    const [citiesResult] = await pool.query(`SELECT COUNT(DISTINCT city) AS citiesCovered FROM reports WHERE city IS NOT NULL AND city!=''`);
+    const [totalResult] = await pool.query(
+      `SELECT COUNT(*) AS totalReports FROM reports`
+    );
+    const [resolvedResult] = await pool.query(
+      `SELECT COUNT(*) AS resolvedReports FROM reports WHERE status='resolved'`
+    );
+    const [pendingResult] = await pool.query(
+      `SELECT COUNT(*) AS pendingReports FROM reports WHERE status='pending'`
+    );
+    const [citiesResult] = await pool.query(
+      `SELECT COUNT(DISTINCT city) AS citiesCovered FROM reports WHERE city IS NOT NULL AND city!=''`
+    );
 
     const stats = {
       totalReports: totalResult[0].totalReports || 0,
@@ -158,19 +181,20 @@ router.get("/stats", async (req, res) => {
     res.json({ success: true, stats });
   } catch (error) {
     console.error("❌ Error fetching report stats:", error);
-    res.status(500).json({ success: false, error: "Server error while fetching stats" });
+    res
+      .status(500)
+      .json({ success: false, error: "Server error while fetching stats" });
   }
 });
 
-
-// -----------------------------
-// GET /api/reports/:trackingId → Fetch single report
-// -----------------------------
+// =============================================================
+// 🔴 FETCH SINGLE REPORT → GET /api/reports/:trackingId
+// =============================================================
 router.get("/:trackingId", async (req, res) => {
   try {
     const { trackingId } = req.params;
 
-    // Validate tracking ID format: CIVYYYYMMDD-xxxxx
+    // Validate tracking ID format CIVYYYYMMDD-xxxxx
     const match = trackingId.match(/^CIV(\d{8})-(\d{5})$/);
     if (!match) {
       return res
@@ -178,7 +202,7 @@ router.get("/:trackingId", async (req, res) => {
         .json({ success: false, error: "Invalid tracking ID format" });
     }
 
-    const reportId = parseInt(match[2], 10); // last 5 digits → reportId
+    const reportId = parseInt(match[2], 10);
 
     const [rows] = await pool.query("SELECT * FROM reports WHERE id = ?", [
       reportId,
@@ -213,7 +237,5 @@ router.get("/:trackingId", async (req, res) => {
     res.status(500).json({ success: false, error: "Server error" });
   }
 });
-
-
 
 export default router;
