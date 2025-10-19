@@ -1,0 +1,19 @@
+{
+  "appName": "सिविक मित्र",
+  "tagline": "नागरिक सेवाएँ",
+  "installApp": "ऐप इंस्टॉल करें",
+  "nav": {
+    "home": "होम",
+    "reportIssue": "समस्या दर्ज करें",
+    "trackStatus": "स्थिति ट्रैक करें",
+    "nearbyReports": "नज़दीकी रिपोर्ट्स",
+    "about": "हमारे बारे में",
+    "contact": "संपर्क करें"
+  },
+  "profile": {
+    "myProfile": "मेरा प्रोफ़ाइल",
+    "dashboard": "डैशबोर्ड",
+    "settings": "सेटिंग्स",
+    "logout": "लॉगआउट"
+  }
+}

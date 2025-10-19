@@ -1,0 +1,19 @@
+{
+  "appName": "Civic Mitra",
+  "tagline": "Citizen Services",
+  "installApp": "Install App",
+  "nav": {
+    "home": "Home",
+    "reportIssue": "Report Issue",
+    "trackStatus": "Track Status",
+    "nearbyReports": "Nearby Reports",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "profile": {
+    "myProfile": "My Profile",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "logout": "Logout"
+  }
+}

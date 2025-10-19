@@ -1,4 +1,3 @@
-// src/components/Navbar/Navbar.jsx
 import React, { useState, useEffect, useRef } from "react";
 import {
   Menu,
@@ -28,10 +27,9 @@ const Navbar = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const profileRef = useRef(null);
-
   const location = useLocation();
 
-  // PWA install prompt
+  // Handle PWA install prompt
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
       e.preventDefault();
@@ -40,10 +38,7 @@ const Navbar = () => {
     };
     window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
     return () =>
-      window.removeEventListener(
-        "beforeinstallprompt",
-        handleBeforeInstallPrompt
-      );
+      window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
   }, []);
 
   const handleInstallApp = async () => {
@@ -88,7 +83,7 @@ const Navbar = () => {
       <nav className="bg-white dark:bg-gray-900 shadow-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40 transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+            {/* ---------- Logo ---------- */}
             <div className="flex items-center space-x-3 cursor-pointer">
               <div className="relative">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg shadow-md flex items-center justify-center">
@@ -108,7 +103,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Desktop Navigation Links */}
+            {/* ---------- Desktop Navigation Links ---------- */}
             <div className="hidden lg:flex items-center space-x-1">
               {navLinks.map((link) => {
                 const IconComponent = link.icon;
@@ -130,7 +125,7 @@ const Navbar = () => {
               })}
             </div>
 
-            {/* Desktop Utility Buttons */}
+            {/* ---------- Desktop Utility Buttons ---------- */}
             <div className="hidden lg:flex items-center space-x-3">
               {/* PWA Install */}
               {isInstallable && (
@@ -195,7 +190,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Mobile Hamburger */}
+            {/* ---------- Mobile Hamburger ---------- */}
             <div className="lg:hidden flex items-center">
               <button
                 aria-label="Toggle Menu"
@@ -210,7 +205,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Sidebar */}
+      {/* ---------- Mobile Sidebar ---------- */}
       <MobileSidebar
         isMenuOpen={isMenuOpen}
         closeMenu={() => setIsMenuOpen(false)}
