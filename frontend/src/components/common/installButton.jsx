@@ -20,6 +20,6 @@ export default function InstallButton() {
     setDeferred(null)
   }
 
-  if (!deferre) return null
+  if (!deferred) return null
   return <button onClick={onInstall} className="px-3 py-1 rounded bg-indigo-600 text-white">Install</button>
 }
