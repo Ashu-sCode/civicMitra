@@ -12,7 +12,7 @@ export default function InstallButton() {
     return () => window.removeEventListener('beforeinstallprompt', handler)
   }, [])
 
-  const onInstal = async () => {
+  const onInstall = async () => {
     if (!deferred) return
     deferred.prompt()
     const choice = await deferred.userChoice
